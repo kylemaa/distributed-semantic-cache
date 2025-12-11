@@ -4,7 +4,6 @@
 
 import { randomUUID } from 'node:crypto';
 import type { CacheEntry, CacheQuery, CacheResponse } from '@distributed-semantic-cache/shared';
-import { findMostSimilar } from '@distributed-semantic-cache/shared';
 import { CacheDatabase } from './database.js';
 import { EmbeddingsService } from './embeddings.js';
 import { config } from './config.js';
@@ -30,8 +29,10 @@ export class SemanticCacheService {
     // Get all entries from database
     const entries = this.db.getAllEntries();
 
-    // Find most similar entry
-    const match = findMostSimilar(queryEmbedding, entries, threshold);
+    // Find most similar entry (dynamic import to handle ESM/CJS interop)
+    const sharedModule = await import('@distributed-semantic-cache/shared');
+    const findMostSimilarFn = (sharedModule as any).findMostSimilar ?? (sharedModule as any).default?.findMostSimilar;
+    const match = findMostSimilarFn ? findMostSimilarFn(queryEmbedding, entries, threshold) : null;
 
     if (match) {
       return {

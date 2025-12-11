@@ -1,0 +1,17 @@
+{
+  "name": "@distributed-semantic-cache/shared",
+  "version": "1.0.0",
+  "description": "Shared utilities and types for distributed semantic cache",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "distributed-semantic-cache-poc",
+  "version": "1.0.0",
+  "description": "Proof of concept for distributed semantic caching with embeddings",
+  "private": true,
+  "scripts": {
+    "dev": "pnpm --parallel --filter \"./packages/*\" dev",
+    "build": "pnpm --recursive --filter \"./packages/*\" build",
+    "clean": "pnpm --recursive --filter \"./packages/*\" clean",
+    "type-check": "pnpm --recursive --filter \"./packages/*\" type-check"
+  },
+  "keywords": [
+    "semantic-cache",
+    "embeddings",
+    "distributed"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.15.0"
+}

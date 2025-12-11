@@ -1,0 +1,28 @@
+{
+  "name": "@distributed-semantic-cache/api",
+  "version": "1.0.0",
+  "description": "API server with Fastify, SQLite, and embeddings",
+  "main": "./dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@distributed-semantic-cache/shared": "workspace:*",
+    "@fastify/cors": "^8.5.0",
+    "better-sqlite3": "^9.2.2",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.25.2",
+    "openai": "^4.24.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.8",
+    "@types/node": "^20.10.6",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}

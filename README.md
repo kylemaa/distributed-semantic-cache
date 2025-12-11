@@ -260,6 +260,16 @@ Even though these queries are worded differently, they have similar embeddings a
 
 This is a proof-of-concept project. Feel free to fork and experiment!
 
+See [CONTRIBUTING.md](./CONTRIBUTING.md) for development guidelines.
+
+## 🔒 Security
+
+**⚠️ This is a POC and not production-ready!**
+
+This project is for demonstration purposes and lacks several security features required for production use, including rate limiting, authentication, and input validation.
+
+See [SECURITY.md](./SECURITY.md) for detailed security considerations and recommendations for production deployment.
+
 ## 📄 License
 
 See LICENSE file for details.

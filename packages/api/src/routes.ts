@@ -1,5 +1,13 @@
 /**
  * API routes
+ * 
+ * SECURITY NOTE: This is a proof-of-concept implementation.
+ * For production use, implement:
+ * - Rate limiting (e.g., @fastify/rate-limit)
+ * - Authentication and authorization
+ * - Input validation and sanitization
+ * - Request size limits
+ * - CSRF protection
  */
 
 import type { FastifyInstance } from 'fastify';

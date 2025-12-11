@@ -2,7 +2,7 @@
  * Semantic cache service
  */
 
-import { randomUUID } from 'crypto';
+import { randomUUID } from 'node:crypto';
 import type { CacheEntry, CacheQuery, CacheResponse } from '@distributed-semantic-cache/shared';
 import { findMostSimilar } from '@distributed-semantic-cache/shared';
 import { CacheDatabase } from './database.js';

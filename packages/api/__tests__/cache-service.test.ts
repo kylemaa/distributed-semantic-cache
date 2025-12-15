@@ -37,6 +37,14 @@ vi.mock('../src/embeddings.js', () => {
       generateEmbeddings: vi.fn().mockImplementation((texts: string[]) => {
         return Promise.resolve(texts.map(text => generateMockEmbedding(text)));
       }),
+      getCacheStats: vi.fn().mockReturnValue({
+        hits: 0,
+        misses: 0,
+        size: 0,
+        capacity: 500,
+        hitRate: 0,
+      }),
+      clearCache: vi.fn(),
     })),
   };
 });

@@ -27,6 +27,16 @@ export const config = {
     get maxSize() {
       return parseInt(process.env.MAX_CACHE_SIZE || '1000', 10);
     },
+    // LRU cache size for exact string matching (Layer 1 cache)
+    get exactMatchSize() {
+      return parseInt(process.env.EXACT_MATCH_CACHE_SIZE || '1000', 10);
+    },
+  },
+  embeddings: {
+    // LRU cache size for embedding reuse
+    get cacheSize() {
+      return parseInt(process.env.EMBEDDING_CACHE_SIZE || '500', 10);
+    },
   },
   cors: {
     allowedOrigins: process.env.ALLOWED_ORIGINS?.split(',') || ['http://localhost:5173'],

@@ -7,6 +7,7 @@ import type { CacheEntry, CacheQuery, CacheResponse } from '@distributed-semanti
 import { CacheDatabase } from './database.js';
 import { EmbeddingsService } from './embeddings.js';
 import { LRUCache } from './lru-cache.js';
+import { quantize, dequantize, deserializeQuantized, serializeQuantized } from './quantization.js';
 import { config } from './config.js';
 
 interface ExactMatchStats {
@@ -57,10 +58,22 @@ export class SemanticCacheService {
     // Get all entries from database
     const entries = this.db.getAllEntries();
 
+    // Dequantize embeddings if quantization is enabled
+    const processedEntries = entries.map(entry => {
+      if (config.quantization.enabled && entry.quantizedEmbedding) {
+        const { quantized, min, max } = deserializeQuantized(entry.quantizedEmbedding);
+        return {
+          ...entry,
+          embedding: dequantize(quantized, min, max),
+        };
+      }
+      return entry;
+    });
+
     // Find most similar entry (dynamic import to handle ESM/CJS interop)
     const sharedModule = await import('@distributed-semantic-cache/shared');
     const findMostSimilarFn = (sharedModule as any).findMostSimilar ?? (sharedModule as any).default?.findMostSimilar;
-    const match = findMostSimilarFn ? findMostSimilarFn(queryEmbedding, entries, threshold) : null;
+    const match = findMostSimilarFn ? findMostSimilarFn(queryEmbedding, processedEntries, threshold) : null;
 
     if (match) {
       return {
@@ -96,7 +109,14 @@ export class SemanticCacheService {
       metadata,
     };
 
-    this.db.insertEntry(entry);
+    // Quantize embedding if enabled for storage reduction
+    let quantizedBuffer: Buffer | undefined;
+    if (config.quantization.enabled) {
+      const quantized = quantize(embedding);
+      quantizedBuffer = serializeQuantized(quantized);
+    }
+
+    this.db.insertEntry(entry, quantizedBuffer);
 
     // Prune cache if needed
     this.db.pruneCache(config.cache.maxSize);

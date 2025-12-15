@@ -23,7 +23,8 @@ export class CacheDatabase {
         response TEXT NOT NULL,
         embedding TEXT NOT NULL,
         timestamp INTEGER NOT NULL,
-        metadata TEXT
+        metadata TEXT,
+        quantized_embedding BLOB
       );
       CREATE INDEX IF NOT EXISTS idx_timestamp ON cache_entries(timestamp);
     `);
@@ -32,10 +33,10 @@ export class CacheDatabase {
   /**
    * Insert a new cache entry
    */
-  insertEntry(entry: CacheEntry): void {
+  insertEntry(entry: CacheEntry, quantizedEmbedding?: Buffer): void {
     const stmt = this.db.prepare(`
-      INSERT INTO cache_entries (id, query, response, embedding, timestamp, metadata)
-      VALUES (?, ?, ?, ?, ?, ?)
+      INSERT INTO cache_entries (id, query, response, embedding, timestamp, metadata, quantized_embedding)
+      VALUES (?, ?, ?, ?, ?, ?, ?)
     `);
 
     stmt.run(
@@ -44,14 +45,16 @@ export class CacheDatabase {
       entry.response,
       JSON.stringify(entry.embedding),
       entry.timestamp,
-      entry.metadata ? JSON.stringify(entry.metadata) : null
+      entry.metadata ? JSON.stringify(entry.metadata) : null,
+      quantizedEmbedding || null
     );
   }
 
   /**
    * Get all cache entries
+   * Returns entries with quantized embeddings if available
    */
-  getAllEntries(): CacheEntry[] {
+  getAllEntries(): (CacheEntry & { quantizedEmbedding?: Buffer })[] {
     const stmt = this.db.prepare('SELECT * FROM cache_entries ORDER BY timestamp DESC');
     const rows = stmt.all() as any[];
 
@@ -62,6 +65,7 @@ export class CacheDatabase {
       embedding: JSON.parse(row.embedding),
       timestamp: row.timestamp,
       metadata: row.metadata ? JSON.parse(row.metadata) : undefined,
+      quantizedEmbedding: row.quantized_embedding ? Buffer.from(row.quantized_embedding) : undefined,
     }));
   }
 

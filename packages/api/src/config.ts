@@ -38,6 +38,12 @@ export const config = {
       return parseInt(process.env.EMBEDDING_CACHE_SIZE || '500', 10);
     },
   },
+  quantization: {
+    // Enable vector quantization for storage reduction
+    get enabled() {
+      return process.env.ENABLE_QUANTIZATION !== 'false';
+    },
+  },
   cors: {
     allowedOrigins: process.env.ALLOWED_ORIGINS?.split(',') || ['http://localhost:5173'],
   },

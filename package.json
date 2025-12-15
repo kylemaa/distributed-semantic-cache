@@ -7,7 +7,10 @@
     "dev": "pnpm --parallel --filter \"./packages/*\" dev",
     "build": "pnpm --recursive --filter \"./packages/*\" build",
     "clean": "pnpm --recursive --filter \"./packages/*\" clean",
-    "type-check": "pnpm --recursive --filter \"./packages/*\" type-check"
+    "type-check": "pnpm --recursive --filter \"./packages/*\" type-check",
+    "test": "pnpm --recursive --filter \"./packages/*\" test",
+    "test:watch": "pnpm --parallel --filter \"./packages/*\" test:watch",
+    "test:coverage": "pnpm --recursive --filter \"./packages/*\" test:coverage"
   },
   "keywords": [
     "semantic-cache",

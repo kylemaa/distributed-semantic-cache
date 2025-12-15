@@ -14,6 +14,8 @@ import type { FastifyInstance } from 'fastify';
 import { SemanticCacheService } from './cache-service.js';
 
 export async function registerRoutes(app: FastifyInstance) {
+  // Create a single cache service instance for this app instance
+  // This ensures tests with different apps get isolated caches
   const cacheService = new SemanticCacheService();
 
   // Health check

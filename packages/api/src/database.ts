@@ -113,7 +113,7 @@ export class CacheDatabase {
   /**
    * Get cache statistics
    */
-  getStats(): { count: number; oldestTimestamp: number | null; newestTimestamp: number | null } {
+  getStats(): { totalEntries: number; oldestTimestamp: number | null; newestTimestamp: number | null } {
     const result = this.db.prepare(`
       SELECT 
         COUNT(*) as count,
@@ -123,7 +123,7 @@ export class CacheDatabase {
     `).get() as any;
 
     return {
-      count: result.count,
+      totalEntries: result.count,
       oldestTimestamp: result.oldestTimestamp,
       newestTimestamp: result.newestTimestamp,
     };

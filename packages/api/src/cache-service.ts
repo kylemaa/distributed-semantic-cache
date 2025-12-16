@@ -1,5 +1,5 @@
 /**
- * Semantic cache service with privacy features
+ * Semantic cache service with privacy and smart matching features
  */
 
 import { randomUUID } from 'node:crypto';
@@ -9,6 +9,10 @@ import { EmbeddingsService } from './embeddings.js';
 import { LRUCache } from './lru-cache.js';
 import { quantize, dequantize, deserializeQuantized, serializeQuantized } from './quantization.js';
 import { encryptEmbedding, decryptEmbedding, hash, createEncryptionMetadata } from './encryption.js';
+import { normalizeQuery, detectQueryType, areQueriesEquivalent } from './normalize.js';
+import { calculateConfidence, CacheLayer } from './confidence.js';
+import { ThresholdLearner } from './threshold-learner.js';
+import { QueryClusterer } from './query-clusterer.js';
 import { config } from './config.js';
 
 interface ExactMatchStats {
@@ -24,6 +28,9 @@ export class SemanticCacheService {
   private embeddings: EmbeddingsService;
   private exactMatchCache: LRUCache<string, string>;
   private exactMatchStats: { hits: number; misses: number };
+  private thresholdLearner: ThresholdLearner;
+  private queryClusterer: QueryClusterer;
+  private normalizedCache: LRUCache<string, string>;
 
   constructor(exactMatchCacheSize?: number) {
     this.db = new CacheDatabase();
@@ -31,34 +38,80 @@ export class SemanticCacheService {
     this.exactMatchCache = new LRUCache<string, string>(
       exactMatchCacheSize ?? config.cache.exactMatchSize
     );
+    this.normalizedCache = new LRUCache<string, string>(exactMatchCacheSize ?? config.cache.exactMatchSize);
     this.exactMatchStats = { hits: 0, misses: 0 };
+    this.thresholdLearner = new ThresholdLearner();
+    this.queryClusterer = new QueryClusterer();
   }
 
   /**
-   * Query the cache for a similar entry
+   * Query the cache for a similar entry with smart matching
    */
   async query(cacheQuery: CacheQuery): Promise<CacheResponse> {
-    const threshold = cacheQuery.threshold ?? config.cache.similarityThreshold;
-    const queryHash = config.privacy.auditEnabled ? hash(cacheQuery.query) : undefined;
+    const originalQuery = cacheQuery.query;
+    const normalizedQuery = normalizeQuery(originalQuery);
+    const queryType = detectQueryType(originalQuery);
+    const queryHash = config.privacy.auditEnabled ? hash(originalQuery) : undefined;
+    
+    // Determine adaptive threshold
+    const adaptiveThreshold = this.thresholdLearner.getThreshold(queryType, originalQuery.length);
+    const threshold = cacheQuery.threshold ?? adaptiveThreshold;
+
+    // Add query to clustering analysis
+    this.queryClusterer.addQuery(originalQuery);
 
     // Layer 1: Check for exact string match (O(1) lookup)
-    const exactMatch = this.exactMatchCache.get(cacheQuery.query);
+    const exactMatch = this.exactMatchCache.get(originalQuery);
     if (exactMatch !== undefined) {
       this.exactMatchStats.hits++;
+      this.thresholdLearner.recordSuccess(queryType, 1.0);
+      
+      const confidence = calculateConfidence(1.0, CacheLayer.EXACT_MATCH, originalQuery.length);
+      
       if (config.privacy.auditEnabled && queryHash) {
-        this.db.addAuditLog('query', undefined, queryHash, true, { layer: 'exact_match', hit: true });
+        this.db.addAuditLog('query', undefined, queryHash, true, { layer: 'exact_match', hit: true, confidence: confidence.score });
       }
       return {
         hit: true,
         response: exactMatch,
         similarity: 1.0,
         cached: true,
+        confidence: {
+          score: confidence.score,
+          level: confidence.level,
+          layer: confidence.layer,
+          explanation: confidence.explanation,
+        },
       };
     }
     this.exactMatchStats.misses++;
 
-    // Layer 2: Generate embedding for semantic search
-    const queryEmbedding = await this.embeddings.generateEmbedding(cacheQuery.query);
+    // Layer 2: Check normalized query cache
+    const normalizedMatch = this.normalizedCache.get(normalizedQuery);
+    if (normalizedMatch !== undefined && normalizedQuery !== originalQuery) {
+      this.thresholdLearner.recordSuccess(queryType, 0.98);
+      
+      const confidence = calculateConfidence(0.98, CacheLayer.NORMALIZED_MATCH, originalQuery.length);
+      
+      if (config.privacy.auditEnabled && queryHash) {
+        this.db.addAuditLog('query', undefined, queryHash, true, { layer: 'normalized_match', hit: true, confidence: confidence.score });
+      }
+      return {
+        hit: true,
+        response: normalizedMatch,
+        similarity: 0.98,
+        cached: true,
+        confidence: {
+          score: confidence.score,
+          level: confidence.level,
+          layer: confidence.layer,
+          explanation: confidence.explanation,
+        },
+      };
+    }
+
+    // Layer 3: Generate embedding for semantic search
+    const queryEmbedding = await this.embeddings.generateEmbedding(originalQuery);
 
     // Get all entries from database
     const entries = this.db.getAllEntries();
@@ -92,19 +145,34 @@ export class SemanticCacheService {
     const match = findMostSimilarFn ? findMostSimilarFn(queryEmbedding, processedEntries, threshold) : null;
 
     if (match) {
+      this.thresholdLearner.recordSuccess(queryType, match.similarity);
+      
+      // Calculate entry age
+      const ageHours = (Date.now() - match.item.timestamp) / (1000 * 60 * 60);
+      const confidence = calculateConfidence(match.similarity, CacheLayer.SEMANTIC_MATCH, originalQuery.length, ageHours);
+      
       if (config.privacy.auditEnabled && queryHash) {
-        this.db.addAuditLog('query', match.item.id, queryHash, true, { layer: 'semantic', similarity: match.similarity, hit: true });
+        this.db.addAuditLog('query', match.item.id, queryHash, true, { layer: 'semantic', similarity: match.similarity, hit: true, confidence: confidence.score });
       }
       return {
         hit: true,
         response: match.item.response,
         similarity: match.similarity,
         cached: true,
+        confidence: {
+          score: confidence.score,
+          level: confidence.level,
+          layer: confidence.layer,
+          explanation: confidence.explanation,
+        },
       };
     }
 
+    // No match found
+    this.thresholdLearner.recordFailure(queryType, threshold);
+    
     if (config.privacy.auditEnabled && queryHash) {
-      this.db.addAuditLog('query', undefined, queryHash, false, { layer: 'semantic', hit: false });
+      this.db.addAuditLog('query', undefined, queryHash, false, { layer: 'semantic', hit: false, threshold });
     }
 
     return {
@@ -114,11 +182,20 @@ export class SemanticCacheService {
   }
 
   /**
-   * Store a query-response pair in the cache
+   * Store a query-response pair in the cache with smart matching
    */
   async store(query: string, response: string, metadata?: Record<string, any>): Promise<CacheEntry> {
     // Store in exact match cache for future O(1) lookups
     this.exactMatchCache.set(query, response);
+    
+    // Store in normalized cache too
+    const normalizedQuery = normalizeQuery(query);
+    if (normalizedQuery !== query) {
+      this.normalizedCache.set(normalizedQuery, response);
+    }
+    
+    // Add to clustering analysis
+    this.queryClusterer.addQuery(query);
 
     // Generate embedding for the query
     const embedding = await this.embeddings.generateEmbedding(query);
@@ -165,13 +242,21 @@ export class SemanticCacheService {
   }
 
   /**
-   * Get cache statistics (including embedding cache and exact match stats)
+   * Get cache statistics (including smart matching stats)
    */
   getStats() {
     return {
       ...this.db.getStats(),
       embeddingCache: this.embeddings.getCacheStats(),
       exactMatchCache: this.getExactMatchStats(),
+      normalizedCache: {
+        size: this.normalizedCache.size(),
+        capacity: this.normalizedCache.capacity,
+      },
+      smartMatching: {
+        thresholdLearning: this.thresholdLearner.getAllStats(),
+        clustering: this.queryClusterer.getStats(),
+      },
     };
   }
 
@@ -191,7 +276,7 @@ export class SemanticCacheService {
   }
 
   /**
-   * Clear all caches (semantic, embedding, and exact match)
+   * Clear all caches (semantic, embedding, exact match, and smart matching)
    */
   clearCache(): void {
     if (config.privacy.auditEnabled) {
@@ -201,7 +286,21 @@ export class SemanticCacheService {
     this.db.clearCache();
     this.embeddings.clearCache();
     this.exactMatchCache.clear();
+    this.normalizedCache.clear();
     this.exactMatchStats = { hits: 0, misses: 0 };
+    this.thresholdLearner.reset();
+    this.queryClusterer.reset();
+  }
+  
+  /**
+   * Get smart matching statistics
+   */
+  getSmartMatchingStats() {
+    return {
+      thresholdLearning: this.thresholdLearner.getAllStats(),
+      clustering: this.queryClusterer.getStats(),
+      popularPatterns: this.queryClusterer.getPopularPatterns(5),
+    };
   }
 
   /**

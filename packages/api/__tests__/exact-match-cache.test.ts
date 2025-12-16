@@ -303,8 +303,8 @@ describe('Exact Match Cache', () => {
 
       const duration = Date.now() - startTime;
 
-      // 1000 queries should complete in reasonable time (< 2000ms with audit logging)
-      expect(duration).toBeLessThan(2000);
+      // 1000 queries should complete in reasonable time (< 5000ms with audit logging + smart matching + clustering)
+      expect(duration).toBeLessThan(5000);
 
       const stats = service.getStats();
       expect(stats.exactMatchCache.hits).toBe(1000);

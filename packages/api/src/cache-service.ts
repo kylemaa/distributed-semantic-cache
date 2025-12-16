@@ -1,5 +1,5 @@
 /**
- * Semantic cache service
+ * Semantic cache service with privacy features
  */
 
 import { randomUUID } from 'node:crypto';
@@ -8,6 +8,7 @@ import { CacheDatabase } from './database.js';
 import { EmbeddingsService } from './embeddings.js';
 import { LRUCache } from './lru-cache.js';
 import { quantize, dequantize, deserializeQuantized, serializeQuantized } from './quantization.js';
+import { encryptEmbedding, decryptEmbedding, hash, createEncryptionMetadata } from './encryption.js';
 import { config } from './config.js';
 
 interface ExactMatchStats {
@@ -38,11 +39,15 @@ export class SemanticCacheService {
    */
   async query(cacheQuery: CacheQuery): Promise<CacheResponse> {
     const threshold = cacheQuery.threshold ?? config.cache.similarityThreshold;
+    const queryHash = config.privacy.auditEnabled ? hash(cacheQuery.query) : undefined;
 
     // Layer 1: Check for exact string match (O(1) lookup)
     const exactMatch = this.exactMatchCache.get(cacheQuery.query);
     if (exactMatch !== undefined) {
       this.exactMatchStats.hits++;
+      if (config.privacy.auditEnabled && queryHash) {
+        this.db.addAuditLog('query', undefined, queryHash, true, { layer: 'exact_match', hit: true });
+      }
       return {
         hit: true,
         response: exactMatch,
@@ -58,8 +63,19 @@ export class SemanticCacheService {
     // Get all entries from database
     const entries = this.db.getAllEntries();
 
-    // Dequantize embeddings if quantization is enabled
+    // Decrypt or dequantize embeddings based on privacy and quantization settings
     const processedEntries = entries.map(entry => {
+      // If encrypted, decrypt first
+      if (config.privacy.mode === 'strict' && entry.encryptedEmbedding) {
+        if (!config.privacy.encryptionKey) {
+          throw new Error('Encryption key required for strict privacy mode');
+        }
+        return {
+          ...entry,
+          embedding: decryptEmbedding(entry.encryptedEmbedding, config.privacy.encryptionKey),
+        };
+      }
+      // Otherwise, dequantize if enabled
       if (config.quantization.enabled && entry.quantizedEmbedding) {
         const { quantized, min, max } = deserializeQuantized(entry.quantizedEmbedding);
         return {
@@ -76,12 +92,19 @@ export class SemanticCacheService {
     const match = findMostSimilarFn ? findMostSimilarFn(queryEmbedding, processedEntries, threshold) : null;
 
     if (match) {
+      if (config.privacy.auditEnabled && queryHash) {
+        this.db.addAuditLog('query', match.item.id, queryHash, true, { layer: 'semantic', similarity: match.similarity, hit: true });
+      }
       return {
         hit: true,
         response: match.item.response,
         similarity: match.similarity,
         cached: true,
       };
+    }
+
+    if (config.privacy.auditEnabled && queryHash) {
+      this.db.addAuditLog('query', undefined, queryHash, false, { layer: 'semantic', hit: false });
     }
 
     return {
@@ -116,7 +139,24 @@ export class SemanticCacheService {
       quantizedBuffer = serializeQuantized(quantized);
     }
 
-    this.db.insertEntry(entry, quantizedBuffer);
+    // Encrypt embedding if privacy mode is strict
+    let encryptedBuffer: Buffer | undefined;
+    let encryptionMetadata: string | undefined;
+    if (config.privacy.mode === 'strict') {
+      if (!config.privacy.encryptionKey) {
+        throw new Error('Encryption key required for strict privacy mode');
+      }
+      encryptedBuffer = encryptEmbedding(embedding, config.privacy.encryptionKey);
+      encryptionMetadata = JSON.stringify(createEncryptionMetadata());
+    }
+
+    this.db.insertEntry(entry, quantizedBuffer, encryptedBuffer, encryptionMetadata);
+
+    // Add audit log
+    if (config.privacy.auditEnabled) {
+      const queryHash = hash(query);
+      this.db.addAuditLog('store', entry.id, queryHash, true, { encrypted: !!encryptedBuffer });
+    }
 
     // Prune cache if needed
     this.db.pruneCache(config.cache.maxSize);
@@ -154,10 +194,34 @@ export class SemanticCacheService {
    * Clear all caches (semantic, embedding, and exact match)
    */
   clearCache(): void {
+    if (config.privacy.auditEnabled) {
+      this.db.addAuditLog('clear_cache', undefined, undefined, true);
+    }
+    
     this.db.clearCache();
     this.embeddings.clearCache();
     this.exactMatchCache.clear();
     this.exactMatchStats = { hits: 0, misses: 0 };
+  }
+
+  /**
+   * Get audit logs (requires audit enabled)
+   */
+  getAuditLogs(limit?: number, action?: string) {
+    if (!config.privacy.auditEnabled) {
+      throw new Error('Audit logging is not enabled');
+    }
+    return this.db.getAuditLogs(limit, action);
+  }
+
+  /**
+   * Clear old audit logs
+   */
+  clearOldAuditLogs(daysToKeep?: number) {
+    if (!config.privacy.auditEnabled) {
+      throw new Error('Audit logging is not enabled');
+    }
+    this.db.clearOldAuditLogs(daysToKeep || config.privacy.auditRetentionDays);
   }
 
   /**

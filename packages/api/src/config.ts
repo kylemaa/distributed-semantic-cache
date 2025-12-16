@@ -52,6 +52,28 @@ export const config = {
       return process.env.ENABLE_QUANTIZATION !== 'false';
     },
   },
+  privacy: {
+    // Privacy mode: 'strict' (encrypt + no logs), 'normal' (no encryption), 'off' (no privacy features)
+    get mode() {
+      return (process.env.PRIVACY_MODE || 'normal') as 'strict' | 'normal' | 'off';
+    },
+    // Encryption key for embeddings at rest (required if mode=strict)
+    get encryptionKey() {
+      return process.env.ENCRYPTION_KEY || '';
+    },
+    // Enable audit logging
+    get auditEnabled() {
+      return process.env.AUDIT_ENABLED !== 'false';
+    },
+    // Days to keep audit logs
+    get auditRetentionDays() {
+      return parseInt(process.env.AUDIT_RETENTION_DAYS || '30', 10);
+    },
+    // Disable analytics/stats collection in strict mode
+    get disableAnalytics() {
+      return this.mode === 'strict' || process.env.DISABLE_ANALYTICS === 'true';
+    },
+  },
   cors: {
     allowedOrigins: process.env.ALLOWED_ORIGINS?.split(',') || ['http://localhost:5173'],
   },

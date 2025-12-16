@@ -24,19 +24,38 @@ export class CacheDatabase {
         embedding TEXT NOT NULL,
         timestamp INTEGER NOT NULL,
         metadata TEXT,
-        quantized_embedding BLOB
+        quantized_embedding BLOB,
+        encrypted_embedding BLOB,
+        encryption_metadata TEXT
       );
       CREATE INDEX IF NOT EXISTS idx_timestamp ON cache_entries(timestamp);
+      
+      CREATE TABLE IF NOT EXISTS audit_log (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        timestamp INTEGER NOT NULL,
+        action TEXT NOT NULL,
+        entry_id TEXT,
+        query_hash TEXT,
+        success INTEGER NOT NULL,
+        metadata TEXT
+      );
+      CREATE INDEX IF NOT EXISTS idx_audit_timestamp ON audit_log(timestamp);
+      CREATE INDEX IF NOT EXISTS idx_audit_action ON audit_log(action);
     `);
   }
 
   /**
    * Insert a new cache entry
    */
-  insertEntry(entry: CacheEntry, quantizedEmbedding?: Buffer): void {
+  insertEntry(
+    entry: CacheEntry, 
+    quantizedEmbedding?: Buffer,
+    encryptedEmbedding?: Buffer,
+    encryptionMetadata?: string
+  ): void {
     const stmt = this.db.prepare(`
-      INSERT INTO cache_entries (id, query, response, embedding, timestamp, metadata, quantized_embedding)
-      VALUES (?, ?, ?, ?, ?, ?, ?)
+      INSERT INTO cache_entries (id, query, response, embedding, timestamp, metadata, quantized_embedding, encrypted_embedding, encryption_metadata)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
     `);
 
     stmt.run(
@@ -46,15 +65,21 @@ export class CacheDatabase {
       JSON.stringify(entry.embedding),
       entry.timestamp,
       entry.metadata ? JSON.stringify(entry.metadata) : null,
-      quantizedEmbedding || null
+      quantizedEmbedding || null,
+      encryptedEmbedding || null,
+      encryptionMetadata || null
     );
   }
 
   /**
    * Get all cache entries
-   * Returns entries with quantized embeddings if available
+   * Returns entries with quantized/encrypted embeddings if available
    */
-  getAllEntries(): (CacheEntry & { quantizedEmbedding?: Buffer })[] {
+  getAllEntries(): (CacheEntry & { 
+    quantizedEmbedding?: Buffer;
+    encryptedEmbedding?: Buffer;
+    encryptionMetadata?: string;
+  })[] {
     const stmt = this.db.prepare('SELECT * FROM cache_entries ORDER BY timestamp DESC');
     const rows = stmt.all() as any[];
 
@@ -66,6 +91,8 @@ export class CacheDatabase {
       timestamp: row.timestamp,
       metadata: row.metadata ? JSON.parse(row.metadata) : undefined,
       quantizedEmbedding: row.quantized_embedding ? Buffer.from(row.quantized_embedding) : undefined,
+      encryptedEmbedding: row.encrypted_embedding ? Buffer.from(row.encrypted_embedding) : undefined,
+      encryptionMetadata: row.encryption_metadata || undefined,
     }));
   }
 
@@ -131,6 +158,62 @@ export class CacheDatabase {
       oldestTimestamp: result.oldestTimestamp,
       newestTimestamp: result.newestTimestamp,
     };
+  }
+
+  /**
+   * Add audit log entry
+   */
+  addAuditLog(action: string, entryId?: string, queryHash?: string, success: boolean = true, metadata?: any): void {
+    const stmt = this.db.prepare(`
+      INSERT INTO audit_log (timestamp, action, entry_id, query_hash, success, metadata)
+      VALUES (?, ?, ?, ?, ?, ?)
+    `);
+
+    stmt.run(
+      Date.now(),
+      action,
+      entryId || null,
+      queryHash || null,
+      success ? 1 : 0,
+      metadata ? JSON.stringify(metadata) : null
+    );
+  }
+
+  /**
+   * Get audit logs
+   */
+  getAuditLogs(limit: number = 100, action?: string): any[] {
+    let query = 'SELECT * FROM audit_log';
+    const params: any[] = [];
+
+    if (action) {
+      query += ' WHERE action = ?';
+      params.push(action);
+    }
+
+    query += ' ORDER BY timestamp DESC LIMIT ?';
+    params.push(limit);
+
+    const stmt = this.db.prepare(query);
+    const rows = stmt.all(...params) as any[];
+
+    return rows.map((row) => ({
+      id: row.id,
+      timestamp: row.timestamp,
+      action: row.action,
+      entryId: row.entry_id || undefined,
+      queryHash: row.query_hash || undefined,
+      success: row.success === 1,
+      metadata: row.metadata ? JSON.parse(row.metadata) : undefined,
+    }));
+  }
+
+  /**
+   * Clear audit logs older than specified days
+   */
+  clearOldAuditLogs(daysToKeep: number = 30): void {
+    const cutoffTime = Date.now() - (daysToKeep * 24 * 60 * 60 * 1000);
+    this.db.prepare('DELETE FROM audit_log WHERE timestamp < ?').run(cutoffTime);
   }
 
   /**

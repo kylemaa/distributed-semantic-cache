@@ -2,11 +2,15 @@
 
 Get up and running with the Distributed Semantic Cache POC in 5 minutes!
 
+## 🆕 Phase 2 Update: FREE Local Embeddings!
+
+**NEW:** You can now run the cache with 100% FREE embeddings (no API key needed)!
+
 ## Prerequisites
 
 Make sure you have:
 - Node.js 18 or higher installed
-- An OpenAI API key
+- An OpenAI API key (optional - only if using OpenAI embeddings)
 
 ## Setup Steps
 

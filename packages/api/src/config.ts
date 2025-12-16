@@ -33,6 +33,14 @@ export const config = {
     },
   },
   embeddings: {
+    // Embedding provider: 'openai' or 'local'
+    get provider() {
+      return (process.env.EMBEDDING_PROVIDER || 'openai') as 'openai' | 'local';
+    },
+    // Local model to use when provider=local
+    get localModel() {
+      return (process.env.LOCAL_EMBEDDING_MODEL || 'all-MiniLM-L6-v2') as 'all-MiniLM-L6-v2' | 'all-mpnet-base-v2' | 'e5-small-v2';
+    },
     // LRU cache size for embedding reuse
     get cacheSize() {
       return parseInt(process.env.EMBEDDING_CACHE_SIZE || '500', 10);

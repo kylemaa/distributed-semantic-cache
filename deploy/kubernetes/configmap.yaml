@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: semantic-cache-config
+  namespace: semantic-cache
+data:
+  NODE_ENV: "production"
+  PORT: "3000"
+  ENABLE_ENCRYPTION: "true"
+  ENABLE_AUDIT_LOG: "true"
+  ENABLE_SMART_MATCHING: "true"
+  LOG_LEVEL: "info"
+  DATABASE_PATH: "/app/data/cache.db"
+  TENANTS_DB_PATH: "/app/data/tenants.db"
+  ANALYTICS_DB_PATH: "/app/data/analytics.db"

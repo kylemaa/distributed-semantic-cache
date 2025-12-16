@@ -12,11 +12,14 @@
 
 import type { FastifyInstance } from 'fastify';
 import { SemanticCacheService } from './cache-service.js';
+import { TenantManager } from './tenant-manager.js';
+import { AnalyticsService } from './analytics-service.js';
 
 export async function registerRoutes(app: FastifyInstance) {
-  // Create a single cache service instance for this app instance
-  // This ensures tests with different apps get isolated caches
+  // Create service instances
   const cacheService = new SemanticCacheService();
+  const tenantManager = new TenantManager();
+  const analyticsService = new AnalyticsService();
 
   // Health check
   app.get('/health', async () => {
@@ -126,8 +129,270 @@ export async function registerRoutes(app: FastifyInstance) {
     }
   });
 
+  // ============= TENANT MANAGEMENT ROUTES =============
+
+  // Create tenant
+  app.post<{
+    Body: { tenantId: string; name: string; similarityThreshold?: number; maxQueries?: number; features?: any };
+  }>('/api/tenants', async (request, reply) => {
+    const { tenantId, name, similarityThreshold, maxQueries, features } = request.body;
+
+    if (!tenantId || !name) {
+      return reply.code(400).send({ error: 'tenantId and name are required' });
+    }
+
+    try {
+      const tenant = tenantManager.createTenant({
+        tenantId,
+        name,
+        similarityThreshold,
+        maxQueries,
+        features,
+      });
+      return { success: true, tenant };
+    } catch (error: any) {
+      console.error('Error creating tenant:', error);
+      if (error.message?.includes('UNIQUE constraint')) {
+        return reply.code(409).send({ error: 'Tenant already exists' });
+      }
+      return reply.code(500).send({ error: 'Internal server error' });
+    }
+  });
+
+  // Get tenant
+  app.get<{
+    Params: { tenantId: string };
+  }>('/api/tenants/:tenantId', async (request, reply) => {
+    const { tenantId } = request.params;
+
+    try {
+      const tenant = tenantManager.getTenant(tenantId);
+      if (!tenant) {
+        return reply.code(404).send({ error: 'Tenant not found' });
+      }
+      return tenant;
+    } catch (error) {
+      console.error('Error getting tenant:', error);
+      return reply.code(500).send({ error: 'Internal server error' });
+    }
+  });
+
+  // List all tenants
+  app.get('/api/tenants', async () => {
+    try {
+      const tenants = tenantManager.listTenants();
+      return { tenants };
+    } catch (error) {
+      console.error('Error listing tenants:', error);
+      return { error: 'Internal server error' };
+    }
+  });
+
+  // Update tenant
+  app.patch<{
+    Params: { tenantId: string };
+    Body: Partial<{ name: string; similarityThreshold: number; maxQueries: number; features: any }>;
+  }>('/api/tenants/:tenantId', async (request, reply) => {
+    const { tenantId } = request.params;
+    const updates = request.body;
+
+    try {
+      const tenant = tenantManager.updateTenant(tenantId, updates);
+      if (!tenant) {
+        return reply.code(404).send({ error: 'Tenant not found' });
+      }
+      return { success: true, tenant };
+    } catch (error) {
+      console.error('Error updating tenant:', error);
+      return reply.code(500).send({ error: 'Internal server error' });
+    }
+  });
+
+  // Delete tenant
+  app.delete<{
+    Params: { tenantId: string };
+  }>('/api/tenants/:tenantId', async (request, reply) => {
+    const { tenantId } = request.params;
+
+    try {
+      const deleted = tenantManager.deleteTenant(tenantId);
+      if (!deleted) {
+        return reply.code(404).send({ error: 'Tenant not found' });
+      }
+      return { success: true, message: 'Tenant deleted' };
+    } catch (error) {
+      console.error('Error deleting tenant:', error);
+      return reply.code(500).send({ error: 'Internal server error' });
+    }
+  });
+
+  // Get tenant usage
+  app.get<{
+    Params: { tenantId: string };
+  }>('/api/tenants/:tenantId/usage', async (request, reply) => {
+    const { tenantId } = request.params;
+
+    try {
+      const usage = tenantManager.getTenantUsage(tenantId);
+      return usage;
+    } catch (error) {
+      console.error('Error getting tenant usage:', error);
+      return reply.code(500).send({ error: 'Internal server error' });
+    }
+  });
+
+  // Get tenant quota
+  app.get<{
+    Params: { tenantId: string };
+  }>('/api/tenants/:tenantId/quota', async (request, reply) => {
+    const { tenantId } = request.params;
+
+    try {
+      const quota = tenantManager.getTenantQuota(tenantId);
+      if (!quota) {
+        return reply.code(404).send({ error: 'Tenant not found' });
+      }
+      return quota;
+    } catch (error) {
+      console.error('Error getting tenant quota:', error);
+      return reply.code(500).send({ error: 'Internal server error' });
+    }
+  });
+
+  // Get all tenants with stats
+  app.get('/api/tenants/stats/all', async () => {
+    try {
+      const stats = tenantManager.getAllTenantsStats();
+      return { tenants: stats };
+    } catch (error) {
+      console.error('Error getting all tenant stats:', error);
+      return { error: 'Internal server error' };
+    }
+  });
+
+  // ============= ANALYTICS ROUTES =============
+
+  // Get cost savings
+  app.get('/api/analytics/cost-savings', async (request) => {
+    const { tenantId, days } = request.query as any;
+
+    try {
+      const costSavings = analyticsService.getCostSavings(
+        tenantId,
+        days ? parseInt(days) : 30
+      );
+      return costSavings;
+    } catch (error) {
+      console.error('Error getting cost savings:', error);
+      return { error: 'Internal server error' };
+    }
+  });
+
+  // Get time series data
+  app.get('/api/analytics/time-series', async (request) => {
+    const { tenantId, days, interval } = request.query as any;
+
+    try {
+      const timeSeries = analyticsService.getTimeSeries(
+        tenantId,
+        days ? parseInt(days) : 30,
+        interval as 'hour' | 'day'
+      );
+      return { data: timeSeries };
+    } catch (error) {
+      console.error('Error getting time series:', error);
+      return { error: 'Internal server error' };
+    }
+  });
+
+  // Get top query patterns
+  app.get('/api/analytics/patterns', async (request) => {
+    const { tenantId, limit } = request.query as any;
+
+    try {
+      const patterns = analyticsService.getTopPatterns(
+        tenantId,
+        limit ? parseInt(limit) : 10
+      );
+      return { patterns };
+    } catch (error) {
+      console.error('Error getting patterns:', error);
+      return { error: 'Internal server error' };
+    }
+  });
+
+  // Get performance metrics
+  app.get('/api/analytics/performance', async (request) => {
+    const { tenantId, days } = request.query as any;
+
+    try {
+      const performance = analyticsService.getPerformanceMetrics(
+        tenantId,
+        days ? parseInt(days) : 7
+      );
+      return performance;
+    } catch (error) {
+      console.error('Error getting performance metrics:', error);
+      return { error: 'Internal server error' };
+    }
+  });
+
+  // Get comprehensive dashboard
+  app.get('/api/analytics/dashboard', async (request) => {
+    const { tenantId, days } = request.query as any;
+
+    try {
+      const dashboard = analyticsService.getDashboard(
+        tenantId,
+        days ? parseInt(days) : 30
+      );
+      return dashboard;
+    } catch (error) {
+      console.error('Error getting dashboard:', error);
+      return { error: 'Internal server error' };
+    }
+  });
+
+  // Export analytics (CSV)
+  app.get('/api/analytics/export/csv', async (request, reply) => {
+    const { tenantId, days } = request.query as any;
+
+    try {
+      const csv = analyticsService.exportCSV(
+        tenantId,
+        days ? parseInt(days) : 30
+      );
+      reply.type('text/csv');
+      reply.header('Content-Disposition', 'attachment; filename="analytics.csv"');
+      return csv;
+    } catch (error) {
+      console.error('Error exporting CSV:', error);
+      return reply.code(500).send({ error: 'Internal server error' });
+    }
+  });
+
+  // Export analytics (JSON)
+  app.get('/api/analytics/export/json', async (request, reply) => {
+    const { tenantId, days } = request.query as any;
+
+    try {
+      const json = analyticsService.exportJSON(
+        tenantId,
+        days ? parseInt(days) : 30
+      );
+      reply.type('application/json');
+      reply.header('Content-Disposition', 'attachment; filename="analytics.json"');
+      return json;
+    } catch (error) {
+      console.error('Error exporting JSON:', error);
+      return reply.code(500).send({ error: 'Internal server error' });
+    }
+  });
+
   // Graceful shutdown
   app.addHook('onClose', async () => {
     cacheService.close();
+    tenantManager.close();
+    analyticsService.close();
   });
 }

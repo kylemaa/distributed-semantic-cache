@@ -1,0 +1,24 @@
+# Example terraform.tfvars file
+# Copy this file to terraform.tfvars and update with your values
+
+aws_region   = "us-east-1"
+project_name = "semantic-cache"
+environment  = "production"
+
+# Docker configuration
+docker_image = "your-registry/semantic-cache"
+docker_tag   = "latest"
+
+# ECS configuration
+task_cpu      = "512"
+task_memory   = "1024"
+desired_count = 2
+min_capacity  = 2
+max_capacity  = 10
+
+# Secrets (use environment variables instead for security)
+# export TF_VAR_openai_api_key="your_key_here"
+# export TF_VAR_encryption_key="your_key_here"
+
+# Logging
+log_retention_days = 30

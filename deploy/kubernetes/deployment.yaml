@@ -1,0 +1,67 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: semantic-cache-api
+  namespace: semantic-cache
+  labels:
+    app: semantic-cache-api
+    version: v1
+spec:
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  selector:
+    matchLabels:
+      app: semantic-cache-api
+  template:
+    metadata:
+      labels:
+        app: semantic-cache-api
+        version: v1
+    spec:
+      containers:
+      - name: api
+        image: semantic-cache:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 3000
+          name: http
+          protocol: TCP
+        envFrom:
+        - configMapRef:
+            name: semantic-cache-config
+        - secretRef:
+            name: semantic-cache-secrets
+        resources:
+          requests:
+            memory: "256Mi"
+            cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 3000
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 3
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 3000
+          initialDelaySeconds: 10
+          periodSeconds: 5
+          timeoutSeconds: 3
+          failureThreshold: 3
+        volumeMounts:
+        - name: cache-data
+          mountPath: /app/data
+      volumes:
+      - name: cache-data
+        persistentVolumeClaim:
+          claimName: semantic-cache-pvc

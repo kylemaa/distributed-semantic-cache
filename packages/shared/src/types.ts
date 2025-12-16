@@ -26,6 +26,12 @@ export interface CacheResponse {
   response?: string;
   similarity?: number;
   cached?: boolean;
+  confidence?: {
+    score: number;
+    level: 'very_high' | 'high' | 'medium' | 'low' | 'very_low';
+    layer: 'exact_match' | 'normalized_match' | 'semantic_match' | 'no_match';
+    explanation: string;
+  };
 }
 
 export interface EmbeddingRequest {

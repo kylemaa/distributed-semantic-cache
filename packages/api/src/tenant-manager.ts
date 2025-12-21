@@ -3,6 +3,23 @@
  * Manages tenant isolation, quotas, and configuration
  */
 
+/**
+ * Multi-Tenancy Manager - ENTERPRISE FEATURE
+ * 
+ * Copyright (c) 2025 Distributed Semantic Cache POC
+ * 
+ * This file is part of the Enterprise Edition and is subject to the
+ * Enterprise License terms. See LICENSE-ENTERPRISE for details.
+ * 
+ * Commercial license required for:
+ * - Production use with multiple tenants
+ * - Data isolation requirements
+ * - Quota management
+ * - Tenant-level analytics
+ * 
+ * 30-day evaluation period available. Contact for licensing.
+ */
+
 import Database from 'better-sqlite3';
 import path from 'path';
 

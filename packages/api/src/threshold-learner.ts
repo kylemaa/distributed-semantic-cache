@@ -1,6 +1,11 @@
 /**
- * Adaptive threshold learning system
- * Tracks query patterns and adjusts similarity thresholds dynamically
+ * Adaptive threshold learning system - Public Version
+ * 
+ * This is a simplified version for the open source edition.
+ * Tracks query patterns and provides basic threshold recommendations.
+ * 
+ * Note: Advanced multi-dimensional optimization algorithms are proprietary.
+ * This version provides a solid baseline for most use cases.
  */
 
 import { QueryType } from './normalize.js';
@@ -71,12 +76,16 @@ export class ThresholdLearner {
   }
 
   /**
-   * Adjust threshold based on query length
+   * Adjust threshold based on query length (simplified public version)
+   * 
+   * Note: Advanced length-based optimization with multiple factors
+   * is available in the enterprise version.
    */
   private adjustForLength(baseThreshold: number, queryLength: number): number {
+    // Simplified: Basic length adjustment only
+    // Enterprise version includes complexity analysis, term density, etc.
     let threshold = baseThreshold;
     
-    // Shorter queries need higher similarity
     if (queryLength < 10) {
       threshold = Math.min(0.95, threshold + 0.05);
     } else if (queryLength > 50) {
@@ -87,7 +96,10 @@ export class ThresholdLearner {
   }
 
   /**
-   * Record a successful match
+   * Record a successful match (simplified public version)
+   * 
+   * Note: Enterprise version includes cross-query-type learning,
+   * contextual adjustments, and multi-factor optimization.
    */
   recordSuccess(queryType: QueryType, similarityScore: number): void {
     if (!this.config.enabled) return;
@@ -95,6 +107,11 @@ export class ThresholdLearner {
     const stats = this.stats.get(queryType);
     if (!stats) return;
 
+    stats.successfulMatches++;
+    stats.totalQueries++;
+    
+    // Simple exponential moving average (public version)
+    // Enterprise version uses advanced ML-based optimization
     stats.successfulMatches++;
     stats.totalQueries++;
     

@@ -1,5 +1,12 @@
 /**
- * Confidence scoring system for cache matches
+ * Confidence scoring system for cache matches - Public Version
+ * 
+ * This is a simplified version for the open source edition.
+ * Provides basic multi-factor confidence scoring.
+ * 
+ * Note: Advanced confidence algorithms with user feedback loops,
+ * contextual adjustments, and proprietary weighting are available
+ * in the enterprise version.
  */
 
 export enum CacheLayer {
@@ -32,7 +39,11 @@ export interface ConfidenceScore {
 }
 
 /**
- * Calculate confidence score for a cache match
+ * Calculate confidence score for a cache match (simplified public version)
+ * 
+ * Note: Enterprise version includes advanced multi-factor weighting,
+ * user feedback integration, and contextual confidence adjustments
+ * using proprietary algorithms.
  */
 export function calculateConfidence(
   similarityScore: number,
@@ -47,29 +58,27 @@ export function calculateConfidence(
   if (cacheLayer === CacheLayer.EXACT_MATCH) {
     score = 1.0;
   } else if (cacheLayer === CacheLayer.NORMALIZED_MATCH) {
-    score = Math.min(0.98, similarityScore + 0.05); // Small boost for normalized matches
+    score = Math.min(0.98, similarityScore + 0.05);
   }
   
-  // Query complexity factor (longer queries need higher similarity)
+  // Simplified scoring (public version)
+  // Enterprise version uses proprietary multi-dimensional analysis
   const complexityPenalty = queryLength > 50 ? 0.05 : 0;
   score = Math.max(0, score - complexityPenalty);
   
-  // Cache age penalty (older entries are less reliable)
+  // Basic age and frequency adjustments
+  // Enterprise version uses advanced decay functions
   if (cacheAgeHours !== undefined) {
-    const agePenalty = Math.min(0.1, cacheAgeHours / 720); // Max 0.1 penalty after 30 days
+    const agePenalty = Math.min(0.1, cacheAgeHours / 720);
     score = Math.max(0, score - agePenalty);
   }
   
-  // Hit frequency boost (popular entries are more reliable)
   if (hitFrequency !== undefined && hitFrequency > 10) {
     const frequencyBoost = Math.min(0.05, Math.log10(hitFrequency) * 0.02);
     score = Math.min(1.0, score + frequencyBoost);
   }
   
-  // Determine confidence level
   const level = getConfidenceLevel(score);
-  
-  // Generate explanation
   const explanation = generateExplanation(score, cacheLayer, queryLength, cacheAgeHours, hitFrequency);
   
   return {

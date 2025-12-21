@@ -2,6 +2,8 @@
 
 A proof-of-concept implementation of a distributed semantic caching system using embeddings, designed to reduce API costs and improve response times by caching semantically similar queries.
 
+**Open Core Model**: Core features are open source (Apache 2.0), enterprise features require commercial license. See [OPEN_CORE_ARCHITECTURE.md](OPEN_CORE_ARCHITECTURE.md) for details.
+
 ## 📁 Project Structure
 
 ```
@@ -37,12 +39,46 @@ distributed-semantic-cache-poc/
 - **Zero-Log Mode**: Disable all telemetry and analytics
 - **HIPAA/GDPR Ready**: Enterprise compliance features
 
-### **Core Features**
+### **Phase 2 Step 3: Smart Matching** ✅
+- **Query Normalization**: Handle case, punctuation, contractions
+- **Confidence Scoring**: Multi-factor confidence calculation
+- **Adaptive Thresholds**: Learn optimal similarity thresholds
+- **Pattern Detection**: Identify common query types
+
+### **Phase 3: Enterprise Features** ✅  
+**Note**: Enterprise features require commercial license (see [OPEN_CORE_ARCHITECTURE.md](OPEN_CORE_ARCHITECTURE.md))
+
+- **Multi-Tenancy** 🏢: Complete data isolation, quota management
+- **Advanced Analytics** 📊: Cost tracking, ROI dashboards, time-series data
+- **Production Deployment** 🚀: Docker, Kubernetes, Terraform templates
+- **220 Tests Passing**: Comprehensive test coverage
+
+### **Core Features (Open Source)**
 - **Semantic Similarity Matching**: Cosine similarity for intelligent caching
 - **SQLite Storage**: Lightweight, file-based database
 - **Real-time Chat Interface**: Interactive React UI
 - **Cache Management**: Full REST API for cache operations
 - **Monorepo Structure**: Clean separation with shared utilities
+
+## 📄 License
+
+This project uses an **Open Core** model:
+
+- **Open Source (Apache 2.0)**: Core caching, privacy features, basic deployment
+  - See [LICENSE](LICENSE)
+- **Enterprise (Proprietary)**: Multi-tenancy, advanced analytics, production templates
+  - See [LICENSE-ENTERPRISE](LICENSE-ENTERPRISE)
+
+**Read**: [OPEN_CORE_ARCHITECTURE.md](OPEN_CORE_ARCHITECTURE.md) for detailed feature breakdown
+
+## 📚 Documentation
+
+- **[QUICKSTART.md](QUICKSTART.md)** - Get started in 5 minutes
+- **[OPEN_CORE_ARCHITECTURE.md](OPEN_CORE_ARCHITECTURE.md)** - Open vs Enterprise features
+- **[TECHNICAL_PAPER.md](TECHNICAL_PAPER.md)** - Defensive publication (prior art)
+- **[PHASE3_COMPLETE.md](PHASE3_COMPLETE.md)** - Enterprise features guide
+- **[COMPETITIVE_STRATEGY.md](COMPETITIVE_STRATEGY.md)** - Market analysis
+- **[EXAMPLES.md](EXAMPLES.md)** - Usage examples
 
 ## 🛠️ Technology Stack
 

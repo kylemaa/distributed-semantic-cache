@@ -45,6 +45,12 @@ distributed-semantic-cache-poc/
 - **Adaptive Thresholds**: Learn optimal similarity thresholds
 - **Pattern Detection**: Identify common query types
 
+### **Phase 4: Advanced Search** ✅ NEW!
+- **HNSW Index**: O(log n) approximate nearest neighbor search
+- **Matryoshka Cascade**: Adaptive dimension search (4-8x faster filtering)
+- **Predictive Cache Warming** 🏢: Pattern-based cache pre-population
+- **Scalability**: Handle 100K+ vectors efficiently
+
 ### **Phase 3: Enterprise Features** ✅  
 **Note**: Enterprise features require commercial license (see [OPEN_CORE_ARCHITECTURE.md](OPEN_CORE_ARCHITECTURE.md))
 

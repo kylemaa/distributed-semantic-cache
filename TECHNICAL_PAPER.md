@@ -392,6 +392,95 @@ function calculateConfidence(
 
 ---
 
+## 11. Advanced Techniques (December 21, 2025 Update)
+
+This section documents additional innovations that extend the base architecture.
+
+### 11.1 Hierarchical Navigable Small World (HNSW) Index
+
+**Problem**: Linear scan O(n) for semantic search becomes slow at scale (>100K entries)
+
+**Solution**: Implement HNSW approximate nearest neighbor search
+
+**Algorithm**:
+```
+1. Build multi-layer graph where each layer is a subset of the previous
+2. Top layers: sparse connectivity for fast navigation
+3. Bottom layers: dense connectivity for accurate search
+4. Search: Start at top layer, descend while improving similarity
+```
+
+**Complexity**:
+- Insert: O(log n)
+- Search: O(log n)
+- vs Linear Scan: O(n)
+
+**Implementation**: Pure TypeScript for moderate scale; hnswlib-node for production
+
+### 11.2 Matryoshka Embeddings Cascade Search
+
+**Concept**: Matryoshka embeddings have the property that truncated prefixes form valid embeddings at lower precision.
+
+**Application to Caching**:
+```
+1. First Pass: Compare using first 64-256 dimensions (fast filter)
+2. Keep top K candidates from first pass
+3. Second Pass: Re-rank using full dimensions (768-1536)
+```
+
+**Benefits**:
+- 4-8x faster initial filtering
+- 75% storage reduction for filter-only scenarios
+- Minimal quality degradation (<5% recall loss at 256d vs 1536d)
+
+**Supported Models**: OpenAI text-embedding-3-small, text-embedding-3-large
+
+### 11.3 Predictive Cache Warming
+
+**Problem**: Cold cache means first queries always miss
+
+**Solution**: Analyze query patterns and proactively populate cache
+
+**Technique**:
+```typescript
+// Temporal pattern analysis
+recordQuery(hour, dayOfWeek, query)
+patterns = analyzeTemporalDistribution()
+
+// Predict demand
+if (currentTime approaches high-demand period) {
+  candidates = getFrequentPatterns()
+  warmingScore = temporal * 0.3 + frequency * 0.4 + recency * 0.3
+  if (warmingScore > threshold) {
+    prewarmCache(candidates)
+  }
+}
+```
+
+**Components**:
+1. Query history with temporal tagging
+2. Pattern frequency analysis
+3. Temporal demand prediction
+4. Confidence-based warming decisions
+
+### 11.4 Future Directions (Claimed as Prior Art)
+
+The following concepts are documented to establish prior art:
+
+1. **Query Intent Vectors**: Dual-vector representation combining semantic content with user intent classification for improved precision.
+
+2. **Semantic Differential Caching**: Cache semantic deltas/modifiers (e.g., "simply", "in detail") separately from base queries, enabling compositional response retrieval.
+
+3. **Contrastive Query Clustering**: Learn cache-aware embeddings where queries with same cached responses cluster together using contrastive learning loss.
+
+4. **Binary Quantization**: 1-bit per dimension quantization with Hamming distance for 8x storage reduction while maintaining 90%+ ranking quality.
+
+5. **Similarity-Weighted Response Interpolation**: For partial matches (0.80-0.90), provide weighted suggestions from multiple cached responses rather than binary hit/miss.
+
+These techniques represent natural extensions of the described architecture and are claimed as prior art as of December 21, 2025.
+
+---
+
 **END OF TECHNICAL PAPER**
 
 This document establishes prior art and prevents future patent claims on these specific techniques.

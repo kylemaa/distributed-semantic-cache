@@ -16,6 +16,8 @@ This project follows an **Open Core** model: core features are open source (Apac
 - **Query normalization**: Case, punctuation, contraction handling
 - **Confidence scoring**: Basic confidence calculation
 - **Threshold adaptation**: Simplified threshold learning
+- **HNSW Index**: O(log n) approximate nearest neighbor search
+- **Matryoshka Cascade**: Adaptive dimension search for faster filtering
 
 **Files**: 
 - `packages/api/src/cache-service.ts`
@@ -27,6 +29,8 @@ This project follows an **Open Core** model: core features are open source (Apac
 - `packages/api/src/normalize.ts`
 - `packages/api/src/confidence.ts` (simplified public version)
 - `packages/api/src/threshold-learner.ts` (simplified public version)
+- `packages/api/src/hnsw-index.ts` ✅ **OPEN SOURCE**
+- `packages/api/src/matryoshka-cascade.ts` ✅ **OPEN SOURCE**
 
 ### Privacy Features (100% Open)
 - **AES-256-GCM encryption**: Encrypt embeddings at rest
@@ -113,6 +117,23 @@ This project follows an **Open Core** model: core features are open source (Apac
 
 **Pricing**: Included in Enterprise tier ($999+/month)
 
+### Predictive Cache Warming 🔮
+**Why Enterprise**: Proactive optimization requires sophisticated pattern analysis
+
+**Features**:
+- Temporal query pattern analysis
+- Demand prediction by time slot
+- Automatic cache pre-population
+- Confidence-based warming decisions
+- Query frequency tracking
+- Cold start elimination
+
+**Files**:
+- `packages/api/src/predictive-warmer.ts` ⚠️ **PROPRIETARY**
+- `packages/api/__tests__/predictive-warmer.test.ts`
+
+**Pricing**: Included in Enterprise tier ($999+/month)
+
 ### Priority Support & SLAs
 - 24/7 support channel
 - <4 hour response time
@@ -140,9 +161,14 @@ These algorithms are **not in the public repository** and remain trade secrets:
 3. **Query Pattern Clustering (Advanced)**
    - Proprietary clustering algorithms
    - Real-time pattern detection
-   - Predictive cache warming
+   - Advanced predictive cache warming (multi-factor scoring)
 
-4. **Performance Optimizations**
+4. **Advanced Demand Prediction**
+   - ML-based time series forecasting
+   - User behavior modeling
+   - Context-aware warming decisions
+
+5. **Performance Optimizations**
    - Proprietary indexing strategies
    - Custom database optimizations
    - Advanced caching layers

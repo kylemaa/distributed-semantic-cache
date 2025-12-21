@@ -1,4 +1,4 @@
-import { pipeline, Pipeline, env } from '@xenova/transformers';
+import { pipeline, FeatureExtractionPipeline, env } from '@xenova/transformers';
 
 // Configure transformers to cache models locally
 env.cacheDir = './.cache/transformers';
@@ -31,7 +31,7 @@ export type LocalEmbeddingModelId = keyof typeof LOCAL_EMBEDDING_MODELS;
  * Runs embedding models directly in Node.js (no API calls)
  */
 export class LocalEmbeddingsProvider {
-  private pipeline: Pipeline | null = null;
+  private pipeline: FeatureExtractionPipeline | null = null;
   private modelId: LocalEmbeddingModelId;
   private modelConfig: typeof LOCAL_EMBEDDING_MODELS[LocalEmbeddingModelId];
   private isInitialized = false;

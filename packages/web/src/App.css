@@ -4,6 +4,10 @@
   height: 100vh;
 }
 
+.app-container.simulation-view {
+  background: #0a0a1a;
+}
+
 .app-nav {
   display: flex;
   gap: 0;

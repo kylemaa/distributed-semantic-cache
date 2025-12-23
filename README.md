@@ -79,12 +79,23 @@ This project uses an **Open Core** model:
 
 ## 📚 Documentation
 
-- **[QUICKSTART.md](QUICKSTART.md)** - Get started in 5 minutes
-- **[OPEN_CORE_ARCHITECTURE.md](OPEN_CORE_ARCHITECTURE.md)** - Open vs Enterprise features
-- **[TECHNICAL_PAPER.md](TECHNICAL_PAPER.md)** - Defensive publication (prior art)
-- **[PHASE3_COMPLETE.md](PHASE3_COMPLETE.md)** - Enterprise features guide
-- **[COMPETITIVE_STRATEGY.md](COMPETITIVE_STRATEGY.md)** - Market analysis
-- **[EXAMPLES.md](EXAMPLES.md)** - Usage examples
+### Quick Start
+- **[Quick Start Guide](docs/guides/QUICKSTART.md)** - Get running in 5 minutes
+- **[Usage Examples](docs/guides/EXAMPLES.md)** - Integration patterns
+- **[Security Guide](docs/guides/SECURITY.md)** - Production hardening
+
+### Architecture
+- **[System Architecture](docs/architecture/ARCHITECTURE.md)** - Complete system design
+- **[Development History](docs/architecture/DEVELOPMENT_HISTORY.md)** - Phase-by-phase evolution
+- **[Technical Paper](docs/architecture/TECHNICAL_PAPER.md)** - Defensive publication (prior art)
+
+### Business & Strategy
+- **[Competitive Analysis](docs/business/COMPETITIVE_STRATEGY.md)** - Market positioning
+- **[Optimization Strategy](docs/business/OPTIMIZATION_STRATEGY.md)** - Cost reduction techniques
+- **[IP Protection](docs/business/IP_PROTECTION.md)** - Licensing model
+
+### Legacy Documentation
+- [OPEN_CORE_ARCHITECTURE.md](OPEN_CORE_ARCHITECTURE.md) - Open vs Enterprise features
 
 ## 🛠️ Technology Stack
 

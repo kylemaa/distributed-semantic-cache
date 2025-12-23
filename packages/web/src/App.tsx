@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import AdminDashboard from './AdminDashboard';
+import CacheSimulation from './CacheSimulation';
 import './App.css';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
@@ -19,7 +20,7 @@ interface CacheStats {
   newestTimestamp: number | null;
 }
 
-type View = 'chat' | 'admin';
+type View = 'chat' | 'admin' | 'simulation';
 
 function App() {
   const [view, setView] = useState<View>('chat');
@@ -51,6 +52,25 @@ function App() {
     }
   };
 
+  if (view === 'simulation') {
+    return (
+      <div className="app-container simulation-view">
+        <nav className="app-nav">
+          <button onClick={() => setView('chat')} className="nav-btn">
+            💬 Chat
+          </button>
+          <button onClick={() => setView('admin')} className="nav-btn">
+            🎛️ Admin
+          </button>
+          <button onClick={() => setView('simulation')} className="nav-btn active">
+            ⚡ Simulation
+          </button>
+        </nav>
+        <CacheSimulation />
+      </div>
+    );
+  }
+
   if (view === 'admin') {
     return (
       <div className="app-container">
@@ -60,6 +80,9 @@ function App() {
           </button>
           <button onClick={() => setView('admin')} className="nav-btn active">
             🎛️ Admin
+          </button>
+          <button onClick={() => setView('simulation')} className="nav-btn">
+            ⚡ Simulation
           </button>
         </nav>
         <AdminDashboard />
@@ -166,6 +189,9 @@ function App() {
         </button>
         <button onClick={() => setView('admin')} className="nav-btn">
           🎛️ Admin
+        </button>
+        <button onClick={() => setView('simulation')} className="nav-btn">
+          ⚡ Simulation
         </button>
       </nav>
       

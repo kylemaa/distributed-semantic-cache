@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import AdminDashboard from './AdminDashboard';
 import './App.css';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
@@ -18,7 +19,10 @@ interface CacheStats {
   newestTimestamp: number | null;
 }
 
+type View = 'chat' | 'admin';
+
 function App() {
+  const [view, setView] = useState<View>('chat');
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -46,6 +50,22 @@ function App() {
       console.error('Error fetching stats:', error);
     }
   };
+
+  if (view === 'admin') {
+    return (
+      <div className="app-container">
+        <nav className="app-nav">
+          <button onClick={() => setView('chat')} className="nav-btn">
+            💬 Chat
+          </button>
+          <button onClick={() => setView('admin')} className="nav-btn active">
+            🎛️ Admin
+          </button>
+        </nav>
+        <AdminDashboard />
+      </div>
+    );
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -139,16 +159,26 @@ function App() {
   };
 
   return (
-    <div className="app">
-      <header className="header">
-        <h1>🚀 Semantic Cache Chat</h1>
-        <div className="stats">
-          <span>Cache Entries: {stats?.count || 0}</span>
-          <button onClick={handleClearCache} className="clear-btn">
-            Clear Cache
-          </button>
-        </div>
-      </header>
+    <div className="app-container">
+      <nav className="app-nav">
+        <button onClick={() => setView('chat')} className="nav-btn active">
+          💬 Chat
+        </button>
+        <button onClick={() => setView('admin')} className="nav-btn">
+          🎛️ Admin
+        </button>
+      </nav>
+      
+      <div className="app">
+        <header className="header">
+          <h1>🚀 Semantic Cache Chat</h1>
+          <div className="stats">
+            <span>Cache Entries: {stats?.count || 0}</span>
+            <button onClick={handleClearCache} className="clear-btn">
+              Clear Cache
+            </button>
+          </div>
+        </header>
 
       <div className="chat-container">
         <div className="messages">
@@ -208,6 +238,7 @@ function App() {
           </button>
         </form>
       </div>
+    </div>
     </div>
   );
 }

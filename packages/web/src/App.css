@@ -1,7 +1,44 @@
-.app {
+.app-container {
   display: flex;
   flex-direction: column;
   height: 100vh;
+}
+
+.app-nav {
+  display: flex;
+  gap: 0;
+  background: #1f2937;
+  padding: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn {
+  padding: 1rem 2rem;
+  background: transparent;
+  color: #9ca3af;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-btn:hover {
+  background: #374151;
+  color: white;
+}
+
+.nav-btn.active {
+  background: #4f46e5;
+  color: white;
+  border-bottom-color: #6366f1;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .header {

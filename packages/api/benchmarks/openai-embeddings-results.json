@@ -1,0 +1,100 @@
+{
+  "results": [
+    {
+      "name": "1. Exact Only (Baseline)",
+      "hitRate": 0.4,
+      "exactHits": 400,
+      "normalizedHits": 0,
+      "semanticHits": 0,
+      "misses": 600,
+      "avgLatency": 0.0003345999999746709,
+      "byType": {
+        "exact": 400,
+        "paraphrase": 0,
+        "unique": 0
+      }
+    },
+    {
+      "name": "2. + Normalization",
+      "hitRate": 0.4,
+      "exactHits": 400,
+      "normalizedHits": 0,
+      "semanticHits": 0,
+      "misses": 600,
+      "avgLatency": 0.00041450000000077124,
+      "byType": {
+        "exact": 400,
+        "paraphrase": 0,
+        "unique": 0
+      }
+    },
+    {
+      "name": "3. + Semantic",
+      "hitRate": 0.663,
+      "exactHits": 400,
+      "normalizedHits": 0,
+      "semanticHits": 263,
+      "misses": 337,
+      "avgLatency": 0.31666100000000913,
+      "byType": {
+        "exact": 400,
+        "paraphrase": 261,
+        "unique": 2
+      }
+    },
+    {
+      "name": "4. + HNSW",
+      "hitRate": 0.663,
+      "exactHits": 400,
+      "normalizedHits": 0,
+      "semanticHits": 263,
+      "misses": 337,
+      "avgLatency": 0.3694279999999853,
+      "byType": {
+        "exact": 400,
+        "paraphrase": 261,
+        "unique": 2
+      }
+    },
+    {
+      "name": "5. + Adaptive",
+      "hitRate": 0.678,
+      "exactHits": 400,
+      "normalizedHits": 0,
+      "semanticHits": 278,
+      "misses": 322,
+      "avgLatency": 0.3765681999999397,
+      "byType": {
+        "exact": 400,
+        "paraphrase": 275,
+        "unique": 3
+      }
+    },
+    {
+      "name": "6. Full System",
+      "hitRate": 0.678,
+      "exactHits": 400,
+      "normalizedHits": 0,
+      "semanticHits": 278,
+      "misses": 322,
+      "avgLatency": 0.35350149999995845,
+      "byType": {
+        "exact": 400,
+        "paraphrase": 275,
+        "unique": 3
+      }
+    }
+  ],
+  "config": {
+    "cacheSize": 500,
+    "testSize": 1000,
+    "baseThreshold": 0.85,
+    "embeddingDim": 1536,
+    "exactRepeatRate": 0.4,
+    "paraphraseRate": 0.3,
+    "uniqueRate": 0.3,
+    "batchSize": 100
+  },
+  "model": "text-embedding-3-small",
+  "embeddingDim": 1536
+}

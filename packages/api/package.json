@@ -12,7 +12,12 @@
     "type-check": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "benchmark": "tsx benchmarks/comprehensive-benchmark.ts",
+    "benchmark:scale": "tsx benchmarks/scale-benchmark.ts",
+    "benchmark:competitor": "tsx benchmarks/competitor-comparison.ts",
+    "benchmark:gptcache": "tsx benchmarks/gptcache-comparison.ts",
+    "benchmark:cost": "tsx benchmarks/cost-calculator.ts"
   },
   "dependencies": {
     "@distributed-semantic-cache/shared": "workspace:*",

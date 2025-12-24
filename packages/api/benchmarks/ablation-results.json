@@ -1,0 +1,74 @@
+[
+  {
+    "config": "1. Exact Match Only (Baseline)",
+    "hitRate": 0.671,
+    "exactHits": 3355,
+    "normalizedHits": 0,
+    "semanticHits": 0,
+    "misses": 1645,
+    "avgLatency": 0.0002666600000002745,
+    "p50Latency": 0.00020000000006348273,
+    "p95Latency": 0.0004000000000132786,
+    "contribution": 0.671
+  },
+  {
+    "config": "2. + Normalization Layer",
+    "hitRate": 0.8322,
+    "exactHits": 3355,
+    "normalizedHits": 806,
+    "semanticHits": 0,
+    "misses": 839,
+    "avgLatency": 0.000153960000000734,
+    "p50Latency": 0.00010000000008858478,
+    "p95Latency": 0.0003000000000383807,
+    "contribution": 0.1612
+  },
+  {
+    "config": "3. + Semantic (Brute Force)",
+    "hitRate": 0.9976,
+    "exactHits": 3355,
+    "normalizedHits": 806,
+    "semanticHits": 827,
+    "misses": 12,
+    "avgLatency": 0.045828240000000846,
+    "p50Latency": 0.00029999999992469384,
+    "p95Latency": 0.26689999999996417,
+    "contribution": 0.1654
+  },
+  {
+    "config": "4. + HNSW Index",
+    "hitRate": 0.9972,
+    "exactHits": 3355,
+    "normalizedHits": 806,
+    "semanticHits": 825,
+    "misses": 14,
+    "avgLatency": 0.038285879999997,
+    "p50Latency": 0.0003000000001520675,
+    "p95Latency": 0.24410000000034415,
+    "contribution": -0.00040000000000006697
+  },
+  {
+    "config": "5. + Adaptive Thresholds",
+    "hitRate": 0.8642,
+    "exactHits": 3355,
+    "normalizedHits": 806,
+    "semanticHits": 160,
+    "misses": 679,
+    "avgLatency": 0.039343999999999144,
+    "p50Latency": 0.0004000000008090865,
+    "p95Latency": 0.253299999999399,
+    "contribution": -0.133
+  },
+  {
+    "config": "6. Full System (+ Confidence)",
+    "hitRate": 0.8642,
+    "exactHits": 3355,
+    "normalizedHits": 806,
+    "semanticHits": 160,
+    "misses": 679,
+    "avgLatency": 0.040748099999997796,
+    "p50Latency": 0.0003999999998995918,
+    "p95Latency": 0.26040000000011787,
+    "contribution": 0
+  }
+]

@@ -1,0 +1,77 @@
+{
+  "results": [
+    {
+      "name": "1. Exact Only (Baseline)",
+      "hitRate": 0,
+      "exactHits": 0,
+      "normalizedHits": 0,
+      "semanticHits": 0,
+      "misses": 5000,
+      "avgLatency": 0.00026073999999983924,
+      "p50Latency": 0.0002000000000066393,
+      "p95Latency": 0.0004000000000132786
+    },
+    {
+      "name": "2. + Normalization",
+      "hitRate": 0,
+      "exactHits": 0,
+      "normalizedHits": 0,
+      "semanticHits": 0,
+      "misses": 5000,
+      "avgLatency": 0.00031038000000007743,
+      "p50Latency": 0.00029999999998153726,
+      "p95Latency": 0.0006000000000199179
+    },
+    {
+      "name": "3. + Semantic",
+      "hitRate": 0.0084,
+      "exactHits": 0,
+      "normalizedHits": 0,
+      "semanticHits": 42,
+      "misses": 4958,
+      "avgLatency": 0.5742974799999996,
+      "p50Latency": 0.5630999999998494,
+      "p95Latency": 0.629399999999805
+    },
+    {
+      "name": "4. + HNSW",
+      "hitRate": 0.0084,
+      "exactHits": 0,
+      "normalizedHits": 0,
+      "semanticHits": 42,
+      "misses": 4958,
+      "avgLatency": 0.4655950000000048,
+      "p50Latency": 0.45429999999942083,
+      "p95Latency": 0.6584999999995489
+    },
+    {
+      "name": "5. + Adaptive",
+      "hitRate": 0.03,
+      "exactHits": 0,
+      "normalizedHits": 0,
+      "semanticHits": 150,
+      "misses": 4850,
+      "avgLatency": 0.49850442000001277,
+      "p50Latency": 0.4841000000014901,
+      "p95Latency": 0.7161999999989348
+    },
+    {
+      "name": "6. Full System",
+      "hitRate": 0.1164,
+      "exactHits": 0,
+      "normalizedHits": 0,
+      "semanticHits": 582,
+      "misses": 4418,
+      "avgLatency": 0.4948548000000235,
+      "p50Latency": 0.48259999999936554,
+      "p95Latency": 0.6981000000014319
+    }
+  ],
+  "config": {
+    "cacheSize": 2000,
+    "testSize": 5000,
+    "baseThreshold": 0.85,
+    "embeddingDim": 384,
+    "useRealEmbeddings": false
+  }
+}

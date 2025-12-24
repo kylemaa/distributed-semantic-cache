@@ -77,4 +77,60 @@ export const config = {
   cors: {
     allowedOrigins: process.env.ALLOWED_ORIGINS?.split(',') || ['http://localhost:5173', 'http://localhost:5174'],
   },
+  
+  // ============================================================================
+  // SCALE CONFIGURATION (P0: Horizontal Scaling)
+  // ============================================================================
+  storage: {
+    // Storage backend: 'sqlite' (default), 'redis', 'postgres'
+    get backend() {
+      return (process.env.CACHE_STORAGE || 'sqlite') as 'sqlite' | 'redis' | 'postgres';
+    },
+    // Vector store backend: 'hnsw' (default), 'qdrant', 'pgvector'
+    get vectorStore() {
+      return (process.env.VECTOR_STORE || 'hnsw') as 'hnsw' | 'qdrant' | 'pgvector';
+    },
+  },
+  
+  redis: {
+    // Redis connection URL (required if storage.backend=redis)
+    get url() {
+      return process.env.REDIS_URL || 'redis://localhost:6379';
+    },
+    // Key prefix for Redis keys
+    get keyPrefix() {
+      return process.env.REDIS_PREFIX || 'dsc:';
+    },
+    // TTL for cached entries in seconds (0 = no expiry)
+    get ttlSeconds() {
+      const ttl = process.env.REDIS_TTL;
+      return ttl ? parseInt(ttl, 10) : undefined;
+    },
+  },
+  
+  postgres: {
+    // PostgreSQL connection string (required if storage.backend=postgres)
+    get connectionString() {
+      return process.env.POSTGRES_URL || '';
+    },
+    // Schema name for tables
+    get schema() {
+      return process.env.POSTGRES_SCHEMA || 'semantic_cache';
+    },
+  },
+  
+  qdrant: {
+    // Qdrant server URL (required if storage.vectorStore=qdrant)
+    get url() {
+      return process.env.QDRANT_URL || 'http://localhost:6333';
+    },
+    // Collection name
+    get collectionName() {
+      return process.env.QDRANT_COLLECTION || 'semantic_cache';
+    },
+    // API key for Qdrant Cloud
+    get apiKey() {
+      return process.env.QDRANT_API_KEY || '';
+    },
+  },
 };

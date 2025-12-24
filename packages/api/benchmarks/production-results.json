@@ -1,0 +1,109 @@
+{
+  "results": [
+    {
+      "name": "1. Exact Only (Baseline)",
+      "hitRate": 0.4002,
+      "exactHits": 2001,
+      "normalizedHits": 0,
+      "semanticHits": 0,
+      "misses": 2999,
+      "avgLatency": 0.00039182000000006383,
+      "p50Latency": 0.00029999999998153726,
+      "p95Latency": 0.0006999999999948159,
+      "byType": {
+        "exact": 2000,
+        "paraphrase": 1,
+        "unique": 0
+      }
+    },
+    {
+      "name": "2. + Normalization",
+      "hitRate": 0.4002,
+      "exactHits": 2001,
+      "normalizedHits": 0,
+      "semanticHits": 0,
+      "misses": 2999,
+      "avgLatency": 0.000289920000000177,
+      "p50Latency": 0.0002000000000066393,
+      "p95Latency": 0.0006999999999948159,
+      "byType": {
+        "exact": 2000,
+        "paraphrase": 1,
+        "unique": 0
+      }
+    },
+    {
+      "name": "3. + Semantic",
+      "hitRate": 0.6838,
+      "exactHits": 2001,
+      "normalizedHits": 0,
+      "semanticHits": 1418,
+      "misses": 1581,
+      "avgLatency": 0.1764457999999992,
+      "p50Latency": 0.25869999999997617,
+      "p95Latency": 0.3775999999999158,
+      "byType": {
+        "exact": 2000,
+        "paraphrase": 1414,
+        "unique": 5
+      }
+    },
+    {
+      "name": "4. + HNSW",
+      "hitRate": 0.677,
+      "exactHits": 2001,
+      "normalizedHits": 0,
+      "semanticHits": 1384,
+      "misses": 1615,
+      "avgLatency": 0.2408584600000009,
+      "p50Latency": 0.28729999999995925,
+      "p95Latency": 0.6149000000000342,
+      "byType": {
+        "exact": 2000,
+        "paraphrase": 1380,
+        "unique": 5
+      }
+    },
+    {
+      "name": "5. + Adaptive",
+      "hitRate": 0.6864,
+      "exactHits": 2001,
+      "normalizedHits": 0,
+      "semanticHits": 1431,
+      "misses": 1568,
+      "avgLatency": 0.2544569799999943,
+      "p50Latency": 0.3052000000006956,
+      "p95Latency": 0.6345000000001164,
+      "byType": {
+        "exact": 2000,
+        "paraphrase": 1406,
+        "unique": 26
+      }
+    },
+    {
+      "name": "6. Full System",
+      "hitRate": 0.687,
+      "exactHits": 2001,
+      "normalizedHits": 0,
+      "semanticHits": 1434,
+      "misses": 1565,
+      "avgLatency": 0.24171370000000605,
+      "p50Latency": 0.30349999999998545,
+      "p95Latency": 0.561599999999089,
+      "byType": {
+        "exact": 2000,
+        "paraphrase": 1409,
+        "unique": 26
+      }
+    }
+  ],
+  "config": {
+    "cacheSize": 1000,
+    "testSize": 5000,
+    "baseThreshold": 0.85,
+    "embeddingDim": 384,
+    "exactRepeatRate": 0.4,
+    "paraphraseRate": 0.3,
+    "uniqueRate": 0.3
+  }
+}

@@ -1,0 +1,80 @@
+# Docker Compose for PostgreSQL + pgvector
+# 
+# Enterprise deployment with PostgreSQL for:
+# - Managed database (AWS RDS, Supabase, Neon)
+# - Full ACID compliance
+# - Native vector search via pgvector
+#
+# Usage:
+#   docker compose -f docker-compose.postgres.yml up -d
+
+version: '3.8'
+
+services:
+  # ============================================================================
+  # POSTGRESQL - Enterprise Database with pgvector
+  # ============================================================================
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: dsc-postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./deploy/postgres/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    environment:
+      - POSTGRES_USER=dsc
+      - POSTGRES_PASSWORD=dsc_password
+      - POSTGRES_DB=semantic_cache
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U dsc -d semantic_cache"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  # ============================================================================
+  # API - Semantic Cache Service
+  # ============================================================================
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      # Storage Backend
+      - CACHE_STORAGE=postgres
+      - VECTOR_STORE=pgvector
+      
+      # PostgreSQL Configuration
+      - POSTGRES_URL=postgresql://dsc:dsc_password@postgres:5432/semantic_cache
+      - POSTGRES_SCHEMA=semantic_cache
+      
+      # Embeddings (local for privacy/cost)
+      - EMBEDDING_PROVIDER=local
+      - LOCAL_EMBEDDING_MODEL=all-MiniLM-L6-v2
+      
+      # Cache Configuration
+      - MAX_CACHE_SIZE=100000
+      - SIMILARITY_THRESHOLD=0.85
+      
+      # Privacy
+      - PRIVACY_MODE=normal
+      - AUDIT_ENABLED=true
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+volumes:
+  postgres-data:
+
+networks:
+  default:
+    name: dsc-postgres-network

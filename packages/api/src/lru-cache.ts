@@ -73,6 +73,13 @@ export class LRUCache<K, V> {
   }
 
   /**
+   * Delete a key from the cache
+   */
+  delete(key: K): boolean {
+    return this.cache.delete(key);
+  }
+
+  /**
    * Get or compute a value
    * If the key exists, return it. Otherwise, compute it, cache it, and return it.
    */

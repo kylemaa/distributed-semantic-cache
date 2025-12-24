@@ -1,0 +1,37 @@
+{
+  "result": {
+    "config": "50 users, 20 queries each, 60% topic repeat",
+    "totalQueries": 800,
+    "cacheHits": 275,
+    "hitRate": 0.34375,
+    "exactMatches": 8,
+    "semanticMatches": 267,
+    "hitsByType": {
+      "exactTopic": 8,
+      "paraphraseTopic": 267,
+      "crossTopic": 0,
+      "uniqueQuery": 0
+    },
+    "missReason": {
+      "uniqueNoMatch": 321,
+      "paraphraseMiss": 29,
+      "notInCache": 175
+    },
+    "userStats": {
+      "usersWithHits": 40,
+      "avgHitsPerUser": 5.5,
+      "maxHitsForUser": 11
+    }
+  },
+  "config": {
+    "numUsers": 50,
+    "queriesPerUser": 20,
+    "numTopics": 100,
+    "topicRepeatRate": 0.6,
+    "cacheSize": 500,
+    "baseThreshold": 0.85,
+    "embeddingDim": 1536,
+    "batchSize": 100
+  },
+  "dataset": "alpaca"
+}

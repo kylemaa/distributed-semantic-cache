@@ -1,0 +1,37 @@
+{
+  "result": {
+    "config": "50 users, 20 queries each, 60% topic repeat",
+    "totalQueries": 800,
+    "cacheHits": 284,
+    "hitRate": 0.355,
+    "exactMatches": 2,
+    "semanticMatches": 282,
+    "hitsByType": {
+      "exactTopic": 2,
+      "paraphraseTopic": 282,
+      "crossTopic": 0,
+      "uniqueQuery": 0
+    },
+    "missReason": {
+      "uniqueNoMatch": 328,
+      "paraphraseMiss": 47,
+      "notInCache": 141
+    },
+    "userStats": {
+      "usersWithHits": 40,
+      "avgHitsPerUser": 5.68,
+      "maxHitsForUser": 13
+    }
+  },
+  "config": {
+    "numUsers": 50,
+    "queriesPerUser": 20,
+    "numTopics": 100,
+    "topicRepeatRate": 0.6,
+    "cacheSize": 500,
+    "baseThreshold": 0.85,
+    "embeddingDim": 1536,
+    "batchSize": 100
+  },
+  "dataset": "dolly"
+}

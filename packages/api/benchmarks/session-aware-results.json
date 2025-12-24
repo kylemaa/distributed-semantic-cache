@@ -1,0 +1,46 @@
+{
+  "results": [
+    {
+      "strategy": "stateless",
+      "hitRate": 0.00872093023255814,
+      "hits": 9,
+      "misses": 1023,
+      "avgKeyLength": 60.02228682170543,
+      "embeddingCost": 0.6002228682170543
+    },
+    {
+      "strategy": "context-1",
+      "hitRate": 0.0009689922480620155,
+      "hits": 1,
+      "misses": 1031,
+      "avgKeyLength": 110.60755813953489,
+      "embeddingCost": 1.106075581395349
+    },
+    {
+      "strategy": "context-3",
+      "hitRate": 0,
+      "hits": 0,
+      "misses": 1032,
+      "avgKeyLength": 177.15697674418604,
+      "embeddingCost": 1.7715697674418605
+    },
+    {
+      "strategy": "full-context",
+      "hitRate": 0,
+      "hits": 0,
+      "misses": 1032,
+      "avgKeyLength": 204.6501937984496,
+      "embeddingCost": 2.046501937984496
+    }
+  ],
+  "config": {
+    "cacheSize": 500,
+    "testSessions": 200,
+    "turnsPerSession": 5,
+    "baseThreshold": 0.85,
+    "embeddingDim": 1536,
+    "batchSize": 100
+  },
+  "sessions": 500,
+  "totalTurns": 2505
+}

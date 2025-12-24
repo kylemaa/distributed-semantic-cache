@@ -1,0 +1,101 @@
+{
+  "results": [
+    {
+      "name": "1. Exact Only (Baseline)",
+      "hitRate": 0.402,
+      "exactHits": 402,
+      "normalizedHits": 0,
+      "semanticHits": 0,
+      "misses": 598,
+      "avgLatency": 0.000630600000040431,
+      "byType": {
+        "exact": 400,
+        "paraphrase": 1,
+        "unique": 1
+      }
+    },
+    {
+      "name": "2. + Normalization",
+      "hitRate": 0.403,
+      "exactHits": 402,
+      "normalizedHits": 1,
+      "semanticHits": 0,
+      "misses": 597,
+      "avgLatency": 0.0005755999999983032,
+      "byType": {
+        "exact": 400,
+        "paraphrase": 1,
+        "unique": 2
+      }
+    },
+    {
+      "name": "3. + Semantic",
+      "hitRate": 0.671,
+      "exactHits": 402,
+      "normalizedHits": 1,
+      "semanticHits": 268,
+      "misses": 329,
+      "avgLatency": 0.8289565000000002,
+      "byType": {
+        "exact": 400,
+        "paraphrase": 266,
+        "unique": 5
+      }
+    },
+    {
+      "name": "4. + HNSW",
+      "hitRate": 0.671,
+      "exactHits": 402,
+      "normalizedHits": 1,
+      "semanticHits": 268,
+      "misses": 329,
+      "avgLatency": 0.6384947000000648,
+      "byType": {
+        "exact": 400,
+        "paraphrase": 266,
+        "unique": 5
+      }
+    },
+    {
+      "name": "5. + Adaptive",
+      "hitRate": 0.678,
+      "exactHits": 402,
+      "normalizedHits": 1,
+      "semanticHits": 275,
+      "misses": 322,
+      "avgLatency": 0.46526090000007025,
+      "byType": {
+        "exact": 400,
+        "paraphrase": 273,
+        "unique": 5
+      }
+    },
+    {
+      "name": "6. Full System",
+      "hitRate": 0.678,
+      "exactHits": 402,
+      "normalizedHits": 1,
+      "semanticHits": 275,
+      "misses": 322,
+      "avgLatency": 0.5129739000000118,
+      "byType": {
+        "exact": 400,
+        "paraphrase": 273,
+        "unique": 5
+      }
+    }
+  ],
+  "config": {
+    "cacheSize": 500,
+    "testSize": 1000,
+    "baseThreshold": 0.85,
+    "embeddingDim": 1536,
+    "exactRepeatRate": 0.4,
+    "paraphraseRate": 0.3,
+    "uniqueRate": 0.3,
+    "batchSize": 100
+  },
+  "dataset": "dolly",
+  "model": "text-embedding-3-small",
+  "embeddingDim": 1536
+}

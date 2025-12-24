@@ -1,0 +1,101 @@
+{
+  "results": [
+    {
+      "name": "1. Exact Only (Baseline)",
+      "hitRate": 0.405,
+      "exactHits": 405,
+      "normalizedHits": 0,
+      "semanticHits": 0,
+      "misses": 595,
+      "avgLatency": 0.00030469999997694686,
+      "byType": {
+        "exact": 400,
+        "paraphrase": 2,
+        "unique": 3
+      }
+    },
+    {
+      "name": "2. + Normalization",
+      "hitRate": 0.405,
+      "exactHits": 405,
+      "normalizedHits": 0,
+      "semanticHits": 0,
+      "misses": 595,
+      "avgLatency": 0.0003725000000031287,
+      "byType": {
+        "exact": 400,
+        "paraphrase": 2,
+        "unique": 3
+      }
+    },
+    {
+      "name": "3. + Semantic",
+      "hitRate": 0.614,
+      "exactHits": 405,
+      "normalizedHits": 0,
+      "semanticHits": 209,
+      "misses": 386,
+      "avgLatency": 0.30710600000000704,
+      "byType": {
+        "exact": 400,
+        "paraphrase": 210,
+        "unique": 4
+      }
+    },
+    {
+      "name": "4. + HNSW",
+      "hitRate": 0.614,
+      "exactHits": 405,
+      "normalizedHits": 0,
+      "semanticHits": 209,
+      "misses": 386,
+      "avgLatency": 0.3964753999999957,
+      "byType": {
+        "exact": 400,
+        "paraphrase": 210,
+        "unique": 4
+      }
+    },
+    {
+      "name": "5. + Adaptive",
+      "hitRate": 0.632,
+      "exactHits": 405,
+      "normalizedHits": 0,
+      "semanticHits": 227,
+      "misses": 368,
+      "avgLatency": 0.4035287999999837,
+      "byType": {
+        "exact": 400,
+        "paraphrase": 228,
+        "unique": 4
+      }
+    },
+    {
+      "name": "6. Full System",
+      "hitRate": 0.632,
+      "exactHits": 405,
+      "normalizedHits": 0,
+      "semanticHits": 227,
+      "misses": 368,
+      "avgLatency": 0.3977003000000404,
+      "byType": {
+        "exact": 400,
+        "paraphrase": 228,
+        "unique": 4
+      }
+    }
+  ],
+  "config": {
+    "cacheSize": 500,
+    "testSize": 1000,
+    "baseThreshold": 0.85,
+    "embeddingDim": 1536,
+    "exactRepeatRate": 0.4,
+    "paraphraseRate": 0.3,
+    "uniqueRate": 0.3,
+    "batchSize": 100
+  },
+  "dataset": "hhrlhf",
+  "model": "text-embedding-3-small",
+  "embeddingDim": 1536
+}

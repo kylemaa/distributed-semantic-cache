@@ -6,7 +6,9 @@
  * Cost estimate: ~$0.02-0.05 for 1500 embeddings
  * 
  * Usage:
- *   npx tsx benchmarks/openai-embeddings-ablation.ts
+ *   npx tsx benchmarks/openai-embeddings-ablation.ts [dataset]
+ *   npx tsx benchmarks/openai-embeddings-ablation.ts alpaca
+ *   npx tsx benchmarks/openai-embeddings-ablation.ts dolly
  */
 
 import { performance } from 'perf_hooks';
@@ -117,15 +119,18 @@ function paraphrase(text: string): string {
 // LOAD DATASET
 // ============================================================================
 
+const DATASET_NAME = process.argv[2] || 'alpaca';
+
 function loadDataset(): string[] {
-  const datasetPath = path.join(__dirname, 'dataset-alpaca.json');
+  const datasetPath = path.join(__dirname, `dataset-${DATASET_NAME}.json`);
   
   if (!fs.existsSync(datasetPath)) {
-    console.error('❌ Dataset not found! Run: npx tsx benchmarks/download-dataset.ts alpaca');
+    console.error(`❌ Dataset not found! Run: npx tsx benchmarks/download-dataset.ts ${DATASET_NAME}`);
     process.exit(1);
   }
   
   const data = JSON.parse(fs.readFileSync(datasetPath, 'utf-8'));
+  console.log(`📊 Loaded ${data.source} dataset: ${data.count} queries`);
   return data.queries;
 }
 
@@ -452,10 +457,11 @@ async function main() {
   console.log(`  🚀 Improvement Factor: ${(full.hitRate / baseline.hitRate).toFixed(2)}x over baseline\n`);
   
   // Save
-  const outputPath = path.join(__dirname, 'openai-embeddings-results.json');
+  const outputPath = path.join(__dirname, `openai-embeddings-results-${DATASET_NAME}.json`);
   fs.writeFileSync(outputPath, JSON.stringify({ 
     results, 
     config: CONFIG,
+    dataset: DATASET_NAME,
     model: 'text-embedding-3-small',
     embeddingDim: CONFIG.embeddingDim,
   }, null, 2));

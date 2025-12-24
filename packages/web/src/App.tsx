@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import AdminDashboard from './AdminDashboard';
 import CacheSimulation from './CacheSimulation';
+import CrossUserSimulation from './CrossUserSimulation';
 import './App.css';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
@@ -20,7 +21,7 @@ interface CacheStats {
   newestTimestamp: number | null;
 }
 
-type View = 'chat' | 'admin' | 'simulation';
+type View = 'chat' | 'admin' | 'simulation' | 'cross-user';
 
 function App() {
   const [view, setView] = useState<View>('chat');
@@ -65,8 +66,33 @@ function App() {
           <button onClick={() => setView('simulation')} className="nav-btn active">
             ⚡ Simulation
           </button>
+          <button onClick={() => setView('cross-user')} className="nav-btn">
+            👥 Cross-User
+          </button>
         </nav>
         <CacheSimulation />
+      </div>
+    );
+  }
+
+  if (view === 'cross-user') {
+    return (
+      <div className="app-container simulation-view">
+        <nav className="app-nav">
+          <button onClick={() => setView('chat')} className="nav-btn">
+            💬 Chat
+          </button>
+          <button onClick={() => setView('admin')} className="nav-btn">
+            🎛️ Admin
+          </button>
+          <button onClick={() => setView('simulation')} className="nav-btn">
+            ⚡ Simulation
+          </button>
+          <button onClick={() => setView('cross-user')} className="nav-btn active">
+            👥 Cross-User
+          </button>
+        </nav>
+        <CrossUserSimulation />
       </div>
     );
   }
@@ -83,6 +109,9 @@ function App() {
           </button>
           <button onClick={() => setView('simulation')} className="nav-btn">
             ⚡ Simulation
+          </button>
+          <button onClick={() => setView('cross-user')} className="nav-btn">
+            👥 Cross-User
           </button>
         </nav>
         <AdminDashboard />
@@ -192,6 +221,9 @@ function App() {
         </button>
         <button onClick={() => setView('simulation')} className="nav-btn">
           ⚡ Simulation
+        </button>
+        <button onClick={() => setView('cross-user')} className="nav-btn">
+          👥 Cross-User
         </button>
       </nav>
       

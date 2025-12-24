@@ -1,0 +1,101 @@
+{
+  "results": [
+    {
+      "name": "1. Exact Only (Baseline)",
+      "hitRate": 0.401,
+      "exactHits": 401,
+      "normalizedHits": 0,
+      "semanticHits": 0,
+      "misses": 599,
+      "avgLatency": 0.00047799999997550914,
+      "byType": {
+        "exact": 400,
+        "paraphrase": 1,
+        "unique": 0
+      }
+    },
+    {
+      "name": "2. + Normalization",
+      "hitRate": 0.401,
+      "exactHits": 401,
+      "normalizedHits": 0,
+      "semanticHits": 0,
+      "misses": 599,
+      "avgLatency": 0.0005880999999972119,
+      "byType": {
+        "exact": 400,
+        "paraphrase": 1,
+        "unique": 0
+      }
+    },
+    {
+      "name": "3. + Semantic",
+      "hitRate": 0.698,
+      "exactHits": 401,
+      "normalizedHits": 0,
+      "semanticHits": 297,
+      "misses": 302,
+      "avgLatency": 0.31443609999998623,
+      "byType": {
+        "exact": 400,
+        "paraphrase": 298,
+        "unique": 0
+      }
+    },
+    {
+      "name": "4. + HNSW",
+      "hitRate": 0.698,
+      "exactHits": 401,
+      "normalizedHits": 0,
+      "semanticHits": 297,
+      "misses": 302,
+      "avgLatency": 0.39434119999999345,
+      "byType": {
+        "exact": 400,
+        "paraphrase": 298,
+        "unique": 0
+      }
+    },
+    {
+      "name": "5. + Adaptive",
+      "hitRate": 0.7,
+      "exactHits": 401,
+      "normalizedHits": 0,
+      "semanticHits": 299,
+      "misses": 300,
+      "avgLatency": 0.39574050000001443,
+      "byType": {
+        "exact": 400,
+        "paraphrase": 300,
+        "unique": 0
+      }
+    },
+    {
+      "name": "6. Full System",
+      "hitRate": 0.7,
+      "exactHits": 401,
+      "normalizedHits": 0,
+      "semanticHits": 299,
+      "misses": 300,
+      "avgLatency": 0.397550400000011,
+      "byType": {
+        "exact": 400,
+        "paraphrase": 300,
+        "unique": 0
+      }
+    }
+  ],
+  "config": {
+    "cacheSize": 500,
+    "testSize": 1000,
+    "baseThreshold": 0.85,
+    "embeddingDim": 1536,
+    "exactRepeatRate": 0.4,
+    "paraphraseRate": 0.3,
+    "uniqueRate": 0.3,
+    "batchSize": 100
+  },
+  "dataset": "wizardlm",
+  "model": "text-embedding-3-small",
+  "embeddingDim": 1536
+}

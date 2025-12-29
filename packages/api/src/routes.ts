@@ -1,19 +1,133 @@
 /**
- * API routes
- * 
- * SECURITY NOTE: This is a proof-of-concept implementation.
- * For production use, implement:
- * - Rate limiting (e.g., @fastify/rate-limit)
- * - Authentication and authorization
- * - Input validation and sanitization
- * - Request size limits
- * - CSRF protection
+ * API routes with authentication and input validation
  */
 
-import type { FastifyInstance } from 'fastify';
+import type { FastifyInstance, FastifyRequest, FastifyReply } from 'fastify';
 import { SemanticCacheService } from './cache-service.js';
 import { TenantManager } from './tenant-manager.js';
 import { AnalyticsService } from './analytics-service.js';
+import { config } from './config.js';
+
+// ============================================================================
+// INPUT VALIDATION SCHEMAS
+// ============================================================================
+
+const querySchema = {
+  body: {
+    type: 'object',
+    required: ['query'],
+    properties: {
+      query: { type: 'string', minLength: 1, maxLength: 10000 },
+      threshold: { type: 'number', minimum: 0, maximum: 1 },
+    },
+    additionalProperties: false,
+  },
+};
+
+const storeSchema = {
+  body: {
+    type: 'object',
+    required: ['query', 'response'],
+    properties: {
+      query: { type: 'string', minLength: 1, maxLength: 10000 },
+      response: { type: 'string', minLength: 1, maxLength: 100000 },
+      metadata: { type: 'object' },
+    },
+    additionalProperties: false,
+  },
+};
+
+const chatSchema = {
+  body: {
+    type: 'object',
+    required: ['message'],
+    properties: {
+      message: { type: 'string', minLength: 1, maxLength: 10000 },
+      response: { type: 'string', minLength: 1, maxLength: 100000 },
+    },
+    additionalProperties: false,
+  },
+};
+
+const tenantCreateSchema = {
+  body: {
+    type: 'object',
+    required: ['tenantId', 'name'],
+    properties: {
+      tenantId: { type: 'string', minLength: 1, maxLength: 100, pattern: '^[a-zA-Z0-9_-]+$' },
+      name: { type: 'string', minLength: 1, maxLength: 255 },
+      similarityThreshold: { type: 'number', minimum: 0, maximum: 1 },
+      maxQueries: { type: 'integer', minimum: 1 },
+      features: { type: 'object' },
+    },
+    additionalProperties: false,
+  },
+};
+
+const tenantUpdateSchema = {
+  body: {
+    type: 'object',
+    properties: {
+      name: { type: 'string', minLength: 1, maxLength: 255 },
+      similarityThreshold: { type: 'number', minimum: 0, maximum: 1 },
+      maxQueries: { type: 'integer', minimum: 1 },
+      features: { type: 'object' },
+    },
+    additionalProperties: false,
+  },
+};
+
+// ============================================================================
+// AUTHENTICATION MIDDLEWARE
+// ============================================================================
+
+/**
+ * Validate API key for standard endpoints
+ */
+function requireAuth(request: FastifyRequest, reply: FastifyReply, done: () => void) {
+  // Skip auth if disabled (for local development)
+  if (!config.security.authEnabled) {
+    return done();
+  }
+
+  const apiKey = request.headers['x-api-key'] as string;
+  
+  if (!apiKey) {
+    reply.code(401).send({ error: 'Unauthorized', message: 'API key required. Set x-api-key header.' });
+    return;
+  }
+
+  if (apiKey !== config.security.apiKey && apiKey !== config.security.adminApiKey) {
+    reply.code(401).send({ error: 'Unauthorized', message: 'Invalid API key.' });
+    return;
+  }
+
+  done();
+}
+
+/**
+ * Validate admin API key for privileged operations
+ */
+function requireAdminAuth(request: FastifyRequest, reply: FastifyReply, done: () => void) {
+  // Skip auth if disabled (for local development)
+  if (!config.security.authEnabled) {
+    return done();
+  }
+
+  const apiKey = request.headers['x-api-key'] as string;
+  
+  if (!apiKey) {
+    reply.code(401).send({ error: 'Unauthorized', message: 'Admin API key required. Set x-api-key header.' });
+    return;
+  }
+
+  if (apiKey !== config.security.adminApiKey) {
+    reply.code(403).send({ error: 'Forbidden', message: 'Admin privileges required.' });
+    return;
+  }
+
+  done();
+}
 
 export async function registerRoutes(app: FastifyInstance) {
   // Create service instances
@@ -56,20 +170,23 @@ export async function registerRoutes(app: FastifyInstance) {
     };
   });
 
-  // Health check
+  // Health check (no auth required)
   app.get('/health', async () => {
     return { status: 'ok', timestamp: Date.now() };
   });
 
+  // ============================================================================
+  // CORE CACHE ENDPOINTS (require standard auth)
+  // ============================================================================
+
   // Query the cache
   app.post<{
     Body: { query: string; threshold?: number };
-  }>('/api/cache/query', async (request, reply) => {
+  }>('/api/cache/query', {
+    schema: querySchema,
+    preHandler: requireAuth,
+  }, async (request, reply) => {
     const { query, threshold } = request.body;
-
-    if (!query) {
-      return reply.code(400).send({ error: 'Query is required' });
-    }
 
     try {
       const result = await cacheService.query({ query, threshold });
@@ -83,12 +200,11 @@ export async function registerRoutes(app: FastifyInstance) {
   // Store in cache
   app.post<{
     Body: { query: string; response: string; metadata?: Record<string, any> };
-  }>('/api/cache/store', async (request, reply) => {
+  }>('/api/cache/store', {
+    schema: storeSchema,
+    preHandler: requireAuth,
+  }, async (request, reply) => {
     const { query, response, metadata } = request.body;
-
-    if (!query || !response) {
-      return reply.code(400).send({ error: 'Query and response are required' });
-    }
 
     try {
       const entry = await cacheService.store(query, response, metadata);
@@ -99,8 +215,10 @@ export async function registerRoutes(app: FastifyInstance) {
     }
   });
 
-  // Get cache statistics
-  app.get('/api/cache/stats', async () => {
+  // Get cache statistics (authenticated)
+  app.get('/api/cache/stats', {
+    preHandler: requireAuth,
+  }, async () => {
     try {
       const stats = cacheService.getStats();
       return stats;
@@ -110,8 +228,14 @@ export async function registerRoutes(app: FastifyInstance) {
     }
   });
 
+  // ============================================================================
+  // ADMIN ENDPOINTS (require admin auth)
+  // ============================================================================
+
   // Get comprehensive admin stats (all layers)
-  app.get('/api/admin/stats/comprehensive', async () => {
+  app.get('/api/admin/stats/comprehensive', {
+    preHandler: requireAdminAuth,
+  }, async () => {
     try {
       const baseStats = cacheService.getStats();
       
@@ -169,7 +293,9 @@ export async function registerRoutes(app: FastifyInstance) {
   });
 
   // Get layer-by-layer performance metrics
-  app.get('/api/admin/stats/layers', async () => {
+  app.get('/api/admin/stats/layers', {
+    preHandler: requireAdminAuth,
+  }, async () => {
     try {
       const stats = cacheService.getStats();
       const exactStats = stats.exactMatchCache || {};
@@ -228,7 +354,9 @@ export async function registerRoutes(app: FastifyInstance) {
   });
 
   // Get real-time cache flow visualization data
-  app.get('/api/admin/stats/flow', async () => {
+  app.get('/api/admin/stats/flow', {
+    preHandler: requireAdminAuth,
+  }, async () => {
     try {
       const stats = cacheService.getStats();
       const total = stats.total || 1;
@@ -287,8 +415,10 @@ export async function registerRoutes(app: FastifyInstance) {
     }
   });
 
-  // Clear cache
-  app.delete('/api/cache/clear', async (request, reply) => {
+  // Clear cache (admin only)
+  app.delete('/api/cache/clear', {
+    preHandler: requireAdminAuth,
+  }, async (request, reply) => {
     try {
       cacheService.clearCache();
       return { success: true, message: 'Cache cleared' };
@@ -301,12 +431,11 @@ export async function registerRoutes(app: FastifyInstance) {
   // Chat endpoint (combines query and store)
   app.post<{
     Body: { message: string; response?: string };
-  }>('/api/chat', async (request, reply) => {
+  }>('/api/chat', {
+    schema: chatSchema,
+    preHandler: requireAuth,
+  }, async (request, reply) => {
     const { message, response } = request.body;
-
-    if (!message) {
-      return reply.code(400).send({ error: 'Message is required' });
-    }
 
     try {
       // First, check if we have a cached response
@@ -341,17 +470,18 @@ export async function registerRoutes(app: FastifyInstance) {
     }
   });
 
-  // ============= TENANT MANAGEMENT ROUTES =============
+  // ============================================================================
+  // TENANT MANAGEMENT ROUTES (require admin auth)
+  // ============================================================================
 
   // Create tenant
   app.post<{
     Body: { tenantId: string; name: string; similarityThreshold?: number; maxQueries?: number; features?: any };
-  }>('/api/tenants', async (request, reply) => {
+  }>('/api/tenants', {
+    schema: tenantCreateSchema,
+    preHandler: requireAdminAuth,
+  }, async (request, reply) => {
     const { tenantId, name, similarityThreshold, maxQueries, features } = request.body;
-
-    if (!tenantId || !name) {
-      return reply.code(400).send({ error: 'tenantId and name are required' });
-    }
 
     try {
       const tenant = tenantManager.createTenant({
@@ -374,7 +504,9 @@ export async function registerRoutes(app: FastifyInstance) {
   // Get tenant
   app.get<{
     Params: { tenantId: string };
-  }>('/api/tenants/:tenantId', async (request, reply) => {
+  }>('/api/tenants/:tenantId', {
+    preHandler: requireAdminAuth,
+  }, async (request, reply) => {
     const { tenantId } = request.params;
 
     try {
@@ -390,7 +522,9 @@ export async function registerRoutes(app: FastifyInstance) {
   });
 
   // List all tenants
-  app.get('/api/tenants', async () => {
+  app.get('/api/tenants', {
+    preHandler: requireAdminAuth,
+  }, async () => {
     try {
       const tenants = tenantManager.listTenants();
       return { tenants };
@@ -404,7 +538,10 @@ export async function registerRoutes(app: FastifyInstance) {
   app.patch<{
     Params: { tenantId: string };
     Body: Partial<{ name: string; similarityThreshold: number; maxQueries: number; features: any }>;
-  }>('/api/tenants/:tenantId', async (request, reply) => {
+  }>('/api/tenants/:tenantId', {
+    schema: tenantUpdateSchema,
+    preHandler: requireAdminAuth,
+  }, async (request, reply) => {
     const { tenantId } = request.params;
     const updates = request.body;
 
@@ -423,7 +560,9 @@ export async function registerRoutes(app: FastifyInstance) {
   // Delete tenant
   app.delete<{
     Params: { tenantId: string };
-  }>('/api/tenants/:tenantId', async (request, reply) => {
+  }>('/api/tenants/:tenantId', {
+    preHandler: requireAdminAuth,
+  }, async (request, reply) => {
     const { tenantId } = request.params;
 
     try {
@@ -441,7 +580,9 @@ export async function registerRoutes(app: FastifyInstance) {
   // Get tenant usage
   app.get<{
     Params: { tenantId: string };
-  }>('/api/tenants/:tenantId/usage', async (request, reply) => {
+  }>('/api/tenants/:tenantId/usage', {
+    preHandler: requireAdminAuth,
+  }, async (request, reply) => {
     const { tenantId } = request.params;
 
     try {
@@ -456,7 +597,9 @@ export async function registerRoutes(app: FastifyInstance) {
   // Get tenant quota
   app.get<{
     Params: { tenantId: string };
-  }>('/api/tenants/:tenantId/quota', async (request, reply) => {
+  }>('/api/tenants/:tenantId/quota', {
+    preHandler: requireAdminAuth,
+  }, async (request, reply) => {
     const { tenantId } = request.params;
 
     try {
@@ -472,7 +615,9 @@ export async function registerRoutes(app: FastifyInstance) {
   });
 
   // Get all tenants with stats
-  app.get('/api/tenants/stats/all', async () => {
+  app.get('/api/tenants/stats/all', {
+    preHandler: requireAdminAuth,
+  }, async () => {
     try {
       const stats = tenantManager.getAllTenantsStats();
       return { tenants: stats };
@@ -482,10 +627,14 @@ export async function registerRoutes(app: FastifyInstance) {
     }
   });
 
-  // ============= ANALYTICS ROUTES =============
+  // ============================================================================
+  // ANALYTICS ROUTES (require admin auth)
+  // ============================================================================
 
   // Get cost savings
-  app.get('/api/analytics/cost-savings', async (request) => {
+  app.get('/api/analytics/cost-savings', {
+    preHandler: requireAdminAuth,
+  }, async (request) => {
     const { tenantId, days } = request.query as any;
 
     try {
@@ -501,7 +650,9 @@ export async function registerRoutes(app: FastifyInstance) {
   });
 
   // Get time series data
-  app.get('/api/analytics/time-series', async (request) => {
+  app.get('/api/analytics/time-series', {
+    preHandler: requireAdminAuth,
+  }, async (request) => {
     const { tenantId, days, interval } = request.query as any;
 
     try {
@@ -518,7 +669,9 @@ export async function registerRoutes(app: FastifyInstance) {
   });
 
   // Get top query patterns
-  app.get('/api/analytics/patterns', async (request) => {
+  app.get('/api/analytics/patterns', {
+    preHandler: requireAdminAuth,
+  }, async (request) => {
     const { tenantId, limit } = request.query as any;
 
     try {
@@ -534,7 +687,9 @@ export async function registerRoutes(app: FastifyInstance) {
   });
 
   // Get performance metrics
-  app.get('/api/analytics/performance', async (request) => {
+  app.get('/api/analytics/performance', {
+    preHandler: requireAdminAuth,
+  }, async (request) => {
     const { tenantId, days } = request.query as any;
 
     try {
@@ -550,7 +705,9 @@ export async function registerRoutes(app: FastifyInstance) {
   });
 
   // Get comprehensive dashboard
-  app.get('/api/analytics/dashboard', async (request) => {
+  app.get('/api/analytics/dashboard', {
+    preHandler: requireAdminAuth,
+  }, async (request) => {
     const { tenantId, days } = request.query as any;
 
     try {
@@ -566,7 +723,9 @@ export async function registerRoutes(app: FastifyInstance) {
   });
 
   // Export analytics (CSV)
-  app.get('/api/analytics/export/csv', async (request, reply) => {
+  app.get('/api/analytics/export/csv', {
+    preHandler: requireAdminAuth,
+  }, async (request, reply) => {
     const { tenantId, days } = request.query as any;
 
     try {
@@ -584,7 +743,9 @@ export async function registerRoutes(app: FastifyInstance) {
   });
 
   // Export analytics (JSON)
-  app.get('/api/analytics/export/json', async (request, reply) => {
+  app.get('/api/analytics/export/json', {
+    preHandler: requireAdminAuth,
+  }, async (request, reply) => {
     const { tenantId, days } = request.query as any;
 
     try {

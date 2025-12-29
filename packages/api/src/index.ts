@@ -4,6 +4,7 @@
 
 import Fastify from 'fastify';
 import cors from '@fastify/cors';
+import rateLimit from '@fastify/rate-limit';
 import { config } from './config.js';
 import { registerRoutes } from './routes.js';
 
@@ -19,12 +20,33 @@ async function start() {
         },
       },
     },
+    // Request body size limit (default 1MB)
+    bodyLimit: config.security.bodyLimit,
   });
 
   // Register CORS
   await app.register(cors, {
     origin: config.cors.allowedOrigins,
     credentials: true,
+  });
+
+  // Register rate limiting
+  await app.register(rateLimit, {
+    max: config.security.rateLimit.max,
+    timeWindow: config.security.rateLimit.timeWindow,
+    // Use API key if present, otherwise use IP
+    keyGenerator: (request) => {
+      const apiKey = request.headers['x-api-key'] as string;
+      return apiKey || request.ip || 'unknown';
+    },
+    // Custom error response
+    errorResponseBuilder: (request, context) => ({
+      error: 'Too Many Requests',
+      message: `Rate limit exceeded. Try again in ${Math.ceil(context.ttl / 1000)} seconds.`,
+      statusCode: 429,
+      limit: context.max,
+      remaining: 0,
+    }),
   });
 
   // Register routes

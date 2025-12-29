@@ -56,6 +56,7 @@ describe('API Routes', () => {
     testDbPath = `./test-routes-${Date.now()}-${Math.random().toString(36)}.db`;
     process.env.DATABASE_PATH = testDbPath;
     process.env.OPENAI_API_KEY = 'test-key'; // Set a dummy key for tests
+    process.env.AUTH_ENABLED = 'false'; // Disable auth for tests
     app = Fastify({ logger: false });
     await registerRoutes(app);
     await app.ready();
@@ -134,7 +135,8 @@ describe('API Routes', () => {
 
       expect(response.statusCode).toBe(400);
       const body = JSON.parse(response.body);
-      expect(body.error).toBe('Query and response are required');
+      // Schema validation returns 'Bad Request' instead of custom message
+      expect(body.error).toBe('Bad Request');
     });
 
     it('should return 400 when response is missing', async () => {
@@ -219,7 +221,8 @@ describe('API Routes', () => {
 
       expect(response.statusCode).toBe(400);
       const body = JSON.parse(response.body);
-      expect(body.error).toBe('Query is required');
+      // Schema validation returns 'Bad Request' instead of custom message
+      expect(body.error).toBe('Bad Request');
     });
   });
 
@@ -298,7 +301,8 @@ describe('API Routes', () => {
 
       expect(response.statusCode).toBe(400);
       const body = JSON.parse(response.body);
-      expect(body.error).toBe('Message is required');
+      // Schema validation returns 'Bad Request' instead of custom message
+      expect(body.error).toBe('Bad Request');
     });
 
     it('should handle chat with cache miss and provided response', async () => {

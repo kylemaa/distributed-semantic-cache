@@ -133,4 +133,35 @@ export const config = {
       return process.env.QDRANT_API_KEY || '';
     },
   },
+  
+  // ============================================================================
+  // SECURITY CONFIGURATION
+  // ============================================================================
+  security: {
+    // API key for authentication (required in production)
+    get apiKey() {
+      return process.env.API_KEY || '';
+    },
+    // Admin API key for privileged operations (optional, falls back to apiKey)
+    get adminApiKey() {
+      return process.env.ADMIN_API_KEY || this.apiKey;
+    },
+    // Enable authentication (disable for local development)
+    get authEnabled() {
+      return process.env.AUTH_ENABLED !== 'false';
+    },
+    // Rate limiting
+    rateLimit: {
+      get max() {
+        return parseInt(process.env.RATE_LIMIT_MAX || '100', 10);
+      },
+      get timeWindow() {
+        return process.env.RATE_LIMIT_WINDOW || '1 minute';
+      },
+    },
+    // Request body size limit
+    get bodyLimit() {
+      return parseInt(process.env.BODY_LIMIT || '1048576', 10); // 1MB default
+    },
+  },
 };

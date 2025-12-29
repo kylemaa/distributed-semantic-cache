@@ -13,7 +13,7 @@
 import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import { SQLiteStorage } from '../src/storage/sqlite-storage';
 import { InMemoryKVCache } from '../src/storage/memory-cache';
-import { InMemoryVectorStore } from '../src/storage/qdrant-store';
+import { InMemoryVectorStore } from '../src/storage/memory-store';
 import type { CacheEntry } from '@distributed-semantic-cache/shared';
 import fs from 'fs';
 import path from 'path';

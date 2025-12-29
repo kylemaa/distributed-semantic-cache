@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API UAT Test Page</title>
+    <style>
+        body { font-family: system-ui, sans-serif; padding: 20px; background: #1a1a2e; color: #eee; }
+        .test { margin: 10px 0; padding: 15px; border-radius: 8px; background: #16213e; }
+        .pass { border-left: 4px solid #00ff88; }
+        .fail { border-left: 4px solid #ff4444; }
+        .pending { border-left: 4px solid #ffaa00; }
+        button { background: #0f3460; color: white; border: none; padding: 12px 24px; cursor: pointer; border-radius: 6px; font-size: 16px; margin: 5px; }
+        button:hover { background: #1a5f8a; }
+        pre { background: #0f0f1a; padding: 10px; border-radius: 4px; overflow-x: auto; font-size: 12px; }
+        h1 { color: #00ff88; }
+        .summary { font-size: 18px; margin: 20px 0; padding: 15px; background: #0f3460; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <h1>🧪 Semantic Cache API - UAT Tests</h1>
+    <div>
+        <button onclick="runAllTests()">▶️ Run All Tests</button>
+        <button onclick="clearResults()">🗑️ Clear Results</button>
+    </div>
+    <div class="summary" id="summary">Click "Run All Tests" to begin</div>
+    <div id="results"></div>
+
+    <script>
+        const BASE_URL = 'http://127.0.0.1:3000';
+        let passed = 0, failed = 0;
+
+        function addResult(name, status, details) {
+            const div = document.createElement('div');
+            div.className = `test ${status}`;
+            div.innerHTML = `<strong>${status === 'pass' ? '✅' : status === 'fail' ? '❌' : '⏳'} ${name}</strong><pre>${JSON.stringify(details, null, 2)}</pre>`;
+            document.getElementById('results').appendChild(div);
+            if (status === 'pass') passed++;
+            if (status === 'fail') failed++;
+            updateSummary();
+        }
+
+        function updateSummary() {
+            document.getElementById('summary').innerHTML = `<strong>Results:</strong> ✅ ${passed} passed, ❌ ${failed} failed`;
+        }
+
+        function clearResults() {
+            document.getElementById('results').innerHTML = '';
+            passed = 0; failed = 0;
+            document.getElementById('summary').innerHTML = 'Click "Run All Tests" to begin';
+        }
+
+        async function runAllTests() {
+            clearResults();
+            
+            // Test 1: Health Check
+            try {
+                const res = await fetch(`${BASE_URL}/health`);
+                const data = await res.json();
+                addResult('Health Check', res.ok ? 'pass' : 'fail', { status: res.status, data });
+            } catch (e) {
+                addResult('Health Check', 'fail', { error: e.message });
+            }
+
+            // Test 2: API Info
+            try {
+                const res = await fetch(`${BASE_URL}/`);
+                const data = await res.json();
+                addResult('API Info', res.ok && data.version ? 'pass' : 'fail', { status: res.status, data });
+            } catch (e) {
+                addResult('API Info', 'fail', { error: e.message });
+            }
+
+            // Test 3: Stats Endpoint
+            try {
+                const res = await fetch(`${BASE_URL}/api/cache/stats`);
+                const data = await res.json();
+                addResult('Cache Stats', res.ok ? 'pass' : 'fail', { status: res.status, data });
+            } catch (e) {
+                addResult('Cache Stats', 'fail', { error: e.message });
+            }
+
+            // Test 4: Store Entry
+            const testQuery = `What is the capital of France? (test-${Date.now()})`;
+            const testResponse = 'The capital of France is Paris.';
+            try {
+                const res = await fetch(`${BASE_URL}/api/cache/store`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ query: testQuery, response: testResponse })
+                });
+                const data = await res.json();
+                addResult('Store Entry', res.ok && data.success ? 'pass' : 'fail', { status: res.status, data });
+            } catch (e) {
+                addResult('Store Entry', 'fail', { error: e.message });
+            }
+
+            // Test 5: Query - Exact Match
+            try {
+                const res = await fetch(`${BASE_URL}/api/cache/query`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ query: testQuery })
+                });
+                const data = await res.json();
+                addResult('Query - Exact Match', res.ok && data.hit && data.response === testResponse ? 'pass' : 'fail', { status: res.status, data });
+            } catch (e) {
+                addResult('Query - Exact Match', 'fail', { error: e.message });
+            }
+
+            // Test 6: Query - Semantic Match
+            try {
+                const res = await fetch(`${BASE_URL}/api/cache/query`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ query: 'Tell me the capital city of France', threshold: 0.7 })
+                });
+                const data = await res.json();
+                addResult('Query - Semantic Match', res.ok ? 'pass' : 'fail', { 
+                    status: res.status, 
+                    hit: data.hit, 
+                    similarity: data.similarity,
+                    matchType: data.matchType,
+                    note: 'This tests semantic similarity matching'
+                });
+            } catch (e) {
+                addResult('Query - Semantic Match', 'fail', { error: e.message });
+            }
+
+            // Test 7: Query - Miss (should not find)
+            try {
+                const res = await fetch(`${BASE_URL}/api/cache/query`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ query: 'How do I cook spaghetti carbonara?', threshold: 0.95 })
+                });
+                const data = await res.json();
+                addResult('Query - Cache Miss', res.ok && !data.hit ? 'pass' : 'fail', { 
+                    status: res.status, 
+                    hit: data.hit,
+                    note: 'Should be a cache miss (different topic)'
+                });
+            } catch (e) {
+                addResult('Query - Cache Miss', 'fail', { error: e.message });
+            }
+
+            // Test 8: Validation - Missing Query
+            try {
+                const res = await fetch(`${BASE_URL}/api/cache/query`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({})
+                });
+                const data = await res.json();
+                addResult('Validation - Missing Query', res.status === 400 ? 'pass' : 'fail', { 
+                    status: res.status, 
+                    data,
+                    note: 'Should return 400 for missing query field'
+                });
+            } catch (e) {
+                addResult('Validation - Missing Query', 'fail', { error: e.message });
+            }
+
+            // Test 9: Validation - Missing Response in Store
+            try {
+                const res = await fetch(`${BASE_URL}/api/cache/store`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ query: 'test' })
+                });
+                const data = await res.json();
+                addResult('Validation - Missing Response', res.status === 400 ? 'pass' : 'fail', { 
+                    status: res.status, 
+                    data,
+                    note: 'Should return 400 for missing response field'
+                });
+            } catch (e) {
+                addResult('Validation - Missing Response', 'fail', { error: e.message });
+            }
+
+            // Test 10: Stats after operations
+            try {
+                const res = await fetch(`${BASE_URL}/api/cache/stats`);
+                const data = await res.json();
+                addResult('Stats After Operations', res.ok && data.entries >= 0 ? 'pass' : 'fail', { status: res.status, data });
+            } catch (e) {
+                addResult('Stats After Operations', 'fail', { error: e.message });
+            }
+
+            updateSummary();
+        }
+    </script>
+</body>
+</html>

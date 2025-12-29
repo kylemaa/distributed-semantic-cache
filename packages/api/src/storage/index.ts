@@ -15,7 +15,7 @@ import type {
 } from './interfaces.js';
 import { SQLiteStorage } from './sqlite-storage.js';
 import { InMemoryKVCache } from './memory-cache.js';
-import { InMemoryVectorStore } from './qdrant-store.js';
+import { InMemoryVectorStore } from './memory-store.js';
 
 /**
  * Storage manager that provides access to all storage components
@@ -225,7 +225,7 @@ export function createStorageFromEnv(): StorageManager {
 export * from './interfaces.js';
 export { SQLiteStorage } from './sqlite-storage.js';
 export { InMemoryKVCache } from './memory-cache.js';
-export { InMemoryVectorStore } from './qdrant-store.js';
+export { InMemoryVectorStore } from './memory-store.js';
 
 // Conditional exports (require the packages to be installed)
 export async function getRedisStorage() {

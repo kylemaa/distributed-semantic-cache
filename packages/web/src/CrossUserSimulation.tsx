@@ -527,7 +527,7 @@ export default function CrossUserSimulation() {
 
         setTryItHistory(prev => [{
           query: tryItQuery,
-          result: data.hit ? 'hit' : 'miss',
+          result: (data.hit ? 'hit' : 'miss') as 'hit' | 'miss',
           matchedQuery: data.cachedQuery,
           similarity: data.similarity,
           responseTime: Math.round(responseTime),
@@ -559,7 +559,7 @@ export default function CrossUserSimulation() {
           const responseTime = performance.now() - startTime;
           setTryItHistory(prev => [{
             query: tryItQuery,
-            result: 'hit',
+            result: 'hit' as const,
             matchedQuery: exactMatch.query,
             similarity: 1.0,
             responseTime: Math.round(responseTime),
@@ -584,7 +584,7 @@ export default function CrossUserSimulation() {
 
           setTryItHistory(prev => [{
             query: tryItQuery,
-            result: isHit ? 'hit' : 'miss',
+            result: (isHit ? 'hit' : 'miss') as 'hit' | 'miss',
             matchedQuery: isHit && bestMatch ? bestMatch.query : undefined,
             similarity: isHit ? bestSimilarity : undefined,
             responseTime: Math.round(responseTime),
@@ -607,7 +607,7 @@ export default function CrossUserSimulation() {
       console.error('Try it error:', error);
       setTryItHistory(prev => [{
         query: tryItQuery,
-        result: 'miss',
+        result: 'miss' as const,
         responseTime: Math.round(performance.now() - startTime),
       }, ...prev].slice(0, 5));
     } finally {

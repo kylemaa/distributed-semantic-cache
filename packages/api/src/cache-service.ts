@@ -251,7 +251,7 @@ export class SemanticCacheService {
       exactMatchCache: this.getExactMatchStats(),
       normalizedCache: {
         size: this.normalizedCache.size(),
-        capacity: this.normalizedCache.capacity,
+        capacity: this.normalizedCache.getStats().capacity,
       },
       smartMatching: {
         thresholdLearning: this.thresholdLearner.getAllStats(),
@@ -266,11 +266,12 @@ export class SemanticCacheService {
   private getExactMatchStats(): ExactMatchStats {
     const { hits, misses } = this.exactMatchStats;
     const total = hits + misses;
+    const cacheStats = this.exactMatchCache.getStats();
     return {
       hits,
       misses,
       size: this.exactMatchCache.size(),
-      capacity: this.exactMatchCache.capacity,
+      capacity: cacheStats.capacity,
       hitRate: total > 0 ? hits / total : 0,
     };
   }

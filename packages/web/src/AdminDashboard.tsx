@@ -61,20 +61,46 @@ export default function AdminDashboard() {
   const [flowData, setFlowData] = useState<FlowData | null>(null);
   const [autoRefresh, setAutoRefresh] = useState(true);
   const [refreshInterval, setRefreshInterval] = useState(5000);
+  const [error, setError] = useState<string | null>(null);
 
   const fetchStats = async () => {
     try {
-      const [comprehensive, layers, flow] = await Promise.all([
-        fetch('/api/admin/stats/comprehensive').then(r => r.json()),
-        fetch('/api/admin/stats/layers').then(r => r.json()),
-        fetch('/api/admin/stats/flow').then(r => r.json()),
+      setError(null);
+      const [comprehensiveRes, layersRes, flowRes] = await Promise.all([
+        fetch('/api/admin/stats/comprehensive'),
+        fetch('/api/admin/stats/layers'),
+        fetch('/api/admin/stats/flow'),
       ]);
+
+      // Check for auth errors
+      if (comprehensiveRes.status === 401 || layersRes.status === 401 || flowRes.status === 401) {
+        setError('Authentication required. Admin endpoints require an API key.');
+        return;
+      }
+
+      if (!comprehensiveRes.ok || !layersRes.ok || !flowRes.ok) {
+        setError('Failed to fetch admin stats. API may be unavailable.');
+        return;
+      }
+
+      const [comprehensive, layers, flow] = await Promise.all([
+        comprehensiveRes.json(),
+        layersRes.json(),
+        flowRes.json(),
+      ]);
+
+      // Validate response structure
+      if (!comprehensive?.overview) {
+        setError('Invalid response from API. Missing overview data.');
+        return;
+      }
 
       setComprehensiveStats(comprehensive);
       setLayerStats(layers);
       setFlowData(flow);
-    } catch (error) {
-      console.error('Error fetching admin stats:', error);
+    } catch (err) {
+      console.error('Error fetching admin stats:', err);
+      setError('Failed to connect to API server.');
     }
   };
 
@@ -97,11 +123,38 @@ export default function AdminDashboard() {
     return (num * 100).toFixed(1) + '%';
   };
 
-  const formatBytes = (bytes: number) => {
+  // Reserved for future memory usage display
+  const _formatBytes = (bytes: number) => {
     if (bytes < 1024) return bytes + ' B';
     if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
     return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
   };
+  void _formatBytes; // Suppress unused warning
+
+  if (error) {
+    return (
+      <div className="admin-dashboard loading">
+        <h1>🎛️ Admin Dashboard</h1>
+        <div className="error-message" style={{ 
+          background: '#ff444420', 
+          border: '1px solid #ff4444', 
+          padding: '20px', 
+          borderRadius: '8px',
+          marginTop: '20px'
+        }}>
+          <h3>⚠️ Error</h3>
+          <p>{error}</p>
+          <p style={{ marginTop: '10px', fontSize: '14px', opacity: 0.8 }}>
+            If authentication is enabled, start the API with AUTH_ENABLED=false for development,
+            or configure the frontend to send API keys.
+          </p>
+          <button onClick={fetchStats} style={{ marginTop: '15px', padding: '8px 16px', cursor: 'pointer' }}>
+            🔄 Retry
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   if (!comprehensiveStats || !layerStats || !flowData) {
     return (

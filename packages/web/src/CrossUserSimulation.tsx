@@ -127,7 +127,15 @@ interface Stats {
 // Mock embedding - simple word-based for visualization
 const getEmbedding = (text: string): number[] => {
   const words = text.toLowerCase().replace(/[^\w\s]/g, '').split(/\s+/);
-  const vocab = ['how', 'what', 'api', 'deploy', 'database', 'error', 'code', 'test', 'review', 'auth', 'query', 'production', 'process', 'best', 'practices'];
+  const vocab = [
+    'how', 'what', 'when', 'where', 'why', 'who',
+    'api', 'deploy', 'deployment', 'database', 'error', 'code', 'test', 'review', 
+    'auth', 'authenticate', 'authentication', 'query', 'production', 'process', 
+    'best', 'practices', 'optimize', 'performance', 'handle', 'exception',
+    'docker', 'container', 'kubernetes', 'aws', 'cloud', 'server',
+    'install', 'configure', 'setup', 'integrate', 'implement',
+    'security', 'permission', 'access', 'token', 'key'
+  ];
   return vocab.map(v => words.includes(v) ? 1 : 0);
 };
 
@@ -138,6 +146,23 @@ const cosineSimilarity = (a: number[], b: number[]): number => {
   const magB = Math.sqrt(b.reduce((sum, val) => sum + val * val, 0));
   return magA && magB ? dotProduct / (magA * magB) : 0;
 };
+
+const SIMILARITY_THRESHOLD = 0.8;
+const API_BASE_URL = 'http://localhost:3000';
+const STARTER_CACHE = [
+  { query: "How do I deploy to production?", topic: "Deployment", user: USERS[0] },
+  { query: "What's the authentication process?", topic: "API Authentication", user: USERS[1] },
+  { query: "How to optimize database queries?", topic: "Database Queries", user: USERS[2] },
+  { query: "Best practices for error handling?", topic: "Error Handling", user: USERS[3] },
+  { query: "What's our code review process?", topic: "Code Review", user: USERS[4] },
+  { query: "How should I write tests?", topic: "Testing Strategy", user: USERS[5] },
+  { query: "How to get API access tokens?", topic: "API Authentication", user: USERS[0] },
+  { query: "Steps to deploy our app", topic: "Deployment", user: USERS[1] },
+  { query: "Database query optimization tips", topic: "Database Queries", user: USERS[2] },
+  { query: "Error handling patterns", topic: "Error Handling", user: USERS[3] },
+  { query: "How do code reviews work here?", topic: "Code Review", user: USERS[4] },
+  { query: "Testing best practices", topic: "Testing Strategy", user: USERS[5] },
+];
 
 const LLM_COST = 0.03; // Cost per LLM call
 const LLM_TIME = 2000; // Time per LLM call in ms
@@ -173,11 +198,47 @@ export default function CrossUserSimulation() {
     active: boolean;
   }>>([]);
 
+  // Try It Yourself state
+  const [tryItQuery, setTryItQuery] = useState('');
+  const [tryItHistory, setTryItHistory] = useState<Array<{
+    query: string;
+    result: 'hit' | 'miss';
+    matchedQuery?: string;
+    similarity?: number;
+    responseTime: number;
+    savedCost?: number;
+  }>>([]);
+  const [tryItLoading, setTryItLoading] = useState(false);
+  const [useRealApi, setUseRealApi] = useState(false);
+  const [apiStatus, setApiStatus] = useState<'checking' | 'online' | 'offline'>('checking');
+
   const queryIdRef = useRef(0);
   const eventIdRef = useRef(0);
   const connectionIdRef = useRef(0);
   const responseTimesRef = useRef<number[]>([]);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  // Initialize cache with starter data
+  useEffect(() => {
+    const initialCache: CacheEntry[] = STARTER_CACHE.map(item => ({
+      query: item.query,
+      topic: item.topic,
+      user: item.user,
+      timestamp: Date.now(),
+      embedding: getEmbedding(item.query),
+    }));
+    setCache(initialCache);
+  }, []);
+
+  // Check API health when real API is enabled
+  useEffect(() => {
+    if (useRealApi) {
+      setApiStatus('checking');
+      fetch(`${API_BASE_URL}/health`)
+        .then(res => res.ok ? setApiStatus('online') : setApiStatus('offline'))
+        .catch(() => setApiStatus('offline'));
+    }
+  }, [useRealApi]);
 
   const addEvent = useCallback((
     text: string, 
@@ -297,7 +358,7 @@ export default function CrossUserSimulation() {
         if (entry.user.id === user.id) continue; // Skip own entries for demo
         const entryEmbedding = getEmbedding(entry.query);
         const similarity = cosineSimilarity(queryEmbedding, entryEmbedding);
-        if (similarity > bestSimilarity && similarity >= 0.5) {
+        if (similarity > bestSimilarity && similarity >= SIMILARITY_THRESHOLD) {
           bestSimilarity = similarity;
           bestMatch = entry;
         }
@@ -442,6 +503,119 @@ export default function CrossUserSimulation() {
     responseTimesRef.current = [];
   };
 
+  const handleTryItSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!tryItQuery.trim() || tryItLoading) return;
+
+    setTryItLoading(true);
+    const startTime = performance.now();
+
+    try {
+      if (useRealApi && apiStatus === 'online') {
+        // Real API mode
+        const response = await fetch(`${API_BASE_URL}/cache/query`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            query: tryItQuery,
+            tenant: 'demo',
+          }),
+        });
+
+        const data = await response.json();
+        const responseTime = performance.now() - startTime;
+
+        setTryItHistory(prev => [{
+          query: tryItQuery,
+          result: data.hit ? 'hit' : 'miss',
+          matchedQuery: data.cachedQuery,
+          similarity: data.similarity,
+          responseTime: Math.round(responseTime),
+          savedCost: data.hit ? LLM_COST : undefined,
+        }, ...prev].slice(0, 5));
+
+        if (!data.hit) {
+          // Store the miss for future queries
+          await fetch(`${API_BASE_URL}/cache/store`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              query: tryItQuery,
+              response: `[Simulated response for: ${tryItQuery}]`,
+              tenant: 'demo',
+            }),
+          });
+        }
+      } else {
+        // Mock mode (word-based matching)
+        const queryEmbedding = getEmbedding(tryItQuery);
+        
+        // Check exact match
+        const exactMatch = cache.find(c => 
+          c.query.toLowerCase() === tryItQuery.toLowerCase()
+        );
+
+        if (exactMatch) {
+          const responseTime = performance.now() - startTime;
+          setTryItHistory(prev => [{
+            query: tryItQuery,
+            result: 'hit',
+            matchedQuery: exactMatch.query,
+            similarity: 1.0,
+            responseTime: Math.round(responseTime),
+            savedCost: LLM_COST,
+          }, ...prev].slice(0, 5));
+        } else {
+          // Check semantic match
+          let bestMatch: CacheEntry | null = null;
+          let bestSimilarity = 0;
+
+          for (const entry of cache) {
+            const entryEmbedding = getEmbedding(entry.query);
+            const similarity = cosineSimilarity(queryEmbedding, entryEmbedding);
+            if (similarity > bestSimilarity) {
+              bestSimilarity = similarity;
+              bestMatch = entry;
+            }
+          }
+
+          const responseTime = performance.now() - startTime;
+          const isHit = bestSimilarity >= SIMILARITY_THRESHOLD;
+
+          setTryItHistory(prev => [{
+            query: tryItQuery,
+            result: isHit ? 'hit' : 'miss',
+            matchedQuery: isHit && bestMatch ? bestMatch.query : undefined,
+            similarity: isHit ? bestSimilarity : undefined,
+            responseTime: Math.round(responseTime),
+            savedCost: isHit ? LLM_COST : undefined,
+          }, ...prev].slice(0, 5));
+
+          if (!isHit) {
+            // Add to cache for future queries
+            setCache(prev => [...prev, {
+              query: tryItQuery,
+              topic: 'User Query',
+              user: USERS[0],
+              timestamp: Date.now(),
+              embedding: queryEmbedding,
+            }]);
+          }
+        }
+      }
+    } catch (error) {
+      console.error('Try it error:', error);
+      setTryItHistory(prev => [{
+        query: tryItQuery,
+        result: 'miss',
+        responseTime: Math.round(performance.now() - startTime),
+      }, ...prev].slice(0, 5));
+    } finally {
+      setTryItLoading(false);
+      setTryItQuery('');
+    }
+  };
+
   const hitRate = stats.totalQueries > 0 
     ? ((stats.cacheHits / stats.totalQueries) * 100).toFixed(1) 
     : '0.0';
@@ -449,11 +623,125 @@ export default function CrossUserSimulation() {
   return (
     <div className="cross-user-simulation">
       <header className="simulation-header">
-        <h1>🏢 Cross-User Semantic Cache</h1>
-        <p className="subtitle">
-          Watch how team members benefit from each other's cached queries
-        </p>
+        <h1>🏢 Semantic Cache for LLMs</h1>
+        <p className="subtitle">Save 40-60% on API costs. Get 100x faster responses.</p>
+        <div className="hero-stats">
+          <div className="hero-stat">
+            <div className="hero-stat-value">~$0</div>
+            <div className="hero-stat-label">per cached query</div>
+          </div>
+          <div className="hero-stat">
+            <div className="hero-stat-value">20ms vs 2000ms</div>
+            <div className="hero-stat-label">cache vs LLM latency</div>
+          </div>
+          <div className="hero-stat">
+            <div className="hero-stat-value">85%+</div>
+            <div className="hero-stat-label">semantic match accuracy</div>
+          </div>
+        </div>
       </header>
+
+      {/* Try It Yourself Section */}
+      <div className="try-it-section featured">
+        <h2>🎯 Try It Yourself</h2>
+        
+        {/* API Toggle and Cache Info */}
+        <div className="try-it-controls">
+          <div className="api-toggle">
+            <label className="toggle-label">
+              <input
+                type="checkbox"
+                checked={useRealApi}
+                onChange={(e) => setUseRealApi(e.target.checked)}
+              />
+              <span className="toggle-switch"></span>
+              <span className="toggle-text">Use Real API</span>
+              {useRealApi && (
+                <span className={`api-status ${apiStatus}`}>
+                  {apiStatus === 'checking' && '🔄 Checking...'}
+                  {apiStatus === 'online' && '✅ Online'}
+                  {apiStatus === 'offline' && '❌ Offline'}
+                </span>
+              )}
+            </label>
+          </div>
+          
+          <div className="cache-info">
+            <span className="cache-info-icon">📦</span>
+            <span className="cache-info-text">{cache.length} queries pre-cached</span>
+          </div>
+        </div>
+
+        <form onSubmit={handleTryItSubmit} className="try-it-form">
+          <input
+            type="text"
+            value={tryItQuery}
+            onChange={(e) => setTryItQuery(e.target.value)}
+            placeholder="Ask a question (e.g., 'How do I deploy?')"
+            className="try-it-input"
+            disabled={tryItLoading}
+          />
+          <button 
+            type="submit" 
+            className="try-it-button"
+            disabled={tryItLoading || !tryItQuery.trim()}
+          >
+            {tryItLoading ? '⏳ Searching...' : '🔍 Query Cache'}
+          </button>
+        </form>
+
+        {tryItHistory.length > 0 && (
+          <div className="try-it-results">
+            <h4>Recent Queries</h4>
+            {tryItHistory.map((result, i) => (
+              <div key={i} className={`try-it-result ${result.result}`}>
+                <div className="result-header">
+                  <span className={`result-badge ${result.result}`}>
+                    {result.result === 'hit' ? '✅ CACHE HIT' : '❌ CACHE MISS'}
+                  </span>
+                  <span className="result-time">{result.responseTime}ms</span>
+                </div>
+                <div className="result-query">"{result.query}"</div>
+                {result.result === 'hit' && result.matchedQuery && (
+                  <div className="result-match">
+                    <span className="match-arrow">→</span>
+                    <span className="match-text">"{result.matchedQuery}"</span>
+                    {result.similarity && (
+                      <span className="match-similarity">
+                        {(result.similarity * 100).toFixed(0)}% match
+                      </span>
+                    )}
+                  </div>
+                )}
+                {result.savedCost && (
+                  <div className="result-savings">
+                    💰 Saved ${result.savedCost.toFixed(2)} • ⚡ {LLM_TIME - CACHE_TIME}ms faster
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+
+        <div className="try-it-suggestions">
+          <span className="suggestions-label">Try these:</span>
+          {['How do I deploy?', 'deployment process', 'push to production', 'API authentication', 'how to authenticate'].map((suggestion, i) => (
+            <button
+              key={i}
+              className="suggestion-chip"
+              onClick={() => setTryItQuery(suggestion)}
+            >
+              {suggestion}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Simulation Section Divider */}
+      <div className="simulation-divider">
+        <h2>🏢 See It At Organization Scale</h2>
+        <p className="divider-subtitle">Watch how multiple team members benefit from shared semantic cache in real-time</p>
+      </div>
 
       {/* Controls */}
       <div className="controls">

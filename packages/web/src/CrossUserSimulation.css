@@ -5,7 +5,7 @@
  */
 
 .cross-user-simulation {
-  background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0f0f23 100%);
+  background: #0a0a1a;
   color: #e0e0e0;
   padding: 2rem;
   font-family: 'Segoe UI', system-ui, sans-serif;
@@ -19,11 +19,10 @@
 
 .simulation-header h1 {
   font-size: 2.5rem;
-  background: linear-gradient(135deg, #4CAF50, #2196F3, #9C27B0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #f3f4f6;
   margin-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 .subtitle {
@@ -49,10 +48,7 @@
 .hero-stat-value {
   font-size: 2.5rem;
   font-weight: bold;
-  background: linear-gradient(135deg, #4CAF50, #2196F3);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #10b981;
   margin-bottom: 0.5rem;
 }
 
@@ -73,10 +69,8 @@
 
 .simulation-divider h2 {
   font-size: 2rem;
-  background: linear-gradient(135deg, #4CAF50, #2196F3);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #f3f4f6;
+  font-weight: 600;
   margin-bottom: 0.75rem;
 }
 

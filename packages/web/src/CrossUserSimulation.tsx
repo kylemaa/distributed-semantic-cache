@@ -623,7 +623,7 @@ export default function CrossUserSimulation() {
   return (
     <div className="cross-user-simulation">
       <header className="simulation-header">
-        <h1>🏢 Semantic Cache for LLMs</h1>
+        <h1>Semantic Cache for LLMs</h1>
         <p className="subtitle">Save 40-60% on API costs. Get 100x faster responses.</p>
         <div className="hero-stats">
           <div className="hero-stat">
@@ -643,7 +643,6 @@ export default function CrossUserSimulation() {
 
       {/* Try It Yourself Section */}
       <div className="try-it-section featured">
-        <h2>🎯 Try It Yourself</h2>
         
         {/* API Toggle and Cache Info */}
         <div className="try-it-controls">

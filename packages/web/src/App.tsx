@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import AdminDashboard from './AdminDashboard';
 import CacheSimulation from './CacheSimulation';
 import CrossUserSimulation from './CrossUserSimulation';
+import HomePage from './HomePage';
 import './App.css';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000';
@@ -21,10 +22,11 @@ interface CacheStats {
   newestTimestamp: number | null;
 }
 
-type View = 'chat' | 'admin' | 'simulation' | 'cross-user';
+type View = 'home' | 'chat' | 'admin' | 'simulation' | 'cross-user';
 
 function App() {
-  const [view, setView] = useState<View>('chat');
+  const [view, setView] = useState<View>('home');
+  const [demoMenuOpen, setDemoMenuOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -43,6 +45,15 @@ function App() {
     fetchStats();
   }, []);
 
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = () => setDemoMenuOpen(false);
+    if (demoMenuOpen) {
+      document.addEventListener('click', handleClickOutside);
+      return () => document.removeEventListener('click', handleClickOutside);
+    }
+  }, [demoMenuOpen]);
+
   const fetchStats = async () => {
     try {
       const response = await fetch(`${API_URL}/api/cache/stats`);
@@ -56,23 +67,57 @@ function App() {
     }
   };
 
+  const handleNavigate = (newView: string) => {
+    setView(newView as View);
+    setDemoMenuOpen(false);
+  };
+
+  // Home page view
+  if (view === 'home') {
+    return <HomePage onNavigate={handleNavigate} />;
+  }
+
+  // Helper component for navigation
+  const Navigation = ({ currentView }: { currentView: View }) => (
+    <nav className="app-nav">
+      <button onClick={() => setView('home')} className="nav-btn nav-brand">
+        🚀 Semantic Cache
+      </button>
+      <div className="nav-spacer"></div>
+      <div className="nav-dropdown" onClick={(e) => e.stopPropagation()}>
+        <button 
+          onClick={() => setDemoMenuOpen(!demoMenuOpen)} 
+          className={`nav-btn nav-dropdown-trigger ${['chat', 'simulation', 'cross-user'].includes(currentView) ? 'active' : ''}`}
+        >
+          🎮 Demos
+          <svg className={`dropdown-arrow ${demoMenuOpen ? 'open' : ''}`} width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M6 9l6 6 6-6"/>
+          </svg>
+        </button>
+        {demoMenuOpen && (
+          <div className="nav-dropdown-menu">
+            <button onClick={() => handleNavigate('chat')} className={`dropdown-item ${currentView === 'chat' ? 'active' : ''}`}>
+              💬 Chat Demo
+            </button>
+            <button onClick={() => handleNavigate('simulation')} className={`dropdown-item ${currentView === 'simulation' ? 'active' : ''}`}>
+              ⚡ Simulation
+            </button>
+            <button onClick={() => handleNavigate('cross-user')} className={`dropdown-item ${currentView === 'cross-user' ? 'active' : ''}`}>
+              👥 Cross-User
+            </button>
+          </div>
+        )}
+      </div>
+      <button onClick={() => setView('admin')} className={`nav-btn ${currentView === 'admin' ? 'active' : ''}`}>
+        🎛️ Dashboard
+      </button>
+    </nav>
+  );
+
   if (view === 'simulation') {
     return (
       <div className="app-container simulation-view">
-        <nav className="app-nav">
-          <button onClick={() => setView('chat')} className="nav-btn">
-            💬 Chat
-          </button>
-          <button onClick={() => setView('admin')} className="nav-btn">
-            🎛️ Admin
-          </button>
-          <button onClick={() => setView('simulation')} className="nav-btn active">
-            ⚡ Simulation
-          </button>
-          <button onClick={() => setView('cross-user')} className="nav-btn">
-            👥 Cross-User
-          </button>
-        </nav>
+        <Navigation currentView={view} />
         <CacheSimulation />
       </div>
     );
@@ -81,20 +126,7 @@ function App() {
   if (view === 'cross-user') {
     return (
       <div className="app-container simulation-view">
-        <nav className="app-nav">
-          <button onClick={() => setView('chat')} className="nav-btn">
-            💬 Chat
-          </button>
-          <button onClick={() => setView('admin')} className="nav-btn">
-            🎛️ Admin
-          </button>
-          <button onClick={() => setView('simulation')} className="nav-btn">
-            ⚡ Simulation
-          </button>
-          <button onClick={() => setView('cross-user')} className="nav-btn active">
-            👥 Cross-User
-          </button>
-        </nav>
+        <Navigation currentView={view} />
         <CrossUserSimulation />
       </div>
     );
@@ -102,21 +134,8 @@ function App() {
 
   if (view === 'admin') {
     return (
-      <div className="app-container">
-        <nav className="app-nav">
-          <button onClick={() => setView('chat')} className="nav-btn">
-            💬 Chat
-          </button>
-          <button onClick={() => setView('admin')} className="nav-btn active">
-            🎛️ Admin
-          </button>
-          <button onClick={() => setView('simulation')} className="nav-btn">
-            ⚡ Simulation
-          </button>
-          <button onClick={() => setView('cross-user')} className="nav-btn">
-            👥 Cross-User
-          </button>
-        </nav>
+      <div className="app-container admin-view">
+        <Navigation currentView={view} />
         <AdminDashboard />
       </div>
     );
@@ -223,24 +242,11 @@ function App() {
 
   return (
     <div className="app-container">
-      <nav className="app-nav">
-        <button onClick={() => setView('chat')} className="nav-btn active">
-          💬 Chat
-        </button>
-        <button onClick={() => setView('admin')} className="nav-btn">
-          🎛️ Admin
-        </button>
-        <button onClick={() => setView('simulation')} className="nav-btn">
-          ⚡ Simulation
-        </button>
-        <button onClick={() => setView('cross-user')} className="nav-btn">
-          👥 Cross-User
-        </button>
-      </nav>
+      <Navigation currentView={view} />
       
       <div className="app">
         <header className="header">
-          <h1>🚀 Semantic Cache Chat</h1>
+          <h1>💬 Semantic Cache Chat</h1>
           <div className="stats">
             <span>Cache Entries: {stats?.count || 0}</span>
             <button onClick={handleClearCache} className="clear-btn">

@@ -196,23 +196,13 @@ export default function AdminDashboard() {
 
   return (
     <div className="admin-dashboard">
+      {demoMode && (
+        <div className="demo-banner">
+          ✨ Demo Mode — Showing sample data (API not connected)
+        </div>
+      )}
       <header className="dashboard-header">
         <h1>🎛️ Cache Admin Dashboard</h1>
-        {demoMode && (
-          <div style={{
-            background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-            color: 'white',
-            padding: '8px 16px',
-            borderRadius: '20px',
-            fontSize: '13px',
-            fontWeight: 500,
-            display: 'flex',
-            alignItems: 'center',
-            gap: '8px',
-          }}>
-            ✨ Demo Mode - Showing sample data
-          </div>
-        )}
         <div className="controls">
           <label>
             <input
@@ -372,33 +362,33 @@ export default function AdminDashboard() {
           <div className="layer-card">
             <h3>Layer 1: Exact Match</h3>
             <div className="layer-info">
-              <p><strong>Type:</strong> {layers.exact.type}</p>
-              <p><strong>Complexity:</strong> {layers.exact.complexity}</p>
-              <p><strong>Avg Latency:</strong> {layers.exact.avgLatency}</p>
-              <p><strong>Size:</strong> {formatNumber(layers.exact.size)} / {formatNumber(layers.exact.capacity)}</p>
-              <p><strong>Hit Rate:</strong> {formatPercent(layers.exact.hitRate)}</p>
+              <p><strong>Type:</strong> <span>{layers.exact.type}</span></p>
+              <p><strong>Complexity:</strong> <span>{layers.exact.complexity}</span></p>
+              <p><strong>Avg Latency:</strong> <span>{layers.exact.avgLatency}</span></p>
+              <p><strong>Size:</strong> <span>{formatNumber(layers.exact.size)} / {formatNumber(layers.exact.capacity)}</span></p>
+              <p><strong>Hit Rate:</strong> <span>{formatPercent(layers.exact.hitRate)}</span></p>
             </div>
           </div>
 
           <div className="layer-card">
             <h3>Layer 2: Normalized</h3>
             <div className="layer-info">
-              <p><strong>Type:</strong> {layers.normalized.type}</p>
-              <p><strong>Complexity:</strong> {layers.normalized.complexity}</p>
-              <p><strong>Avg Latency:</strong> {layers.normalized.avgLatency}</p>
-              <p><strong>Size:</strong> {formatNumber(layers.normalized.size)} / {formatNumber(layers.normalized.capacity)}</p>
-              <p><strong>Handles:</strong> {layers.normalized.description}</p>
+              <p><strong>Type:</strong> <span>{layers.normalized.type}</span></p>
+              <p><strong>Complexity:</strong> <span>{layers.normalized.complexity}</span></p>
+              <p><strong>Avg Latency:</strong> <span>{layers.normalized.avgLatency}</span></p>
+              <p><strong>Size:</strong> <span>{formatNumber(layers.normalized.size)} / {formatNumber(layers.normalized.capacity)}</span></p>
+              <p><strong>Handles:</strong> <span>{layers.normalized.description}</span></p>
             </div>
           </div>
 
           <div className="layer-card">
             <h3>Layer 3: Semantic</h3>
             <div className="layer-info">
-              <p><strong>Type:</strong> {layers.semantic.type}</p>
-              <p><strong>Complexity:</strong> {layers.semantic.complexity}</p>
-              <p><strong>Avg Latency:</strong> {layers.semantic.avgLatency}</p>
-              <p><strong>Entries:</strong> {formatNumber(layers.semantic.totalEntries)}</p>
-              <p><strong>Method:</strong> {layers.semantic.description}</p>
+              <p><strong>Type:</strong> <span>{layers.semantic.type}</span></p>
+              <p><strong>Complexity:</strong> <span>{layers.semantic.complexity}</span></p>
+              <p><strong>Avg Latency:</strong> <span>{layers.semantic.avgLatency}</span></p>
+              <p><strong>Entries:</strong> <span>{formatNumber(layers.semantic.totalEntries)}</span></p>
+              <p><strong>Method:</strong> <span>{layers.semantic.description}</span></p>
             </div>
           </div>
         </div>

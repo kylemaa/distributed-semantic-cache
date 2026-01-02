@@ -46,10 +46,13 @@ function App() {
   const fetchStats = async () => {
     try {
       const response = await fetch(`${API_URL}/api/cache/stats`);
-      const data = await response.json();
-      setStats(data);
+      if (response.ok) {
+        const data = await response.json();
+        setStats(data);
+      }
     } catch (error) {
-      console.error('Error fetching stats:', error);
+      // Silently ignore - demo mode works without API
+      console.log('API not available, running in demo mode');
     }
   };
 
@@ -142,6 +145,10 @@ function App() {
         body: JSON.stringify({ message: input }),
       });
 
+      if (!cacheResponse.ok) {
+        throw new Error('API unavailable');
+      }
+
       const cacheData = await cacheResponse.json();
 
       if (cacheData.cached && cacheData.response) {
@@ -182,14 +189,18 @@ function App() {
       // Refresh stats
       await fetchStats();
     } catch (error) {
-      console.error('Error:', error);
-      const errorMessage: Message = {
+      // Demo mode - provide simulated response without API
+      console.log('Running in demo mode - simulating response');
+      const demoResponse = `[Demo Mode] This is a simulated response to: "${input}"\n\nIn production with the API connected, this would:\n1. Check semantic cache for similar queries\n2. Call LLM if no cache hit\n3. Store the response for future queries`;
+
+      const assistantMessage: Message = {
         id: (Date.now() + 1).toString(),
-        text: 'Error: Could not connect to the server. Make sure the API is running.',
+        text: demoResponse,
         sender: 'assistant',
+        cached: false,
         timestamp: Date.now(),
       };
-      setMessages((prev) => [...prev, errorMessage]);
+      setMessages((prev) => [...prev, assistantMessage]);
     } finally {
       setIsLoading(false);
     }

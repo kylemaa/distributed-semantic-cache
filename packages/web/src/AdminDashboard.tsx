@@ -61,25 +61,70 @@ export default function AdminDashboard() {
   const [flowData, setFlowData] = useState<FlowData | null>(null);
   const [autoRefresh, setAutoRefresh] = useState(true);
   const [refreshInterval, setRefreshInterval] = useState(5000);
-  const [error, setError] = useState<string | null>(null);
+  const [demoMode, setDemoMode] = useState(false);
+
+  // Demo data for when API is not available
+  const demoStats: ComprehensiveStats = {
+    timestamp: Date.now(),
+    overview: {
+      totalQueries: 12847,
+      cacheHits: 9892,
+      cacheMisses: 2955,
+      overallHitRate: 0.77,
+      totalEntriesStored: 3241,
+    },
+    layers: {
+      exact: { hits: 4521, misses: 8326, hitRate: 0.35, size: 3241, capacity: 10000 },
+      normalized: { size: 2156, capacity: 10000 },
+      semantic: { totalEntries: 3241 },
+    },
+    smartMatching: {},
+    embeddingCache: { hits: 8234, misses: 4613, hitRate: 0.64, size: 1000, capacity: 1000 },
+    performance: { storageEfficiency: '75% reduction', privacyMode: 'standard', encryptionEnabled: false },
+  };
+
+  const demoLayerStats = {
+    layers: [
+      { layer: 1, name: 'Exact Match', hits: 4521, hitRate: 0.35, percentOfTotalHits: 45.7, avgLatencyMs: 0.5, size: 3241, capacity: 10000 },
+      { layer: 2, name: 'Normalized', hits: 2134, hitRate: 0.17, percentOfTotalHits: 21.6, avgLatencyMs: 1, size: 2156, capacity: 10000 },
+      { layer: 3, name: 'Semantic', hits: 3237, hitRate: 0.25, percentOfTotalHits: 32.7, avgLatencyMs: 25, size: 3241, capacity: -1 },
+    ],
+    summary: { totalHits: 9892, totalMisses: 2955, overallHitRate: 0.77, avgOverallLatency: 15 },
+  };
+
+  const demoFlowData: FlowData = {
+    flowData: {
+      incoming: 12847,
+      layer1: { hit: 4521, forward: 8326, hitRate: 0.35 },
+      layer2: { hit: 2134, forward: 6192, hitRate: 0.26 },
+      layer3: { hit: 3237, miss: 2955, hitRate: 0.52 },
+    },
+    visualization: {
+      nodes: [
+        { id: 'incoming', label: 'Incoming Queries', value: 12847 },
+        { id: 'layer1', label: 'L1: Exact Match', value: 4521 },
+        { id: 'layer2', label: 'L2: Normalized', value: 2134 },
+        { id: 'layer3', label: 'L3: Semantic', value: 3237 },
+        { id: 'miss', label: 'Cache Miss', value: 2955 },
+      ],
+      edges: [],
+    },
+  };
 
   const fetchStats = async () => {
     try {
-      setError(null);
       const [comprehensiveRes, layersRes, flowRes] = await Promise.all([
         fetch('/api/admin/stats/comprehensive'),
         fetch('/api/admin/stats/layers'),
         fetch('/api/admin/stats/flow'),
       ]);
 
-      // Check for auth errors
-      if (comprehensiveRes.status === 401 || layersRes.status === 401 || flowRes.status === 401) {
-        setError('Authentication required. Admin endpoints require an API key.');
-        return;
-      }
-
       if (!comprehensiveRes.ok || !layersRes.ok || !flowRes.ok) {
-        setError('Failed to fetch admin stats. API may be unavailable.');
+        // Switch to demo mode if API unavailable
+        setDemoMode(true);
+        setComprehensiveStats(demoStats);
+        setLayerStats(demoLayerStats);
+        setFlowData(demoFlowData);
         return;
       }
 
@@ -89,18 +134,25 @@ export default function AdminDashboard() {
         flowRes.json(),
       ]);
 
-      // Validate response structure
       if (!comprehensive?.overview) {
-        setError('Invalid response from API. Missing overview data.');
+        setDemoMode(true);
+        setComprehensiveStats(demoStats);
+        setLayerStats(demoLayerStats);
+        setFlowData(demoFlowData);
         return;
       }
 
+      setDemoMode(false);
       setComprehensiveStats(comprehensive);
       setLayerStats(layers);
       setFlowData(flow);
     } catch (err) {
       console.error('Error fetching admin stats:', err);
-      setError('Failed to connect to API server.');
+      // Switch to demo mode on error
+      setDemoMode(true);
+      setComprehensiveStats(demoStats);
+      setLayerStats(demoLayerStats);
+      setFlowData(demoFlowData);
     }
   };
 
@@ -131,31 +183,6 @@ export default function AdminDashboard() {
   };
   void _formatBytes; // Suppress unused warning
 
-  if (error) {
-    return (
-      <div className="admin-dashboard loading">
-        <h1>🎛️ Admin Dashboard</h1>
-        <div className="error-message" style={{ 
-          background: '#ff444420', 
-          border: '1px solid #ff4444', 
-          padding: '20px', 
-          borderRadius: '8px',
-          marginTop: '20px'
-        }}>
-          <h3>⚠️ Error</h3>
-          <p>{error}</p>
-          <p style={{ marginTop: '10px', fontSize: '14px', opacity: 0.8 }}>
-            If authentication is enabled, start the API with AUTH_ENABLED=false for development,
-            or configure the frontend to send API keys.
-          </p>
-          <button onClick={fetchStats} style={{ marginTop: '15px', padding: '8px 16px', cursor: 'pointer' }}>
-            🔄 Retry
-          </button>
-        </div>
-      </div>
-    );
-  }
-
   if (!comprehensiveStats || !layerStats || !flowData) {
     return (
       <div className="admin-dashboard loading">
@@ -171,6 +198,21 @@ export default function AdminDashboard() {
     <div className="admin-dashboard">
       <header className="dashboard-header">
         <h1>🎛️ Cache Admin Dashboard</h1>
+        {demoMode && (
+          <div style={{
+            background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+            color: 'white',
+            padding: '8px 16px',
+            borderRadius: '20px',
+            fontSize: '13px',
+            fontWeight: 500,
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+          }}>
+            ✨ Demo Mode - Showing sample data
+          </div>
+        )}
         <div className="controls">
           <label>
             <input

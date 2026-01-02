@@ -1,7 +1,7 @@
 {
   "buildCommand": "pnpm build",
   "outputDirectory": "dist",
-  "installCommand": "pnpm install",
+  "installCommand": "pnpm install --filter=@distributed-semantic-cache/web --prod=false",
   "framework": null,
   "rewrites": [
     {

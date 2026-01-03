@@ -23,5 +23,12 @@
  * ```
  */
 
+// Core client
 export * from './client.js';
 export * from './types.js';
+
+// Fluent builder
+export * from './builder.js';
+
+// LLM middleware integrations
+export * from './middleware.js';

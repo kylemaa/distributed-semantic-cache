@@ -1,17 +1,10 @@
 /**
- * Predictive Cache Warming - ENTERPRISE FEATURE
+ * Predictive Cache Warming
  * 
- * Copyright (c) 2025 Distributed Semantic Cache POC
- * This file is subject to Enterprise License terms.
- * Commercial license required for production use.
- * 30-day evaluation period available.
+ * MIT License - See LICENSE for details
  * 
  * Proactively populates cache based on query pattern analysis,
  * temporal patterns, and predictive algorithms.
- * 
- * Note: Advanced prediction algorithms, temporal pattern detection,
- * and multi-factor scoring are proprietary. This version provides
- * a working implementation for evaluation purposes.
  */
 
 import { QueryClusterer, QueryPattern } from './query-clusterer.js';
@@ -129,10 +122,8 @@ export class PredictiveCacheWarmer {
   /**
    * Get candidates for cache warming
    * 
-   * Note: Enterprise version uses advanced multi-factor scoring
-   * including user behavior prediction, content similarity analysis,
-   * and temporal demand forecasting. This version provides basic
-   * pattern-based prediction.
+   * Uses multi-factor scoring including pattern frequency,
+   * temporal patterns, and recency analysis.
    */
   getWarmingCandidates(): WarmingCandidate[] {
     const candidates: WarmingCandidate[] = [];
@@ -144,8 +135,7 @@ export class PredictiveCacheWarmer {
     for (const pattern of patterns) {
       if (pattern.frequency < this.config.minPatternFrequency) continue;
 
-      // Basic temporal scoring (simplified public version)
-      // Enterprise version uses ML-based demand forecasting
+      // Temporal scoring based on time patterns
       const temporalScore = this.calculateTemporalScore(currentHour, currentDay);
       
       // Pattern frequency score
@@ -154,8 +144,7 @@ export class PredictiveCacheWarmer {
       // Recency score (when was pattern last seen)
       const recencyScore = this.calculateRecencyScore(pattern.lastSeen);
       
-      // Combined confidence (simplified weighted average)
-      // Enterprise version uses proprietary multi-factor optimization
+      // Combined confidence using weighted average
       const confidence = (
         temporalScore * 0.3 +
         frequencyScore * 0.4 +
@@ -186,9 +175,9 @@ export class PredictiveCacheWarmer {
   }
 
   /**
-   * Calculate temporal relevance score (simplified public version)
+   * Calculate temporal relevance score
    * 
-   * Note: Enterprise version includes day-of-week patterns,
+   * Future enhancement: Could add day-of-week patterns,
    * holiday awareness, and ML-based time series forecasting.
    */
   private calculateTemporalScore(hour: number, dayOfWeek: number): number {
@@ -222,9 +211,9 @@ export class PredictiveCacheWarmer {
   }
 
   /**
-   * Generate representative queries from a pattern (simplified)
+   * Generate representative queries from a pattern
    * 
-   * Note: Enterprise version uses semantic expansion, synonym
+   * Future enhancement: Could add semantic expansion, synonym
    * generation, and LLM-based query reformulation.
    */
   private generateRepresentativeQueries(pattern: QueryPattern): string[] {

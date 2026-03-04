@@ -322,7 +322,7 @@ class CacheAnalytics {
 
 ## Example 8: Multi-Tenant Setup
 
-Enterprise deployment with customer isolation:
+Production deployment with customer isolation:
 
 ```typescript
 import { TenantManager, SemanticCacheService } from './index.js';
@@ -333,7 +333,7 @@ const tenantManager = new TenantManager('./tenants');
 // Create a new tenant
 const tenant = await tenantManager.createTenant({
   name: 'Acme Corp',
-  plan: 'enterprise',
+  plan: 'professional',
   quotaLimit: 100000,  // 100K queries/month
   features: {
     encryption: true,

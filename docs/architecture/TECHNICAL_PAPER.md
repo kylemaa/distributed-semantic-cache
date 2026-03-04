@@ -329,7 +329,7 @@ We conducted a rigorous ablation study to measure the contribution of each syste
 
 **Open Source Implementation**: Available at [repository location]
 
-**License**: Apache 2.0 (core features), Commercial (enterprise features)
+**License**: MIT License
 
 **Technologies**:
 - Node.js/TypeScript

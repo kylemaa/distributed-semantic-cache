@@ -119,7 +119,7 @@ LOCAL_EMBEDDING_MODEL=all-MiniLM-L6-v2
 **Completed:** December 2025  
 **Tests:** 127 passing (+32 new)
 
-**Problem:** Enterprise customers need encryption and audit trails.
+**Problem:** Production deployments need encryption and audit trails.
 
 **Solution:** AES-256-GCM encryption, comprehensive audit logging.
 
@@ -195,7 +195,7 @@ Query → L1: Exact → L2: Normalized → L3: Semantic
 
 ---
 
-## Phase 3: Enterprise Features
+## Phase 3: Advanced Features
 
 **Completed:** December 2025  
 **Tests:** 220 passing
@@ -236,7 +236,7 @@ Query → L1: Exact → L2: Normalized → L3: Semantic
 
 ### Production Deployment
 
-**Problem:** Need enterprise-grade deployment options.
+**Problem:** Need production-grade deployment options.
 
 **Solution:** Complete infrastructure templates.
 
@@ -312,7 +312,7 @@ Query → L1: Exact → L2: Normalized → L3: Semantic
 | Phase 2.1 | 22 (Local embed) | 95* |
 | Phase 2.2 | 32 (Encryption) | 127 |
 | Phase 2.3 | 59 (Smart matching) | 186 |
-| Phase 3 | 34 (Enterprise) | 220 |
+| Phase 3 | 34 (Advanced) | 220 |
 | Phase 4 | ~30 (Scaling) | ~250 |
 
 *22 local tests optionally skipped

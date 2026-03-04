@@ -1,6 +1,6 @@
 # Docker Compose for PostgreSQL + pgvector
 # 
-# Enterprise deployment with PostgreSQL for:
+# Production deployment with PostgreSQL for:
 # - Managed database (AWS RDS, Supabase, Neon)
 # - Full ACID compliance
 # - Native vector search via pgvector
@@ -12,7 +12,7 @@ version: '3.8'
 
 services:
   # ============================================================================
-  # POSTGRESQL - Enterprise Database with pgvector
+  # POSTGRESQL - Production Database with pgvector
   # ============================================================================
   postgres:
     image: pgvector/pgvector:pg16

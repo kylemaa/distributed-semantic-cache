@@ -1,12 +1,7 @@
 /**
- * Confidence scoring system for cache matches - Public Version
+ * Confidence scoring system for cache matches
  * 
- * This is a simplified version for the open source edition.
- * Provides basic multi-factor confidence scoring.
- * 
- * Note: Advanced confidence algorithms with user feedback loops,
- * contextual adjustments, and proprietary weighting are available
- * in the enterprise version.
+ * Provides multi-factor confidence scoring for cache hit quality.
  */
 
 export enum CacheLayer {
@@ -39,11 +34,10 @@ export interface ConfidenceScore {
 }
 
 /**
- * Calculate confidence score for a cache match (simplified public version)
+ * Calculate confidence score for a cache match
  * 
- * Note: Enterprise version includes advanced multi-factor weighting,
- * user feedback integration, and contextual confidence adjustments
- * using proprietary algorithms.
+ * Uses multi-factor weighting including similarity, cache layer,
+ * query complexity, cache age, and hit frequency.
  */
 export function calculateConfidence(
   similarityScore: number,
@@ -61,13 +55,11 @@ export function calculateConfidence(
     score = Math.min(0.98, similarityScore + 0.05);
   }
   
-  // Simplified scoring (public version)
-  // Enterprise version uses proprietary multi-dimensional analysis
+  // Apply complexity penalty for long queries
   const complexityPenalty = queryLength > 50 ? 0.05 : 0;
   score = Math.max(0, score - complexityPenalty);
   
-  // Basic age and frequency adjustments
-  // Enterprise version uses advanced decay functions
+  // Age decay - older entries are less reliable
   if (cacheAgeHours !== undefined) {
     const agePenalty = Math.min(0.1, cacheAgeHours / 720);
     score = Math.max(0, score - agePenalty);

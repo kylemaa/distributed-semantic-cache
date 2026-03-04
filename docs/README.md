@@ -55,14 +55,7 @@ docs/
 ### Production Deployment
 
 1. **[Security](guides/SECURITY.md)** - Hardening checklist
-2. **[Optimization](business/OPTIMIZATION_STRATEGY.md)** - Cost reduction
-3. **[Docker/K8s](../deploy/)** - Deployment templates
-
-### Business & Strategy
-
-1. **[Competitive Analysis](business/COMPETITIVE_STRATEGY.md)** - Market position
-2. **[IP Protection](business/IP_PROTECTION.md)** - Licensing model
-3. **[Open Core](architecture/OPEN_CORE_ARCHITECTURE.md)** - Feature split
+2. **[Docker/K8s](../deploy/)** - Deployment templates
 
 ---
 
@@ -171,13 +164,6 @@ curl -X POST http://localhost:3000/api/chat \
 - GitHub Discussions for questions
 - Contributing guide: [CONTRIBUTING.md](../CONTRIBUTING.md)
 
-### Enterprise
-
-- Priority support available
-- Custom features
-- SLA agreements
-- Contact: enterprise@yourcompany.com
-
 ---
 
-*Last Updated: December 2025*
+*Last Updated: March 2026*

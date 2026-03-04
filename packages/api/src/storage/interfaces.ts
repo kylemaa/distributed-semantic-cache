@@ -4,7 +4,7 @@
  * Provides a unified interface for different storage backends:
  * - SQLite (default, single-node)
  * - Redis (distributed L1/L2 cache)
- * - PostgreSQL (enterprise deployments)
+ * - PostgreSQL (production deployments)
  * 
  * This abstraction enables horizontal scaling while maintaining
  * backward compatibility with the existing SQLite implementation.

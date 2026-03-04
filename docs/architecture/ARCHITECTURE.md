@@ -10,7 +10,7 @@ A comprehensive overview of the Distributed Semantic Cache system architecture, 
 4. [Smart Matching System](#smart-matching-system)
 5. [Privacy & Security](#privacy--security)
 6. [Performance Optimizations](#performance-optimizations)
-7. [Enterprise Features](#enterprise-features)
+7. [Advanced Features](#advanced-features)
 8. [Data Flow](#data-flow)
 
 ---
@@ -290,7 +290,7 @@ Accuracy:   <1% cosine similarity error
 
 ---
 
-## Enterprise Features
+## Advanced Features
 
 ### Multi-Tenancy (`tenant-manager.ts`)
 
@@ -443,7 +443,7 @@ This architecture evolved through multiple development phases:
 | **Phase 2.1** | Local Models | Transformer.js, 100% free embeddings |
 | **Phase 2.2** | Privacy | AES-256 encryption, audit logs |
 | **Phase 2.3** | Smart Matching | Normalization, confidence, thresholds |
-| **Phase 3** | Enterprise | Multi-tenancy, analytics, deployment |
+| **Phase 3** | Advanced | Multi-tenancy, analytics, deployment |
 | **Phase 4** | Scale | HNSW index, Matryoshka cascade |
 
 ---

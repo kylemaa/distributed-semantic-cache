@@ -154,7 +154,7 @@ function HomePage({ onNavigate }: HomePageProps) {
                   <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
                 </svg>
               </div>
-              <h3>Enterprise Security</h3>
+              <h3>Production Security</h3>
               <p>AES-256-GCM encryption, comprehensive audit logging, and full compliance support.</p>
               <ul className="feature-list">
                 <li>HIPAA/GDPR ready</li>
@@ -472,9 +472,9 @@ function HomePage({ onNavigate }: HomePageProps) {
             <a href="#license">License</a>
           </div>
           <div className="footer-license">
-            <span>Open Core Model</span>
+            <span>MIT License</span>
             <span className="footer-separator">•</span>
-            <span>Apache 2.0 (Core) + Enterprise License</span>
+            <span>Open Source</span>
           </div>
         </div>
       </footer>

@@ -167,7 +167,7 @@ const featureComparison: Feature[] = [
     gptcache: '✗ Not built-in',
     ours: '✓ AES-256-GCM',
     winner: 'ours',
-    notes: 'Enterprise-ready encryption out of the box.',
+    notes: 'Production-ready encryption out of the box.',
   },
 
   // Observability

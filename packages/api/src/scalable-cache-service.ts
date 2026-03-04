@@ -5,7 +5,7 @@
  * Supports multiple backends for horizontal scaling:
  * - SQLite (single-node, default)
  * - Redis (distributed L1/L2 cache)
- * - PostgreSQL + pgvector (enterprise)
+ * - PostgreSQL + pgvector (production)
  * - Qdrant (production vector search)
  * 
  * This maintains full backward compatibility with the existing
@@ -53,8 +53,7 @@ interface CacheStats {
  * 
  * Uses pluggable storage backends for different scale requirements:
  * - Development: SQLite + In-memory HNSW
- * - Production: Redis + Qdrant
- * - Enterprise: PostgreSQL + pgvector
+ * - Production: Redis + Qdrant or PostgreSQL + pgvector
  */
 export class ScalableCacheService {
   private storageManager: StorageManager;

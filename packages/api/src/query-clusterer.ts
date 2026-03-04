@@ -1,12 +1,10 @@
 /**
- * Query pattern clustering and analysis - Public Version
+ * Query pattern clustering and analysis
  * 
- * This is a simplified version for the open source edition.
- * Provides basic query pattern detection using Jaccard similarity.
+ * Provides query pattern detection using Jaccard similarity.
  * 
- * Note: Advanced clustering algorithms with predictive cache warming,
- * real-time pattern detection, and proprietary optimization techniques
- * are available in the enterprise version.
+ * Future enhancements could include predictive cache warming,
+ * real-time pattern detection, and advanced optimization techniques.
  */
 
 import { extractKeyTerms } from './normalize.js';
@@ -107,16 +105,14 @@ export class QueryClusterer {
   }
 
   /**
-   * Calculate similarity between two term sets (simplified Jaccard similarity)
+   * Calculate similarity between two term sets using Jaccard similarity
    * 
-   * Note: Enterprise version uses advanced semantic similarity measures
-   * with weighted terms and contextual understanding.
+   * Future enhancement: Could add weighted terms and contextual understanding.
    */
   private calculateTermSimilarity(terms1: string[], terms2: string[]): number {
     if (terms1.length === 0 || terms2.length === 0) return 0;
     
-    // Simple Jaccard similarity (public version)
-    // Enterprise version includes term weighting and semantic expansion
+    // Jaccard similarity
     const set1 = new Set(terms1);
     const set2 = new Set(terms2);
     

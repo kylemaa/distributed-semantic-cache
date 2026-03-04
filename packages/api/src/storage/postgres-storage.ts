@@ -1,7 +1,7 @@
 /**
  * PostgreSQL Storage Adapter with pgvector support
  * 
- * Provides enterprise-grade storage with:
+ * Provides production-grade storage with:
  * - Full ACID compliance
  * - Native vector similarity search via pgvector
  * - Horizontal scaling via read replicas
@@ -41,7 +41,7 @@ async function getPool() {
 }
 
 /**
- * PostgreSQL-based cache storage for enterprise deployments
+ * PostgreSQL-based cache storage for production deployments
  */
 export class PostgresStorage implements ICacheStorage {
   private pool: any;

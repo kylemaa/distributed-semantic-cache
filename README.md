@@ -1,8 +1,8 @@
 # Distributed Semantic Cache
 
-**Enterprise-grade semantic caching for LLM applications. Reduce API costs by 50-80% while improving response times.**
+**Open-source semantic caching for LLM applications. Reduce API costs by 50-80% while improving response times.**
 
-[![Enterprise](https://img.shields.io/badge/Edition-Enterprise-gold.svg)](LICENSE-ENTERPRISE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
 [![Tests](https://img.shields.io/badge/Tests-220%2B%20Passing-brightgreen.svg)](packages/api/__tests__)
@@ -98,7 +98,7 @@ if (result.cached) {
 
 ## 🚀 Features
 
-### Core Features (Open Source)
+### Features
 - **3-Layer Cache Architecture** - Exact → Normalized → Semantic matching
 - **Local Embeddings** - 100% free, privacy-first (MiniLM, mpnet, e5)
 - **Query Normalization** - Case, punctuation, contraction handling
@@ -106,16 +106,12 @@ if (result.cached) {
 - **SQLite Storage** - Lightweight, file-based, zero-config
 - **Full REST API** - Query, store, stats, admin endpoints
 - **React Chat UI** - Interactive demo and testing interface
-
-### Enterprise Features 🏢
 - **Multi-Tenancy** - Complete data isolation, per-tenant quotas
-- **Advanced Analytics** - Cost tracking, ROI dashboards, time-series metrics
+- **Analytics** - Cost tracking, ROI dashboards, time-series metrics
 - **Predictive Cache Warming** - Pattern-based pre-population
 - **HNSW Indexing** - O(log n) search for 100K+ vectors
 - **Matryoshka Cascade** - Adaptive dimension search (4-8x faster)
-- **Production Deployment** - Docker, Kubernetes, Terraform templates
-- **Audit Logging** - Comprehensive operation tracking
-- **HIPAA/GDPR Ready** - Encryption at rest, zero-log mode
+- **Production Ready** - Docker, Kubernetes, Terraform templates
 
 ## 📊 Performance
 
@@ -240,14 +236,9 @@ distributed-semantic-cache/
 
 ## 📄 License
 
-This project uses an **Open Core** licensing model:
+This project is licensed under the **MIT License** - see [LICENSE](LICENSE) for details.
 
-| Component | License | Features |
-|-----------|---------|----------|
-| **Core** | Apache 2.0 | Caching, privacy, basic deployment |
-| **Enterprise** | Proprietary | Multi-tenancy, analytics, production templates |
-
-See [OPEN_CORE_ARCHITECTURE.md](OPEN_CORE_ARCHITECTURE.md) for detailed feature breakdown.
+Free to use, modify, and distribute for any purpose.
 
 ## 📚 Documentation
 
@@ -280,10 +271,11 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for development guidelines.
 
 ## 📞 Support
 
-| Tier | Support |
-|------|---------|
-| **Community** | GitHub Issues |
-| **Enterprise** | Dedicated support, SLAs, custom integrations |
+Have questions or need help?
+
+- 📝 [Open an Issue](../../issues) for bugs or feature requests
+- 💬 [Discussions](../../discussions) for questions and ideas
+- ⭐ Star this repo if you find it useful!
 
 ---
 

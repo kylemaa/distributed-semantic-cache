@@ -76,14 +76,12 @@ export class ThresholdLearner {
   }
 
   /**
-   * Adjust threshold based on query length (simplified public version)
+   * Adjust threshold based on query length
    * 
-   * Note: Advanced length-based optimization with multiple factors
-   * is available in the enterprise version.
+   * Future enhancement: Could add complexity analysis, term density, etc.
    */
   private adjustForLength(baseThreshold: number, queryLength: number): number {
-    // Simplified: Basic length adjustment only
-    // Enterprise version includes complexity analysis, term density, etc.
+    // Basic length adjustment
     let threshold = baseThreshold;
     
     if (queryLength < 10) {
@@ -96,9 +94,9 @@ export class ThresholdLearner {
   }
 
   /**
-   * Record a successful match (simplified public version)
+   * Record a successful match
    * 
-   * Note: Enterprise version includes cross-query-type learning,
+   * Future enhancement: Could add cross-query-type learning,
    * contextual adjustments, and multi-factor optimization.
    */
   recordSuccess(queryType: QueryType, similarityScore: number): void {
@@ -110,8 +108,7 @@ export class ThresholdLearner {
     stats.successfulMatches++;
     stats.totalQueries++;
     
-    // Simple exponential moving average (public version)
-    // Enterprise version uses advanced ML-based optimization
+    // Exponential moving average
     stats.successfulMatches++;
     stats.totalQueries++;
     

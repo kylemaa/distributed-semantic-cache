@@ -14,7 +14,7 @@ The official TypeScript/JavaScript SDK for Distributed Semantic Cache - a high-p
 - ⚡ **Fluent Builder API** - Chainable configuration for better developer experience
 - ⚛️ **React Hooks** - First-class React integration (optional)
 - 🔄 **Automatic Retry** - Configurable retry with exponential backoff
-- 🔐 **Enterprise Ready** - Multi-tenant support, audit logging, HIPAA/GDPR compliant
+- 🔐 **Production Ready** - Multi-tenant support, audit logging, security-focused
 
 ## Installation
 
@@ -387,9 +387,9 @@ import type {
 } from '@distributed-semantic-cache/sdk';
 ```
 
-## 🏢 Enterprise Features
+## 🚀 Advanced Features
 
-The SDK supports enterprise features when connected to a Distributed Semantic Cache Enterprise server:
+The SDK supports advanced features when connected to a Distributed Semantic Cache server:
 
 - **Multi-Tenancy**: Use `withTenantId()` for tenant isolation
 - **Audit Logging**: All operations are automatically logged
@@ -421,6 +421,4 @@ MIT - See [LICENSE](LICENSE) for details.
 
 ---
 
-**Need Help?** Open an issue on GitHub or contact support@example.com
-
-**Enterprise Support**: Contact sales@example.com for dedicated support and SLAs.
+**Need Help?** Open an issue on GitHub or start a discussion.

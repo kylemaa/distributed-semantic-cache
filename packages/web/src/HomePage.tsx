@@ -467,7 +467,7 @@ function HomePage({ onNavigate }: HomePageProps) {
             <span className="footer-name">Distributed Semantic Cache</span>
           </div>
           <div className="footer-links">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://github.com/kylemaa/distributed-semantic-cache" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="#docs">Documentation</a>
             <a href="#license">License</a>
           </div>

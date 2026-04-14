@@ -1,7 +1,7 @@
 {
-  "name": "@distributed-semantic-cache/sdk",
+  "name": "@distributed-semantic-cache/nextjs",
   "version": "1.0.0",
-  "description": "SDK client for Distributed Semantic Cache - reduce LLM API costs by 50-80% with semantic query matching. Drop-in middleware for OpenAI, Anthropic, and custom LLMs.",
+  "description": "Next.js integration for Distributed Semantic Cache - server actions, route handlers, and React hooks for App Router",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -10,13 +10,16 @@
     ".": {
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
+    },
+    "./server": {
+      "import": "./dist/server.js",
+      "types": "./dist/server.d.ts"
     }
   },
   "files": [
     "dist",
     "README.md",
-    "CHANGELOG.md",
-    "LICENSE"
+    "CHANGELOG.md"
   ],
   "scripts": {
     "build": "tsc",
@@ -26,45 +29,42 @@
   },
   "keywords": [
     "semantic-cache",
-    "caching",
-    "embeddings",
-    "ai",
+    "nextjs",
+    "next",
+    "react",
+    "server-actions",
+    "app-router",
     "llm",
+    "ai",
+    "caching",
     "openai",
-    "anthropic",
-    "claude",
-    "gpt",
-    "similarity-search",
-    "hnsw",
-    "vector-search",
-    "cost-reduction",
-    "middleware"
+    "anthropic"
   ],
   "author": "Kyle Ma",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kylemaa/distributed-semantic-cache-poc.git",
-    "directory": "packages/sdk"
+    "directory": "packages/nextjs"
   },
   "bugs": {
     "url": "https://github.com/kylemaa/distributed-semantic-cache-poc/issues"
   },
-  "homepage": "https://github.com/kylemaa/distributed-semantic-cache-poc/tree/main/packages/sdk#readme",
+  "homepage": "https://github.com/kylemaa/distributed-semantic-cache-poc/tree/main/packages/nextjs#readme",
   "engines": {
     "node": ">=18.0.0"
   },
+  "dependencies": {
+    "@distributed-semantic-cache/sdk": "workspace:*"
+  },
   "devDependencies": {
     "@types/node": "^20.10.0",
+    "@types/react": "^18.2.0",
     "typescript": "^5.3.0",
     "vitest": "^1.6.0"
   },
   "peerDependencies": {
-    "typescript": ">=4.7.0"
-  },
-  "peerDependenciesMeta": {
-    "typescript": {
-      "optional": true
-    }
+    "next": ">=13.4.0",
+    "react": ">=18.0.0"
   }
 }

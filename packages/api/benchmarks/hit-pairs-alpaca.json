@@ -1,0 +1,1730 @@
+[
+  {
+    "cacheQuery": "List the benefits of Amazon Web Services.",
+    "testQuery": "How do I list the benefits of Amazon Web Services",
+    "similarity": 0.876426953191687,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Describe the solution in detail. We established a system for automatically generating data for our machine learning model.",
+    "testQuery": "How do I describe the solution in detail. We established a system for automatically generating data for our machine learning model thanks",
+    "similarity": 0.9048480746498118,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "What is the first rule of storytelling?",
+    "testQuery": "What is the first rule of storytelling for me",
+    "similarity": 0.8938407385353739,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Name something you can do with paper.",
+    "testQuery": "Help me name something you can do with paper?",
+    "similarity": 0.898014827192015,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Compose a sonnet about the beauty of nature.",
+    "testQuery": "Explain compose a sonnet about the beauty of nature please",
+    "similarity": 0.8845096682341671,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Generate a headline for the following article. This article discusses the future of renewable energy sources in the US.",
+    "testQuery": "Please generate a headline for the following article. This article discusses the future of renewable energy sources in the US thanks",
+    "similarity": 0.9503636855860697,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Suggest two marketing strategies for launching a new app.",
+    "testQuery": "Help me suggest two marketing strategies for launching a new app thanks",
+    "similarity": 0.9202776934103288,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Name something you can do with paper.",
+    "testQuery": "What is name something you can do with paper",
+    "similarity": 0.9159181396035255,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Compute the area of a rectangle with length 10cm and width 5cm.",
+    "testQuery": "I need you to compute the area of a rectangle with length 10cm and width 5cm?",
+    "similarity": 0.915420419378145,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Describe a typical workday for a barista.",
+    "testQuery": "Explain describe a typical workday for a barista",
+    "similarity": 0.9553143155001477,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Describe the life and reign of King Charles II.",
+    "testQuery": "Explain describe the life and reign of King Charles II thanks",
+    "similarity": 0.9138098624740302,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Classify the following fruit according to its color. Orange",
+    "testQuery": "Could you classify the following fruit according to its color. Orange for me",
+    "similarity": 0.8702387180405364,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Write a tweet about customer service.",
+    "testQuery": "Explain write a tweet about customer service",
+    "similarity": 0.9212543142063253,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Calculate the area of the triangle. Base: 5cm; Height: 6cm",
+    "testQuery": "Tell me calculate the area of the triangle. Base: 5cm; Height: 6cm?",
+    "similarity": 0.9167478258071912,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Make the following sentence more concise. I have a really bad cold and it is making me feeling really miserable.",
+    "testQuery": "I need you to make the following sentence more concise. I have a really bad cold and it is making me feeling really miserable",
+    "similarity": 0.9446822492909908,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Explain the concept of net neutrality.",
+    "testQuery": "I want to know the concept of net neutrality?",
+    "similarity": 0.8608967404556732,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Generate a list of five elements for a grocery shopping list",
+    "testQuery": "I need you to generate a list of five elements for a grocery shopping list please",
+    "similarity": 0.8412483969716181,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Complete the following analogy: Loud is to quiet as day is to",
+    "testQuery": "What is complete the following analogy: Loud is to quiet as day is to",
+    "similarity": 0.971080237843201,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Create a sentence that ends with an ellipsis.",
+    "testQuery": "Please create a sentence that ends with an ellipsis?",
+    "similarity": 0.9276386012466739,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Write a definition of \"photoshop\".",
+    "testQuery": "Tell me write a definition of \"photoshop\"",
+    "similarity": 0.9479078246056964,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Compare and contrast the Cuban Missile Crisis and the Vietnam War.",
+    "testQuery": "How do I compare and contrast the Cuban Missile Crisis and the Vietnam War please",
+    "similarity": 0.9010397902010411,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Compose a poem about a single color.",
+    "testQuery": "Please compose a poem about a single color for me",
+    "similarity": 0.8781492593286664,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Find the solution to the quadratic equation. 3x² + 7x - 4 = 0",
+    "testQuery": "What is find the solution to the quadratic equation. 3x² + 7x - 4 = 0",
+    "similarity": 0.9426502084222301,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "What is the force on a 1 kg mass due to the gravitational force?",
+    "testQuery": "How do I the force on a 1 kg mass due to the gravitational force?",
+    "similarity": 0.9345638763711416,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Explain how a random forest algorithm achieves higher accuracy than individual decision trees.",
+    "testQuery": "I need you to how a random forest algorithm achieves higher accuracy than individual decision trees?",
+    "similarity": 0.9299243080430054,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Choose an appropriate introduction for the following news article. The latest report from the Environmental Protection Agency reveals that the emissions of greenhouse gasses in the state have risen by 5% from last year.",
+    "testQuery": "Can you choose an appropriate introduction for the following news article. The latest report from the Environmental Protection Agency reveals that the emissions of greenhouse gasses in the state have risen by 5% from last year",
+    "similarity": 0.9570449313667576,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "What is the process of photosynthesis and why is it important?",
+    "testQuery": "Help me the process of photosynthesis and why is it important",
+    "similarity": 0.879314679847917,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Rewrite the following sentence using active voice. The news report was read by the captain.",
+    "testQuery": "What is rewrite the following sentence using active voice. The news report was read by the captain",
+    "similarity": 0.9609594509700478,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Classify the given article as either positive or negative sentiment. The new car is a disappointment. The breaks are terrible and cost way too much for the features offered.",
+    "testQuery": "Could you classify the given article as either positive or negative sentiment. The new car is a disappointment. The breaks are terrible and cost way too much for the features offered please",
+    "similarity": 0.959632691388424,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Write a review for the following movie. The Godfather",
+    "testQuery": "I want to know write a review for the following movie. The Godfather for me",
+    "similarity": 0.8892911510539848,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "What's the difference between a virus and a worm?",
+    "testQuery": "Can you what's the difference between a virus and a worm for me",
+    "similarity": 0.8625970787143034,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Analyze the following poem and explain its meaning. 'My love is like a red, red rose'",
+    "testQuery": "Explain analyze the following poem and explain its meaning. 'My love is like a red, red rose' please",
+    "similarity": 0.9642798628406197,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Given two strings, check whether one string is a rotation of another? s1 = ‘waterbottle’\ns2 = ‘erbottlewat’",
+    "testQuery": "I want to know given two strings, check whether one string is a rotation of another? s1 = ‘waterbottle’\ns2 = ‘erbottlewat’",
+    "similarity": 0.9775935103939565,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Classify the item as either animal or vegetable. Banana",
+    "testQuery": "Explain classify the item as either animal or vegetable. Banana thanks",
+    "similarity": 0.8896458187776292,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Reword the following sentence to the past tense. She is writing a novel inspired by her grandfather.",
+    "testQuery": "Explain reword the following sentence to the past tense. She is writing a novel inspired by her grandfather?",
+    "similarity": 0.9299900343332892,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Describe the differences between a substantive and procedural law.",
+    "testQuery": "Explain describe the differences between a substantive and procedural law?",
+    "similarity": 0.9792415110984221,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Generate a sentence that contains the given words. magic, castle, king",
+    "testQuery": "I need you to generate a sentence that contains the given words. magic, castle, king?",
+    "similarity": 0.8844685583155939,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Propose an idea for a self-driving car.",
+    "testQuery": "Could you propose an idea for a self-driving car thanks",
+    "similarity": 0.8648326328797679,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "What type of plant is a skunk cabbage?",
+    "testQuery": "What is what type of plant is a skunk cabbage thanks",
+    "similarity": 0.8864227056310031,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Find the sum of the numbers 6 and 12. 6 + 12",
+    "testQuery": "I need you to find the sum of the numbers 6 and 12. 6 + 12?",
+    "similarity": 0.8870828251681672,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Rewrite the given sentence using a different but similar word. She partook in the event.",
+    "testQuery": "I want to know rewrite the given sentence using a different but similar word. She partook in the event?",
+    "similarity": 0.943248321096715,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Find the average of these three numbers. 2, 5, 10",
+    "testQuery": "Can you find the average of these three numbers. 2, 5, 10",
+    "similarity": 0.9236679297814562,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Transform the following sentence using the past perfect tense: Yesterday they opened the door.",
+    "testQuery": "I want to know transform the following sentence using the past perfect tense: Yesterday they opened the door",
+    "similarity": 0.9379846416520645,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Pick out the correct noun from the following list. river, mountain, book",
+    "testQuery": "Can you pick out the correct noun from the following list. river, mountain, book",
+    "similarity": 0.9639802247931002,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Describe the life and reign of King Charles II.",
+    "testQuery": "How do I describe the life and reign of King Charles II",
+    "similarity": 0.8852519123573882,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "List five factors that lead to global warming.",
+    "testQuery": "Help me list five factors that lead to global warming please",
+    "similarity": 0.8724664557570885,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Analyze the following sentence and find the direct object. She wrote a book.",
+    "testQuery": "Tell me analyze the following sentence and find the direct object. She wrote a book for me",
+    "similarity": 0.8691837127244536,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Generate a sound effect for a car passing by.",
+    "testQuery": "Help me generate a sound effect for a car passing by for me",
+    "similarity": 0.9119064053614764,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Correct any spelling or grammar mistakes in the given sentence. She jogged excersies around the lake.",
+    "testQuery": "Could you correct any spelling or grammar mistakes in the given sentence. She jogged excersies around the lake?",
+    "similarity": 0.9321942551978999,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "What is the most commonly shared type of content on social media?",
+    "testQuery": "Explain the most commonly shared type of content on social media please",
+    "similarity": 0.8794751431390432,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Summarize the argument in the text. In the book \"Crime and Punishment\" by Fyodor Dostoevsky, the main character, Raskolnikov, commits a murder in hope of revealing a higher purpose.",
+    "testQuery": "Could you summarize the argument in the text. In the book \"Crime and Punishment\" by Fyodor Dostoevsky, the main character, Raskolnikov, commits a murder in hope of revealing a higher purpose please",
+    "similarity": 0.9504822065430206,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Construct a phrase using the given words Pandemic, challenge, action",
+    "testQuery": "I want to know construct a phrase using the given words Pandemic, challenge, action",
+    "similarity": 0.9477914323108723,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Summarize the following article https://www.nytimes.com/2010/07/05/business/global/05phone.html",
+    "testQuery": "How do I summarize the following article https://www.nytimes.com/2010/07/05/business/global/05phone.html for me",
+    "similarity": 0.8936729413635854,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Compare and contrast two types of computer networks.",
+    "testQuery": "I need you to compare and contrast two types of computer networks",
+    "similarity": 0.9007298103485435,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Generate a topic sentence to introduce the following text. Amidst increasing violence in the region, many civilians are fleeing their homes in search of safety.",
+    "testQuery": "Can you generate a topic sentence to introduce the following text. Amidst increasing violence in the region, many civilians are fleeing their homes in search of safety please",
+    "similarity": 0.9445820059757173,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Create a job description for the following role Data Analytics Consultant",
+    "testQuery": "Please create a job description for the following role Data Analytics Consultant?",
+    "similarity": 0.9320991489889537,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Compose a sonnet about the beauty of nature.",
+    "testQuery": "What is compose a sonnet about the beauty of nature for me",
+    "similarity": 0.8913224392756982,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Calculate the average age of the following five people. John, 32 \nAnne, 25 \nHugh, 27\nPeter, 40 \nRebecca, 28",
+    "testQuery": "Help me calculate the average age of the following five people. John, 32 \nAnne, 25 \nHugh, 27\nPeter, 40 \nRebecca, 28",
+    "similarity": 0.9692763676760053,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Generate three different ways to greet the user.",
+    "testQuery": "Help me generate three different ways to greet the user?",
+    "similarity": 0.9015026890391066,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Classify the following data with three labels. fjsklfjdsklfjsklfjsklfjs",
+    "testQuery": "How do I classify the following data with three labels. fjsklfjdsklfjsklfjsklfjs thanks",
+    "similarity": 0.8971231508701786,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "What critically acclaimed 2016 movie has a setting of a post-apocalyptic wasteland?",
+    "testQuery": "Tell me what critically acclaimed 2016 movie has a setting of a post-apocalyptic wasteland thanks",
+    "similarity": 0.8972633443109722,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Rewrite the sentence into more descriptive form:\nThe food was delicious.",
+    "testQuery": "Help me rewrite the sentence into more descriptive form:\nThe food was delicious please",
+    "similarity": 0.8828691667848071,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Change this sentence into the future tense. She walks to school.",
+    "testQuery": "Explain change this sentence into the future tense. She walks to school please",
+    "similarity": 0.9009856610190454,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Generate a sentence using the following words in the correct order. house on fire",
+    "testQuery": "Could you generate a sentence using the following words in the correct order. house on fire for me",
+    "similarity": 0.830295610385628,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Describe a time when you had to make a difficult decision.",
+    "testQuery": "Explain describe a time when you had to make a difficult decision?",
+    "similarity": 0.9609391489046781,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Provide the answer to the equation. 7 + 6",
+    "testQuery": "Please provide the answer to the equation. 7 + 6?",
+    "similarity": 0.9152468122164785,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Replace the underlined words with appropriate synonyms. The robbers snitched on their partners.",
+    "testQuery": "Tell me replace the underlined words with appropriate synonyms. The robbers snitched on their partners please",
+    "similarity": 0.9486489779967423,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Pick out the correct noun from the following list. river, mountain, book",
+    "testQuery": "Explain pick out the correct noun from the following list. river, mountain, book",
+    "similarity": 0.9674830459187943,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Gather some recent data related to the increasing rates of unemployment.",
+    "testQuery": "Can you gather some recent data related to the increasing rates of unemployment please",
+    "similarity": 0.9105724120594755,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Describe a scenario in which blockchain technology could be successfully applied.",
+    "testQuery": "Tell me describe a scenario in which blockchain technology could be successfully applied thanks",
+    "similarity": 0.9082905881111144,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Rewrite the following sentence for clarity. What makes this program different from the others?",
+    "testQuery": "Explain rewrite the following sentence for clarity. What makes this program different from the others for me",
+    "similarity": 0.8870553339183345,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Generate a summary of the given article. Between 1989 and 2019, the size of the U.S. economy, measured in terms of the gross domestic product (GDP), more than doubled. The growth was faster than in the prior two decades, driven in part by the dramatic expansion of the information technology sector in the 1990s and early 2000s, gains in worker productivity and strong consumer demand, and government investments in research and development.",
+    "testQuery": "Can you generate a summary of the given article. Between 1989 and 2019, the size of the U.S. economy, measured in terms of the gross domestic product (GDP), more than doubled. The growth was faster than in the prior two decades, driven in part by the dramatic expansion of the information technology sector in the 1990s and early 2000s, gains in worker productivity and strong consumer demand, and government investments in research and development thanks",
+    "similarity": 0.9702362972659426,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Outline an itinerary for a three day trip. Location: London, England",
+    "testQuery": "I want to know outline an itinerary for a three day trip. Location: London, England",
+    "similarity": 0.934690141398931,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Suggest a suitable card game for a birthday party with 10 year old kids.",
+    "testQuery": "Can you suggest a suitable card game for a birthday party with 10 year old kids?",
+    "similarity": 0.9776503347305613,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Develop a web-based application that does the following Sorts images according to category",
+    "testQuery": "Explain develop a web-based application that does the following Sorts images according to category?",
+    "similarity": 0.9373690325226379,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Explain the term \"AI explainability\".",
+    "testQuery": "Can you the term \"AI explainability\" thanks",
+    "similarity": 0.873107073813599,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Come up with a creative tagline for a beauty product.",
+    "testQuery": "Please come up with a creative tagline for a beauty product?",
+    "similarity": 0.9599602823178602,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "List 5 items of personal protective equipment.",
+    "testQuery": "Help me list 5 items of personal protective equipment thanks",
+    "similarity": 0.8688170518297406,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Generate a random password of 6 characters in length using only capital letters and numbers.",
+    "testQuery": "I want to know generate a random password of 6 characters in length using only capital letters and numbers thanks",
+    "similarity": 0.8911478048168824,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "What geometric shape has 5 sides and 5 angles?",
+    "testQuery": "I need you to what geometric shape has 5 sides and 5 angles thanks",
+    "similarity": 0.866973166315079,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Describe the impact of the coronavirus on the economy.",
+    "testQuery": "How do I describe the impact of the coronavirus on the economy?",
+    "similarity": 0.9051614767589853,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Variable x is defined as “4x + 2y = 10”. Find the value of x.",
+    "testQuery": "Explain variable x is defined as “4x + 2y = 10”. Find the value of x for me",
+    "similarity": 0.8860897779423975,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Give me a detailed overview of the framework of a web service.",
+    "testQuery": "Can you give me a detailed overview of the framework of a web service please",
+    "similarity": 0.9443847516684372,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Write a short review for the novel \"The Catcher in the Rye\".",
+    "testQuery": "Write a summary of the book \"The Catcher in the Rye\".",
+    "similarity": 0.8444738422908201,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Create a job description for the following role Data Analytics Consultant",
+    "testQuery": "Tell me create a job description for the following role Data Analytics Consultant for me",
+    "similarity": 0.9350750618607854,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Compare and contrast the Cuban Missile Crisis and the Vietnam War.",
+    "testQuery": "Explain compare and contrast the Cuban Missile Crisis and the Vietnam War",
+    "similarity": 0.9460448325072103,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Find the sum of the numbers 6 and 12. 6 + 12",
+    "testQuery": "Please find the sum of the numbers 6 and 12. 6 + 12 thanks",
+    "similarity": 0.8482239402927474,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Find the synonyms for the words below. Determined",
+    "testQuery": "Please find the synonyms for the words below. Determined thanks",
+    "similarity": 0.8803844711953109,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Create a list of items for a picnic.",
+    "testQuery": "Help me create a list of items for a picnic?",
+    "similarity": 0.8869158958164743,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Classify the given article as either positive or negative sentiment. The new car is a disappointment. The breaks are terrible and cost way too much for the features offered.",
+    "testQuery": "Help me classify the given article as either positive or negative sentiment. The new car is a disappointment. The breaks are terrible and cost way too much for the features offered",
+    "similarity": 0.9688227923417209,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Variable x is defined as “4x + 2y = 10”. Find the value of x.",
+    "testQuery": "Could you variable x is defined as “4x + 2y = 10”. Find the value of x please",
+    "similarity": 0.8674154449328596,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Categorize the following text into one of the two sentiment classes: positive or negative. I didn't like the product very much because it was too slow and not user friendly.",
+    "testQuery": "What is categorize the following text into one of the two sentiment classes: positive or negative. I didn't like the product very much because it was too slow and not user friendly please",
+    "similarity": 0.9604115558305079,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Assign this task to the design team. Design a communication tool for internal team members.",
+    "testQuery": "Tell me assign this task to the design team. Design a communication tool for internal team members?",
+    "similarity": 0.9497455351479729,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Identify the conjugation of the verb: I will have helped",
+    "testQuery": "What is identify the conjugation of the verb: I will have helped?",
+    "similarity": 0.9444712336634485,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Classify the following statement as true or false. The Supreme Court is the highest court in the US.",
+    "testQuery": "Help me classify the following statement as true or false. The Supreme Court is the highest court in the US please",
+    "similarity": 0.8903277242828254,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Compile a list of 5 US states located in the Mid West.",
+    "testQuery": "Please compile a list of 5 US states located in the Mid West?",
+    "similarity": 0.9185943995768628,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Reverse engineer this code to create a new version def factorialize(num):\n  factorial = 1\n  for i in range(1, num):\n    factorial *= i\n  \n  return factorial",
+    "testQuery": "I need you to reverse engineer this code to create a new version def factorialize(num):\n  factorial = 1\n  for i in range(1, num):\n    factorial *= i\n  \n  return factorial?",
+    "similarity": 0.8944971111881033,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Arrange the words in the given sentence to form a grammatically correct sentence. quickly the brown fox jumped",
+    "testQuery": "I need you to arrange the words in the given sentence to form a grammatically correct sentence. quickly the brown fox jumped thanks",
+    "similarity": 0.884667316774285,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Give me a detailed overview of the framework of a web service.",
+    "testQuery": "What is give me a detailed overview of the framework of a web service please",
+    "similarity": 0.9305921545261382,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Provide five adjectives that describe a particular animal. Lion",
+    "testQuery": "How do I provide five adjectives that describe a particular animal. Lion thanks",
+    "similarity": 0.8638586915655108,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Identify the incorrect word and suggest a better version. The waitress served a humonguous burger.",
+    "testQuery": "Explain identify the incorrect word and suggest a better version. The waitress served a humonguous burger for me",
+    "similarity": 0.9481550239156679,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "List five characteristics of good communication.",
+    "testQuery": "Please list five characteristics of good communication",
+    "similarity": 0.9450455327132935,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Write a 250 word essay about Coral Reef Conservation",
+    "testQuery": "Please write a 250 word essay about Coral Reef Conservation for me",
+    "similarity": 0.9335027563915965,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Name five characteristics of a typical resume.",
+    "testQuery": "Could you name five characteristics of a typical resume for me",
+    "similarity": 0.8681609615895548,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Write a Satire article about the coronavirus pandemic",
+    "testQuery": "I need you to write a Satire article about the coronavirus pandemic?",
+    "similarity": 0.8995305289034686,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Create a dialog between two people who are discussing a scientific phenomenon Hydropower",
+    "testQuery": "I need you to create a dialog between two people who are discussing a scientific phenomenon Hydropower",
+    "similarity": 0.9413408310807121,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Aim to reduce the following sentence without changing its meaning When he came in, he woke everyone up",
+    "testQuery": "Please aim to reduce the following sentence without changing its meaning When he came in, he woke everyone up for me",
+    "similarity": 0.9545392200146328,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "During the last member meeting, create a list of 5 ideas to improve the club.",
+    "testQuery": "What is during the last member meeting, create a list of 5 ideas to improve the club",
+    "similarity": 0.9646239110796471,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Write a Python function that takes two integers and returns their least common multiple.",
+    "testQuery": "Could you write a Python function that takes two integers and returns their least common multiple please",
+    "similarity": 0.9176403753511638,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Create a tweet with the following hashtag. #SharingIsCaring",
+    "testQuery": "Help me create a tweet with the following hashtag. #SharingIsCaring thanks",
+    "similarity": 0.9062220173687311,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Compose a haiku about cats",
+    "testQuery": "Could you compose a haiku about cats",
+    "similarity": 0.9191372282513998,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "What type of fruit would be a good addition to a fruit salad?",
+    "testQuery": "How do I what type of fruit would be a good addition to a fruit salad thanks",
+    "similarity": 0.9111416802189101,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Create a timeline describing the history of the internet",
+    "testQuery": "Explain create a timeline describing the history of the internet",
+    "similarity": 0.9293276036720268,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Rewrite the following equation in expanded form. (x + 3)(2x - 5)",
+    "testQuery": "I want to know rewrite the following equation in expanded form. (x + 3)(2x - 5) for me",
+    "similarity": 0.8988685130023231,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Give an example of a metaphor that uses the following object Stars",
+    "testQuery": "Explain give an example of a metaphor that uses the following object Stars?",
+    "similarity": 0.9318139732088533,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Calculate the average age of the following five people. John, 32 \nAnne, 25 \nHugh, 27\nPeter, 40 \nRebecca, 28",
+    "testQuery": "Please calculate the average age of the following five people. John, 32 \nAnne, 25 \nHugh, 27\nPeter, 40 \nRebecca, 28?",
+    "similarity": 0.9554282406241655,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Compose a simple melody for the following lyrics. \"I can't find the words to say, but I'm feeling OK\"",
+    "testQuery": "Explain compose a simple melody for the following lyrics. \"I can't find the words to say, but I'm feeling OK\"",
+    "similarity": 0.9602028334444245,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Imagine you are speaking with a customer who is unsatisfied with the product they bought from you. Construct a response that diffuses the situation.",
+    "testQuery": "Help me imagine you are speaking with a customer who is unsatisfied with the product they bought from you. Construct a response that diffuses the situation for me",
+    "similarity": 0.9224136951704014,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Identify the continents with the most carnivores.",
+    "testQuery": "Can you identify the continents with the most carnivores?",
+    "similarity": 0.9517839653351051,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "What is the process of photosynthesis and why is it important?",
+    "testQuery": "Help me the process of photosynthesis and why is it important please",
+    "similarity": 0.8261829883514432,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "What type of punctuation should be used at the end of the following sentence? Let's look at the bird",
+    "testQuery": "Can you what type of punctuation should be used at the end of the following sentence? Let's look at the bird",
+    "similarity": 0.9783293099308435,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Rewrite the sentence in a different tense. He asked her to join him for lunch.",
+    "testQuery": "I want to know rewrite the sentence in a different tense. He asked her to join him for lunch thanks",
+    "similarity": 0.8991572534876763,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Convert from celsius to fahrenheit. Temperature in Celsius: 15",
+    "testQuery": "Tell me convert from celsius to fahrenheit. Temperature in Celsius: 15?",
+    "similarity": 0.8697440199128659,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Design a logo for the given company. Example Company",
+    "testQuery": "I want to know design a logo for the given company. Example Company please",
+    "similarity": 0.8690297727954721,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Summarize the following article https://www.nytimes.com/2010/07/05/business/global/05phone.html",
+    "testQuery": "I want to know summarize the following article https://www.nytimes.com/2010/07/05/business/global/05phone.html please",
+    "similarity": 0.8951295620126329,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "What is the force on a 1 kg mass due to the gravitational force?",
+    "testQuery": "What is the force on a 1 kg mass due to the gravitational force",
+    "similarity": 0.9702679173164095,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Generate a review for a recent movie Movie name: The Martian",
+    "testQuery": "Explain generate a review for a recent movie Movie name: The Martian?",
+    "similarity": 0.9014962172487012,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "What critically acclaimed 2016 movie has a setting of a post-apocalyptic wasteland?",
+    "testQuery": "Please what critically acclaimed 2016 movie has a setting of a post-apocalyptic wasteland?",
+    "similarity": 0.9674240268128463,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "What is the purpose of Financial Accounting?",
+    "testQuery": "Explain the purpose of Financial Accounting?",
+    "similarity": 0.9598052269668356,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Supply a phrase to complete this proverb: \"It's better to be safe than ____.\"",
+    "testQuery": "Help me supply a phrase to complete this proverb: \"It's better to be safe than ____.\"",
+    "similarity": 0.9639139135639814,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Discover which word in the sentence carries the most weight. She ordered Chinese food for dinner.",
+    "testQuery": "Tell me discover which word in the sentence carries the most weight. She ordered Chinese food for dinner please",
+    "similarity": 0.9165987470813366,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Draft a letter of appreciation for the given recipient. Mr. John Smith",
+    "testQuery": "Can you draft a letter of appreciation for the given recipient. Mr. John Smith please",
+    "similarity": 0.9081861499496741,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Write a blog post about how AI is transforming the healthcare industry.",
+    "testQuery": "Can you write a blog post about how AI is transforming the healthcare industry?",
+    "similarity": 0.9437481215191946,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Rewrite this sentence using the third person point of view. I went to the store.",
+    "testQuery": "Can you rewrite this sentence using the third person point of view. I went to the store thanks",
+    "similarity": 0.854398341633534,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Explain the term \"AI explainability\".",
+    "testQuery": "Can you the term \"AI explainability\" thanks",
+    "similarity": 0.8731969049331361,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Create a pop quiz about clouds.",
+    "testQuery": "How do I create a pop quiz about clouds?",
+    "similarity": 0.9585658812167239,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Add the article \"the\" to the following sentence. Person who is talking",
+    "testQuery": "I want to know add the article \"the\" to the following sentence. Person who is talking",
+    "similarity": 0.9402415541102753,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Create a response for a customer's email about a refund issue. Dear [Company],\n\nI recently purchased a product from your store and I'm disappointed with the quality. I would like to request a refund.",
+    "testQuery": "I need you to create a response for a customer's email about a refund issue. Dear [Company],\n\nI recently purchased a product from your store and I'm disappointed with the quality. I would like to request a refund for me",
+    "similarity": 0.9610437348326194,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Suggest a good restaurant. Los Angeles, CA",
+    "testQuery": "Could you suggest a good restaurant. Los Angeles, CA for me",
+    "similarity": 0.9034507826477125,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Create a questions that can be answered using the following sentence. \"It was a beautiful day\"",
+    "testQuery": "Explain create a questions that can be answered using the following sentence. \"It was a beautiful day\" please",
+    "similarity": 0.9244240758389044,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "What type of fruit would be a good addition to a fruit salad?",
+    "testQuery": "Please what type of fruit would be a good addition to a fruit salad for me",
+    "similarity": 0.8788226207795975,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Rewrite the given paragraph in a shorter, easier to understand form. Although it is generally accepted that the internet has allowed us to connect with people all over the world, there are still those people who are not familiar with its basic functions, who don’t understand why it has become so commonplace, or what its true capabilities are.",
+    "testQuery": "What is rewrite the given paragraph in a shorter, easier to understand form. Although it is generally accepted that the internet has allowed us to connect with people all over the world, there are still those people who are not familiar with its basic functions, who don’t understand why it has become so commonplace, or what its true capabilities are thanks",
+    "similarity": 0.9546067099041694,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Brainstorm possible solutions to reduce water pollution.",
+    "testQuery": "Can you brainstorm possible solutions to reduce water pollution?",
+    "similarity": 0.919730817038009,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Compose a poem about a single color.",
+    "testQuery": "I want to know compose a poem about a single color for me",
+    "similarity": 0.8650752797966035,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Provide me a list of diseases that can be caused by smoking.",
+    "testQuery": "Can you provide me a list of diseases that can be caused by smoking",
+    "similarity": 0.947129398706345,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Generate an example that illustrates the concept of \"artificial intelligence\".",
+    "testQuery": "I want to know generate an example that illustrates the concept of \"artificial intelligence\" thanks",
+    "similarity": 0.8907114454873519,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Discover which word in the sentence carries the most weight. She ordered Chinese food for dinner.",
+    "testQuery": "Can you discover which word in the sentence carries the most weight. She ordered Chinese food for dinner thanks",
+    "similarity": 0.9171644274462157,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "What is a trade deficit?",
+    "testQuery": "What is a trade deficit",
+    "similarity": 0.9412007647828526,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Explain the concept of a GPT language model.",
+    "testQuery": "I need you to the concept of a GPT language model?",
+    "similarity": 0.8542760301193668,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Assign this task to the design team. Design a communication tool for internal team members.",
+    "testQuery": "Help me assign this task to the design team. Design a communication tool for internal team members thanks",
+    "similarity": 0.9263353331420021,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Explain why a given topic is important. Environmental protection",
+    "testQuery": "What is why a given topic is important. Environmental protection for me",
+    "similarity": 0.8796198946457372,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Come up with a social media campaign slogan.",
+    "testQuery": "How do I come up with a social media campaign slogan?",
+    "similarity": 0.9135382640609911,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Compile a list of five items that would help someone go camping.",
+    "testQuery": "Please compile a list of five items that would help someone go camping",
+    "similarity": 0.9441271261664739,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Identify the conjugation of the verb: I will have helped",
+    "testQuery": "How do I identify the conjugation of the verb: I will have helped",
+    "similarity": 0.9684861962190406,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Name all the elements in the periodic table with symbol C.",
+    "testQuery": "How do I name all the elements in the periodic table with symbol C",
+    "similarity": 0.8812623561437714,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Find the lowest common multiple of two numbers. 36 and 87",
+    "testQuery": "What is find the lowest common multiple of two numbers. 36 and 87 thanks",
+    "similarity": 0.924690269185402,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Extract the facts from the paragraph. Online education continues to become more popular for schools and students alike. Its advantages are generally lower costs, less commitment and the ability to study at a time, place and pace that suits the student.",
+    "testQuery": "Explain extract the facts from the paragraph. Online education continues to become more popular for schools and students alike. Its advantages are generally lower costs, less commitment and the ability to study at a time, place and pace that suits the student thanks",
+    "similarity": 0.9329409343255275,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Develop a web-based application that does the following Sorts images according to category",
+    "testQuery": "Can you develop a web-based application that does the following Sorts images according to category thanks",
+    "similarity": 0.9336975929838003,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Correct the grammatical errors in the sentence. She come to the store for supplies.",
+    "testQuery": "How do I correct the grammatical errors in the sentence. She come to the store for supplies",
+    "similarity": 0.9554274345545433,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Rewrite the following sentence omitting the pronouns. She told us she was busy.",
+    "testQuery": "Could you rewrite the following sentence omitting the pronouns. She told us she was busy please",
+    "similarity": 0.9102686656502927,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Suggest topics for an informal discussion about the given country. China",
+    "testQuery": "I need you to suggest topics for an informal discussion about the given country. China please",
+    "similarity": 0.9318791763419538,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Derive the mathematical equation for a straight line.",
+    "testQuery": "Please derive the mathematical equation for a straight line thanks",
+    "similarity": 0.8364566026485546,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Create a function to check whether two strings are anagrams.",
+    "testQuery": "Please create a function to check whether two strings are anagrams for me",
+    "similarity": 0.9020261484990457,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Generate a question that could follow the response below. I saw a movie last week.",
+    "testQuery": "Help me generate a question that could follow the response below. I saw a movie last week please",
+    "similarity": 0.8982091319354938,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Select the best prediction from the sentences below given the input \"My vacation is in ________.\" My vacation is in _______.",
+    "testQuery": "I need you to select the best prediction from the sentences below given the input \"My vacation is in ________.\" My vacation is in _______",
+    "similarity": 0.9586375016356142,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "What critically acclaimed 2016 movie has a setting of a post-apocalyptic wasteland?",
+    "testQuery": "Explain what critically acclaimed 2016 movie has a setting of a post-apocalyptic wasteland",
+    "similarity": 0.9359534073539888,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Write a short paragraph about the given topic. The importance of using renewable energy",
+    "testQuery": "What is write a short paragraph about the given topic. The importance of using renewable energy",
+    "similarity": 0.9731588609675621,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "What type of plant is a skunk cabbage?",
+    "testQuery": "Please what type of plant is a skunk cabbage please",
+    "similarity": 0.900453566405652,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Rewrite the following sentence in a more concise way. Although he had been studying for several hours he had not finished the task.",
+    "testQuery": "I need you to rewrite the following sentence in a more concise way. Although he had been studying for several hours he had not finished the task please",
+    "similarity": 0.89032098716019,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Classify the given input as either a poem, story, or song. Once upon a midnight dreary, while I pondered, weak and weary.",
+    "testQuery": "Could you classify the given input as either a poem, story, or song. Once upon a midnight dreary, while I pondered, weak and weary thanks",
+    "similarity": 0.9368420939149461,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Explain the difference between a personal computer and a server",
+    "testQuery": "Could you the difference between a personal computer and a server for me",
+    "similarity": 0.8185508068302406,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "What does DNA stand for?",
+    "testQuery": "Please what does DNA stand for for me",
+    "similarity": 0.8501216925532679,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Summarize the article below in 5 sentences. The COVID-19 crisis has brought many changes to our everyday lives, including the way we work and interact. Working from home has become the norm for many people, but it has also brought its own unique challenges. It can be difficult to stay productive and motivated while working remotely, especially if you’re feeling burned out or isolated. So how do you make the most of it? Here are some tips to help you stay productive while working from home.",
+    "testQuery": "Please summarize the article below in 5 sentences. The COVID-19 crisis has brought many changes to our everyday lives, including the way we work and interact. Working from home has become the norm for many people, but it has also brought its own unique challenges. It can be difficult to stay productive and motivated while working remotely, especially if you’re feeling burned out or isolated. So how do you make the most of it? Here are some tips to help you stay productive while working from home thanks",
+    "similarity": 0.9847148667531955,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Calculate the amount of money in a bank account with an initial $100 deposit and an interest rate of 6%, compounded annually",
+    "testQuery": "Please calculate the amount of money in a bank account with an initial $100 deposit and an interest rate of 6%, compounded annually for me",
+    "similarity": 0.9245509907764419,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Compose a haiku with the provided subject. Spring",
+    "testQuery": "I want to know compose a haiku with the provided subject. Spring",
+    "similarity": 0.9228428394812057,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Provide five adjectives that describe a particular animal. Lion",
+    "testQuery": "Could you provide five adjectives that describe a particular animal. Lion please",
+    "similarity": 0.9034043664341677,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Give an example of a metaphor that uses the following object Stars",
+    "testQuery": "I want to know give an example of a metaphor that uses the following object Stars thanks",
+    "similarity": 0.9088760786299328,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Generate a list of five elements for a grocery shopping list",
+    "testQuery": "I need you to generate a list of five elements for a grocery shopping list thanks",
+    "similarity": 0.8274305126006091,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Transcribe the recording into text. Recording about the history of Waterloo",
+    "testQuery": "Explain transcribe the recording into text. Recording about the history of Waterloo",
+    "similarity": 0.97459301477898,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Find the main idea of the following passage Climate change is an increasingly contentious global issue. It is already having a drastic effect on the environment and human lives. We are already seeing an increase in extreme weather events and rising sea levels, both of which have a major impact on the planet.",
+    "testQuery": "Tell me find the main idea of the following passage Climate change is an increasingly contentious global issue. It is already having a drastic effect on the environment and human lives. We are already seeing an increase in extreme weather events and rising sea levels, both of which have a major impact on the planet thanks",
+    "similarity": 0.9611976959723135,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Write a 250 word essay about Coral Reef Conservation",
+    "testQuery": "I need you to write a 250 word essay about Coral Reef Conservation?",
+    "similarity": 0.9212861613274713,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Write a function to calculate the factorial of a given number.",
+    "testQuery": "Tell me write a function to calculate the factorial of a given number please",
+    "similarity": 0.9252339049553201,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Describe the importance of renewable energy",
+    "testQuery": "I want to know describe the importance of renewable energy thanks",
+    "similarity": 0.832344906479223,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Given the following input, classify the verb as transitive or intransitive. improve",
+    "testQuery": "Could you given the following input, classify the verb as transitive or intransitive. improve for me",
+    "similarity": 0.8980639108684454,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Assign this task to the design team. Design a communication tool for internal team members.",
+    "testQuery": "Could you assign this task to the design team. Design a communication tool for internal team members thanks",
+    "similarity": 0.9132966253934323,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Identify the lines of longitude that divides North and South America.",
+    "testQuery": "How do I identify the lines of longitude that divides North and South America please",
+    "similarity": 0.8955606919494431,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Replace the single quote (') to double quote (\") in the given sentence. In the U.S., KIPP is a 'public-private partnership'.",
+    "testQuery": "Tell me replace the single quote (') to double quote (\") in the given sentence. In the U.S., KIPP is a 'public-private partnership' please",
+    "similarity": 0.9474756408337539,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "What type of fruit would be a good addition to a fruit salad?",
+    "testQuery": "I want to know what type of fruit would be a good addition to a fruit salad for me",
+    "similarity": 0.8637201868494269,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Identify the type of the following musical chord. D minor",
+    "testQuery": "I want to know identify the type of the following musical chord. D minor please",
+    "similarity": 0.9156828950323469,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Indicate how the following characters in the novel reflect the theme of \"the corrupting influence of power\". Gregoire in Zola's Germinal",
+    "testQuery": "Tell me indicate how the following characters in the novel reflect the theme of \"the corrupting influence of power\". Gregoire in Zola's Germinal?",
+    "similarity": 0.9619011981230394,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Compose a haiku with the provided subject. Spring",
+    "testQuery": "Please compose a haiku with the provided subject. Spring please",
+    "similarity": 0.9169281889614193,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Rewrite the following sentence for clarity. What makes this program different from the others?",
+    "testQuery": "Explain rewrite the following sentence for clarity. What makes this program different from the others thanks",
+    "similarity": 0.9059104685171178,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Reword the following sentence to the past tense. She is writing a novel inspired by her grandfather.",
+    "testQuery": "How do I reword the following sentence to the past tense. She is writing a novel inspired by her grandfather for me",
+    "similarity": 0.9063979624510456,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Create a dialog between two people who are discussing a scientific phenomenon Hydropower",
+    "testQuery": "Help me create a dialog between two people who are discussing a scientific phenomenon Hydropower for me",
+    "similarity": 0.9349376581539515,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Given a sequence of numbers, calculate the average 1, 2, 3, 4, 5",
+    "testQuery": "I want to know given a sequence of numbers, calculate the average 1, 2, 3, 4, 5?",
+    "similarity": 0.8938511231482299,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "What is the difference between machine learning and deep learning?",
+    "testQuery": "Describe the differences between machine and deep learning",
+    "similarity": 0.8597000189962862,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Create a title for the following description. A story about a journey of self-discovery by a young girl.",
+    "testQuery": "How do I create a title for the following description. A story about a journey of self-discovery by a young girl for me",
+    "similarity": 0.9265960869067696,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Generate a topic sentence to introduce the following text. Amidst increasing violence in the region, many civilians are fleeing their homes in search of safety.",
+    "testQuery": "Can you generate a topic sentence to introduce the following text. Amidst increasing violence in the region, many civilians are fleeing their homes in search of safety for me",
+    "similarity": 0.9388566440843703,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Describe the function of a computer motherboard",
+    "testQuery": "Can you describe the function of a computer motherboard for me",
+    "similarity": 0.8540794874069957,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Rewrite the following sentence omitting the pronouns. She told us she was busy.",
+    "testQuery": "Help me rewrite the following sentence omitting the pronouns. She told us she was busy?",
+    "similarity": 0.9372927982183985,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Provide five adjectives that describe a particular animal. Lion",
+    "testQuery": "Tell me provide five adjectives that describe a particular animal. Lion please",
+    "similarity": 0.9202641035535883,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Identify the following animal. It has thick fur, a long tail, and pointed ears.",
+    "testQuery": "Tell me identify the following animal. It has thick fur, a long tail, and pointed ears thanks",
+    "similarity": 0.9058040145056235,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Create a new recipe for flavorful noodles",
+    "testQuery": "How do I create a new recipe for flavorful noodles thanks",
+    "similarity": 0.8988403541357662,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Construct a list of tips to help reduce stress.",
+    "testQuery": "What is construct a list of tips to help reduce stress thanks",
+    "similarity": 0.913467715883397,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Create a list of items for a picnic.",
+    "testQuery": "Can you create a list of items for a picnic",
+    "similarity": 0.925610186789904,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Pick out the correct noun from the following list. river, mountain, book",
+    "testQuery": "Help me pick out the correct noun from the following list. river, mountain, book",
+    "similarity": 0.9495351965595569,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Suggest a powerful quote.",
+    "testQuery": "Help me suggest a powerful quote",
+    "similarity": 0.8905385620774932,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Classify the following sentence into one of the following labels: [positive, negative, neutral] My laptop seems to be slow today.",
+    "testQuery": "What is classify the following sentence into one of the following labels: [positive, negative, neutral] My laptop seems to be slow today please",
+    "similarity": 0.9439304978716658,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Write a function to calculate the factorial of a given number.",
+    "testQuery": "I need you to write a function to calculate the factorial of a given number thanks",
+    "similarity": 0.8830779662546843,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "What is the meaning of the following idiom? It’s raining cats and dogs",
+    "testQuery": "How do I the meaning of the following idiom? It’s raining cats and dogs for me",
+    "similarity": 0.9147471351747505,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Provide an example of a non-renewable source of energy.",
+    "testQuery": "Explain provide an example of a non-renewable source of energy please",
+    "similarity": 0.9027859690642793,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Summarize the article below in a maximum of 100 words. A head teacher at a high school in Birmingham has been suspended following reports of irregularities in marking examinations. Inspectors said that some grades had been inflated and process failings had contributed to the issues. The head teacher was said to have failed to ensure the security of the marking process, as well as failing to protect the school from “potential reputational damage”.",
+    "testQuery": "Please summarize the article below in a maximum of 100 words. A head teacher at a high school in Birmingham has been suspended following reports of irregularities in marking examinations. Inspectors said that some grades had been inflated and process failings had contributed to the issues. The head teacher was said to have failed to ensure the security of the marking process, as well as failing to protect the school from “potential reputational damage”?",
+    "similarity": 0.9805752427293659,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Organize the following words into a meaningful sentence. tall life the in",
+    "testQuery": "I need you to organize the following words into a meaningful sentence. tall life the in thanks",
+    "similarity": 0.8547242520961943,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Name three diseases that can be caused by poor hygiene.",
+    "testQuery": "Please name three diseases that can be caused by poor hygiene?",
+    "similarity": 0.9596673462909061,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Generate a function for calculating the mean of a list.",
+    "testQuery": "Help me generate a function for calculating the mean of a list please",
+    "similarity": 0.8810240003925207,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Find the solution to the quadratic equation. 3x² + 7x - 4 = 0",
+    "testQuery": "What is find the solution to the quadratic equation. 3x² + 7x - 4 = 0 thanks",
+    "similarity": 0.8990380717044288,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Generate three verbs that mean the same as \"to apologize\"",
+    "testQuery": "Help me generate three verbs that mean the same as \"to apologize\" for me",
+    "similarity": 0.8945922228157641,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Explain the concept of cogging torque.",
+    "testQuery": "Could you the concept of cogging torque?",
+    "similarity": 0.9230733302046137,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Compare the differences between a wooden and plastic baseball bat.",
+    "testQuery": "I want to know compare the differences between a wooden and plastic baseball bat?",
+    "similarity": 0.9352458435428828,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Explain the purpose of hypertext markup language (HTML).",
+    "testQuery": "Could you the purpose of hypertext markup language (HTML)",
+    "similarity": 0.8908532251766004,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Create a haiku poetry with the given theme. The beauty of night sky",
+    "testQuery": "How do I create a haiku poetry with the given theme. The beauty of night sky thanks",
+    "similarity": 0.9316653554412255,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Give a definition of \"algae\".",
+    "testQuery": "Tell me give a definition of \"algae\" for me",
+    "similarity": 0.8772042179690737,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Construct an argument to defend the following statement Alternative energy sources are critical to solving the climate crisis",
+    "testQuery": "Can you construct an argument to defend the following statement Alternative energy sources are critical to solving the climate crisis",
+    "similarity": 0.9699137338326438,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Generate a sound effect for a car passing by.",
+    "testQuery": "Tell me generate a sound effect for a car passing by thanks",
+    "similarity": 0.9157042589330012,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Describe the major differences between the Catholic and Protestant faiths.",
+    "testQuery": "Please describe the major differences between the Catholic and Protestant faiths for me",
+    "similarity": 0.8704729678552974,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Generate a memorable quote from Albert Einstein.",
+    "testQuery": "What is generate a memorable quote from Albert Einstein thanks",
+    "similarity": 0.8800609150066679,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Convert the following number from base 10 to hexadecimal: 278",
+    "testQuery": "Could you convert the following number from base 10 to hexadecimal: 278?",
+    "similarity": 0.9175061854649301,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Explain the role of a computer scientist in the modern world.",
+    "testQuery": "Please the role of a computer scientist in the modern world",
+    "similarity": 0.8521870812813623,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Summarize the given passage. A recent study showed that global climate change is one of the most important challenges facing the world today. The consequences of global warming include rising sea levels, extreme weather events and biodiversity loss. Climate change is caused by human activities such as burning fossil fuels, and if unchecked will have long-term and devastating impacts on the planet.",
+    "testQuery": "What is summarize the given passage. A recent study showed that global climate change is one of the most important challenges facing the world today. The consequences of global warming include rising sea levels, extreme weather events and biodiversity loss. Climate change is caused by human activities such as burning fossil fuels, and if unchecked will have long-term and devastating impacts on the planet for me",
+    "similarity": 0.9584537688793754,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Label the following news article as either \"Political\" or \"Entertainment\" Ansel Elgort and Gabrielle Union have both been cast in a new romantic summer movie to be released in 2022.",
+    "testQuery": "Help me label the following news article as either \"Political\" or \"Entertainment\" Ansel Elgort and Gabrielle Union have both been cast in a new romantic summer movie to be released in 2022 please",
+    "similarity": 0.9089807328684393,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Describe the form and structure of a haiku poem.",
+    "testQuery": "I need you to describe the form and structure of a haiku poem",
+    "similarity": 0.8617389495652964,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Describe the benefits of using a GPT model.",
+    "testQuery": "Please describe the benefits of using a GPT model?",
+    "similarity": 0.9621124518027111,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "What is the first rule of storytelling?",
+    "testQuery": "Help me the first rule of storytelling",
+    "similarity": 0.896667582032555,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Give an example of a place where an endangered species of animal might be found.",
+    "testQuery": "How do I give an example of a place where an endangered species of animal might be found?",
+    "similarity": 0.9277173744840107,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Classify the given sentence as either negative or positive. I want to quit my job.",
+    "testQuery": "Tell me classify the given sentence as either negative or positive. I want to quit my job thanks",
+    "similarity": 0.9089042209622555,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Design an algorithm to find the maximum profit of a stock buy and sell?",
+    "testQuery": "Could you design an algorithm to find the maximum profit of a stock buy and sell for me",
+    "similarity": 0.8918824547053392,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Write a limerick about a holiday.",
+    "testQuery": "I need you to write a limerick about a holiday",
+    "similarity": 0.9081997565387926,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Identify the main character in the following story. Once upon a time, there lived a poor peasant boy who worked very hard on his farm.",
+    "testQuery": "How do I identify the main character in the following story. Once upon a time, there lived a poor peasant boy who worked very hard on his farm for me",
+    "similarity": 0.9411984735410175,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Name all the elements in the periodic table with symbol C.",
+    "testQuery": "I need you to name all the elements in the periodic table with symbol C for me",
+    "similarity": 0.8610615837602492,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Provide an example of a non-renewable source of energy.",
+    "testQuery": "Could you provide an example of a non-renewable source of energy thanks",
+    "similarity": 0.8191020552648752,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Compose an informative sentence explaining the given term. Green bonds",
+    "testQuery": "I need you to compose an informative sentence explaining the given term. Green bonds?",
+    "similarity": 0.9167638368999331,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Indicate how the following characters in the novel reflect the theme of \"the corrupting influence of power\". Gregoire in Zola's Germinal",
+    "testQuery": "I need you to indicate how the following characters in the novel reflect the theme of \"the corrupting influence of power\". Gregoire in Zola's Germinal",
+    "similarity": 0.9780864416153585,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Write a few sentences about a given historical figure. Amelia Earhart",
+    "testQuery": "How do I write a few sentences about a given historical figure. Amelia Earhart",
+    "similarity": 0.9437172418454782,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Search the web and find the title of the longest novel.",
+    "testQuery": "Please search the web and find the title of the longest novel thanks",
+    "similarity": 0.8917141223353263,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "For the following passage, identify the theme or thesis statement. Corruption affects countries on many levels and erodes their competitive edge in a global economy. Poor compliance to regulations, ethical standards, and laws impairs public trust and results in conflict. Transnational financial crime drains a nation’s resources, weakens government tools to deliver long-term social goals, and destabilizes markets.",
+    "testQuery": "Please for the following passage, identify the theme or thesis statement. Corruption affects countries on many levels and erodes their competitive edge in a global economy. Poor compliance to regulations, ethical standards, and laws impairs public trust and results in conflict. Transnational financial crime drains a nation’s resources, weakens government tools to deliver long-term social goals, and destabilizes markets",
+    "similarity": 0.9861673109437586,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Give an example of a convergent boundary.",
+    "testQuery": "How do I give an example of a convergent boundary?",
+    "similarity": 0.9040234038056689,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Change the following sentence from the singular form to the plural form. The cat is drinking.",
+    "testQuery": "Help me change the following sentence from the singular form to the plural form. The cat is drinking for me",
+    "similarity": 0.8754522774346822,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Explain the difference between a personal computer and a server",
+    "testQuery": "How do I the difference between a personal computer and a server",
+    "similarity": 0.9382814679544554,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Rewrite the following sentence to avoid any logical fallacies. This medicine will cure all your health issues; you should trust me because I am a doctor.",
+    "testQuery": "What is rewrite the following sentence to avoid any logical fallacies. This medicine will cure all your health issues; you should trust me because I am a doctor",
+    "similarity": 0.9636967058771376,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Explain what the article is about in 1 to 2 sentences. Summary: This paper describes a novel deep learning technique called Generative Autowavelets (GAW) and examines its uses in natural language processing (NLP) tasks. GAW is a combination of an autoencoder and wavelet transformer, meaning it can both compress features in text and enable structured extraction of these features.",
+    "testQuery": "Can you what the article is about in 1 to 2 sentences. Summary: This paper describes a novel deep learning technique called Generative Autowavelets (GAW) and examines its uses in natural language processing (NLP) tasks. GAW is a combination of an autoencoder and wavelet transformer, meaning it can both compress features in text and enable structured extraction of these features",
+    "similarity": 0.9667734059714923,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Evaluate the following statement AI is the new electricity.",
+    "testQuery": "I want to know evaluate the following statement AI is the new electricity for me",
+    "similarity": 0.9072972310793755,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Translate this sentence from French to English. J'aime faire de la randonnée.",
+    "testQuery": "Tell me translate this sentence from French to English. J'aime faire de la randonnée?",
+    "similarity": 0.9594176338731996,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Categorize the following text into one of the two sentiment classes: positive or negative. I didn't like the product very much because it was too slow and not user friendly.",
+    "testQuery": "What is categorize the following text into one of the two sentiment classes: positive or negative. I didn't like the product very much because it was too slow and not user friendly for me",
+    "similarity": 0.9709421432499151,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Describe the function of a computer motherboard",
+    "testQuery": "I want to know describe the function of a computer motherboard?",
+    "similarity": 0.8643717507227536,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Compute the longest increasing subsequence of a given array? arr = [7, 10, 8, 11, 9, 5]",
+    "testQuery": "I want to know compute the longest increasing subsequence of a given array? arr = [7, 10, 8, 11, 9, 5] for me",
+    "similarity": 0.9372813644948083,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Predict the monthly electricity bill of a 1000 square-foot apartment in California.",
+    "testQuery": "I need you to predict the monthly electricity bill of a 1000 square-foot apartment in California please",
+    "similarity": 0.9220799083670264,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Generate a list of ten items a person might need for a camping trip",
+    "testQuery": "Construct a list containing at least ten items. Items you need to pack for a camping trip.",
+    "similarity": 0.8527118477617969,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Provide a brief summary of the novel \"Never Let Me Go\".",
+    "testQuery": "Can you provide a brief summary of the novel \"Never Let Me Go\" thanks",
+    "similarity": 0.9076240814326518,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Generate an example that illustrates the concept of \"artificial intelligence\".",
+    "testQuery": "Could you generate an example that illustrates the concept of \"artificial intelligence\"?",
+    "similarity": 0.9102761484045472,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Given a set of numbers, find the maximum value. Set: {10, 3, 25, 6, 16}",
+    "testQuery": "Help me given a set of numbers, find the maximum value. Set: {10, 3, 25, 6, 16} thanks",
+    "similarity": 0.9166323388565749,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Analyze the historical significance of the Stonewall Uprising.",
+    "testQuery": "Help me analyze the historical significance of the Stonewall Uprising for me",
+    "similarity": 0.9068119298238372,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Create a dialogue between a customer and a flight attendant for a plane ride",
+    "testQuery": "Tell me create a dialogue between a customer and a flight attendant for a plane ride for me",
+    "similarity": 0.92554892712907,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Explain the uses of artificial intelligence.",
+    "testQuery": "Can you the uses of artificial intelligence",
+    "similarity": 0.8734670896587602,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Generate the third term in the sequence 2, 5, 9, 14.",
+    "testQuery": "Tell me generate the third term in the sequence 2, 5, 9, 14",
+    "similarity": 0.9121122710482368,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Name the three main mountain ranges in the United States.",
+    "testQuery": "Tell me name the three main mountain ranges in the United States?",
+    "similarity": 0.9436321630104494,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Calculate the amount of money in a bank account with an initial $100 deposit and an interest rate of 6%, compounded annually",
+    "testQuery": "Please calculate the amount of money in a bank account with an initial $100 deposit and an interest rate of 6%, compounded annually for me",
+    "similarity": 0.9245223641308465,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Pick out the adverbs in the following sentence. John quickly ran to the store.",
+    "testQuery": "Could you pick out the adverbs in the following sentence. John quickly ran to the store",
+    "similarity": 0.9470784005461464,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Indicate how the following characters in the novel reflect the theme of \"the corrupting influence of power\". Gregoire in Zola's Germinal",
+    "testQuery": "Explain indicate how the following characters in the novel reflect the theme of \"the corrupting influence of power\". Gregoire in Zola's Germinal please",
+    "similarity": 0.9543614809031467,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "During the last member meeting, create a list of 5 ideas to improve the club.",
+    "testQuery": "Explain during the last member meeting, create a list of 5 ideas to improve the club",
+    "similarity": 0.9539759103089177,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Give a definition of \"algae\".",
+    "testQuery": "What is give a definition of \"algae\"",
+    "similarity": 0.9273636598436271,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Explain the concept of a bubble sort algorithm to a non-technical audience.",
+    "testQuery": "What is the concept of a bubble sort algorithm to a non-technical audience thanks",
+    "similarity": 0.9157728324985186,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "During the last member meeting, create a list of 5 ideas to improve the club.",
+    "testQuery": "I want to know during the last member meeting, create a list of 5 ideas to improve the club?",
+    "similarity": 0.9491098418007019,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Describe how machine learning can be used to automate mundane tasks.",
+    "testQuery": "Please describe how machine learning can be used to automate mundane tasks?",
+    "similarity": 0.960414343821447,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Name two different ways to reduce poverty in a community.",
+    "testQuery": "How do I name two different ways to reduce poverty in a community thanks",
+    "similarity": 0.8886492656062237,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Describe a scenario in which blockchain technology could be successfully applied.",
+    "testQuery": "Could you describe a scenario in which blockchain technology could be successfully applied please",
+    "similarity": 0.9081817276800865,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Assign this task to the design team. Design a communication tool for internal team members.",
+    "testQuery": "How do I assign this task to the design team. Design a communication tool for internal team members?",
+    "similarity": 0.9448304628752452,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Generate 10 rhyming words for the word \"love\".",
+    "testQuery": "Explain generate 10 rhyming words for the word \"love\" please",
+    "similarity": 0.8921797982683382,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Who is the world's most famous painter?",
+    "testQuery": "I want to know who is the world's most famous painter for me",
+    "similarity": 0.8575015229760798,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "List the benefits of Amazon Web Services.",
+    "testQuery": "Can you list the benefits of Amazon Web Services please",
+    "similarity": 0.8988632613819811,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Rewrite the sentence, replacing the idioms with their literal meanings. We need to break the ice with the new team members.",
+    "testQuery": "How do I rewrite the sentence, replacing the idioms with their literal meanings. We need to break the ice with the new team members for me",
+    "similarity": 0.9475505718116531,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Create a funny one-liner.",
+    "testQuery": "I want to know create a funny one-liner?",
+    "similarity": 0.8751570599907772,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Rewrite the sentence to provide more clarity and flow. Making the decision to rent a house was a wise choice",
+    "testQuery": "Help me rewrite the sentence to provide more clarity and flow. Making the decision to rent a house was a wise choice please",
+    "similarity": 0.9488304212011691,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Calculate the total surface area of a cube with a side length of 5 cm.",
+    "testQuery": "Could you calculate the total surface area of a cube with a side length of 5 cm?",
+    "similarity": 0.9250121476260988,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Find the greatest common factor of 12 and 18. 12 & 18",
+    "testQuery": "Help me find the greatest common factor of 12 and 18. 12 & 18 thanks",
+    "similarity": 0.9229168123283613,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Write a story that begins with the following sentence. She opened the door to find a tall figure cloaked in shadows.",
+    "testQuery": "Can you write a story that begins with the following sentence. She opened the door to find a tall figure cloaked in shadows for me",
+    "similarity": 0.9196361167154405,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Imagine you are speaking with a customer who is unsatisfied with the product they bought from you. Construct a response that diffuses the situation.",
+    "testQuery": "What is imagine you are speaking with a customer who is unsatisfied with the product they bought from you. Construct a response that diffuses the situation thanks",
+    "similarity": 0.9200897074582518,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Write a 250 word essay about Coral Reef Conservation",
+    "testQuery": "Help me write a 250 word essay about Coral Reef Conservation",
+    "similarity": 0.9619483238029063,
+    "dataset": "alpaca"
+  },
+  {
+    "cacheQuery": "Compose a haiku about cats",
+    "testQuery": "Please compose a haiku about cats for me",
+    "similarity": 0.9237799780461415,
+    "dataset": "alpaca"
+  }
+]

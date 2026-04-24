@@ -1,0 +1,613 @@
+{
+  "dataset": "hhrlhf",
+  "totalPairs": 227,
+  "evaluated": 100,
+  "summary": {
+    "yes": 99,
+    "no": 1,
+    "partial": 0,
+    "precision": 99
+  },
+  "results": [
+    {
+      "cacheQuery": "Yeah, but most PC's still work after they are old and slow.",
+      "testQuery": "Help me yeah, but most PC's still work after they are old and slow please",
+      "similarity": 0.8010927621482132,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How bright does the light have to be?",
+      "testQuery": "I want to know how bright does the light have to be for me",
+      "similarity": 0.8078398952384995,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "I have nothing more to say. Goodbye.",
+      "testQuery": "I want to know i have nothing more to say. Goodbye?",
+      "similarity": 0.825233985645951,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "More trivia questions! Question One: What is a doe?",
+      "testQuery": "Help me more trivia questions! Question One: What is a doe thanks",
+      "similarity": 0.8257613487662905,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "I was thinking a brown or black one for something different.",
+      "testQuery": "Explain i was thinking a brown or black one for something different please",
+      "similarity": 0.8340079562846456,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Wow, can you narrow that down for me?",
+      "testQuery": "I want to know wow, can you narrow that down for me please",
+      "similarity": 0.8362290037617982,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Where is MOS Burger's headquarter?",
+      "testQuery": "I need you to where is MOS Burger's headquarter for me",
+      "similarity": 0.8413500311263781,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "I'm in my 30s. I feel groggy and sluggish when I wake up.",
+      "testQuery": "I need you to i'm in my 30s. I feel groggy and sluggish when I wake up?",
+      "similarity": 0.8418914235321013,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Hmm...I just looked those things up and that's incorrect.",
+      "testQuery": "I want to know hmm...I just looked those things up and that's incorrect?",
+      "similarity": 0.8462405925998898,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "I'm open to suggestion.",
+      "testQuery": "Can you i'm open to suggestion?",
+      "similarity": 0.8501765899441613,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How do I make chamoy apples?",
+      "testQuery": "What is make chamoy apples for me",
+      "similarity": 0.8530122708633656,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "I just mean what is the purpose of life and living?",
+      "testQuery": "Explain i just mean what is the purpose of life and living thanks",
+      "similarity": 0.8557444367989976,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "I like all of those. Can you recommend a few more?",
+      "testQuery": "I want to know i like all of those. Can you recommend a few more",
+      "similarity": 0.85792659777684,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How do you choose a good one?",
+      "testQuery": "Explain how do you choose a good one please",
+      "similarity": 0.8585520125720528,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Did the breakup happen after President Josip Broz Tito died?",
+      "testQuery": "How do I did the breakup happen after President Josip Broz Tito died for me",
+      "similarity": 0.8606647275898154,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "I have nothing more to say. Goodbye.",
+      "testQuery": "Explain i have nothing more to say. Goodbye please",
+      "similarity": 0.8622953972726202,
+      "judgment": "NO"
+    },
+    {
+      "cacheQuery": "Restore the oak floors to their original appearance.",
+      "testQuery": "Please restore the oak floors to their original appearance for me",
+      "similarity": 0.8635735606414809,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Can you give me a recipe for potato pancakes?",
+      "testQuery": "Tell me give me a recipe for potato pancakes for me",
+      "similarity": 0.8651662337788939,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How do I find the location of the studs?",
+      "testQuery": "Could you find the location of the studs thanks",
+      "similarity": 0.8664031260346774,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "When was the Yankee Stadium built?",
+      "testQuery": "Can you when was the Yankee Stadium built please",
+      "similarity": 0.8700387473108373,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "I'm looking for any sort of Korean drama that's popular!",
+      "testQuery": "Help me i'm looking for any sort of Korean drama that's popular?",
+      "similarity": 0.8711298961885332,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "A lot of these aren't classics.",
+      "testQuery": "Could you a lot of these aren't classics",
+      "similarity": 0.8724110412752561,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "And metabolism, right. Living organisms do require consuming food and turning it into energy",
+      "testQuery": "I want to know and metabolism, right. Living organisms do require consuming food and turning it into energy for me",
+      "similarity": 0.874886383517363,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "I might not be sleeping well. Do you think that could be the problem?",
+      "testQuery": "Explain i might not be sleeping well. Do you think that could be the problem thanks",
+      "similarity": 0.8761375568165213,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How can I clarify butter?",
+      "testQuery": "Could you how can I clarify butter please",
+      "similarity": 0.8779820840302036,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "If you don't have friends, how can you advise me how to make friends?",
+      "testQuery": "Help me if you don't have friends, how can you advise me how to make friends for me",
+      "similarity": 0.879208450846537,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "I like  “Smooth”.  Have you heard of it?",
+      "testQuery": "Explain i like  “Smooth”.  Have you heard of it",
+      "similarity": 0.8798366753297406,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Which coaster is the scariest?",
+      "testQuery": "Tell me which coaster is the scariest please",
+      "similarity": 0.8813229937571806,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What is the best selling candy in the US?",
+      "testQuery": "Explain the best selling candy in the US please",
+      "similarity": 0.8822028888231762,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "I have an old baseball card that is a collector's item. I want to find out how much it is worth?",
+      "testQuery": "I need you to i have an old baseball card that is a collector's item. I want to find out how much it is worth",
+      "similarity": 0.8829272775989369,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "what color does blue and purple make?",
+      "testQuery": "I need you to what color does blue and purple make?",
+      "similarity": 0.8845343009637421,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "So, what is the difference between Java and JavaScript?",
+      "testQuery": "Tell me so, what is the difference between Java and JavaScript thanks",
+      "similarity": 0.8867761934592993,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "So do rainbows touch the ground then?",
+      "testQuery": "Could you so do rainbows touch the ground then",
+      "similarity": 0.8880196990097177,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "I find myself dealing with insomnia quite often. Do you have any tips for dealing with insomnia?",
+      "testQuery": "I need you to i find myself dealing with insomnia quite often. Do you have any tips for dealing with insomnia for me",
+      "similarity": 0.8883773712428165,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "So do I help them pull, do I show them?",
+      "testQuery": "Please so do I help them pull, do I show them for me",
+      "similarity": 0.8901323635355901,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How do I apply leather soap? With a brush or a cloth?",
+      "testQuery": "Could you apply leather soap? With a brush or a cloth thanks",
+      "similarity": 0.891269277862625,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Aren't most doughnuts usually fried?",
+      "testQuery": "I want to know aren't most doughnuts usually fried thanks",
+      "similarity": 0.8933899335126183,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How bright does the light have to be?",
+      "testQuery": "I want to know how bright does the light have to be",
+      "similarity": 0.8942707505461125,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Why did they settle on the 4 cylinder engine for most cars manufactured today?",
+      "testQuery": "I need you to why did they settle on the 4 cylinder engine for most cars manufactured today thanks",
+      "similarity": 0.8948117441815447,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Have any new technological advances been made in regards to electricity within the past few years?",
+      "testQuery": "How do I have any new technological advances been made in regards to electricity within the past few years please",
+      "similarity": 0.8955009725832656,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "That's correct, can you recommend me any bands that sound similar?",
+      "testQuery": "Could you that's correct, can you recommend me any bands that sound similar for me",
+      "similarity": 0.900229491142329,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How do you delete a Facebook account?",
+      "testQuery": "Help me how do you delete a Facebook account?",
+      "similarity": 0.901286313150757,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "I'm reading about her heading several different organizations. Sometimes you make things up though.",
+      "testQuery": "I want to know i'm reading about her heading several different organizations. Sometimes you make things up though thanks",
+      "similarity": 0.9033671718238061,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How do you laminate a document?",
+      "testQuery": "How do I how do you laminate a document for me",
+      "similarity": 0.9038643735894148,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Might The Lock Ness Monster really exist?",
+      "testQuery": "Help me might The Lock Ness Monster really exist?",
+      "similarity": 0.9051354851004101,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Do people who deliver pizza actually enjoy their jobs?",
+      "testQuery": "Explain do people who deliver pizza actually enjoy their jobs for me",
+      "similarity": 0.9063409003963535,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "I was thinking a brown or black one for something different.",
+      "testQuery": "Please i was thinking a brown or black one for something different?",
+      "similarity": 0.9068025005672602,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Yeah, but most PC's still work after they are old and slow.",
+      "testQuery": "Can you yeah, but most PC's still work after they are old and slow?",
+      "similarity": 0.908315678987831,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Okay, do you have any other advice?",
+      "testQuery": "Okay, any other advice?",
+      "similarity": 0.9096143864202437,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Is it the same for indoor plants?",
+      "testQuery": "Can you is it the same for indoor plants please",
+      "similarity": 0.9110166755887524,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "If I wanted to watch the Star Wars movies so that the timeline is chronological, which order should I watch them in?",
+      "testQuery": "I need you to if I wanted to watch the Star Wars movies so that the timeline is chronological, which order should I watch them in for me",
+      "similarity": 0.9118830209920642,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What games are being released for the PS4 next month?",
+      "testQuery": "Please what games are being released for the PS4 next month thanks",
+      "similarity": 0.9120564994265447,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What should I do if my boss is always mean to me?",
+      "testQuery": "I want to know what should I do if my boss is always mean to me",
+      "similarity": 0.9129630057568282,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How often should I water a bamboo tree?",
+      "testQuery": "What is how often should I water a bamboo tree for me",
+      "similarity": 0.9136975551619825,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How do I find the present value of a collector baseball card?",
+      "testQuery": "Tell me find the present value of a collector baseball card for me",
+      "similarity": 0.9138119138488683,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Just a reliable method to clean leather sneakers.",
+      "testQuery": "Can you just a reliable method to clean leather sneakers",
+      "similarity": 0.9145385868063819,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Which programming language is the easiest to learn online on my own?",
+      "testQuery": "Help me which programming language is the easiest to learn online on my own please",
+      "similarity": 0.9148394154745244,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Yeah, but most PC's still work after they are old and slow.",
+      "testQuery": "Please yeah, but most PC's still work after they are old and slow",
+      "similarity": 0.9161335902373978,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "I do have a lot of clothes that are hard for me to give away",
+      "testQuery": "Can you i do have a lot of clothes that are hard for me to give away thanks",
+      "similarity": 0.9170070718356111,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Are Bosnia and Herzegovina two different countries?",
+      "testQuery": "How do I are Bosnia and Herzegovina two different countries?",
+      "similarity": 0.9173053959435862,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How do you cash a personal check?",
+      "testQuery": "Tell me how do you cash a personal check",
+      "similarity": 0.9177625153292522,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Those are some helpful tips!  How about selling them for a better price?",
+      "testQuery": "I want to know those are some helpful tips!  How about selling them for a better price",
+      "similarity": 0.9185917317688207,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Voxer doesn't seem like a suitable suggestion for podcasts but the rest of your advice seems good",
+      "testQuery": "Please voxer doesn't seem like a suitable suggestion for podcasts but the rest of your advice seems good?",
+      "similarity": 0.9199435472467717,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Can an ophthalmologist see the drusen?",
+      "testQuery": "Explain can an ophthalmologist see the drusen",
+      "similarity": 0.9212275861715765,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How often should I water a bamboo tree?",
+      "testQuery": "Can you how often should I water a bamboo tree for me",
+      "similarity": 0.9223542993426183,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How can I feed squirrels and make  more come to my home?",
+      "testQuery": "Explain how can I feed squirrels and make  more come to my home for me",
+      "similarity": 0.9230045386512196,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How should I dress for a job interview?",
+      "testQuery": "I need you to how should I dress for a job interview?",
+      "similarity": 0.9234938512577558,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Okay, why would people get along better with rats?",
+      "testQuery": "How do I okay, why would people get along better with rats thanks",
+      "similarity": 0.924734257094969,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "And how does a vacuum keep the dust and dirt from just spewing out into the air?",
+      "testQuery": "What is and how does a vacuum keep the dust and dirt from just spewing out into the air thanks",
+      "similarity": 0.9261566828888562,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How can I store food if I don't have a pantry?",
+      "testQuery": "Could you how can I store food if I don't have a pantry thanks",
+      "similarity": 0.9264864645316463,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "He is mean to about half of us. I don't know what his problem is.",
+      "testQuery": "Please he is mean to about half of us. I don't know what his problem is thanks",
+      "similarity": 0.9283106341578795,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Both of your responses were inaccurate.   The singer who sang  “Smooth” is Rob Thomas.",
+      "testQuery": "Can you both of your responses were inaccurate.   The singer who sang  “Smooth” is Rob Thomas for me",
+      "similarity": 0.9288609040898169,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "And how does a vacuum keep the dust and dirt from just spewing out into the air?",
+      "testQuery": "What is and how does a vacuum keep the dust and dirt from just spewing out into the air",
+      "similarity": 0.9302576902578195,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Those are some helpful tips!  How about selling them for a better price?",
+      "testQuery": "What is those are some helpful tips!  How about selling them for a better price thanks",
+      "similarity": 0.9321736405845811,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How do shoe insoles help you?",
+      "testQuery": "Help me how do shoe insoles help you",
+      "similarity": 0.9338929411042043,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "He is ignorant and mean. I feel bad going to work. What should I do?",
+      "testQuery": "Explain he is ignorant and mean. I feel bad going to work. What should I do",
+      "similarity": 0.9344689153612344,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Do you think you can help me learn how to mount a TV to a wall?",
+      "testQuery": "I need you to do you think you can help me learn how to mount a TV to a wall thanks",
+      "similarity": 0.9353135266863475,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "I want to make pancakes but I have never made them before.  Can you help me?",
+      "testQuery": "I need you to i want to make pancakes but I have never made them before.  Can you help me?",
+      "similarity": 0.9355338330405947,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What do you mean too harshly?",
+      "testQuery": "What is what do you mean too harshly?",
+      "similarity": 0.9364703419473192,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Is it better to buy a bounce house or to rent one?",
+      "testQuery": "I want to know is it better to buy a bounce house or to rent one please",
+      "similarity": 0.9375560980644971,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "I feel like how energized it makes one feel it would do the opposite of feeling relaxed.",
+      "testQuery": "Tell me i feel like how energized it makes one feel it would do the opposite of feeling relaxed",
+      "similarity": 0.9393075308832011,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Right, all living organisms have cells! And all cells have DNA. Is that why you mentioned cell structure?",
+      "testQuery": "Tell me right, all living organisms have cells! And all cells have DNA. Is that why you mentioned cell structure please",
+      "similarity": 0.939887488190803,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "I want to learn how to spatchcock a turkey for roasting.",
+      "testQuery": "What is i want to learn how to spatchcock a turkey for roasting",
+      "similarity": 0.9415475517156905,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Bosnia and Herzegovina, Croatia, Kosovo, Macedonia, Montenegro, Serbia, and Slovenia. Are they communist countries?  Which one has the most Muslims and which one has the most Christians?",
+      "testQuery": "Tell me bosnia and Herzegovina, Croatia, Kosovo, Macedonia, Montenegro, Serbia, and Slovenia. Are they communist countries?  Which one has the most Muslims and which one has the most Christians please",
+      "similarity": 0.9422999492905448,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Do you think its possible to meet people on social media that will become your friend?",
+      "testQuery": "Please do you think its possible to meet people on social media that will become your friend please",
+      "similarity": 0.9426947119212314,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What are some methods I can use to help with my social anxiety?",
+      "testQuery": "Please what are some methods I can use to help with my social anxiety",
+      "similarity": 0.9433363148553296,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Will the metal be too damaged by rust to salvage it?",
+      "testQuery": "Tell me will the metal be too damaged by rust to salvage it",
+      "similarity": 0.9436442080927193,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "So you're saying that crayons feel like wax because they're literally made out of wax?",
+      "testQuery": "What is so you're saying that crayons feel like wax because they're literally made out of wax please",
+      "similarity": 0.9455947709316822,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "I'm in my 30s. I feel groggy and sluggish when I wake up.",
+      "testQuery": "What is i'm in my 30s. I feel groggy and sluggish when I wake up",
+      "similarity": 0.946427556192983,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "If you don't have friends, how can you advise me how to make friends?",
+      "testQuery": "Can you if you don't have friends, how can you advise me how to make friends",
+      "similarity": 0.9473439430240733,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "I am actually wondering, what sources I can look for information to find a cards value in general.",
+      "testQuery": "Could you i am actually wondering, what sources I can look for information to find a cards value in general please",
+      "similarity": 0.9477120242938049,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Bosnia and Herzegovina, Croatia, Kosovo, Macedonia, Montenegro, Serbia, and Slovenia. Are they communist countries?  Which one has the most Muslims and which one has the most Christians?",
+      "testQuery": "Could you bosnia and Herzegovina, Croatia, Kosovo, Macedonia, Montenegro, Serbia, and Slovenia. Are they communist countries?  Which one has the most Muslims and which one has the most Christians please",
+      "similarity": 0.9482266409378032,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "In Swahili samaki' is fish. The dish is popular in the Lake Victoria and Lake Naivasha area.",
+      "testQuery": "How do I in Swahili samaki' is fish. The dish is popular in the Lake Victoria and Lake Naivasha area for me",
+      "similarity": 0.9495352100552924,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "I'm trying to find out what the different phases of the moon are. Can you help?",
+      "testQuery": "Can you i'm trying to find out what the different phases of the moon are. Can you help for me",
+      "similarity": 0.9498875186130853,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "I am actually wondering, what sources I can look for information to find a cards value in general.",
+      "testQuery": "Can you i am actually wondering, what sources I can look for information to find a cards value in general thanks",
+      "similarity": 0.9519982152032027,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "I would like to know some useful facts about Stephan Hawking.",
+      "testQuery": "Could you i would like to know some useful facts about Stephan Hawking please",
+      "similarity": 0.9524861611168266,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Is it better to buy a bounce house or to rent one?",
+      "testQuery": "Could you is it better to buy a bounce house or to rent one",
+      "similarity": 0.9533130056066564,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Yes, how do I remove the backbone of the turkey?",
+      "testQuery": "Could you yes, how do I remove the backbone of the turkey",
+      "similarity": 0.9550685975933,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Teaching a child how to convert a percent to a decimal",
+      "testQuery": "Help me teaching a child how to convert a percent to a decimal",
+      "similarity": 0.9551911361988894,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "I am trying to learn more about UFC history. Which two fighters were a part of the first match ever?",
+      "testQuery": "How do I i am trying to learn more about UFC history. Which two fighters were a part of the first match ever",
+      "similarity": 0.9562331320183293,
+      "judgment": "YES"
+    }
+  ]
+}

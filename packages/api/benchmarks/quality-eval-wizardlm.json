@@ -1,0 +1,613 @@
+{
+  "dataset": "wizardlm",
+  "totalPairs": 299,
+  "evaluated": 100,
+  "summary": {
+    "yes": 95,
+    "no": 2,
+    "partial": 3,
+    "precision": 96.5
+  },
+  "results": [
+    {
+      "cacheQuery": "Describe the differences between formal and informal communication",
+      "testQuery": "Can you describe the differences between formal and informal communication thanks",
+      "similarity": 0.8227038918475844,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Rewrite the sentence in proper English and substitute the appropriate word.\nHe wented to the store to buy groceries.",
+      "testQuery": "Can you rewrite the sentence in proper English and substitute the appropriate word.\nHe wented to the store to buy groceries for me",
+      "similarity": 0.8692041541162825,
+      "judgment": "NO"
+    },
+    {
+      "cacheQuery": "Brainstorm 3 creative ways to use an old tablecloth",
+      "testQuery": "Could you brainstorm 3 creative ways to use an old tablecloth thanks",
+      "similarity": 0.882444969037192,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Remember, the rewritten prompt can only add 10 to 20 words, and must not omit the non-textual elements in the given prompt.",
+      "testQuery": "How do I remember, the rewritten prompt can only add 10 to 20 words, and must not omit the non-textual elements in the given prompt for me",
+      "similarity": 0.8920649888876762,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Develop a memory technique for remembering the chemical composition of the human body.",
+      "testQuery": "Could you develop a memory technique for remembering the chemical composition of the human body for me",
+      "similarity": 0.8952860171073151,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Generate a story about a situation where someone has to make a difficult decision.",
+      "testQuery": "Tell me generate a story about a situation where someone has to make a difficult decision please",
+      "similarity": 0.8964060314097319,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What is something you can do that involves finding hidden words and can be played alone or with others, and is often found in newspapers and puzzle books?",
+      "testQuery": "Please something you can do that involves finding hidden words and can be played alone or with others, and is often found in newspapers and puzzle books for me",
+      "similarity": 0.9014616384829195,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Act as a customer service representative for Chime.com while also providing support for Spanish-speaking customers.",
+      "testQuery": "Can you act as a customer service representative for Chime.com while also providing support for Spanish-speaking customers for me",
+      "similarity": 0.9030336903126422,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Calculate the fraction of a circle that a given angle subtends.\nAngle = 60°",
+      "testQuery": "I want to know calculate the fraction of a circle that a given angle subtends.\nAngle = 60° please",
+      "similarity": 0.9072156407040347,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Find and provide two sources to support the following statement\nThe economic cost of climate change is estimated in trillions of dollars.",
+      "testQuery": "Help me find and provide two sources to support the following statement\nThe economic cost of climate change is estimated in trillions of dollars please",
+      "similarity": 0.9092971943880831,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Describe the differences between formal and informal communication",
+      "testQuery": "Explain describe the differences between formal and informal communication for me",
+      "similarity": 0.9122660003221186,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Create a valid argument to convince someone to switch to using a Linux operating system.",
+      "testQuery": "Explain create a valid argument to convince someone to switch to using a Linux operating system thanks",
+      "similarity": 0.917713619703423,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Find information in the following document about the history of the space program.\nNASA's History",
+      "testQuery": "Can you find information in the following document about the history of the space program.\nNASA's History please",
+      "similarity": 0.9202269405381259,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Give a suggestion for a fun activity that can be done with friends.",
+      "testQuery": "I want to know give a suggestion for a fun activity that can be done with friends?",
+      "similarity": 0.9216973073156426,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Write a classification essay about pet animals.",
+      "testQuery": "What is write a classification essay about pet animals for me",
+      "similarity": 0.9220941199301246,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What is the estimated expense of incorporating a supplementary sleeping quarter to a residential property situated in Atlanta, GA, where the average bedroom dimensions are 12 feet in length and 12 feet in width?",
+      "testQuery": "Please the estimated expense of incorporating a supplementary sleeping quarter to a residential property situated in Atlanta, GA, where the average bedroom dimensions are 12 feet in length and 12 feet in width thanks",
+      "similarity": 0.9298095445248481,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Construct an SQL query\nRequest all records from the \"Users\" table",
+      "testQuery": "Explain construct an SQL query\nRequest all records from the \"Users\" table please",
+      "similarity": 0.9310998291375274,
+      "judgment": "PARTIAL"
+    },
+    {
+      "cacheQuery": "What does abstraction mean on OOP when considering the principle of Encapsulation and how it affects the inheritance hierarchies and object relationships in a software design system?",
+      "testQuery": "I need you to what does abstraction mean on OOP when considering the principle of Encapsulation and how it affects the inheritance hierarchies and object relationships in a software design system?",
+      "similarity": 0.9320114622766874,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Arrange these numbers in ascending order: 16, 12, 9, 5",
+      "testQuery": "How do I arrange these numbers in ascending order: 16, 12, 9, 5",
+      "similarity": 0.9334458765271746,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Can you suggest photographers who excel in capturing images of underwater marine life, particularly in locations with unique and rare species, and using only natural lighting techniques?",
+      "testQuery": "Explain suggest photographers who excel in capturing images of underwater marine life, particularly in locations with unique and rare species, and using only natural lighting techniques?",
+      "similarity": 0.9347713338974886,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How to plot a 3D Probability Density Function using advanced mathematical software?",
+      "testQuery": "I want to know how to plot a 3D Probability Density Function using advanced mathematical software for me",
+      "similarity": 0.934964707446776,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Describe the differences between formal and informal communication",
+      "testQuery": "Explain describe the differences between formal and informal communication?",
+      "similarity": 0.9360789403487054,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What is the most efficient way to extract specific information from a large dataset using regular expressions in Typescript?",
+      "testQuery": "I need you to the most efficient way to extract specific information from a large dataset using regular expressions in Typescript thanks",
+      "similarity": 0.9370971112215459,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Change the given sentence to express the opposite meaning: \"My plan is to proceed with the action of traveling to a certain location.\"",
+      "testQuery": "Can you change the given sentence to express the opposite meaning: \"My plan is to proceed with the action of traveling to a certain location.\" thanks",
+      "similarity": 0.9406017652483086,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Tell me a metaphor related to swimming.",
+      "testQuery": "Help me a metaphor related to swimming?",
+      "similarity": 0.9416167816261509,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Can you provide more information about the context in which this prompt will be used? This will help me understand the purpose and audience of the prompt, which can guide my rewriting.",
+      "testQuery": "How do I provide more information about the context in which this prompt will be used? This will help me understand the purpose and audience of the prompt, which can guide my rewriting for me",
+      "similarity": 0.9419540026709992,
+      "judgment": "PARTIAL"
+    },
+    {
+      "cacheQuery": "Re-word the following sentence to remove the slang.\nHis mom was totally chill about it.",
+      "testQuery": "Could you re-word the following sentence to remove the slang.\nHis mom was totally chill about it",
+      "similarity": 0.942052289889033,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Explain two effects of climate change on the environment",
+      "testQuery": "What is two effects of climate change on the environment",
+      "similarity": 0.9438118907940474,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Recommend a foreign language movie on Netflix with a rating of 9.0 or higher that has won at least two international film awards.",
+      "testQuery": "Please recommend a foreign language movie on Netflix with a rating of 9.0 or higher that has won at least two international film awards for me",
+      "similarity": 0.9457278863429198,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How have recent advances in the implementation of artificial intelligence algorithms in project management systems, particularly with regard to Natural Language Processing and image recognition, impacted the way teams collaborate and make decisions? In your response, please provide concrete examples of successful projects that have employed these cutting-edge technologies and highlight the ways in which these systems have helped streamline workflows and improve overall project outcomes.",
+      "testQuery": "Help me how have recent advances in the implementation of artificial intelligence algorithms in project management systems, particularly with regard to Natural Language Processing and image recognition, impacted the way teams collaborate and make decisions? In your response, please provide concrete examples of successful projects that have employed these cutting-edge technologies and highlight the ways in which these systems have helped streamline workflows and improve overall project outcomes thanks",
+      "similarity": 0.9463884070110727,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Explain the short-term and long-term consequences of a devastating oil spill in the Arctic Circle on the global oil industry, including the economic, environmental, and geopolitical effects. Additionally, analyze the potential solutions and strategies for mitigating the impacts and preventing future disasters.",
+      "testQuery": "Help me the short-term and long-term consequences of a devastating oil spill in the Arctic Circle on the global oil industry, including the economic, environmental, and geopolitical effects. Additionally, analyze the potential solutions and strategies for mitigating the impacts and preventing future disasters please",
+      "similarity": 0.9470655286475101,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Examine and order this list of natural calamities in ascending order based on their short-term and long-term environmental consequences and their direct risk to human existence: \n7. Earthquake, Flood, Hurricane, Tornado.",
+      "testQuery": "Can you examine and order this list of natural calamities in ascending order based on their short-term and long-term environmental consequences and their direct risk to human existence: \n7. Earthquake, Flood, Hurricane, Tornado thanks",
+      "similarity": 0.9473614650613404,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "The linear regression technique, including its various types such as simple, multiple, polynomial, Ridge, Lasso, Recursive Feature Elimination (RFE), and Principal Component Regression (PCR), is an essential tool for handling complex and high-dimensional datasets in machine learning.\r\n\r\nWhat are the advantages and disadvantages of using Ridge regression compared to Lasso regression in handling high-dimensional datasets?",
+      "testQuery": "Help me the linear regression technique, including its various types such as simple, multiple, polynomial, Ridge, Lasso, Recursive Feature Elimination (RFE), and Principal Component Regression (PCR), is an essential tool for handling complex and high-dimensional datasets in machine learning.\r\n\r\nWhat are the advantages and disadvantages of using Ridge regression compared to Lasso regression in handling high-dimensional datasets thanks",
+      "similarity": 0.9482403635016324,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "In addition to the maximum value of integer in Java, can you provide the maximum value for other primitive data types such as long, float, and double? Also, could you explain the underlying mechanisms behind the limitations of these data types in terms of their storage and representation in memory?",
+      "testQuery": "What is in addition to the maximum value of integer in Java, can you provide the maximum value for other primitive data types such as long, float, and double? Also, could you explain the underlying mechanisms behind the limitations of these data types in terms of their storage and representation in memory",
+      "similarity": 0.9485008963050275,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Add a requirement for the given prompt by specifying that the sentence should be related to a high-end technology product, using the phrase \"top-notch\" to describe its quality.",
+      "testQuery": "Can you add a requirement for the given prompt by specifying that the sentence should be related to a high-end technology product, using the phrase \"top-notch\" to describe its quality for me",
+      "similarity": 0.9492232049476483,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Provide a set of five exemplary AI use cases that are innovative and advanced enough to captivate Jeremy Hunt, Manchester competition's judges. The proposed AI solutions must demonstrate the potential of AI in a particular area while being feasible to implement at the same time.",
+      "testQuery": "I need you to provide a set of five exemplary AI use cases that are innovative and advanced enough to captivate Jeremy Hunt, Manchester competition's judges. The proposed AI solutions must demonstrate the potential of AI in a particular area while being feasible to implement at the same time for me",
+      "similarity": 0.9504570283349902,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "New prompt: How to run a GitLab job when a merge request is created or closed with a specific branch and a webhook-triggered confirmation email sent to a designated recipient.",
+      "testQuery": "I want to know new prompt: How to run a GitLab job when a merge request is created or closed with a specific branch and a webhook-triggered confirmation email sent to a designated recipient",
+      "similarity": 0.9509059930019147,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Please provide a detailed report on the latest innovations and advancements made by your organization in the given format, taking into consideration that your report will be analyzed by both human and AI systems. The report should include a detailed analysis of the impact of the innovation on the industry, potential applications, and future prospects.",
+      "testQuery": "Explain provide a detailed report on the latest innovations and advancements made by your organization in the given format, taking into consideration that your report will be analyzed by both human and AI systems. The report should include a detailed analysis of the impact of the innovation on the industry, potential applications, and future prospects for me",
+      "similarity": 0.9513266075043043,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Translate the phrase \"Salut tout le monde!\" to English.",
+      "testQuery": "Can you translate the phrase \"Salut tout le monde!\" to English?",
+      "similarity": 0.9518929433008699,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Can you develop a deep learning algorithm using TensorFlow to predict the future stock prices of Apple based on historical data? The algorithm should require multiple-step reasoning and complex calculations.",
+      "testQuery": "Explain develop a deep learning algorithm using TensorFlow to predict the future stock prices of Apple based on historical data? The algorithm should require multiple-step reasoning and complex calculations for me",
+      "similarity": 0.9523575334633751,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "\"Reflect on a moment of pure serendipity in the past year that has greatly impacted your life. Describe in detail how it altered your trajectory and led you to unexpected opportunities.\"",
+      "testQuery": "How do I \"Reflect on a moment of pure serendipity in the past year that has greatly impacted your life. Describe in detail how it altered your trajectory and led you to unexpected opportunities.\"?",
+      "similarity": 0.9528889521118529,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Design a role-playing game that two players can play, featuring a die for actions that are taken. This game should involve strategic decision making, using unique abilities and responding to events that happen in the game's scenario. The game should be built around a complex and dynamic world, with multiple paths to victory and challenges to overcome.",
+      "testQuery": "I want to know design a role-playing game that two players can play, featuring a die for actions that are taken. This game should involve strategic decision making, using unique abilities and responding to events that happen in the game's scenario. The game should be built around a complex and dynamic world, with multiple paths to victory and challenges to overcome for me",
+      "similarity": 0.9530235303487925,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Create a workout routine for a full-body strength training session using only household objects as weights. The routine should include exercises for each major muscle group, and instructions on how to perform each exercise properly. Additionally, suggest alternative household items that could be used as weights for those who may not have access to the recommended objects.",
+      "testQuery": "I want to know create a workout routine for a full-body strength training session using only household objects as weights. The routine should include exercises for each major muscle group, and instructions on how to perform each exercise properly. Additionally, suggest alternative household items that could be used as weights for those who may not have access to the recommended objects please",
+      "similarity": 0.953829801149,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "To create a virtual shopping assistant that offers an interactive shopping experience for customers, what specific hardware and software components are essential? The virtual assistant must be able to provide tailored recommendations based on a customer's shopping history and preferences while offering alternatives.",
+      "testQuery": "How do I to create a virtual shopping assistant that offers an interactive shopping experience for customers, what specific hardware and software components are essential? The virtual assistant must be able to provide tailored recommendations based on a customer's shopping history and preferences while offering alternatives?",
+      "similarity": 0.9545919762847601,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Given a dataset containing the personal details of patients and their medical history, create a program that can generate a personalized health report for each patient, including dietary recommendations, exercise routines, and medication dosages. The program should also factor in any genetic predispositions or allergies the patient may have and should allow the user to set custom thresholds for each metric to ensure that the health report aligns with the user's individual health goals.",
+      "testQuery": "I need you to given a dataset containing the personal details of patients and their medical history, create a program that can generate a personalized health report for each patient, including dietary recommendations, exercise routines, and medication dosages. The program should also factor in any genetic predispositions or allergies the patient may have and should allow the user to set custom thresholds for each metric to ensure that the health report aligns with the user's individual health goals thanks",
+      "similarity": 0.9550811424878611,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Develop a predictive model using advanced machine learning algorithms that not only analyzes large datasets from various sources but also includes deep learning models and time-series forecasting. The model should be able to handle complex variables and incorporate feature engineering techniques to improve accuracy. Demonstrating your ability to create complex models that can accurately predict complex phenomena.",
+      "testQuery": "Can you develop a predictive model using advanced machine learning algorithms that not only analyzes large datasets from various sources but also includes deep learning models and time-series forecasting. The model should be able to handle complex variables and incorporate feature engineering techniques to improve accuracy. Demonstrating your ability to create complex models that can accurately predict complex phenomena please",
+      "similarity": 0.9553047577851146,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "After contemplating her options, weighing the potential outcomes, and considering her personal values and beliefs, the woman came to a decisive conclusion. With a deep breath and a sense of conviction, she thought to herself, \"This is the right choice for me.\"",
+      "testQuery": "Can you after contemplating her options, weighing the potential outcomes, and considering her personal values and beliefs, the woman came to a decisive conclusion. With a deep breath and a sense of conviction, she thought to herself, \"This is the right choice for me.\"?",
+      "similarity": 0.9557109981661028,
+      "judgment": "NO"
+    },
+    {
+      "cacheQuery": "Identify the type of figure of speech used in the phrase \"She has the heart of a lion\"",
+      "testQuery": "What is identify the type of figure of speech used in the phrase \"She has the heart of a lion\" for me",
+      "similarity": 0.9564826364151529,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Brainstorm a list of at least five practical work from home jobs for seniors with the constraint that the jobs must not involve using social media or video conferencing platforms. Consider jobs that require basic computer skills such as data entry, transcription, or customer service, and keep in mind the need for flexible working hours and the ability to work independently.",
+      "testQuery": "Explain brainstorm a list of at least five practical work from home jobs for seniors with the constraint that the jobs must not involve using social media or video conferencing platforms. Consider jobs that require basic computer skills such as data entry, transcription, or customer service, and keep in mind the need for flexible working hours and the ability to work independently thanks",
+      "similarity": 0.9569703090860973,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How can I simplify the expression 2(x + 9) + 2(x + 7) using Python code?",
+      "testQuery": "Explain how can I simplify the expression 2(x + 9) + 2(x + 7) using Python code",
+      "similarity": 0.9575489212786159,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Build a system to classify animals into the different categories i.e Mammal, Reptile, Amphibian, Insect , Fish.",
+      "testQuery": "What is build a system to classify animals into the different categories i.e Mammal, Reptile, Amphibian, Insect , Fish",
+      "similarity": 0.9579368910075129,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Develop a memory technique for remembering the chemical composition of the human body.",
+      "testQuery": "What is develop a memory technique for remembering the chemical composition of the human body?",
+      "similarity": 0.9583875264650796,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Please provide information about the texture, directionality, and reflectivity of the surface material, as well as the position and quantity of nearby light sources, in addition to asking for the color and presence of patterns or symbols on the background of DB displays, to ensure optimal readability and visibility for viewers.",
+      "testQuery": "Help me provide information about the texture, directionality, and reflectivity of the surface material, as well as the position and quantity of nearby light sources, in addition to asking for the color and presence of patterns or symbols on the background of DB displays, to ensure optimal readability and visibility for viewers thanks",
+      "similarity": 0.9585726651671396,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Please provide the exact count of lymph nodes that can be identified in the specified region. It would be appreciated if you could also provide detailed information about the size and consistency of each identified lymph node, where possible.",
+      "testQuery": "Help me provide the exact count of lymph nodes that can be identified in the specified region. It would be appreciated if you could also provide detailed information about the size and consistency of each identified lymph node, where possible for me",
+      "similarity": 0.9591406299641845,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Can you create a function that can count the number of tokens from a given input string using the GPT3 api with C#? Please ensure that the function can handle complex input strings with multiple layers of logic and reasoning required to accurately count the tokens.",
+      "testQuery": "What is create a function that can count the number of tokens from a given input string using the GPT3 api with C#? Please ensure that the function can handle complex input strings with multiple layers of logic and reasoning required to accurately count the tokens for me",
+      "similarity": 0.9598919570499127,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Using your grandfather's military service during World War II as a starting point, craft a thought-provoking question that explores the personal impact and emotional toll of wartime experiences on both soldiers and their families.",
+      "testQuery": "Can you using your grandfather's military service during World War II as a starting point, craft a thought-provoking question that explores the personal impact and emotional toll of wartime experiences on both soldiers and their families please",
+      "similarity": 0.9601411703394666,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What C++ code can be used to find the factorial of a given number recursively?\n[C++ code]\nint factorial(int n) {\n    if (n == 0) {\n        return 1;\n    } else {\n        return n * factorial(n-1);\n    }\n}",
+      "testQuery": "What is what C++ code can be used to find the factorial of a given number recursively?\n[C++ code]\nint factorial(int n) {\n    if (n == 0) {\n        return 1;\n    } else {\n        return n * factorial(n-1);\n    }\n} please",
+      "similarity": 0.9601586049510028,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "From the perspective of a neuroscientist and a philosopher, discuss the controversial topic of whether free will truly exists or if it's just an illusion. Include empirical evidence and ethical considerations in your argument. Additionally, provide an in-depth analysis of the impact of cultural and societal factors on the concept of free will, and how it affects our perception of individuality and personal responsibility.",
+      "testQuery": "Tell me from the perspective of a neuroscientist and a philosopher, discuss the controversial topic of whether free will truly exists or if it's just an illusion. Include empirical evidence and ethical considerations in your argument. Additionally, provide an in-depth analysis of the impact of cultural and societal factors on the concept of free will, and how it affects our perception of individuality and personal responsibility thanks",
+      "similarity": 0.9604466518679979,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "My Flask app is returning a 404 error when trying to access a specific endpoint from a third-party API. Upon further investigation, I noticed that the API is rate limiting my requests. How can I mitigate this issue while still being able to retrieve the required data from the API?",
+      "testQuery": "Explain my Flask app is returning a 404 error when trying to access a specific endpoint from a third-party API. Upon further investigation, I noticed that the API is rate limiting my requests. How can I mitigate this issue while still being able to retrieve the required data from the API please",
+      "similarity": 0.9618441979741634,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "As a mysql server, you need to manage the application database which includes three tables- users, activity, and dogs. Along with the given constraints, now you are required to check the validity of the query before processing it. If the query is invalid, you have to provide appropriate error messages. And if it's valid, generate a sample output for future inputs.",
+      "testQuery": "I need you to as a mysql server, you need to manage the application database which includes three tables- users, activity, and dogs. Along with the given constraints, now you are required to check the validity of the query before processing it. If the query is invalid, you have to provide appropriate error messages. And if it's valid, generate a sample output for future inputs",
+      "similarity": 0.9620160336811016,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Can you generate an Excel table that provides key statistics on the Canadian population? Please include data such as the total population, population density, age distribution, and ethnic makeup. Additionally, can you calculate the percentage of the population that speaks French as their first language and the percentage that identifies as Indigenous?",
+      "testQuery": "What is generate an Excel table that provides key statistics on the Canadian population? Please include data such as the total population, population density, age distribution, and ethnic makeup. Additionally, can you calculate the percentage of the population that speaks French as their first language and the percentage that identifies as Indigenous for me",
+      "similarity": 0.9628344055360009,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "If we consider the age of the oldest sibling as x, then what would be the age of the youngest and middle siblings in terms of x? Moreover, can we find out the exact ages of each sibling? This brain teaser demands the application of fundamental arithmetic operations, and one must exhibit meticulousness while performing calculations.",
+      "testQuery": "Help me if we consider the age of the oldest sibling as x, then what would be the age of the youngest and middle siblings in terms of x? Moreover, can we find out the exact ages of each sibling? This brain teaser demands the application of fundamental arithmetic operations, and one must exhibit meticulousness while performing calculations thanks",
+      "similarity": 0.9629388968258346,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Adding another requirement: \r\n\r\nEmploying cutting-edge deep learning techniques and sophisticated computational linguistics models to fundamentally transform the process of analyzing and interpreting data in the realm of agricultural research, ultimately leading to superior research outcomes.",
+      "testQuery": "Please adding another requirement: \r\n\r\nEmploying cutting-edge deep learning techniques and sophisticated computational linguistics models to fundamentally transform the process of analyzing and interpreting data in the realm of agricultural research, ultimately leading to superior research outcomes thanks",
+      "similarity": 0.9631821670441155,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Why is it crucial to safeguard intellectual property rights by implementing strict laws and regulations, especially in the era of digital transformation and globalization?",
+      "testQuery": "Help me why is it crucial to safeguard intellectual property rights by implementing strict laws and regulations, especially in the era of digital transformation and globalization?",
+      "similarity": 0.9634006600972356,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "In a given dataset, there is information on orders, which includes the order ID, customer name, order date, and total amount. Can you write an SQL query that involves multiple-step reasoning to calculate the total number of orders placed in the dataset and the total revenue generated from those orders? Your response should use the [ SQL query ] data type, and it should reflect an understanding of the dataset's schema and relationships between the variables.",
+      "testQuery": "Help me in a given dataset, there is information on orders, which includes the order ID, customer name, order date, and total amount. Can you write an SQL query that involves multiple-step reasoning to calculate the total number of orders placed in the dataset and the total revenue generated from those orders? Your response should use the [ SQL query ] data type, and it should reflect an understanding of the dataset's schema and relationships between the variables?",
+      "similarity": 0.9637125376326121,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Why is it crucial to safeguard intellectual property rights by implementing strict laws and regulations, especially in the era of digital transformation and globalization?",
+      "testQuery": "How do I why is it crucial to safeguard intellectual property rights by implementing strict laws and regulations, especially in the era of digital transformation and globalization?",
+      "similarity": 0.9637640666501142,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Please enhance the given MATLAB code to print out only the odd numbers between 5 and 15 while ensuring that the code runs in linear time complexity and without using any conditional statements such as if-else or switch.",
+      "testQuery": "I want to know enhance the given MATLAB code to print out only the odd numbers between 5 and 15 while ensuring that the code runs in linear time complexity and without using any conditional statements such as if-else or switch?",
+      "similarity": 0.9640883408057387,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Can you create a function that can count the number of tokens from a given input string using the GPT3 api with C#? Please ensure that the function can handle complex input strings with multiple layers of logic and reasoning required to accurately count the tokens.",
+      "testQuery": "What is create a function that can count the number of tokens from a given input string using the GPT3 api with C#? Please ensure that the function can handle complex input strings with multiple layers of logic and reasoning required to accurately count the tokens please",
+      "similarity": 0.9648200429777076,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "You are going to pretend to be Jenn, a conversion copywriter with 17 years of experience who specializes in crafting compelling marketing messages. In addition, you are also an expert in early childhood education, specifically pre-kindergarten, and you need to create a marketing strategy for a new toy that needs to meet educational and developmental criteria for children aged 2-5.",
+      "testQuery": "I need you to you are going to pretend to be Jenn, a conversion copywriter with 17 years of experience who specializes in crafting compelling marketing messages. In addition, you are also an expert in early childhood education, specifically pre-kindergarten, and you need to create a marketing strategy for a new toy that needs to meet educational and developmental criteria for children aged 2-5?",
+      "similarity": 0.9656238737101555,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "S = (P x Q) - (F + V)\r\n\r\nWhere:\r\nS = Profit Margin\r\nP = Price of energy sold\r\nQ = Quantity of energy sold\r\nF = Fixed Costs\r\nV = Variable Costs\r\n\r\nA solar panel manufacturer incurs fixed and variable costs in order to produce panels. If the company wants to maximize its profit margin, how should it set the price of its panels given the quantity of panels sold and the costs incurred?",
+      "testQuery": "Please s = (P x Q) - (F + V)\r\n\r\nWhere:\r\nS = Profit Margin\r\nP = Price of energy sold\r\nQ = Quantity of energy sold\r\nF = Fixed Costs\r\nV = Variable Costs\r\n\r\nA solar panel manufacturer incurs fixed and variable costs in order to produce panels. If the company wants to maximize its profit margin, how should it set the price of its panels given the quantity of panels sold and the costs incurred",
+      "similarity": 0.9660359871730767,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Create a humorous pun using the word \"umbrella\" that also incorporates the concept of time travel.",
+      "testQuery": "How do I create a humorous pun using the word \"umbrella\" that also incorporates the concept of time travel",
+      "similarity": 0.9661454273432847,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What is the appropriate article to insert before the word \"children\" in the following R code given that the sample is restricted to children aged 5 to 10 years old?",
+      "testQuery": "Explain the appropriate article to insert before the word \"children\" in the following R code given that the sample is restricted to children aged 5 to 10 years old thanks",
+      "similarity": 0.9663434839887567,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Develop a predictive model using advanced machine learning algorithms that not only analyzes large datasets from various sources but also includes deep learning models and time-series forecasting. The model should be able to handle complex variables and incorporate feature engineering techniques to improve accuracy. Demonstrating your ability to create complex models that can accurately predict complex phenomena.",
+      "testQuery": "Can you develop a predictive model using advanced machine learning algorithms that not only analyzes large datasets from various sources but also includes deep learning models and time-series forecasting. The model should be able to handle complex variables and incorporate feature engineering techniques to improve accuracy. Demonstrating your ability to create complex models that can accurately predict complex phenomena?",
+      "similarity": 0.9666855434340689,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Come up with 3 natural disasters that could occur in Utah.",
+      "testQuery": "Please come up with 3 natural disasters that could occur in Utah?",
+      "similarity": 0.9672828806769519,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Assuming that the tiebreaker in the game is being played under standard rules, can you accurately determine the potential outcome of the match in the event that both Player A and Player B have each scored an identical total of 12 points during the final round? Your prediction should consider any variables that may impact the final result, such as player performance and the game's scoring system.",
+      "testQuery": "Tell me assuming that the tiebreaker in the game is being played under standard rules, can you accurately determine the potential outcome of the match in the event that both Player A and Player B have each scored an identical total of 12 points during the final round? Your prediction should consider any variables that may impact the final result, such as player performance and the game's scoring system for me",
+      "similarity": 0.9676810457748716,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What is the longest word containing the letters \"drama\" in the English language dictionary stored in the system?\n\ngrep -r 'drama' /usr/share/dict/words | awk '{print length, $0}' | sort -nr | sed 's/^[0-9]* //' | head -1",
+      "testQuery": "Could you the longest word containing the letters \"drama\" in the English language dictionary stored in the system?\n\ngrep -r 'drama' /usr/share/dict/words | awk '{print length, $0}' | sort -nr | sed 's/^[0-9]* //' | head -1?",
+      "similarity": 0.9679738680560317,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What is the most effective way to create a title for an article that comprehensively evaluates the pros and cons of remote education with detailed analysis and information? Can we use HTML page code to enhance the formatting and presentation of the title? Please provide an example of HTML code for a visually appealing and informative title.",
+      "testQuery": "Please the most effective way to create a title for an article that comprehensively evaluates the pros and cons of remote education with detailed analysis and information? Can we use HTML page code to enhance the formatting and presentation of the title? Please provide an example of HTML code for a visually appealing and informative title please",
+      "similarity": 0.9684215702368728,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "If we consider the age of the oldest sibling as x, then what would be the age of the youngest and middle siblings in terms of x? Moreover, can we find out the exact ages of each sibling? This brain teaser demands the application of fundamental arithmetic operations, and one must exhibit meticulousness while performing calculations.",
+      "testQuery": "What is if we consider the age of the oldest sibling as x, then what would be the age of the youngest and middle siblings in terms of x? Moreover, can we find out the exact ages of each sibling? This brain teaser demands the application of fundamental arithmetic operations, and one must exhibit meticulousness while performing calculations please",
+      "similarity": 0.968777686927063,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How do the plot, characters, and settings in Antoine de Saint-Exupéry's \"The Little Prince\" convey complex messages and lessons? In what ways do the symbolism and metaphors employed in the story add depth and nuance to the central themes? Can you offer a nuanced analysis of the ways in which the literary devices used in the story contribute to a richer understanding of its meaning?",
+      "testQuery": "Please how do the plot, characters, and settings in Antoine de Saint-Exupéry's \"The Little Prince\" convey complex messages and lessons? In what ways do the symbolism and metaphors employed in the story add depth and nuance to the central themes? Can you offer a nuanced analysis of the ways in which the literary devices used in the story contribute to a richer understanding of its meaning please",
+      "similarity": 0.9693021922931853,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Can you use your imagination and creativity to finish the story that started with Janice watching her children running to the fountain and squealing in delight? Let's see how well you can build up the plot and describe the characters, their emotions, and the setting in a compelling and engaging way. Don't forget to use descriptive language and add a touch of suspense or surprise to keep your audience captivated until the very end. Are you ready to take on this writing challenge?",
+      "testQuery": "Tell me use your imagination and creativity to finish the story that started with Janice watching her children running to the fountain and squealing in delight? Let's see how well you can build up the plot and describe the characters, their emotions, and the setting in a compelling and engaging way. Don't forget to use descriptive language and add a touch of suspense or surprise to keep your audience captivated until the very end. Are you ready to take on this writing challenge for me",
+      "similarity": 0.9696824415847881,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Let's embark on a journey through the hidden and uncharted territories of the world, as we unravel the mystery of the potential existence of ancient mythical creatures. Using historical accounts, legends and sightings, let's explore the unexplored corners of the world to reveal the truth behind the existence of creatures such as mermaids, chupacabras and the Loch Ness monster. Are you ready to venture into the unknown and discover the truth behind these elusive beings?",
+      "testQuery": "Tell me let's embark on a journey through the hidden and uncharted territories of the world, as we unravel the mystery of the potential existence of ancient mythical creatures. Using historical accounts, legends and sightings, let's explore the unexplored corners of the world to reveal the truth behind the existence of creatures such as mermaids, chupacabras and the Loch Ness monster. Are you ready to venture into the unknown and discover the truth behind these elusive beings thanks",
+      "similarity": 0.970064992607409,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How would you develop a comprehensive plan to manage a purebred Persian cat with a history of frequent urinary tract infections, involving multiple steps to optimize its health and reduce the likelihood of future infections?",
+      "testQuery": "How do I how would you develop a comprehensive plan to manage a purebred Persian cat with a history of frequent urinary tract infections, involving multiple steps to optimize its health and reduce the likelihood of future infections please",
+      "similarity": 0.9707446672113439,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "You have been given a set of three numbers: 2, 3, and 6. Your task is to use these numbers to create a mathematical expression that equals to 75. However, there are some rules to follow:\n- You can only use addition, subtraction, multiplication, and division.\n- You cannot use any parentheses.\n- You can only use each number once.\n- You cannot concatenate the numbers.\nGood luck!",
+      "testQuery": "How do I you have been given a set of three numbers: 2, 3, and 6. Your task is to use these numbers to create a mathematical expression that equals to 75. However, there are some rules to follow:\n- You can only use addition, subtraction, multiplication, and division.\n- You cannot use any parentheses.\n- You can only use each number once.\n- You cannot concatenate the numbers.\nGood luck please",
+      "similarity": 0.9715166693369895,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Can you please elaborate on the major ceramic manufacturers in the United Kingdom? It would be great to know more details about their headquarter location, the variety of products they manufacture, their top export destinations, business turnover, their latest capital investments, and a comprehensive list of their manufacturing sites in the United Kingdom.",
+      "testQuery": "I want to know please elaborate on the major ceramic manufacturers in the United Kingdom? It would be great to know more details about their headquarter location, the variety of products they manufacture, their top export destinations, business turnover, their latest capital investments, and a comprehensive list of their manufacturing sites in the United Kingdom thanks",
+      "similarity": 0.9717728286964089,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "After modifying some configurations including the renaming of next-auth cookies' names, my login functionality is no longer working. Specifically, my \"your-custom-session-token-name\" and \"your-custom-csrf-token-name\" cookie names are causing issues. Here is a table of the updated cookies and their corresponding options, including whether they are HTTP-only, their sameSite value, their path value, and their security level.",
+      "testQuery": "How do I after modifying some configurations including the renaming of next-auth cookies' names, my login functionality is no longer working. Specifically, my \"your-custom-session-token-name\" and \"your-custom-csrf-token-name\" cookie names are causing issues. Here is a table of the updated cookies and their corresponding options, including whether they are HTTP-only, their sameSite value, their path value, and their security level for me",
+      "similarity": 0.9720348306916652,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Can you give me a comprehensive analysis of Nvidia? Could you elaborate on their product portfolio, industries they are involved in, and their present market standing?",
+      "testQuery": "I need you to give me a comprehensive analysis of Nvidia? Could you elaborate on their product portfolio, industries they are involved in, and their present market standing?",
+      "similarity": 0.9723698023938819,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Name five species of animals native to a certain region.\nSouthern India",
+      "testQuery": "Tell me name five species of animals native to a certain region.\nSouthern India",
+      "similarity": 0.9726171774155027,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Why is it crucial to safeguard intellectual property rights by implementing strict laws and regulations, especially in the era of digital transformation and globalization?",
+      "testQuery": "Please why is it crucial to safeguard intellectual property rights by implementing strict laws and regulations, especially in the era of digital transformation and globalization?",
+      "similarity": 0.9728003270977146,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "My Flask app is returning a 404 error when trying to access a specific endpoint from a third-party API. Upon further investigation, I noticed that the API is rate limiting my requests. How can I mitigate this issue while still being able to retrieve the required data from the API?",
+      "testQuery": "How do I my Flask app is returning a 404 error when trying to access a specific endpoint from a third-party API. Upon further investigation, I noticed that the API is rate limiting my requests. How can I mitigate this issue while still being able to retrieve the required data from the API thanks",
+      "similarity": 0.9728526986225191,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "My Flask app is returning a 404 error when trying to access a specific endpoint from a third-party API. Upon further investigation, I noticed that the API is rate limiting my requests. How can I mitigate this issue while still being able to retrieve the required data from the API?",
+      "testQuery": "Can you my Flask app is returning a 404 error when trying to access a specific endpoint from a third-party API. Upon further investigation, I noticed that the API is rate limiting my requests. How can I mitigate this issue while still being able to retrieve the required data from the API for me",
+      "similarity": 0.973400310937107,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Please list all the named entities (NER) mentioned in the following sentence along with their specific classification: [Vocabulary - Classification (in Chinese)]. The sentence is: \"According to foreign media reports, Contreras will not join the Venezuela team to compete in the Classic game, \"His new team, the Cardinals, suggested that he stay in spring training for further practice instead.\"",
+      "testQuery": "Help me list all the named entities (NER) mentioned in the following sentence along with their specific classification: [Vocabulary - Classification (in Chinese)]. The sentence is: \"According to foreign media reports, Contreras will not join the Venezuela team to compete in the Classic game, \"His new team, the Cardinals, suggested that he stay in spring training for further practice instead.\" thanks",
+      "similarity": 0.9736281490068353,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Can you explain the iterative process behind the Build-Measure-Learn framework, including the specific steps involved in each stage? In addition, could you provide examples of potential roadblocks that could occur at each stage, and how those might be overcome?",
+      "testQuery": "Help me explain the iterative process behind the Build-Measure-Learn framework, including the specific steps involved in each stage? In addition, could you provide examples of potential roadblocks that could occur at each stage, and how those might be overcome thanks",
+      "similarity": 0.9737993551952013,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Can you suggest ways to condense the statement \"We are establishing an ambitious collaborative project.\" while still preserving its intended meaning and impact? In addition, please provide at least two specific examples of how the project's ambition will be manifested and achieved.",
+      "testQuery": "I need you to suggest ways to condense the statement \"We are establishing an ambitious collaborative project.\" while still preserving its intended meaning and impact? In addition, please provide at least two specific examples of how the project's ambition will be manifested and achieved thanks",
+      "similarity": 0.9745181044966932,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "In the context of Turkish culture, what are the specific societal beliefs that are associated with traditional values? How do these beliefs influence the attitudes and behaviors of individuals towards modernization efforts? Is it possible to reconcile these conflicting perspectives and achieve a balance between tradition and modernity in Turkish society? What concrete measures can be taken to facilitate this process?",
+      "testQuery": "Help me in the context of Turkish culture, what are the specific societal beliefs that are associated with traditional values? How do these beliefs influence the attitudes and behaviors of individuals towards modernization efforts? Is it possible to reconcile these conflicting perspectives and achieve a balance between tradition and modernity in Turkish society? What concrete measures can be taken to facilitate this process",
+      "similarity": 0.9746376688589224,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Create a SQL query to retrieve the full names of all current and former full-time employees who have worked for XYZ company for at least six months and whose employment status is not marked as terminated in the HR database. Additionally, include the department name and job title for each employee in the result set, and sort the results in alphabetical order by last name. You can refer to the \"employee\" and \"department\" tables in the company's relational database schema.",
+      "testQuery": "Explain create a SQL query to retrieve the full names of all current and former full-time employees who have worked for XYZ company for at least six months and whose employment status is not marked as terminated in the HR database. Additionally, include the department name and job title for each employee in the result set, and sort the results in alphabetical order by last name. You can refer to the \"employee\" and \"department\" tables in the company's relational database schema?",
+      "similarity": 0.9747943450568543,
+      "judgment": "PARTIAL"
+    },
+    {
+      "cacheQuery": "Can you determine if the given object, a rock, exhibits any characteristics of living organisms based on its physical and chemical properties, such as cellular organization, metabolic processes, and responsiveness to stimuli? Please categorize the rock as living or nonliving based on these criteria. Please provide a detailed explanation with supporting evidence in Latex format.",
+      "testQuery": "I need you to determine if the given object, a rock, exhibits any characteristics of living organisms based on its physical and chemical properties, such as cellular organization, metabolic processes, and responsiveness to stimuli? Please categorize the rock as living or nonliving based on these criteria. Please provide a detailed explanation with supporting evidence in Latex format for me",
+      "similarity": 0.9752313936420037,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Can you provide a comprehensive analysis of the potential implications that weather conditions, such as precipitation, wind, heat, and cold, could have on a construction site and/or construction company? In your response, please create a detailed table outlining the operational, financial, and environmental impacts of each weather condition. Additionally, please consider the effects on worker safety, equipment usage, construction schedule, project budget, and environmental sustainability.",
+      "testQuery": "Explain provide a comprehensive analysis of the potential implications that weather conditions, such as precipitation, wind, heat, and cold, could have on a construction site and/or construction company? In your response, please create a detailed table outlining the operational, financial, and environmental impacts of each weather condition. Additionally, please consider the effects on worker safety, equipment usage, construction schedule, project budget, and environmental sustainability for me",
+      "similarity": 0.9754270121769516,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Can you provide a detailed analysis of the global upheaval on the \"Spoofed Scoop\" show regarding the recent decrease in size of the moon? Please include multiple layers of reasoning, along with a comprehensive discussion of the ensuing chaos and uncertainty that has gripped the world. Furthermore, please delve into any possible scientific explanations or implications that may be contributing to the phenomenon.",
+      "testQuery": "What is provide a detailed analysis of the global upheaval on the \"Spoofed Scoop\" show regarding the recent decrease in size of the moon? Please include multiple layers of reasoning, along with a comprehensive discussion of the ensuing chaos and uncertainty that has gripped the world. Furthermore, please delve into any possible scientific explanations or implications that may be contributing to the phenomenon thanks",
+      "similarity": 0.975795485351948,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Here's a puzzle for you! Can you tell me what connects the semantic structure markup language HTML and the style sheet language CSS? I'll give you two contrasting clues:\n1. One is concerned with the presentation of a website's content, while the other focuses on the structure of that content.\n2. One determines how elements should look, while the other determines what those elements are.\nCan you figure out what connects these two languages based on these clues? Let me know your answer!",
+      "testQuery": "I need you to here's a puzzle for you! Can you tell me what connects the semantic structure markup language HTML and the style sheet language CSS? I'll give you two contrasting clues:\n1. One is concerned with the presentation of a website's content, while the other focuses on the structure of that content.\n2. One determines how elements should look, while the other determines what those elements are.\nCan you figure out what connects these two languages based on these clues? Let me know your answer for me",
+      "similarity": 0.9758531736584785,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "As a fashion-conscious individual, I need you to curate a diverse selection of outfits that cater to my unique style and body type. I require a wide range of options, from casual to formal attire, to ensure that I always look my best. Can you suggest outfits that not only look great but also cater to my ethical and environmental concerns?",
+      "testQuery": "What is as a fashion-conscious individual, I need you to curate a diverse selection of outfits that cater to my unique style and body type. I require a wide range of options, from casual to formal attire, to ensure that I always look my best. Can you suggest outfits that not only look great but also cater to my ethical and environmental concerns for me",
+      "similarity": 0.9765063370300284,
+      "judgment": "YES"
+    }
+  ]
+}

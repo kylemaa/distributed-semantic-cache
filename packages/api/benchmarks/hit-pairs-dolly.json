@@ -1,0 +1,1634 @@
+[
+  {
+    "cacheQuery": "In SQL, how can I filter table rows based on a column condition?",
+    "testQuery": "Explain in SQL, how can I filter table rows based on a column condition for me",
+    "similarity": 0.935690562643661,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "When rock climbing, what is the difference between lead climbing and top rope climbing?",
+    "testQuery": "Could you when rock climbing, what is the difference between lead climbing and top rope climbing",
+    "similarity": 0.9664662946132617,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is a good way to get around without a car?",
+    "testQuery": "Can you a good way to get around without a car?",
+    "similarity": 0.9573245348226975,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is the old name for The Go Between Bridge? The Go Between Bridge, formerly known as the Hale Street Link, is a toll bridge for vehicles, pedestrians and cyclists over the Brisbane River in inner-city Brisbane, Queensland, Australia. The bridge",
+    "testQuery": "Please the old name for The Go Between Bridge? The Go Between Bridge, formerly known as the Hale Street Link, is a toll bridge for vehicles, pedestrians and cyclists over the Brisbane River in inner-city Brisbane, Queensland, Australia. The bridge thanks",
+    "similarity": 0.955622140429961,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Do George Lucas and Steven Spielberg know each other?",
+    "testQuery": "I want to know do George Lucas and Steven Spielberg know each other?",
+    "similarity": 0.9773034114217548,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Extract the reason why was Mark Hunt known as the King of Walk Offs Mark Richard Hunt (born 23 March 1974) is a New Zealand former mixed martial artist and kickboxer of Samoan descent, currently living in Sydney, Australia. Hunt competed in the Ultimate Fighting Champ",
+    "testQuery": "What is extract the reason why was Mark Hunt known as the King of Walk Offs Mark Richard Hunt (born 23 March 1974) is a New Zealand former mixed martial artist and kickboxer of Samoan descent, currently living in Sydney, Australia. Hunt competed in the Ultimate Fighting Champ",
+    "similarity": 0.9828270405858786,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What does fasting mean? Fasting is the abstention from eating and sometimes drinking. From a purely physiological context, \"fasting\" may refer to the metabolic status of a person who has not eaten overnight (see \"Breakfast\")",
+    "testQuery": "Can you what does fasting mean? Fasting is the abstention from eating and sometimes drinking. From a purely physiological context, \"fasting\" may refer to the metabolic status of a person who has not eaten overnight (see \"Breakfast\")",
+    "similarity": 0.9765956767193067,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What does Cisco specialize in, what technology markets do they address, and what are their most successful products? Cisco Systems, Inc., commonly known as Cisco, is an American-based multinational digital communications technology conglomerate corporation headquartered in San Jose, California. Cisco develops, manuf",
+    "testQuery": "Tell me what does Cisco specialize in, what technology markets do they address, and what are their most successful products? Cisco Systems, Inc., commonly known as Cisco, is an American-based multinational digital communications technology conglomerate corporation headquartered in San Jose, California. Cisco develops, manuf",
+    "similarity": 0.9834143252536289,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "How long does it take for a mustard seed to germinate? Mustard seeds are the small round seeds of various mustard plants. The seeds are usually about 1 to 2 millimetres (0.039 to 0.079 in) in diameter and may be colored from yellowish white to black. They",
+    "testQuery": "How do I how long does it take for a mustard seed to germinate? Mustard seeds are the small round seeds of various mustard plants. The seeds are usually about 1 to 2 millimetres (0.039 to 0.079 in) in diameter and may be colored from yellowish white to black. They",
+    "similarity": 0.9893260106169451,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is wine? Wine is an alcoholic drink typically made from fermented grapes. Yeast consumes the sugar in the grapes and converts it to ethanol and carbon dioxide, releasing heat in the process. Different varietie",
+    "testQuery": "Please wine? Wine is an alcoholic drink typically made from fermented grapes. Yeast consumes the sugar in the grapes and converts it to ethanol and carbon dioxide, releasing heat in the process. Different varietie for me",
+    "similarity": 0.8969795814237802,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Whats the difference between a bass guitar and a regular guitar?",
+    "testQuery": "What is the difference between a bass guitar and a normal guitar?`",
+    "similarity": 0.9332424400078922,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Please summarize the causes and cure for color blindness given in the passage? The most common cause of color blindness is an inherited problem or variation in the functionality of one or more of the three classes of cone cells in the retina, which mediate color vision. The most",
+    "testQuery": "Explain summarize the causes and cure for color blindness given in the passage? The most common cause of color blindness is an inherited problem or variation in the functionality of one or more of the three classes of cone cells in the retina, which mediate color vision. The most for me",
+    "similarity": 0.9629116016160009,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What makes a good sales account executive?",
+    "testQuery": "What is what makes a good sales account executive for me",
+    "similarity": 0.9074680209748669,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Change the following passage to past tense The episode focuses on two people: an elderly hospital doctor (Aleksander Bardini), who lives by himself in the ubiquitous Dekalog apartment block; and Dorota Geller (Krystyna Janda), a woman in her 3",
+    "testQuery": "I need you to change the following passage to past tense The episode focuses on two people: an elderly hospital doctor (Aleksander Bardini), who lives by himself in the ubiquitous Dekalog apartment block; and Dorota Geller (Krystyna Janda), a woman in her 3 thanks",
+    "similarity": 0.9340398776088664,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "How can I contribute to Spark?",
+    "testQuery": "How do I how can I contribute to Spark",
+    "similarity": 0.9687918448457767,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Why do potato chip bags become stale after opening?",
+    "testQuery": "Please why do potato chip bags become stale after opening please",
+    "similarity": 0.9240907202746318,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is a dispersive prism? In optics, a dispersive prism is an optical prism that is used to disperse light, that is, to separate light into its spectral components (the colors of the rainbow). Different wavelengths (colors) of",
+    "testQuery": "How do I a dispersive prism? In optics, a dispersive prism is an optical prism that is used to disperse light, that is, to separate light into its spectral components (the colors of the rainbow). Different wavelengths (colors) of?",
+    "similarity": 0.9590374695098928,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Why do potato chip bags become stale after opening?",
+    "testQuery": "Can you why do potato chip bags become stale after opening",
+    "similarity": 0.9688252042637931,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which is a species of fish? Mola mola or Molar",
+    "testQuery": "I want to know which is a species of fish? Mola mola or Molar for me",
+    "similarity": 0.9416767586384297,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Classify each of the following as either a title by Isaac Asimov or Jules Verne: Pebble in the Sky, The Stars, Like Dust, Foundation, The Robots of Dawn, The Naked Sun, Around the World in Eighty Days, From the Earth to the Moon, Martin Paz, Journey to the Centre of the Earth, A Drama in the Air",
+    "testQuery": "Please classify each of the following as either a title by Isaac Asimov or Jules Verne: Pebble in the Sky, The Stars, Like Dust, Foundation, The Robots of Dawn, The Naked Sun, Around the World in Eighty Days, From the Earth to the Moon, Martin Paz, Journey to the Centre of the Earth, A Drama in the Air please",
+    "similarity": 0.968617798950239,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "From the passage provided, extract the date when the 34th Wisconsin Infantry Regiment was organized. The 34th Wisconsin Infantry Regiment was a conscripted infantry regiment that served in the Union Army during the American Civil War. The 34th Wisconsin Infantry was composed of men drafted by state a",
+    "testQuery": "Help me from the passage provided, extract the date when the 34th Wisconsin Infantry Regiment was organized. The 34th Wisconsin Infantry Regiment was a conscripted infantry regiment that served in the Union Army during the American Civil War. The 34th Wisconsin Infantry was composed of men drafted by state a please",
+    "similarity": 0.9559088107204787,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Who do you think is the most powerful Mandalorian in Star Wars history?",
+    "testQuery": "Explain who do you think is the most powerful Mandalorian in Star Wars history thanks",
+    "similarity": 0.9217294726458046,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Tell whether these are countries, cities, continents or neither: Australia, Mexico, Mexico city, Antartica, Singapore, India, Gulf, Beijing, Jakarta, Luxembourg, Vatican City",
+    "testQuery": "Please tell whether these are countries, cities, continents or neither: Australia, Mexico, Mexico city, Antartica, Singapore, India, Gulf, Beijing, Jakarta, Luxembourg, Vatican City for me",
+    "similarity": 0.9402875153046185,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "List 6 different types of rain in Seattle",
+    "testQuery": "Please list 6 different types of rain in Seattle please",
+    "similarity": 0.9251509458333431,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What's the difference between tennis and pickleball?",
+    "testQuery": "Could you what's the difference between tennis and pickleball thanks",
+    "similarity": 0.9291701309039297,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What’s a typical dish in Brazil?",
+    "testQuery": "What is what’s a typical dish in Brazil",
+    "similarity": 0.9413855050401932,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which is considered the first human technology?",
+    "testQuery": "Could you which is considered the first human technology?",
+    "similarity": 0.9716841153239322,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is the name of the Winslow's nerdy next-door neighbor on the TV show \"Family Matters\"?",
+    "testQuery": "Can you the name of the Winslow's nerdy next-door neighbor on the TV show \"Family Matters\"",
+    "similarity": 0.9665208454231018,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Please describe  what is oil and give me a list of it’s applications. An oil is any nonpolar chemical substance that is composed primarily of hydrocarbons and is hydrophobic (does not mix with water) & lipophilic (mixes with other oils). Oils are usually flammable and s",
+    "testQuery": "What is describe  what is oil and give me a list of it’s applications. An oil is any nonpolar chemical substance that is composed primarily of hydrocarbons and is hydrophobic (does not mix with water) & lipophilic (mixes with other oils). Oils are usually flammable and s?",
+    "similarity": 0.9744573306254567,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "write a scene between two actors discussing movie Inception",
+    "testQuery": "Please write a scene between two actors discussing movie Inception please",
+    "similarity": 0.9344734765975651,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "As a golfer, how can I fix my slice?",
+    "testQuery": "Explain as a golfer, how can I fix my slice thanks",
+    "similarity": 0.8973422061612504,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is process mining? Process mining is a family of techniques relating the fields of data science and process management to support the analysis of operational processes based on event logs. The goal of process mining is ",
+    "testQuery": "Explain process mining? Process mining is a family of techniques relating the fields of data science and process management to support the analysis of operational processes based on event logs. The goal of process mining is  please",
+    "similarity": 0.940629765024787,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which of these are rappers? Eminem, Michael Jackson, Rihanna, 50 Cent",
+    "testQuery": "I want to know which of these are rappers? Eminem, Michael Jackson, Rihanna, 50 Cent?",
+    "similarity": 0.948095827301172,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Who was John Moses Browning? John Moses Browning (January 23, 1855 – November 26, 1926) was an American firearm designer who developed many varieties of military and civilian firearms, cartridges, and gun mechanisms – many of whi",
+    "testQuery": "How do I who was John Moses Browning? John Moses Browning (January 23, 1855 – November 26, 1926) was an American firearm designer who developed many varieties of military and civilian firearms, cartridges, and gun mechanisms – many of whi please",
+    "similarity": 0.9584142815018201,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Who was boxer John Baldwin Known as \"The Mad\" Baldwin, he turned pro in 1970 and lost a decision to Marvin Hagler in 1975. In 1977 he took on Rocky Mosley Jr in the ill-fated U.S. Championship Tournament, but lost via K.O. In 1",
+    "testQuery": "Help me who was boxer John Baldwin Known as \"The Mad\" Baldwin, he turned pro in 1970 and lost a decision to Marvin Hagler in 1975. In 1977 he took on Rocky Mosley Jr in the ill-fated U.S. Championship Tournament, but lost via K.O. In 1",
+    "similarity": 0.9810227050756534,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which coin of U.S currency has the most ridges.",
+    "testQuery": "Please which coin of U.S currency has the most ridges for me",
+    "similarity": 0.9299105263909616,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is the name of the largest red-light district in Amsterdam?",
+    "testQuery": "I need you to the name of the largest red-light district in Amsterdam?",
+    "similarity": 0.9382638146454833,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Separate the following suburbs into those that border, and do not border, the Brisbane River: Indooroopilly, Bulimba, St Lucia, Newstead, Wilston, West End, Toowong, Bowen Hills and, Wooloongabba.",
+    "testQuery": "What is separate the following suburbs into those that border, and do not border, the Brisbane River: Indooroopilly, Bulimba, St Lucia, Newstead, Wilston, West End, Toowong, Bowen Hills and, Wooloongabba thanks",
+    "similarity": 0.9416031672032554,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What are the advantages to studying Engineering in college?",
+    "testQuery": "How do I what are the advantages to studying Engineering in college",
+    "similarity": 0.9523743160636374,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Give me a bulleted list of the the first five books in the bible old testament?",
+    "testQuery": "Could you give me a bulleted list of the the first five books in the bible old testament",
+    "similarity": 0.940152617624641,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Extract all of the dates mentioned in this paragraph and list them using bullets in the format {Date} - {Description} Daniel Leavitt was born November 16, 1813, at Rye, New Hampshire, the son of Benning Leavitt, influential businessman, state senator, county commissioner and later Chicopee Selectman, and his wife Oli",
+    "testQuery": "I need you to extract all of the dates mentioned in this paragraph and list them using bullets in the format {Date} - {Description} Daniel Leavitt was born November 16, 1813, at Rye, New Hampshire, the son of Benning Leavitt, influential businessman, state senator, county commissioner and later Chicopee Selectman, and his wife Oli please",
+    "similarity": 0.9561671235247179,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "How do you operate a car with a manual transmission?",
+    "testQuery": "Tell me how do you operate a car with a manual transmission",
+    "similarity": 0.9071670972009052,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "In the United States of America, which state is the largest in size?",
+    "testQuery": "I need you to in the United States of America, which state is the largest in size thanks",
+    "similarity": 0.8195758499977077,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Please provide a brief summary describing Canada Canada is a country in North America. Its ten provinces and three territories extend from the Atlantic Ocean to the Pacific Ocean and northward into the Arctic Ocean, making it the world's second-larg",
+    "testQuery": "Tell me provide a brief summary describing Canada Canada is a country in North America. Its ten provinces and three territories extend from the Atlantic Ocean to the Pacific Ocean and northward into the Arctic Ocean, making it the world's second-larg for me",
+    "similarity": 0.9476022977780875,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What does fasting mean? Fasting is the abstention from eating and sometimes drinking. From a purely physiological context, \"fasting\" may refer to the metabolic status of a person who has not eaten overnight (see \"Breakfast\")",
+    "testQuery": "How do I what does fasting mean? Fasting is the abstention from eating and sometimes drinking. From a purely physiological context, \"fasting\" may refer to the metabolic status of a person who has not eaten overnight (see \"Breakfast\") please",
+    "similarity": 0.9626240116646302,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "List the weapons of Goddess Durga in a comma separated manner. Durga is a warrior goddess, and she is depicted to express her martial skills. Her iconography typically resonates with these attributes, where she rides a lion or a tiger, has between eight and eight",
+    "testQuery": "How do I list the weapons of Goddess Durga in a comma separated manner. Durga is a warrior goddess, and she is depicted to express her martial skills. Her iconography typically resonates with these attributes, where she rides a lion or a tiger, has between eight and eight?",
+    "similarity": 0.9606399915169358,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What’s a typical dish in Brazil?",
+    "testQuery": "Could you what’s a typical dish in Brazil thanks",
+    "similarity": 0.8997020186649889,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Tell me whether these people are DJs or singers: David Guetta, Avicii, Rihanna, Beyonce, Martin Garrix, Calvin Harris, Taylor Swift",
+    "testQuery": "Could you whether these people are DJs or singers: David Guetta, Avicii, Rihanna, Beyonce, Martin Garrix, Calvin Harris, Taylor Swift for me",
+    "similarity": 0.948450723909404,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What should I do on a free afternoon in San Francisco?",
+    "testQuery": "I want to know what should I do on a free afternoon in San Francisco for me",
+    "similarity": 0.9095826154736844,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is the PGA Championship? The PGA Championship (often referred to as the US PGA Championship or USPGA outside the United States) is an annual golf tournament conducted by the Professional Golfers' Association of America. It is",
+    "testQuery": "Help me the PGA Championship? The PGA Championship (often referred to as the US PGA Championship or USPGA outside the United States) is an annual golf tournament conducted by the Professional Golfers' Association of America. It is please",
+    "similarity": 0.9059940981635503,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Based on the following passage summarise how sunsets are viewed from the northern hemisphere across seasons. Sunset, also known as sundown, is the daily disappearance of the Sun below the horizon due to Earth's rotation. As viewed from everywhere on Earth (except the North and South poles), the equinox Sun s",
+    "testQuery": "Please based on the following passage summarise how sunsets are viewed from the northern hemisphere across seasons. Sunset, also known as sundown, is the daily disappearance of the Sun below the horizon due to Earth's rotation. As viewed from everywhere on Earth (except the North and South poles), the equinox Sun s?",
+    "similarity": 0.9704167525754163,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Give me a list of ways that a runner can advance a base in baseball without there being a hit.",
+    "testQuery": "I need you to give me a list of ways that a runner can advance a base in baseball without there being a hit for me",
+    "similarity": 0.9416353574150101,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Who were the ten best baseball players in the history of the Boston Red Sox?",
+    "testQuery": "I want to know who were the ten best baseball players in the history of the Boston Red Sox",
+    "similarity": 0.9234083025846512,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is the tiny piece at the end of a shoelace called?",
+    "testQuery": "Tell me the tiny piece at the end of a shoelace called please",
+    "similarity": 0.8443149556328943,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "When was Lamb Air operating Lamb Air Ltd. was a Canadian airline that began operations in 1934 in The Pas, Manitoba, and went out of business in 1981.\n\nHistory\nTom Lamb was the son of Thomas Henry Peacock (THP) Lamb, who had emi",
+    "testQuery": "Please when was Lamb Air operating Lamb Air Ltd. was a Canadian airline that began operations in 1934 in The Pas, Manitoba, and went out of business in 1981.\n\nHistory\nTom Lamb was the son of Thomas Henry Peacock (THP) Lamb, who had emi thanks",
+    "similarity": 0.9917200459827854,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Is it true that Lewis Hamilton won the championship in his first F1 season? Hamilton's first season in Formula One saw him partner two-time and defending World Champion Fernando Alonso. Hamilton is the first and, as of 2022, the only black driver to race in the series. After ",
+    "testQuery": "I want to know is it true that Lewis Hamilton won the championship in his first F1 season? Hamilton's first season in Formula One saw him partner two-time and defending World Champion Fernando Alonso. Hamilton is the first and, as of 2022, the only black driver to race in the series. After ?",
+    "similarity": 0.9839262616790413,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which is a species of fish? Sea dragon or Red bearded",
+    "testQuery": "I need you to which is a species of fish? Sea dragon or Red bearded",
+    "similarity": 0.9050001117828286,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Identify which animal species is alive or extinct: Pliosaur, Marine Iguana",
+    "testQuery": "Tell me identify which animal species is alive or extinct: Pliosaur, Marine Iguana?",
+    "similarity": 0.9546241983591431,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What's the best way to learn how to snowboard?",
+    "testQuery": "Please what's the best way to learn how to snowboard please",
+    "similarity": 0.885602830253447,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Tell me which months have 30 days and which have 31 days, based on this list: January, February, March, April, May, June, July, August, September, October, November, and December.",
+    "testQuery": "Could you which months have 30 days and which have 31 days, based on this list: January, February, March, April, May, June, July, August, September, October, November, and December?",
+    "similarity": 0.9547002206165253,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Who are the pianists that are considered masters in playing Bach's music?",
+    "testQuery": "Could you who are the pianists that are considered masters in playing Bach's music please",
+    "similarity": 0.9151302674925441,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Tell me whether each of these are animals or not: Alligator, Grass, Tree, Boat, Dolphin, Shark, Fish, Fence, Dog, Car",
+    "testQuery": "What is whether each of these are animals or not: Alligator, Grass, Tree, Boat, Dolphin, Shark, Fish, Fence, Dog, Car please",
+    "similarity": 0.9557583182545694,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Give me five ways in which I can make my homebrew beer more interesting",
+    "testQuery": "What is give me five ways in which I can make my homebrew beer more interesting",
+    "similarity": 0.9824325521962752,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What cities should someone visit during a trip to Morocco?",
+    "testQuery": "Could you what cities should someone visit during a trip to Morocco for me",
+    "similarity": 0.9161456483333834,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Extract what is Top Gun The United States Navy Strike Fighter Tactics Instructor program (SFTI program), more popularly known as Top Gun (stylized as TOPGUN), is an American military program that teaches fighter and strike t",
+    "testQuery": "I need you to extract what is Top Gun The United States Navy Strike Fighter Tactics Instructor program (SFTI program), more popularly known as Top Gun (stylized as TOPGUN), is an American military program that teaches fighter and strike t?",
+    "similarity": 0.9451635332194612,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Cauliflower rice is not that fun to eat in its bland form. Is there anything interesting and tasty I can cook with cauliflower rice?",
+    "testQuery": "What is cauliflower rice is not that fun to eat in its bland form. Is there anything interesting and tasty I can cook with cauliflower rice?",
+    "similarity": 0.9779381003476574,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What's the best way to learn how to snowboard?",
+    "testQuery": "How can I learn to snowboard?",
+    "similarity": 0.9193131768402827,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Is Paris a good city to live in?",
+    "testQuery": "Can you is Paris a good city to live in?",
+    "similarity": 0.9763515382261444,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What are some different things you should bring with you on a day hiking trip?",
+    "testQuery": "Can you what are some different things you should bring with you on a day hiking trip for me",
+    "similarity": 0.9296846797100763,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What film won the 1943 Oscar as best film",
+    "testQuery": "Help me what film won the 1943 Oscar as best film for me",
+    "similarity": 0.8598597129678587,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Give me a list of ways that a runner can advance a base in baseball without there being a hit.",
+    "testQuery": "Tell me give me a list of ways that a runner can advance a base in baseball without there being a hit thanks",
+    "similarity": 0.9633641763589524,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Tell me whether these people are DJs or singers: David Guetta, Avicii, Rihanna, Beyonce, Martin Garrix, Calvin Harris, Taylor Swift",
+    "testQuery": "Could you whether these people are DJs or singers: David Guetta, Avicii, Rihanna, Beyonce, Martin Garrix, Calvin Harris, Taylor Swift",
+    "similarity": 0.9733721435857702,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What are the ten best restaurants in London?",
+    "testQuery": "Tell me what are the ten best restaurants in London please",
+    "similarity": 0.8997487599228337,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Categorize these movies that came out in 1999 as cartoons or live-action: The Matrix, Stuart Little, Cruel Intentions, The Iron Giant, The Blair Witch Project, South Park: Bigger, Longer, and Uncut, The Sixth Sense",
+    "testQuery": "Can you categorize these movies that came out in 1999 as cartoons or live-action: The Matrix, Stuart Little, Cruel Intentions, The Iron Giant, The Blair Witch Project, South Park: Bigger, Longer, and Uncut, The Sixth Sense?",
+    "similarity": 0.9689416003503172,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Classify each of the following as either a title by Isaac Asimov or Jules Verne: Pebble in the Sky, The Stars, Like Dust, Foundation, The Robots of Dawn, The Naked Sun, Around the World in Eighty Days, From the Earth to the Moon, Martin Paz, Journey to the Centre of the Earth, A Drama in the Air",
+    "testQuery": "How do I classify each of the following as either a title by Isaac Asimov or Jules Verne: Pebble in the Sky, The Stars, Like Dust, Foundation, The Robots of Dawn, The Naked Sun, Around the World in Eighty Days, From the Earth to the Moon, Martin Paz, Journey to the Centre of the Earth, A Drama in the Air for me",
+    "similarity": 0.9759463640643183,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What's the game engine used by Bethesda before Creation Engine? And what's the last game make with it? After using the Gamebryo engine to create The Elder Scrolls III: Morrowind, The Elder Scrolls IV: Oblivion, and Fallout 3, Bethesda decided that Gamebryo's capabilities were becoming too outdated and ",
+    "testQuery": "What is what's the game engine used by Bethesda before Creation Engine? And what's the last game make with it? After using the Gamebryo engine to create The Elder Scrolls III: Morrowind, The Elder Scrolls IV: Oblivion, and Fallout 3, Bethesda decided that Gamebryo's capabilities were becoming too outdated and ?",
+    "similarity": 0.9784946690029641,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What's the best way to cook a soft-boiled egg?",
+    "testQuery": "Can you what's the best way to cook a soft-boiled egg for me",
+    "similarity": 0.8837225026357588,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What are three most commonly sung lyric soprano arias?",
+    "testQuery": "Could you what are three most commonly sung lyric soprano arias please",
+    "similarity": 0.9006784640448835,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is the best language in the world",
+    "testQuery": "Explain the best language in the world",
+    "similarity": 0.8801636815914102,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "How many campgrounds does Shenandoah National Park have?",
+    "testQuery": "I want to know how many campgrounds does Shenandoah National Park have thanks",
+    "similarity": 0.8662123227414006,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is the current capital of Japan? Tokyo (/ˈtoʊkioʊ/; Japanese: 東京, Tōkyō, [toːkʲoː] (listen)), officially the Tokyo Metropolis (東京都, Tōkyō-to), is the capital and most populous city of Japan. Formerly known as Edo, its metropolitan ar",
+    "testQuery": "Can you the current capital of Japan? Tokyo (/ˈtoʊkioʊ/; Japanese: 東京, Tōkyō, [toːkʲoː] (listen)), officially the Tokyo Metropolis (東京都, Tōkyō-to), is the capital and most populous city of Japan. Formerly known as Edo, its metropolitan ar thanks",
+    "similarity": 0.9603325771522776,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Is there a World Taekwondo Grand Prix",
+    "testQuery": "Help me is there a World Taekwondo Grand Prix thanks",
+    "similarity": 0.8665258557351451,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is Magical Thinking? Magical thinking, or superstitious thinking, is the belief that unrelated events are causally connected despite the absence of any plausible causal link between them, particularly as a result of super",
+    "testQuery": "Explain magical Thinking? Magical thinking, or superstitious thinking, is the belief that unrelated events are causally connected despite the absence of any plausible causal link between them, particularly as a result of super thanks",
+    "similarity": 0.9463329030811711,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "which weighs more, cold or hot water?",
+    "testQuery": "Help me which weighs more, cold or hot water for me",
+    "similarity": 0.8624908960695913,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What are the benefits of division of labour? The division of labour is the separation of the tasks in any economic system or organization so that participants may specialize (specialization). Individuals, organizations, and nations are endowed w",
+    "testQuery": "What is what are the benefits of division of labour? The division of labour is the separation of the tasks in any economic system or organization so that participants may specialize (specialization). Individuals, organizations, and nations are endowed w?",
+    "similarity": 0.9501265533972086,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is Zenthoefer Furs Zenthoefer Furs were an amateur U.S. soccer club which played in St. Louis, Missouri during the late 1940s and early 1950s.\n\nThey had played as a junior squad named Schumachers in the 1947-48 season w",
+    "testQuery": "Explain zenthoefer Furs Zenthoefer Furs were an amateur U.S. soccer club which played in St. Louis, Missouri during the late 1940s and early 1950s.\n\nThey had played as a junior squad named Schumachers in the 1947-48 season w",
+    "similarity": 0.9730476891642468,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Given this paragraph, how many public high schools are in Arlington, Virginia? Arlington Public Schools operates the county's public K-12 education system of 22 elementary schools; 6 middle schools (Dorothy Hamm Middle School, Gunston Middle School, Kenmore Middle School, Swanso",
+    "testQuery": "Could you given this paragraph, how many public high schools are in Arlington, Virginia? Arlington Public Schools operates the county's public K-12 education system of 22 elementary schools; 6 middle schools (Dorothy Hamm Middle School, Gunston Middle School, Kenmore Middle School, Swanso please",
+    "similarity": 0.9556315871241514,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What event John Johnstone won as a rider? John Johnstone (1881-1935) was a British businessman and rider. He was the tai-pan of the Jardine, Matheson & Co., member of the Shanghai Municipal Council and Legislative Council of Hong Kong.\n\nHe wa",
+    "testQuery": "Could you what event John Johnstone won as a rider? John Johnstone (1881-1935) was a British businessman and rider. He was the tai-pan of the Jardine, Matheson & Co., member of the Shanghai Municipal Council and Legislative Council of Hong Kong.\n\nHe wa",
+    "similarity": 0.9902585485698061,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Name some reasons it's great to live in Marin County, California.",
+    "testQuery": "Help me name some reasons it's great to live in Marin County, California?",
+    "similarity": 0.9553041635817612,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Wat id DNA annotation?",
+    "testQuery": "What is wat id DNA annotation for me",
+    "similarity": 0.8795551819013714,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Who gave the UN the land in NY to build their HQ",
+    "testQuery": "Could you who gave the UN the land in NY to build their HQ thanks",
+    "similarity": 0.9340004296387249,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Does \"outbreeding\" or \"inbreeding\" benefit the offspring more? Exogamy often results in two individuals that are not closely genetically related marrying each other; that is, outbreeding as opposed to inbreeding. In moderation, this benefits the offspring as it r",
+    "testQuery": "Explain does \"outbreeding\" or \"inbreeding\" benefit the offspring more? Exogamy often results in two individuals that are not closely genetically related marrying each other; that is, outbreeding as opposed to inbreeding. In moderation, this benefits the offspring as it r",
+    "similarity": 0.9772245917786982,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Given this paragraph, what is the top speed of a Kia Stinger? Kia claims that the Stinger accelerates from zero to 100 km/h (62 mph) in 7.7, 6 and 4.9 seconds for the 2.2-liter diesel, 2.0-liter petrol and 3.3-liter petrol respectively. Schreyer reportedly drove",
+    "testQuery": "I want to know given this paragraph, what is the top speed of a Kia Stinger? Kia claims that the Stinger accelerates from zero to 100 km/h (62 mph) in 7.7, 6 and 4.9 seconds for the 2.2-liter diesel, 2.0-liter petrol and 3.3-liter petrol respectively. Schreyer reportedly drove",
+    "similarity": 0.9902483989259853,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Who was John Moses Browning? John Moses Browning (January 23, 1855 – November 26, 1926) was an American firearm designer who developed many varieties of military and civilian firearms, cartridges, and gun mechanisms – many of whi",
+    "testQuery": "Help me who was John Moses Browning? John Moses Browning (January 23, 1855 – November 26, 1926) was an American firearm designer who developed many varieties of military and civilian firearms, cartridges, and gun mechanisms – many of whi?",
+    "similarity": 0.9613983245547415,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Summarize the rulers of the territory of Albania in this time period. The Illyrian Ardiaei tribe, centred in Montenegro, ruled over most of the territory of Albania. Their Ardiaean Kingdom reached its greatest extent under King Agron, the son of Pleuratus II. Agron exte",
+    "testQuery": "How do I summarize the rulers of the territory of Albania in this time period. The Illyrian Ardiaei tribe, centred in Montenegro, ruled over most of the territory of Albania. Their Ardiaean Kingdom reached its greatest extent under King Agron, the son of Pleuratus II. Agron exte please",
+    "similarity": 0.9745864504522588,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Who saved Andromeda from the sea monster",
+    "testQuery": "Help me who saved Andromeda from the sea monster please",
+    "similarity": 0.8888179599290281,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is the winter weather like in Salt Lake City, Utah?",
+    "testQuery": "Could you the winter weather like in Salt Lake City, Utah?",
+    "similarity": 0.8939792563863562,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Discuss at least two risks associated with scraping data from websites. Describe steps an analyst could take to mitigate those risks.",
+    "testQuery": "Please discuss at least two risks associated with scraping data from websites. Describe steps an analyst could take to mitigate those risks please",
+    "similarity": 0.9656884356998745,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "From the paragraph, tell me what is the fourth longest natural arch in the world Landscape Arch is a natural arch in Arches National Park, Utah, United States. It is among the longest natural rock arches in the world. The arch is among many in the Devils Garden area in the north o",
+    "testQuery": "I need you to from the paragraph, tell me what is the fourth longest natural arch in the world Landscape Arch is a natural arch in Arches National Park, Utah, United States. It is among the longest natural rock arches in the world. The arch is among many in the Devils Garden area in the north o please",
+    "similarity": 0.9613882774816366,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Extract what is Top Gun The United States Navy Strike Fighter Tactics Instructor program (SFTI program), more popularly known as Top Gun (stylized as TOPGUN), is an American military program that teaches fighter and strike t",
+    "testQuery": "Tell me extract what is Top Gun The United States Navy Strike Fighter Tactics Instructor program (SFTI program), more popularly known as Top Gun (stylized as TOPGUN), is an American military program that teaches fighter and strike t for me",
+    "similarity": 0.9662809489904993,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which of these are car brands: Ferrari, Fiat, Batavus, Philips, Renault, BMW, IKEA and MG",
+    "testQuery": "Can you which of these are car brands: Ferrari, Fiat, Batavus, Philips, Renault, BMW, IKEA and MG for me",
+    "similarity": 0.9494688462364755,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Given a reference text about Gennady Petrovich Lyachin, tell me when he joined the navy and when he was decommissioned. Gennady Petrovich Lyachin (Russian: Геннадий Петрович Лячин; 1 January 1955 – 12 August 2000) was a Russian navy officer. He was the commanding officer of the Russian submarine Kursk when the vessel s",
+    "testQuery": "Please given a reference text about Gennady Petrovich Lyachin, tell me when he joined the navy and when he was decommissioned. Gennady Petrovich Lyachin (Russian: Геннадий Петрович Лячин; 1 January 1955 – 12 August 2000) was a Russian navy officer. He was the commanding officer of the Russian submarine Kursk when the vessel s please",
+    "similarity": 0.9820642421314075,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is the average lifespan of a Golden Retriever? Golden Retrievers are a generally healthy breed; they have an average lifespan of 12 to 13 years. Irresponsible breeding to meet high demand has led to the prevalence of inherited health problems in s",
+    "testQuery": "Please the average lifespan of a Golden Retriever? Golden Retrievers are a generally healthy breed; they have an average lifespan of 12 to 13 years. Irresponsible breeding to meet high demand has led to the prevalence of inherited health problems in s?",
+    "similarity": 0.9630037414704814,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "I started a new company named Greystone Inc. What do we do?",
+    "testQuery": "Tell me i started a new company named Greystone Inc. What do we do please",
+    "similarity": 0.9349263225256014,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Are lilies safe for cats?",
+    "testQuery": "Please are lilies safe for cats for me",
+    "similarity": 0.9077017464269672,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Classify these objects based on their shape.\nwheel, coin, CD, stamp, chess board",
+    "testQuery": "What is classify these objects based on their shape.\nwheel, coin, CD, stamp, chess board",
+    "similarity": 0.9785376744132112,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Categorize each of the following instruments as either string or keyboard: Guitar, Violin, piano, harmonium, cello, accordion, banjo",
+    "testQuery": "I need you to categorize each of the following instruments as either string or keyboard: Guitar, Violin, piano, harmonium, cello, accordion, banjo please",
+    "similarity": 0.9144372565806016,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Why are dogs generally more popular than cats as pets?",
+    "testQuery": "Explain why are dogs generally more popular than cats as pets please",
+    "similarity": 0.8889722995252008,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What links Brazil, Uruguay, Mozambique and Angola",
+    "testQuery": "Tell me what links Brazil, Uruguay, Mozambique and Angola",
+    "similarity": 0.9527574788554104,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "From the passage provided, extract the state Lincoln was born in Abraham Lincoln (/ˈlɪŋkən/ LINK-ən; February 12, 1809 – April 15, 1865) was an American lawyer, politician and statesman who served as the 16th president of the United States from 1861 until his assas",
+    "testQuery": "Tell me from the passage provided, extract the state Lincoln was born in Abraham Lincoln (/ˈlɪŋkən/ LINK-ən; February 12, 1809 – April 15, 1865) was an American lawyer, politician and statesman who served as the 16th president of the United States from 1861 until his assas thanks",
+    "similarity": 0.9621283590624525,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "According to the paragraph below, what is Generative AI? A generative artificial intelligence or generative AI is a type of AI system capable of generating text, images, or other media in response to prompts. Generative AI systems use generative models such",
+    "testQuery": "What is according to the paragraph below, what is Generative AI? A generative artificial intelligence or generative AI is a type of AI system capable of generating text, images, or other media in response to prompts. Generative AI systems use generative models such thanks",
+    "similarity": 0.9705462120084272,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Who is Thomas Jefferson? Thomas Jefferson (April 13, 1743 – July 4, 1826) was an American statesman, diplomat, lawyer, architect, philosopher, and Founding Father who served as the third president of the United States from 18",
+    "testQuery": "Can you who is Thomas Jefferson? Thomas Jefferson (April 13, 1743 – July 4, 1826) was an American statesman, diplomat, lawyer, architect, philosopher, and Founding Father who served as the third president of the United States from 18 please",
+    "similarity": 0.9254384096951666,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which is a species of fish? Mola mola or Molar",
+    "testQuery": "Explain which is a species of fish? Mola mola or Molar please",
+    "similarity": 0.9374095143396733,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is appealing about Charleston in South Carolina?",
+    "testQuery": "Help me appealing about Charleston in South Carolina for me",
+    "similarity": 0.8018404868099912,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What types of sport fish do most anglers target in New England?",
+    "testQuery": "Tell me what types of sport fish do most anglers target in New England",
+    "similarity": 0.9570812094848367,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Tell whether these are countries, cities, continents or neither: Australia, Mexico, Mexico city, Antartica, Singapore, India, Gulf, Beijing, Jakarta, Luxembourg, Vatican City",
+    "testQuery": "I want to know tell whether these are countries, cities, continents or neither: Australia, Mexico, Mexico city, Antartica, Singapore, India, Gulf, Beijing, Jakarta, Luxembourg, Vatican City for me",
+    "similarity": 0.9351221747674288,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Name the three best professional sports teams based in California.",
+    "testQuery": "I want to know name the three best professional sports teams based in California?",
+    "similarity": 0.9521196305295724,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "How do you prepare for case study interview for digital transformation case?",
+    "testQuery": "What is how do you prepare for case study interview for digital transformation case please",
+    "similarity": 0.9500834672976644,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Where is the village of Congosto Congosto (Spanish pronunciation: [koŋˈɡosto]) is a village and municipality located in the region of El Bierzo (province of León, Castile and León, Spain) . It is located near to Ponferrada, the capit",
+    "testQuery": "Tell me where is the village of Congosto Congosto (Spanish pronunciation: [koŋˈɡosto]) is a village and municipality located in the region of El Bierzo (province of León, Castile and León, Spain) . It is located near to Ponferrada, the capit for me",
+    "similarity": 0.9749149961916943,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which types of fish contain the lowest levels of mercury?",
+    "testQuery": "Help me which types of fish contain the lowest levels of mercury please",
+    "similarity": 0.8681185280666331,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Give me a list of recommendations to quickly heal from an achilles rupture surgery.",
+    "testQuery": "How do I give me a list of recommendations to quickly heal from an achilles rupture surgery please",
+    "similarity": 0.9472638607749985,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "According to the text below about UVA, name the UVA alumni that have won the Pulitzer Prize. Rhodes Scholarships are international postgraduate awards given to students to study at the University of Oxford. Since the scholarship program began in 1904, UVA has had fifty-five Rhodes Scholars, t",
+    "testQuery": "Could you according to the text below about UVA, name the UVA alumni that have won the Pulitzer Prize. Rhodes Scholarships are international postgraduate awards given to students to study at the University of Oxford. Since the scholarship program began in 1904, UVA has had fifty-five Rhodes Scholars, t?",
+    "similarity": 0.9730445123842376,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What city in the United States is known for its Mardi Gras celebrations?",
+    "testQuery": "Can you what city in the United States is known for its Mardi Gras celebrations thanks",
+    "similarity": 0.9036959341299863,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is the currency in use in the Netherlands?",
+    "testQuery": "Explain the currency in use in the Netherlands",
+    "similarity": 0.9407526104929138,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "which are rainbow colours violet red orange purple indigo pink blue black white yellow  green grey",
+    "testQuery": "Explain which are rainbow colours violet red orange purple indigo pink blue black white yellow  green grey for me",
+    "similarity": 0.8401625973688486,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Give me a list of recommendations to quickly heal from an achilles rupture surgery.",
+    "testQuery": "Tell me give me a list of recommendations to quickly heal from an achilles rupture surgery for me",
+    "similarity": 0.9659204398356656,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What are some of the common elements of visual design? Design elements are the basic units of any visual design which form its structure and convey visual messages. Painter and design theorist Maitland E. Graves (1902-1978), who attempted to gestate the f",
+    "testQuery": "I want to know what are some of the common elements of visual design? Design elements are the basic units of any visual design which form its structure and convey visual messages. Painter and design theorist Maitland E. Graves (1902-1978), who attempted to gestate the f please",
+    "similarity": 0.9659390722257507,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Choose the word which is different from the rest: hangar, platform, dock, park, bus stand",
+    "testQuery": "Tell me choose the word which is different from the rest: hangar, platform, dock, park, bus stand for me",
+    "similarity": 0.9301288061577913,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which Dutch artist painted “Girl with a Pearl Earring”?",
+    "testQuery": "Explain which Dutch artist painted “Girl with a Pearl Earring” thanks",
+    "similarity": 0.8815008564009001,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Who is Cindy Robinson? Cindy Robinson is an American voice actress who voices in animations and video games. Some of her major roles are Makoto Nanaya and Gii from the Blazblue series, Betty Boop in commercials, Queen Beryl",
+    "testQuery": "How do I who is Cindy Robinson? Cindy Robinson is an American voice actress who voices in animations and video games. Some of her major roles are Makoto Nanaya and Gii from the Blazblue series, Betty Boop in commercials, Queen Beryl",
+    "similarity": 0.9865887976240574,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Are The Smiths a good band?",
+    "testQuery": "How do I are The Smiths a good band please",
+    "similarity": 0.8925433620832668,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Name some of the bravolebrities from Vanderpump Rules",
+    "testQuery": "Can you name some of the bravolebrities from Vanderpump Rules",
+    "similarity": 0.9838992568450042,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Give me a list of the last five european golden boots winner And tell me how many goals they scored.",
+    "testQuery": "I want to know give me a list of the last five european golden boots winner And tell me how many goals they scored please",
+    "similarity": 0.9657718781995953,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What city in the United States is known for its Mardi Gras celebrations?",
+    "testQuery": "Tell me what city in the United States is known for its Mardi Gras celebrations thanks",
+    "similarity": 0.8969078150119945,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Explain how a mechanical watch works",
+    "testQuery": "Can you how a mechanical watch works thanks",
+    "similarity": 0.8852591723478769,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Who is the best Formula 1 driver",
+    "testQuery": "I want to know who is the best Formula 1 driver?",
+    "similarity": 0.8914899225243118,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Classify these objects based on their shape.\nwheel, coin, CD, stamp, chess board",
+    "testQuery": "Help me classify these objects based on their shape.\nwheel, coin, CD, stamp, chess board?",
+    "similarity": 0.9629791536226852,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which of the 10 largest earthquakes was the deadliest? Largest Earthquakes ever recorded\nThe 10 largest magnitudes in recorded history\n1. Valdivia, Chile 22 May 1960 (magnitude 9.5)\nThis earthquake killed 1655 people, injured 3000 and displaced two millio",
+    "testQuery": "What is which of the 10 largest earthquakes was the deadliest? Largest Earthquakes ever recorded\nThe 10 largest magnitudes in recorded history\n1. Valdivia, Chile 22 May 1960 (magnitude 9.5)\nThis earthquake killed 1655 people, injured 3000 and displaced two millio for me",
+    "similarity": 0.9806830204781424,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which players won the men's singles grand slam tennis tournaments in 2022.",
+    "testQuery": "Tell me which players won the men's singles grand slam tennis tournaments in 2022 please",
+    "similarity": 0.8876263560605437,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What are the advantages to studying Engineering in college?",
+    "testQuery": "Help me what are the advantages to studying Engineering in college for me",
+    "similarity": 0.8700187129426532,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What are the benefits of collaborating on a tech blog with your customers?",
+    "testQuery": "Please what are the benefits of collaborating on a tech blog with your customers?",
+    "similarity": 0.9872454083149174,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Given this paragraph about the Cold War, why did the Soviets pull out of their war in Afghanistan? After World War II, parts of Eastern and Central Europe, including East Germany and eastern parts of Austria were occupied by Red Army according to the Potsdam Conference. Dependent communist governme",
+    "testQuery": "What is given this paragraph about the Cold War, why did the Soviets pull out of their war in Afghanistan? After World War II, parts of Eastern and Central Europe, including East Germany and eastern parts of Austria were occupied by Red Army according to the Potsdam Conference. Dependent communist governme please",
+    "similarity": 0.9414017000576216,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Given a reference text about Gennady Petrovich Lyachin, tell me when he joined the navy and when he was decommissioned. Gennady Petrovich Lyachin (Russian: Геннадий Петрович Лячин; 1 January 1955 – 12 August 2000) was a Russian navy officer. He was the commanding officer of the Russian submarine Kursk when the vessel s",
+    "testQuery": "Tell me given a reference text about Gennady Petrovich Lyachin, tell me when he joined the navy and when he was decommissioned. Gennady Petrovich Lyachin (Russian: Геннадий Петрович Лячин; 1 January 1955 – 12 August 2000) was a Russian navy officer. He was the commanding officer of the Russian submarine Kursk when the vessel s",
+    "similarity": 0.9882889646027473,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Who played Billy the Kid in The Left Handed Gun",
+    "testQuery": "Tell me who played Billy the Kid in The Left Handed Gun",
+    "similarity": 0.9747652803952772,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Why age 27 is given so much importance specially in Music industry?",
+    "testQuery": "Help me why age 27 is given so much importance specially in Music industry please",
+    "similarity": 0.9314654710779761,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Given a reference text about Psychiatry: An Industry of Death, tell me when it opened and and who owns and operates it. Psychiatry: An Industry of Death is a museum in Hollywood, Los Angeles, California, that has also hosted several touring exhibitions. It is owned and operated by the Citizens Commission on Human Right",
+    "testQuery": "How do I given a reference text about Psychiatry: An Industry of Death, tell me when it opened and and who owns and operates it. Psychiatry: An Industry of Death is a museum in Hollywood, Los Angeles, California, that has also hosted several touring exhibitions. It is owned and operated by the Citizens Commission on Human Right for me",
+    "similarity": 0.9746769125975311,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which of the following are ice cream toppings and which are salad dressings: thousand island, chocolate sauce, hot fudge, balsamic vinaigrette, whipped cream, and Caesar.",
+    "testQuery": "I want to know which of the following are ice cream toppings and which are salad dressings: thousand island, chocolate sauce, hot fudge, balsamic vinaigrette, whipped cream, and Caesar please",
+    "similarity": 0.9444928764257589,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is engineering culture?",
+    "testQuery": "What is engineering culture please",
+    "similarity": 0.9345498153262428,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which products apple sell?",
+    "testQuery": "Can you which products apple sell?",
+    "similarity": 0.9645053915010093,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Give me some tips on how to train for a marathon.",
+    "testQuery": "I want to know give me some tips on how to train for a marathon",
+    "similarity": 0.9348201624717809,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is Magical Thinking? Magical thinking, or superstitious thinking, is the belief that unrelated events are causally connected despite the absence of any plausible causal link between them, particularly as a result of super",
+    "testQuery": "Can you magical Thinking? Magical thinking, or superstitious thinking, is the belief that unrelated events are causally connected despite the absence of any plausible causal link between them, particularly as a result of super please",
+    "similarity": 0.9237662126583877,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is Unified Payments Interface (UPI) in India",
+    "testQuery": "How do I unified Payments Interface (UPI) in India please",
+    "similarity": 0.8803872573653707,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What was Angie Thomas's first published novel?",
+    "testQuery": "Please what was Angie Thomas's first published novel for me",
+    "similarity": 0.9155010490452784,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is the largest city in Washington state?",
+    "testQuery": "Help me the largest city in Washington state?",
+    "similarity": 0.922479025811463,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "From the passage provided, extract the date when the 34th Wisconsin Infantry Regiment was organized. The 34th Wisconsin Infantry Regiment was a conscripted infantry regiment that served in the Union Army during the American Civil War. The 34th Wisconsin Infantry was composed of men drafted by state a",
+    "testQuery": "I want to know from the passage provided, extract the date when the 34th Wisconsin Infantry Regiment was organized. The 34th Wisconsin Infantry Regiment was a conscripted infantry regiment that served in the Union Army during the American Civil War. The 34th Wisconsin Infantry was composed of men drafted by state a please",
+    "similarity": 0.9647306445094418,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Extract all of the dates mentioned in this paragraph and list them using bullets in the format {Date} - {Description} Daniel Leavitt was born November 16, 1813, at Rye, New Hampshire, the son of Benning Leavitt, influential businessman, state senator, county commissioner and later Chicopee Selectman, and his wife Oli",
+    "testQuery": "Please extract all of the dates mentioned in this paragraph and list them using bullets in the format {Date} - {Description} Daniel Leavitt was born November 16, 1813, at Rye, New Hampshire, the son of Benning Leavitt, influential businessman, state senator, county commissioner and later Chicopee Selectman, and his wife Oli please",
+    "similarity": 0.956855241354838,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Are The Smiths a good band?",
+    "testQuery": "Could you are The Smiths a good band",
+    "similarity": 0.9153308374970575,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is the Maareech Advanced Torpedo Defence System (ATDS)? Maareech Advanced Torpedo Defence System (ATDS) is a torpedo detection and countermeasure system used by the Indian Navy. The system offers a complete solution to detect and locate an incoming torpedo",
+    "testQuery": "I need you to the Maareech Advanced Torpedo Defence System (ATDS)? Maareech Advanced Torpedo Defence System (ATDS) is a torpedo detection and countermeasure system used by the Indian Navy. The system offers a complete solution to detect and locate an incoming torpedo for me",
+    "similarity": 0.9450670154160893,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Who discovered the double-helix DNA structure?",
+    "testQuery": "Could you who discovered the double-helix DNA structure for me",
+    "similarity": 0.8316205922110604,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What city in the United States is known for its Mardi Gras celebrations?",
+    "testQuery": "What is what city in the United States is known for its Mardi Gras celebrations?",
+    "similarity": 0.9802530360132372,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Where is the village of Congosto Congosto (Spanish pronunciation: [koŋˈɡosto]) is a village and municipality located in the region of El Bierzo (province of León, Castile and León, Spain) . It is located near to Ponferrada, the capit",
+    "testQuery": "Can you where is the village of Congosto Congosto (Spanish pronunciation: [koŋˈɡosto]) is a village and municipality located in the region of El Bierzo (province of León, Castile and León, Spain) . It is located near to Ponferrada, the capit for me",
+    "similarity": 0.9850426922093125,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "List the weapons of Goddess Durga in a comma separated manner. Durga is a warrior goddess, and she is depicted to express her martial skills. Her iconography typically resonates with these attributes, where she rides a lion or a tiger, has between eight and eight",
+    "testQuery": "Help me list the weapons of Goddess Durga in a comma separated manner. Durga is a warrior goddess, and she is depicted to express her martial skills. Her iconography typically resonates with these attributes, where she rides a lion or a tiger, has between eight and eight?",
+    "similarity": 0.9716000728663434,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What are all of the professional baseball teams in the state of Florida?",
+    "testQuery": "I need you to what are all of the professional baseball teams in the state of Florida for me",
+    "similarity": 0.8924789860377565,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Who are the pianists that are considered masters in playing Bach's music?",
+    "testQuery": "Please who are the pianists that are considered masters in playing Bach's music for me",
+    "similarity": 0.9308713304217592,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "List the weapons of Goddess Durga in a comma separated manner. Durga is a warrior goddess, and she is depicted to express her martial skills. Her iconography typically resonates with these attributes, where she rides a lion or a tiger, has between eight and eight",
+    "testQuery": "Tell me list the weapons of Goddess Durga in a comma separated manner. Durga is a warrior goddess, and she is depicted to express her martial skills. Her iconography typically resonates with these attributes, where she rides a lion or a tiger, has between eight and eight thanks",
+    "similarity": 0.9792753398281926,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Give me a bulleted list of the three most recent prime ministers of India",
+    "testQuery": "What is give me a bulleted list of the three most recent prime ministers of India for me",
+    "similarity": 0.9437273118840858,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What are the top reasons to become a vegan?",
+    "testQuery": "Can you what are the top reasons to become a vegan thanks",
+    "similarity": 0.8741004488316013,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Cauliflower rice is not that fun to eat in its bland form. Is there anything interesting and tasty I can cook with cauliflower rice?",
+    "testQuery": "I want to know cauliflower rice is not that fun to eat in its bland form. Is there anything interesting and tasty I can cook with cauliflower rice for me",
+    "similarity": 0.9502530673394086,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Extract the criticisms that modern portfolio theory faces from this link https://en.wikipedia.org/wiki/Modern_portfolio_theory, place them in a bullet list Despite its theoretical importance, critics of MPT question whether it is an ideal investment tool, because its model of financial markets does not match the real world in many ways\n\nThe risk, return,",
+    "testQuery": "Could you extract the criticisms that modern portfolio theory faces from this link https://en.wikipedia.org/wiki/Modern_portfolio_theory, place them in a bullet list Despite its theoretical importance, critics of MPT question whether it is an ideal investment tool, because its model of financial markets does not match the real world in many ways\n\nThe risk, return, for me",
+    "similarity": 0.9749969289227499,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Who are some of the most successful golfers in history?",
+    "testQuery": "Please who are some of the most successful golfers in history",
+    "similarity": 0.9406461314095721,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What are some unique curtain tie backs that you can make yourself?",
+    "testQuery": "I need you to what are some unique curtain tie backs that you can make yourself thanks",
+    "similarity": 0.9181609724983637,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Give me a list of things that pose a challenge to cryptos",
+    "testQuery": "Help me give me a list of things that pose a challenge to cryptos?",
+    "similarity": 0.9529039814741886,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "When was Lamb Air operating Lamb Air Ltd. was a Canadian airline that began operations in 1934 in The Pas, Manitoba, and went out of business in 1981.\n\nHistory\nTom Lamb was the son of Thomas Henry Peacock (THP) Lamb, who had emi",
+    "testQuery": "Please when was Lamb Air operating Lamb Air Ltd. was a Canadian airline that began operations in 1934 in The Pas, Manitoba, and went out of business in 1981.\n\nHistory\nTom Lamb was the son of Thomas Henry Peacock (THP) Lamb, who had emi for me",
+    "similarity": 0.992996745272796,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Imagine a world where life expectancy is fixed and the same for everyone at birth, yet people can engage in life expectancy \"donation\" – meaning that someone can extend your life three years longer at the expense of theirs. Talk about a likely scenario in this world that involves manipulated, coerced donation.",
+    "testQuery": "Help me imagine a world where life expectancy is fixed and the same for everyone at birth, yet people can engage in life expectancy \"donation\" – meaning that someone can extend your life three years longer at the expense of theirs. Talk about a likely scenario in this world that involves manipulated, coerced donation for me",
+    "similarity": 0.9496548692097604,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Why should we ban artificial sweeteners like aspartame?",
+    "testQuery": "Help me why should we ban artificial sweeteners like aspartame please",
+    "similarity": 0.877120596310993,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "From the passage find the list of banks who supported Yes Bank in 2020. Display the results in comma separated format. The history of Yes Bank can be traced back to 1999, when three Indian bankers decided to launch a non-banking financial enterprise together. They were Ashok Kapur, who had previously worked as the nat",
+    "testQuery": "What is from the passage find the list of banks who supported Yes Bank in 2020. Display the results in comma separated format. The history of Yes Bank can be traced back to 1999, when three Indian bankers decided to launch a non-banking financial enterprise together. They were Ashok Kapur, who had previously worked as the nat please",
+    "similarity": 0.9800370980638357,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Categorize the following Taylor Swift songs based on what album they are in: The Archer, tolerate it, Lover, Love Story (Taylor's Version), Bejeweled, Don't Blame Me, 22 (Taylor's version), Look What You Made Me Do, Lavender Haze, willow, Cruel Summer",
+    "testQuery": "Tell me categorize the following Taylor Swift songs based on what album they are in: The Archer, tolerate it, Lover, Love Story (Taylor's Version), Bejeweled, Don't Blame Me, 22 (Taylor's version), Look What You Made Me Do, Lavender Haze, willow, Cruel Summer?",
+    "similarity": 0.9777940573972341,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which ones are programming languages, out of C, Java, Node.js, Python, HTML, BigData, Spark?",
+    "testQuery": "Tell me which ones are programming languages, out of C, Java, Node.js, Python, HTML, BigData, Spark for me",
+    "similarity": 0.9302034629568687,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Is skiing or snowboarding easier?",
+    "testQuery": "Help me is skiing or snowboarding easier for me",
+    "similarity": 0.8631963227208921,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Do cats have nine lives?",
+    "testQuery": "Explain do cats have nine lives please",
+    "similarity": 0.8889336986917533,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Give me a bunch of ways I can keep my house cool in the summer",
+    "testQuery": "Explain give me a bunch of ways I can keep my house cool in the summer please",
+    "similarity": 0.9186188297382356,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Given a reference text about Psychiatry: An Industry of Death, tell me when it opened and and who owns and operates it. Psychiatry: An Industry of Death is a museum in Hollywood, Los Angeles, California, that has also hosted several touring exhibitions. It is owned and operated by the Citizens Commission on Human Right",
+    "testQuery": "I need you to given a reference text about Psychiatry: An Industry of Death, tell me when it opened and and who owns and operates it. Psychiatry: An Industry of Death is a museum in Hollywood, Los Angeles, California, that has also hosted several touring exhibitions. It is owned and operated by the Citizens Commission on Human Right?",
+    "similarity": 0.9687713239898197,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "When was the 8088 processor released? The 8086 (also called iAPX 86) is a 16-bit microprocessor chip designed by Intel between early 1976 and June 8, 1978, when it was released. The Intel 8088, released July 1, 1979, is a slightly modifie",
+    "testQuery": "Could you when was the 8088 processor released? The 8086 (also called iAPX 86) is a 16-bit microprocessor chip designed by Intel between early 1976 and June 8, 1978, when it was released. The Intel 8088, released July 1, 1979, is a slightly modifie for me",
+    "similarity": 0.9884036852422701,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What percussion instruments are easy to learn?",
+    "testQuery": "How do I what percussion instruments are easy to learn",
+    "similarity": 0.9473831308728092,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is the name of the largest red-light district in Amsterdam?",
+    "testQuery": "Tell me the name of the largest red-light district in Amsterdam thanks",
+    "similarity": 0.8917072202861211,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What are the ten best restaurants in London?",
+    "testQuery": "I need you to what are the ten best restaurants in London?",
+    "similarity": 0.937412053340216,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Did dinosaurs have lips?",
+    "testQuery": "I want to know did dinosaurs have lips thanks",
+    "similarity": 0.8958046528027332,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which country makes the best coffee in the world?",
+    "testQuery": "Could you which country makes the best coffee in the world for me",
+    "similarity": 0.8256578437639087,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Extract the owner of Lamborghini and a listing of the different types of Huracan cars that Lamborghini has produced for its Motorsport division. Automobili Lamborghini S.p.A. (Italian pronunciation: [autoˈmɔːbili lamborˈɡiːni]) is an Italian manufacturer of luxury sports cars and SUVs based in Sant'Agata Bolognese. The company is owned by the ",
+    "testQuery": "Can you extract the owner of Lamborghini and a listing of the different types of Huracan cars that Lamborghini has produced for its Motorsport division. Automobili Lamborghini S.p.A. (Italian pronunciation: [autoˈmɔːbili lamborˈɡiːni]) is an Italian manufacturer of luxury sports cars and SUVs based in Sant'Agata Bolognese. The company is owned by the ?",
+    "similarity": 0.9765736189903609,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "How would I get from an upstairs apartment to the parking garage?",
+    "testQuery": "How do I how would I get from an upstairs apartment to the parking garage?",
+    "similarity": 0.9862565234905636,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which episodes of season four of Game of Thrones did Michelle MacLaren direct?",
+    "testQuery": "Help me which episodes of season four of Game of Thrones did Michelle MacLaren direct",
+    "similarity": 0.9564176599239121,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Tell me whether each of these are animals or not: Alligator, Grass, Tree, Boat, Dolphin, Shark, Fish, Fence, Dog, Car",
+    "testQuery": "Can you whether each of these are animals or not: Alligator, Grass, Tree, Boat, Dolphin, Shark, Fish, Fence, Dog, Car thanks",
+    "similarity": 0.9326882078922196,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "which weighs more, cold or hot water?",
+    "testQuery": "I need you to which weighs more, cold or hot water please",
+    "similarity": 0.8575717626410474,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Give me a list of things that pose a challenge to cryptos",
+    "testQuery": "Please give me a list of things that pose a challenge to cryptos please",
+    "similarity": 0.947732250480622,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Give me some ideas to manage my manager.",
+    "testQuery": "What is give me some ideas to manage my manager for me",
+    "similarity": 0.9198692035564017,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Classify the following types of cars as \"economy\" or \"luxury\": Ford, Chevrolet, Lamborghini, Ferrari, Mercedes, Honda, Lexus, Toyota, Nissan, Subaru",
+    "testQuery": "Please classify the following types of cars as \"economy\" or \"luxury\": Ford, Chevrolet, Lamborghini, Ferrari, Mercedes, Honda, Lexus, Toyota, Nissan, Subaru please",
+    "similarity": 0.9608087946740261,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Name some famous rock bands from the 1960s",
+    "testQuery": "I need you to name some famous rock bands from the 1960s?",
+    "similarity": 0.9071107107460652,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "When was Tomoaki Komorida born? Komorida was born in Kumamoto Prefecture on July 10, 1981. After graduating from high school, he joined the J1 League club Avispa Fukuoka in 2000. Although he debuted as a midfielder in 2001, he did n",
+    "testQuery": "Tell me when was Tomoaki Komorida born? Komorida was born in Kumamoto Prefecture on July 10, 1981. After graduating from high school, he joined the J1 League club Avispa Fukuoka in 2000. Although he debuted as a midfielder in 2001, he did n please",
+    "similarity": 0.9761883086571829,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Tell me whether each South Park character is a kid or adult: Randy, Stan, Kyle, Butters, Sharon",
+    "testQuery": "Tell me whether each South Park character is a kid or adult: Randy, Stan, Kyle, Butters, Sharon?",
+    "similarity": 0.9799430414649501,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "How many times Lewis Hamilton won the F1 Championship ?",
+    "testQuery": "I want to know how many times Lewis Hamilton won the F1 Championship  thanks",
+    "similarity": 0.8261186805769711,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Extract all of the dates mentioned in this paragraph and list them using bullets in the format {Date} - {Description} Daniel Leavitt was born November 16, 1813, at Rye, New Hampshire, the son of Benning Leavitt, influential businessman, state senator, county commissioner and later Chicopee Selectman, and his wife Oli",
+    "testQuery": "I want to know extract all of the dates mentioned in this paragraph and list them using bullets in the format {Date} - {Description} Daniel Leavitt was born November 16, 1813, at Rye, New Hampshire, the son of Benning Leavitt, influential businessman, state senator, county commissioner and later Chicopee Selectman, and his wife Oli?",
+    "similarity": 0.9480867930964124,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What are the top reasons to become a vegan?",
+    "testQuery": "Explain what are the top reasons to become a vegan",
+    "similarity": 0.9199416073575208,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Extract the names of the cities and rank them in alphabetical order? The United Kingdom is a constitutional monarchy and parliamentary democracy. Its capital and largest city is London, the capital of England, a global city and financial centre with a population of ove",
+    "testQuery": "What is extract the names of the cities and rank them in alphabetical order? The United Kingdom is a constitutional monarchy and parliamentary democracy. Its capital and largest city is London, the capital of England, a global city and financial centre with a population of ove?",
+    "similarity": 0.9691420778889115,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Give me a bulleted list of the the first five books in the bible old testament?",
+    "testQuery": "Explain give me a bulleted list of the the first five books in the bible old testament for me",
+    "similarity": 0.9055857680908357,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which is a bird or fish: Blackchin, Black redstart",
+    "testQuery": "How do I which is a bird or fish: Blackchin, Black redstart thanks",
+    "similarity": 0.9274723922083932,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Without quoting from the text, can you summarise from wikipedia who Denis-Benjamin Viger was? Denis-Benjamin Viger (French pronunciation: ​[dəni bɛ̃ʒamɛ̃ viʒe]; August 19, 1774 – February 13, 1861) was a 19th-century politician, lawyer, businessman in Lower Canada. He was a leader in the Patri",
+    "testQuery": "Help me without quoting from the text, can you summarise from wikipedia who Denis-Benjamin Viger was? Denis-Benjamin Viger (French pronunciation: ​[dəni bɛ̃ʒamɛ̃ viʒe]; August 19, 1774 – February 13, 1861) was a 19th-century politician, lawyer, businessman in Lower Canada. He was a leader in the Patri please",
+    "similarity": 0.9614409060514044,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Given a reference text about Run Towards the Danger, tell me how many essays are part of the collection. Run Towards the Danger is a 2022 Canadian essay collection by Sarah Polley, a former child star, director, and screenwriter.\n\nThe six essays in the collection examine aspects of Polley's career on sta",
+    "testQuery": "Tell me given a reference text about Run Towards the Danger, tell me how many essays are part of the collection. Run Towards the Danger is a 2022 Canadian essay collection by Sarah Polley, a former child star, director, and screenwriter.\n\nThe six essays in the collection examine aspects of Polley's career on sta thanks",
+    "similarity": 0.981058331943485,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Given this reference text about the consumption of peanut butter, when is national peanut butter day? The United States is a leading exporter of peanut butter, and one of the largest consumers of peanut butter annually per capita. January 24 is National Peanut Butter Day in the United States. In March",
+    "testQuery": "I want to know given this reference text about the consumption of peanut butter, when is national peanut butter day? The United States is a leading exporter of peanut butter, and one of the largest consumers of peanut butter annually per capita. January 24 is National Peanut Butter Day in the United States. In March please",
+    "similarity": 0.9808396739211028,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Identify which instrument is string or woodwind: Wheelharp, Clarinet",
+    "testQuery": "Could you identify which instrument is string or woodwind: Wheelharp, Clarinet?",
+    "similarity": 0.9588159379391047,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Why are dogs generally more popular than cats as pets?",
+    "testQuery": "I need you to why are dogs generally more popular than cats as pets",
+    "similarity": 0.8976858315254561,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Write a haiku about how much I love pickles.",
+    "testQuery": "Please write a haiku about how much I love pickles thanks",
+    "similarity": 0.9164830880275923,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which of these are rappers? Eminem, Michael Jackson, Rihanna, 50 Cent",
+    "testQuery": "I need you to which of these are rappers? Eminem, Michael Jackson, Rihanna, 50 Cent for me",
+    "similarity": 0.9131101811188134,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which river can you hike in Utah? Hiking The Narrows is arguably the quintessential Zion experience. The Narrows can be hiked either as a top-down through-hike from Chamberlain Ranch to the Temple of Sinawava, or as an up-and-back bot",
+    "testQuery": "Can you which river can you hike in Utah? Hiking The Narrows is arguably the quintessential Zion experience. The Narrows can be hiked either as a top-down through-hike from Chamberlain Ranch to the Temple of Sinawava, or as an up-and-back bot please",
+    "similarity": 0.9873966074959157,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Think of some family rules to promote a healthy family relationship",
+    "testQuery": "Tell me think of some family rules to promote a healthy family relationship thanks",
+    "similarity": 0.9346879074976113,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What percussion instruments are easy to learn?",
+    "testQuery": "Please what percussion instruments are easy to learn thanks",
+    "similarity": 0.9150960296964958,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Why did the Seattle Supersonics leave Seattle?",
+    "testQuery": "Can you why did the Seattle Supersonics leave Seattle",
+    "similarity": 0.9493066646395278,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Given a reference text about Lollapalooza, where does it take place, who started it and what is it? Lollapalooza /ˌlɒləpəˈluːzə/ (Lolla) is an annual American four-day music festival held in Grant Park in Chicago. It originally started as a touring event in 1991, but several years later, Chicago bec",
+    "testQuery": "Help me given a reference text about Lollapalooza, where does it take place, who started it and what is it? Lollapalooza /ˌlɒləpəˈluːzə/ (Lolla) is an annual American four-day music festival held in Grant Park in Chicago. It originally started as a touring event in 1991, but several years later, Chicago bec please",
+    "similarity": 0.9635117878937245,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Give me five ways in which I can make my homebrew beer more interesting",
+    "testQuery": "Explain give me five ways in which I can make my homebrew beer more interesting for me",
+    "similarity": 0.9594851992929757,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Write a funny and whimsical horoscope reading",
+    "testQuery": "Please write a funny and whimsical horoscope reading",
+    "similarity": 0.968772664047667,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What's the best way to cook a soft-boiled egg?",
+    "testQuery": "What is what's the best way to cook a soft-boiled egg",
+    "similarity": 0.9423544888589889,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which Dutch actress played Xenia Onatopp in the James Bond movie GoldenEye?",
+    "testQuery": "Please which Dutch actress played Xenia Onatopp in the James Bond movie GoldenEye",
+    "similarity": 0.9649331329332917,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Give me some ideas of kids items to stuff into Easter eggs.",
+    "testQuery": "Explain give me some ideas of kids items to stuff into Easter eggs thanks",
+    "similarity": 0.9454304134397435,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Categorize these movies that came out in 1999 as cartoons or live-action: The Matrix, Stuart Little, Cruel Intentions, The Iron Giant, The Blair Witch Project, South Park: Bigger, Longer, and Uncut, The Sixth Sense",
+    "testQuery": "Tell me categorize these movies that came out in 1999 as cartoons or live-action: The Matrix, Stuart Little, Cruel Intentions, The Iron Giant, The Blair Witch Project, South Park: Bigger, Longer, and Uncut, The Sixth Sense",
+    "similarity": 0.9838819196233027,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Write a short paragraph about why you should not have both a pet cat and a pet bird.",
+    "testQuery": "I want to know write a short paragraph about why you should not have both a pet cat and a pet bird thanks",
+    "similarity": 0.9332877965679811,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Without quoting directly from the text give me a summary of the history of the Key Lime Pie. Key lime pie is probably derived from the \"Magic Lemon Cream Pie\" published in a promotional brochure by Borden, a producer of condensed milk, in 1931. The recipe is attributed to Borden's fictional s",
+    "testQuery": "I want to know without quoting directly from the text give me a summary of the history of the Key Lime Pie. Key lime pie is probably derived from the \"Magic Lemon Cream Pie\" published in a promotional brochure by Borden, a producer of condensed milk, in 1931. The recipe is attributed to Borden's fictional s?",
+    "similarity": 0.962601022666672,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which ones are metals and non metals: Copper, Hydrogen, Silver, Carbon, Gold, Nitrogen",
+    "testQuery": "Help me which ones are metals and non metals: Copper, Hydrogen, Silver, Carbon, Gold, Nitrogen for me",
+    "similarity": 0.9024987195002723,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Sally has 2 chickens, 3 cows and 2 motorcycles. Doug has 6 monkeys, 12 pigs and 2 tractors. Amy has 1 car, 10 cows and 6 ducks. How many farm animals do Sally, Doug and Amy have in total?",
+    "testQuery": "I want to know sally has 2 chickens, 3 cows and 2 motorcycles. Doug has 6 monkeys, 12 pigs and 2 tractors. Amy has 1 car, 10 cows and 6 ducks. How many farm animals do Sally, Doug and Amy have in total?",
+    "similarity": 0.9813587807463091,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is the Research Collaboratory for Structural Bioinformatics Protein Data Bank (RCSB PDB)?",
+    "testQuery": "Tell me the Research Collaboratory for Structural Bioinformatics Protein Data Bank (RCSB PDB)",
+    "similarity": 0.9240841498964594,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Categorize each of the following as either 'spicy', 'not spicy' or 'sometimes spicy': jalapenos, chilis, sriracha, chips, pizza, cocktails, fruit, milk",
+    "testQuery": "What is categorize each of the following as either 'spicy', 'not spicy' or 'sometimes spicy': jalapenos, chilis, sriracha, chips, pizza, cocktails, fruit, milk",
+    "similarity": 0.9853310414583933,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What type of weather is San Francisco famous for?",
+    "testQuery": "Help me what type of weather is San Francisco famous for for me",
+    "similarity": 0.8853505751165315,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Give me a bunch of ways I can keep my house cool in the summer",
+    "testQuery": "Please give me a bunch of ways I can keep my house cool in the summer for me",
+    "similarity": 0.9532413330488417,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What's the game engine used by Bethesda before Creation Engine? And what's the last game make with it? After using the Gamebryo engine to create The Elder Scrolls III: Morrowind, The Elder Scrolls IV: Oblivion, and Fallout 3, Bethesda decided that Gamebryo's capabilities were becoming too outdated and ",
+    "testQuery": "Help me what's the game engine used by Bethesda before Creation Engine? And what's the last game make with it? After using the Gamebryo engine to create The Elder Scrolls III: Morrowind, The Elder Scrolls IV: Oblivion, and Fallout 3, Bethesda decided that Gamebryo's capabilities were becoming too outdated and  please",
+    "similarity": 0.9660181748015687,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "In the United States of America, which state is the largest in size?",
+    "testQuery": "What is in the United States of America, which state is the largest in size for me",
+    "similarity": 0.8678629396866819,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "When was Lamb Air operating Lamb Air Ltd. was a Canadian airline that began operations in 1934 in The Pas, Manitoba, and went out of business in 1981.\n\nHistory\nTom Lamb was the son of Thomas Henry Peacock (THP) Lamb, who had emi",
+    "testQuery": "I need you to when was Lamb Air operating Lamb Air Ltd. was a Canadian airline that began operations in 1934 in The Pas, Manitoba, and went out of business in 1981.\n\nHistory\nTom Lamb was the son of Thomas Henry Peacock (THP) Lamb, who had emi thanks",
+    "similarity": 0.9677277840292696,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "In the United States of America, which state is the largest in size?",
+    "testQuery": "What is the largest state by land size in the United States of America?",
+    "similarity": 0.8562548146218071,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Let's imagine I create a fake currency called Yarns with two types of coins: a super-yarn (worth 10 yarns) and a mini-yarn (worth 0.5 yarn). How much money do I have in total if I have 2 super-yarns and three mini-yarns?",
+    "testQuery": "Tell me let's imagine I create a fake currency called Yarns with two types of coins: a super-yarn (worth 10 yarns) and a mini-yarn (worth 0.5 yarn). How much money do I have in total if I have 2 super-yarns and three mini-yarns?",
+    "similarity": 0.9922456153041677,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is Unified Payments Interface (UPI) in India",
+    "testQuery": "I need you to unified Payments Interface (UPI) in India",
+    "similarity": 0.8803299762735742,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is \"diglossia\"?",
+    "testQuery": "How do I \"diglossia\"",
+    "similarity": 0.9078109977875068,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which coin of U.S currency has the most ridges.",
+    "testQuery": "How do I which coin of U.S currency has the most ridges",
+    "similarity": 0.9387384747132224,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is the PGA Championship? The PGA Championship (often referred to as the US PGA Championship or USPGA outside the United States) is an annual golf tournament conducted by the Professional Golfers' Association of America. It is",
+    "testQuery": "Please the PGA Championship? The PGA Championship (often referred to as the US PGA Championship or USPGA outside the United States) is an annual golf tournament conducted by the Professional Golfers' Association of America. It is for me",
+    "similarity": 0.8996134993149314,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Classify each of the following as a primary color or a secondary color",
+    "testQuery": "Can you classify each of the following as a primary color or a secondary color for me",
+    "similarity": 0.8769330089941881,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Give me a bulleted list of the first ten MacOS (operating system) versions.",
+    "testQuery": "Help me give me a bulleted list of the first ten MacOS (operating system) versions",
+    "similarity": 0.9718659775678593,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "How do you prepare for case study interview for digital transformation case?",
+    "testQuery": "What is how do you prepare for case study interview for digital transformation case?",
+    "similarity": 0.9838797511064994,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Explain how a mechanical watch works",
+    "testQuery": "Can you how a mechanical watch works",
+    "similarity": 0.9443037693849123,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is the current reigning dynasty of Thailand?",
+    "testQuery": "Explain the current reigning dynasty of Thailand for me",
+    "similarity": 0.8983797055346031,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "How do you know if you reached product market fit?",
+    "testQuery": "Tell me how do you know if you reached product market fit please",
+    "similarity": 0.9287997458670634,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Increased money supply (i.e. money printing)",
+    "testQuery": "Please increased money supply (i.e. money printing) thanks",
+    "similarity": 0.8067957654898554,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is the origin of the name of the herb Rosemary? alvia rosmarinus (/ˈsælviə ˌrɒsməˈraɪnəs/), commonly known as rosemary, is a shrub with fragrant, evergreen, needle-like leaves and white, pink, purple, or blue flowers, native to the Mediterranean re",
+    "testQuery": "Can you the origin of the name of the herb Rosemary? alvia rosmarinus (/ˈsælviə ˌrɒsməˈraɪnəs/), commonly known as rosemary, is a shrub with fragrant, evergreen, needle-like leaves and white, pink, purple, or blue flowers, native to the Mediterranean re thanks",
+    "similarity": 0.9591724083562048,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Who were the original 5 members of the Grateful Dead?",
+    "testQuery": "What is who were the original 5 members of the Grateful Dead please",
+    "similarity": 0.9274843852971779,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "How did Alfred Nobel make his money",
+    "testQuery": "Please how did Alfred Nobel make his money please",
+    "similarity": 0.9517284577573664,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "How is the The U.S. Naturalization Interview and test done?",
+    "testQuery": "Could you how is the The U.S. Naturalization Interview and test done",
+    "similarity": 0.9583319304973312,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What do you know about the city of Aberdeen in Scotland?",
+    "testQuery": "Can you what do you know about the city of Aberdeen in Scotland",
+    "similarity": 0.9570274657696836,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which of these are rappers? Eminem, Michael Jackson, Rihanna, 50 Cent",
+    "testQuery": "What is which of these are rappers? Eminem, Michael Jackson, Rihanna, 50 Cent",
+    "similarity": 0.9786177810288468,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which classical composer was deaf?",
+    "testQuery": "How do I which classical composer was deaf",
+    "similarity": 0.9192090469087693,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Extract the criticisms that modern portfolio theory faces from this link https://en.wikipedia.org/wiki/Modern_portfolio_theory, place them in a bullet list Despite its theoretical importance, critics of MPT question whether it is an ideal investment tool, because its model of financial markets does not match the real world in many ways\n\nThe risk, return,",
+    "testQuery": "Help me extract the criticisms that modern portfolio theory faces from this link https://en.wikipedia.org/wiki/Modern_portfolio_theory, place them in a bullet list Despite its theoretical importance, critics of MPT question whether it is an ideal investment tool, because its model of financial markets does not match the real world in many ways\n\nThe risk, return, for me",
+    "similarity": 0.9662995474010224,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is Cup Game? The cup game is a children's clapping game that involves tapping and hitting a cup using a defined rhythm.",
+    "testQuery": "Help me cup Game? The cup game is a children's clapping game that involves tapping and hitting a cup using a defined rhythm thanks",
+    "similarity": 0.8719285900784919,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Separate the following suburbs into those that border, and do not border, the Brisbane River: Indooroopilly, Bulimba, St Lucia, Newstead, Wilston, West End, Toowong, Bowen Hills and, Wooloongabba.",
+    "testQuery": "Help me separate the following suburbs into those that border, and do not border, the Brisbane River: Indooroopilly, Bulimba, St Lucia, Newstead, Wilston, West End, Toowong, Bowen Hills and, Wooloongabba?",
+    "similarity": 0.9480719943449697,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Think up some openings for beginners to the game of Chess",
+    "testQuery": "Can you think up some openings for beginners to the game of Chess please",
+    "similarity": 0.9279530219958937,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Where did Gretel attend primary school? Gretel Beer was born in Vienna into a Jewish family. She was mostly raised by her aunt Olga Springer (Bechin, Bohemia 1879–1942 Maly Trostenets extermination camp) the widow of a physician (in 1937: 9",
+    "testQuery": "Tell me where did Gretel attend primary school? Gretel Beer was born in Vienna into a Jewish family. She was mostly raised by her aunt Olga Springer (Bechin, Bohemia 1879–1942 Maly Trostenets extermination camp) the widow of a physician (in 1937: 9 please",
+    "similarity": 0.9817179177783515,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What is the future trend of job industry",
+    "testQuery": "What is the future trend of job industry for me",
+    "similarity": 0.8798485280078291,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Without quoting from the text, can you summarise from wikipedia who Denis-Benjamin Viger was? Denis-Benjamin Viger (French pronunciation: ​[dəni bɛ̃ʒamɛ̃ viʒe]; August 19, 1774 – February 13, 1861) was a 19th-century politician, lawyer, businessman in Lower Canada. He was a leader in the Patri",
+    "testQuery": "Please without quoting from the text, can you summarise from wikipedia who Denis-Benjamin Viger was? Denis-Benjamin Viger (French pronunciation: ​[dəni bɛ̃ʒamɛ̃ viʒe]; August 19, 1774 – February 13, 1861) was a 19th-century politician, lawyer, businessman in Lower Canada. He was a leader in the Patri please",
+    "similarity": 0.9717421831281904,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "what are the advantages of having a vegetable garden at home on the owners health?",
+    "testQuery": "Explain what are the advantages of having a vegetable garden at home on the owners health for me",
+    "similarity": 0.8958750573638794,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "How can I contribute to Spark?",
+    "testQuery": "How do I how can I contribute to Spark for me",
+    "similarity": 0.9466704580341104,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which American president spoke Dutch as their first language? Van Buren received a basic education at the village schoolhouse, and briefly studied Latin at the Kinderhook Academy and at Washington Seminary in Claverack. Van Buren was raised speaking primarily Du",
+    "testQuery": "How do I which American president spoke Dutch as their first language? Van Buren received a basic education at the village schoolhouse, and briefly studied Latin at the Kinderhook Academy and at Washington Seminary in Claverack. Van Buren was raised speaking primarily Du",
+    "similarity": 0.9782191567516284,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Which characters belong to DC or Marvel Universe? Hulk, Spectre",
+    "testQuery": "Explain which characters belong to DC or Marvel Universe? Hulk, Spectre for me",
+    "similarity": 0.9505871398790552,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "When was the first Reading railway station opened? Reading railway station is a major transport hub in Reading, Berkshire, England. It is on the northern edge of the town centre, near the main retail and commercial areas and the River Thames, 36 miles",
+    "testQuery": "What is when was the first Reading railway station opened? Reading railway station is a major transport hub in Reading, Berkshire, England. It is on the northern edge of the town centre, near the main retail and commercial areas and the River Thames, 36 miles thanks",
+    "similarity": 0.9803140524116238,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Extract the names of the cities and rank them in alphabetical order? The United Kingdom is a constitutional monarchy and parliamentary democracy. Its capital and largest city is London, the capital of England, a global city and financial centre with a population of ove",
+    "testQuery": "Can you extract the names of the cities and rank them in alphabetical order? The United Kingdom is a constitutional monarchy and parliamentary democracy. Its capital and largest city is London, the capital of England, a global city and financial centre with a population of ove for me",
+    "similarity": 0.9789122571523288,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Are lilies safe for cats?",
+    "testQuery": "Could you are lilies safe for cats?",
+    "similarity": 0.9561959205114551,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What dog breed is a mix between a Cocker Spaniel and a Poodle?",
+    "testQuery": "Could you what dog breed is a mix between a Cocker Spaniel and a Poodle please",
+    "similarity": 0.8951299051042271,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What are some ways to improve the value of your home?",
+    "testQuery": "Please what are some ways to improve the value of your home?",
+    "similarity": 0.9751921941112627,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "Based on the following passage summarise how sunsets are viewed from the northern hemisphere across seasons. Sunset, also known as sundown, is the daily disappearance of the Sun below the horizon due to Earth's rotation. As viewed from everywhere on Earth (except the North and South poles), the equinox Sun s",
+    "testQuery": "Could you based on the following passage summarise how sunsets are viewed from the northern hemisphere across seasons. Sunset, also known as sundown, is the daily disappearance of the Sun below the horizon due to Earth's rotation. As viewed from everywhere on Earth (except the North and South poles), the equinox Sun s?",
+    "similarity": 0.9679132480286932,
+    "dataset": "dolly"
+  },
+  {
+    "cacheQuery": "What are some movies that star Will Ferrell?",
+    "testQuery": "Tell me what are some movies that star Will Ferrell please",
+    "similarity": 0.8822607985780206,
+    "dataset": "dolly"
+  }
+]

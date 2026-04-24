@@ -1,0 +1,613 @@
+{
+  "dataset": "dolly",
+  "totalPairs": 272,
+  "evaluated": 100,
+  "summary": {
+    "yes": 96,
+    "no": 1,
+    "partial": 3,
+    "precision": 97.5
+  },
+  "results": [
+    {
+      "cacheQuery": "What is appealing about Charleston in South Carolina?",
+      "testQuery": "Help me appealing about Charleston in South Carolina for me",
+      "similarity": 0.8018404868099912,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "In the United States of America, which state is the largest in size?",
+      "testQuery": "I need you to in the United States of America, which state is the largest in size thanks",
+      "similarity": 0.8195758499977077,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How many times Lewis Hamilton won the F1 Championship ?",
+      "testQuery": "I want to know how many times Lewis Hamilton won the F1 Championship  thanks",
+      "similarity": 0.8261186805769711,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "which are rainbow colours violet red orange purple indigo pink blue black white yellow  green grey",
+      "testQuery": "Explain which are rainbow colours violet red orange purple indigo pink blue black white yellow  green grey for me",
+      "similarity": 0.8401625973688486,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "In the United States of America, which state is the largest in size?",
+      "testQuery": "What is the largest state by land size in the United States of America?",
+      "similarity": 0.8562548146218071,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What film won the 1943 Oscar as best film",
+      "testQuery": "Help me what film won the 1943 Oscar as best film for me",
+      "similarity": 0.8598597129678587,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Is skiing or snowboarding easier?",
+      "testQuery": "Help me is skiing or snowboarding easier for me",
+      "similarity": 0.8631963227208921,
+      "judgment": "PARTIAL"
+    },
+    {
+      "cacheQuery": "Is there a World Taekwondo Grand Prix",
+      "testQuery": "Help me is there a World Taekwondo Grand Prix thanks",
+      "similarity": 0.8665258557351451,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Which types of fish contain the lowest levels of mercury?",
+      "testQuery": "Help me which types of fish contain the lowest levels of mercury please",
+      "similarity": 0.8681185280666331,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What is Cup Game? The cup game is a children's clapping game that involves tapping and hitting a cup using a defined rhythm.",
+      "testQuery": "Help me cup Game? The cup game is a children's clapping game that involves tapping and hitting a cup using a defined rhythm thanks",
+      "similarity": 0.8719285900784919,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Classify each of the following as a primary color or a secondary color",
+      "testQuery": "Can you classify each of the following as a primary color or a secondary color for me",
+      "similarity": 0.8769330089941881,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Wat id DNA annotation?",
+      "testQuery": "What is wat id DNA annotation for me",
+      "similarity": 0.8795551819013714,
+      "judgment": "PARTIAL"
+    },
+    {
+      "cacheQuery": "What is the best language in the world",
+      "testQuery": "Explain the best language in the world",
+      "similarity": 0.8801636815914102,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What is Unified Payments Interface (UPI) in India",
+      "testQuery": "How do I unified Payments Interface (UPI) in India please",
+      "similarity": 0.8803872573653707,
+      "judgment": "PARTIAL"
+    },
+    {
+      "cacheQuery": "What are some movies that star Will Ferrell?",
+      "testQuery": "Tell me what are some movies that star Will Ferrell please",
+      "similarity": 0.8822607985780206,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Explain how a mechanical watch works",
+      "testQuery": "Can you how a mechanical watch works thanks",
+      "similarity": 0.8852591723478769,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What's the best way to learn how to snowboard?",
+      "testQuery": "Please what's the best way to learn how to snowboard please",
+      "similarity": 0.885602830253447,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Who saved Andromeda from the sea monster",
+      "testQuery": "Help me who saved Andromeda from the sea monster please",
+      "similarity": 0.8888179599290281,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Why are dogs generally more popular than cats as pets?",
+      "testQuery": "Explain why are dogs generally more popular than cats as pets please",
+      "similarity": 0.8889722995252008,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What is the name of the largest red-light district in Amsterdam?",
+      "testQuery": "Tell me the name of the largest red-light district in Amsterdam thanks",
+      "similarity": 0.8917072202861211,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Are The Smiths a good band?",
+      "testQuery": "How do I are The Smiths a good band please",
+      "similarity": 0.8925433620832668,
+      "judgment": "NO"
+    },
+    {
+      "cacheQuery": "What dog breed is a mix between a Cocker Spaniel and a Poodle?",
+      "testQuery": "Could you what dog breed is a mix between a Cocker Spaniel and a Poodle please",
+      "similarity": 0.8951299051042271,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "what are the advantages of having a vegetable garden at home on the owners health?",
+      "testQuery": "Explain what are the advantages of having a vegetable garden at home on the owners health for me",
+      "similarity": 0.8958750573638794,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What is wine? Wine is an alcoholic drink typically made from fermented grapes. Yeast consumes the sugar in the grapes and converts it to ethanol and carbon dioxide, releasing heat in the process. Different varietie",
+      "testQuery": "Please wine? Wine is an alcoholic drink typically made from fermented grapes. Yeast consumes the sugar in the grapes and converts it to ethanol and carbon dioxide, releasing heat in the process. Different varietie for me",
+      "similarity": 0.8969795814237802,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Why are dogs generally more popular than cats as pets?",
+      "testQuery": "I need you to why are dogs generally more popular than cats as pets",
+      "similarity": 0.8976858315254561,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What is the PGA Championship? The PGA Championship (often referred to as the US PGA Championship or USPGA outside the United States) is an annual golf tournament conducted by the Professional Golfers' Association of America. It is",
+      "testQuery": "Please the PGA Championship? The PGA Championship (often referred to as the US PGA Championship or USPGA outside the United States) is an annual golf tournament conducted by the Professional Golfers' Association of America. It is for me",
+      "similarity": 0.8996134993149314,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What are the ten best restaurants in London?",
+      "testQuery": "Tell me what are the ten best restaurants in London please",
+      "similarity": 0.8997487599228337,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Which ones are metals and non metals: Copper, Hydrogen, Silver, Carbon, Gold, Nitrogen",
+      "testQuery": "Help me which ones are metals and non metals: Copper, Hydrogen, Silver, Carbon, Gold, Nitrogen for me",
+      "similarity": 0.9024987195002723,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Which is a species of fish? Sea dragon or Red bearded",
+      "testQuery": "I need you to which is a species of fish? Sea dragon or Red bearded",
+      "similarity": 0.9050001117828286,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What is the PGA Championship? The PGA Championship (often referred to as the US PGA Championship or USPGA outside the United States) is an annual golf tournament conducted by the Professional Golfers' Association of America. It is",
+      "testQuery": "Help me the PGA Championship? The PGA Championship (often referred to as the US PGA Championship or USPGA outside the United States) is an annual golf tournament conducted by the Professional Golfers' Association of America. It is please",
+      "similarity": 0.9059940981635503,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How do you operate a car with a manual transmission?",
+      "testQuery": "Tell me how do you operate a car with a manual transmission",
+      "similarity": 0.9071670972009052,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Are lilies safe for cats?",
+      "testQuery": "Please are lilies safe for cats for me",
+      "similarity": 0.9077017464269672,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What should I do on a free afternoon in San Francisco?",
+      "testQuery": "I want to know what should I do on a free afternoon in San Francisco for me",
+      "similarity": 0.9095826154736844,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Categorize each of the following instruments as either string or keyboard: Guitar, Violin, piano, harmonium, cello, accordion, banjo",
+      "testQuery": "I need you to categorize each of the following instruments as either string or keyboard: Guitar, Violin, piano, harmonium, cello, accordion, banjo please",
+      "similarity": 0.9144372565806016,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Who are the pianists that are considered masters in playing Bach's music?",
+      "testQuery": "Could you who are the pianists that are considered masters in playing Bach's music please",
+      "similarity": 0.9151302674925441,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What was Angie Thomas's first published novel?",
+      "testQuery": "Please what was Angie Thomas's first published novel for me",
+      "similarity": 0.9155010490452784,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Write a haiku about how much I love pickles.",
+      "testQuery": "Please write a haiku about how much I love pickles thanks",
+      "similarity": 0.9164830880275923,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Give me a bunch of ways I can keep my house cool in the summer",
+      "testQuery": "Explain give me a bunch of ways I can keep my house cool in the summer please",
+      "similarity": 0.9186188297382356,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What's the best way to learn how to snowboard?",
+      "testQuery": "How can I learn to snowboard?",
+      "similarity": 0.9193131768402827,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What are the top reasons to become a vegan?",
+      "testQuery": "Explain what are the top reasons to become a vegan",
+      "similarity": 0.9199416073575208,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What is the largest city in Washington state?",
+      "testQuery": "Help me the largest city in Washington state?",
+      "similarity": 0.922479025811463,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What is Magical Thinking? Magical thinking, or superstitious thinking, is the belief that unrelated events are causally connected despite the absence of any plausible causal link between them, particularly as a result of super",
+      "testQuery": "Can you magical Thinking? Magical thinking, or superstitious thinking, is the belief that unrelated events are causally connected despite the absence of any plausible causal link between them, particularly as a result of super please",
+      "similarity": 0.9237662126583877,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Why do potato chip bags become stale after opening?",
+      "testQuery": "Please why do potato chip bags become stale after opening please",
+      "similarity": 0.9240907202746318,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Who is Thomas Jefferson? Thomas Jefferson (April 13, 1743 – July 4, 1826) was an American statesman, diplomat, lawyer, architect, philosopher, and Founding Father who served as the third president of the United States from 18",
+      "testQuery": "Can you who is Thomas Jefferson? Thomas Jefferson (April 13, 1743 – July 4, 1826) was an American statesman, diplomat, lawyer, architect, philosopher, and Founding Father who served as the third president of the United States from 18 please",
+      "similarity": 0.9254384096951666,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Who were the original 5 members of the Grateful Dead?",
+      "testQuery": "What is who were the original 5 members of the Grateful Dead please",
+      "similarity": 0.9274843852971779,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How do you know if you reached product market fit?",
+      "testQuery": "Tell me how do you know if you reached product market fit please",
+      "similarity": 0.9287997458670634,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What are some different things you should bring with you on a day hiking trip?",
+      "testQuery": "Can you what are some different things you should bring with you on a day hiking trip for me",
+      "similarity": 0.9296846797100763,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Choose the word which is different from the rest: hangar, platform, dock, park, bus stand",
+      "testQuery": "Tell me choose the word which is different from the rest: hangar, platform, dock, park, bus stand for me",
+      "similarity": 0.9301288061577913,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Who are the pianists that are considered masters in playing Bach's music?",
+      "testQuery": "Please who are the pianists that are considered masters in playing Bach's music for me",
+      "similarity": 0.9308713304217592,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Tell me whether each of these are animals or not: Alligator, Grass, Tree, Boat, Dolphin, Shark, Fish, Fence, Dog, Car",
+      "testQuery": "Can you whether each of these are animals or not: Alligator, Grass, Tree, Boat, Dolphin, Shark, Fish, Fence, Dog, Car thanks",
+      "similarity": 0.9326882078922196,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Write a short paragraph about why you should not have both a pet cat and a pet bird.",
+      "testQuery": "I want to know write a short paragraph about why you should not have both a pet cat and a pet bird thanks",
+      "similarity": 0.9332877965679811,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Change the following passage to past tense The episode focuses on two people: an elderly hospital doctor (Aleksander Bardini), who lives by himself in the ubiquitous Dekalog apartment block; and Dorota Geller (Krystyna Janda), a woman in her 3",
+      "testQuery": "I need you to change the following passage to past tense The episode focuses on two people: an elderly hospital doctor (Aleksander Bardini), who lives by himself in the ubiquitous Dekalog apartment block; and Dorota Geller (Krystyna Janda), a woman in her 3 thanks",
+      "similarity": 0.9340398776088664,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What is engineering culture?",
+      "testQuery": "What is engineering culture please",
+      "similarity": 0.9345498153262428,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Give me some tips on how to train for a marathon.",
+      "testQuery": "I want to know give me some tips on how to train for a marathon",
+      "similarity": 0.9348201624717809,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Tell whether these are countries, cities, continents or neither: Australia, Mexico, Mexico city, Antartica, Singapore, India, Gulf, Beijing, Jakarta, Luxembourg, Vatican City",
+      "testQuery": "I want to know tell whether these are countries, cities, continents or neither: Australia, Mexico, Mexico city, Antartica, Singapore, India, Gulf, Beijing, Jakarta, Luxembourg, Vatican City for me",
+      "similarity": 0.9351221747674288,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Which is a species of fish? Mola mola or Molar",
+      "testQuery": "Explain which is a species of fish? Mola mola or Molar please",
+      "similarity": 0.9374095143396733,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What is the name of the largest red-light district in Amsterdam?",
+      "testQuery": "I need you to the name of the largest red-light district in Amsterdam?",
+      "similarity": 0.9382638146454833,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Give me a bulleted list of the the first five books in the bible old testament?",
+      "testQuery": "Could you give me a bulleted list of the the first five books in the bible old testament",
+      "similarity": 0.940152617624641,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What is process mining? Process mining is a family of techniques relating the fields of data science and process management to support the analysis of operational processes based on event logs. The goal of process mining is ",
+      "testQuery": "Explain process mining? Process mining is a family of techniques relating the fields of data science and process management to support the analysis of operational processes based on event logs. The goal of process mining is  please",
+      "similarity": 0.940629765024787,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What is the currency in use in the Netherlands?",
+      "testQuery": "Explain the currency in use in the Netherlands",
+      "similarity": 0.9407526104929138,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Given this paragraph about the Cold War, why did the Soviets pull out of their war in Afghanistan? After World War II, parts of Eastern and Central Europe, including East Germany and eastern parts of Austria were occupied by Red Army according to the Potsdam Conference. Dependent communist governme",
+      "testQuery": "What is given this paragraph about the Cold War, why did the Soviets pull out of their war in Afghanistan? After World War II, parts of Eastern and Central Europe, including East Germany and eastern parts of Austria were occupied by Red Army according to the Potsdam Conference. Dependent communist governme please",
+      "similarity": 0.9414017000576216,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Give me a list of ways that a runner can advance a base in baseball without there being a hit.",
+      "testQuery": "I need you to give me a list of ways that a runner can advance a base in baseball without there being a hit for me",
+      "similarity": 0.9416353574150101,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What's the best way to cook a soft-boiled egg?",
+      "testQuery": "What is what's the best way to cook a soft-boiled egg",
+      "similarity": 0.9423544888589889,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Explain how a mechanical watch works",
+      "testQuery": "Can you how a mechanical watch works",
+      "similarity": 0.9443037693849123,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What is the Maareech Advanced Torpedo Defence System (ATDS)? Maareech Advanced Torpedo Defence System (ATDS) is a torpedo detection and countermeasure system used by the Indian Navy. The system offers a complete solution to detect and locate an incoming torpedo",
+      "testQuery": "I need you to the Maareech Advanced Torpedo Defence System (ATDS)? Maareech Advanced Torpedo Defence System (ATDS) is a torpedo detection and countermeasure system used by the Indian Navy. The system offers a complete solution to detect and locate an incoming torpedo for me",
+      "similarity": 0.9450670154160893,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Give me some ideas of kids items to stuff into Easter eggs.",
+      "testQuery": "Explain give me some ideas of kids items to stuff into Easter eggs thanks",
+      "similarity": 0.9454304134397435,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How can I contribute to Spark?",
+      "testQuery": "How do I how can I contribute to Spark for me",
+      "similarity": 0.9466704580341104,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What percussion instruments are easy to learn?",
+      "testQuery": "How do I what percussion instruments are easy to learn",
+      "similarity": 0.9473831308728092,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Give me a list of things that pose a challenge to cryptos",
+      "testQuery": "Please give me a list of things that pose a challenge to cryptos please",
+      "similarity": 0.947732250480622,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Extract all of the dates mentioned in this paragraph and list them using bullets in the format {Date} - {Description} Daniel Leavitt was born November 16, 1813, at Rye, New Hampshire, the son of Benning Leavitt, influential businessman, state senator, county commissioner and later Chicopee Selectman, and his wife Oli",
+      "testQuery": "I want to know extract all of the dates mentioned in this paragraph and list them using bullets in the format {Date} - {Description} Daniel Leavitt was born November 16, 1813, at Rye, New Hampshire, the son of Benning Leavitt, influential businessman, state senator, county commissioner and later Chicopee Selectman, and his wife Oli?",
+      "similarity": 0.9480867930964124,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Tell me whether these people are DJs or singers: David Guetta, Avicii, Rihanna, Beyonce, Martin Garrix, Calvin Harris, Taylor Swift",
+      "testQuery": "Could you whether these people are DJs or singers: David Guetta, Avicii, Rihanna, Beyonce, Martin Garrix, Calvin Harris, Taylor Swift for me",
+      "similarity": 0.948450723909404,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Which of these are car brands: Ferrari, Fiat, Batavus, Philips, Renault, BMW, IKEA and MG",
+      "testQuery": "Can you which of these are car brands: Ferrari, Fiat, Batavus, Philips, Renault, BMW, IKEA and MG for me",
+      "similarity": 0.9494688462364755,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How do you prepare for case study interview for digital transformation case?",
+      "testQuery": "What is how do you prepare for case study interview for digital transformation case please",
+      "similarity": 0.9500834672976644,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Cauliflower rice is not that fun to eat in its bland form. Is there anything interesting and tasty I can cook with cauliflower rice?",
+      "testQuery": "I want to know cauliflower rice is not that fun to eat in its bland form. Is there anything interesting and tasty I can cook with cauliflower rice for me",
+      "similarity": 0.9502530673394086,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How did Alfred Nobel make his money",
+      "testQuery": "Please how did Alfred Nobel make his money please",
+      "similarity": 0.9517284577573664,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What are the advantages to studying Engineering in college?",
+      "testQuery": "How do I what are the advantages to studying Engineering in college",
+      "similarity": 0.9523743160636374,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Give me a list of things that pose a challenge to cryptos",
+      "testQuery": "Help me give me a list of things that pose a challenge to cryptos?",
+      "similarity": 0.9529039814741886,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Identify which animal species is alive or extinct: Pliosaur, Marine Iguana",
+      "testQuery": "Tell me identify which animal species is alive or extinct: Pliosaur, Marine Iguana?",
+      "similarity": 0.9546241983591431,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Name some reasons it's great to live in Marin County, California.",
+      "testQuery": "Help me name some reasons it's great to live in Marin County, California?",
+      "similarity": 0.9553041635817612,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Given this paragraph, how many public high schools are in Arlington, Virginia? Arlington Public Schools operates the county's public K-12 education system of 22 elementary schools; 6 middle schools (Dorothy Hamm Middle School, Gunston Middle School, Kenmore Middle School, Swanso",
+      "testQuery": "Could you given this paragraph, how many public high schools are in Arlington, Virginia? Arlington Public Schools operates the county's public K-12 education system of 22 elementary schools; 6 middle schools (Dorothy Hamm Middle School, Gunston Middle School, Kenmore Middle School, Swanso please",
+      "similarity": 0.9556315871241514,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "From the passage provided, extract the date when the 34th Wisconsin Infantry Regiment was organized. The 34th Wisconsin Infantry Regiment was a conscripted infantry regiment that served in the Union Army during the American Civil War. The 34th Wisconsin Infantry was composed of men drafted by state a",
+      "testQuery": "Help me from the passage provided, extract the date when the 34th Wisconsin Infantry Regiment was organized. The 34th Wisconsin Infantry Regiment was a conscripted infantry regiment that served in the Union Army during the American Civil War. The 34th Wisconsin Infantry was composed of men drafted by state a please",
+      "similarity": 0.9559088107204787,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Are lilies safe for cats?",
+      "testQuery": "Could you are lilies safe for cats?",
+      "similarity": 0.9561959205114551,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Extract all of the dates mentioned in this paragraph and list them using bullets in the format {Date} - {Description} Daniel Leavitt was born November 16, 1813, at Rye, New Hampshire, the son of Benning Leavitt, influential businessman, state senator, county commissioner and later Chicopee Selectman, and his wife Oli",
+      "testQuery": "Please extract all of the dates mentioned in this paragraph and list them using bullets in the format {Date} - {Description} Daniel Leavitt was born November 16, 1813, at Rye, New Hampshire, the son of Benning Leavitt, influential businessman, state senator, county commissioner and later Chicopee Selectman, and his wife Oli please",
+      "similarity": 0.956855241354838,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What types of sport fish do most anglers target in New England?",
+      "testQuery": "Tell me what types of sport fish do most anglers target in New England",
+      "similarity": 0.9570812094848367,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "How is the The U.S. Naturalization Interview and test done?",
+      "testQuery": "Could you how is the The U.S. Naturalization Interview and test done",
+      "similarity": 0.9583319304973312,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Identify which instrument is string or woodwind: Wheelharp, Clarinet",
+      "testQuery": "Could you identify which instrument is string or woodwind: Wheelharp, Clarinet?",
+      "similarity": 0.9588159379391047,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What is the origin of the name of the herb Rosemary? alvia rosmarinus (/ˈsælviə ˌrɒsməˈraɪnəs/), commonly known as rosemary, is a shrub with fragrant, evergreen, needle-like leaves and white, pink, purple, or blue flowers, native to the Mediterranean re",
+      "testQuery": "Can you the origin of the name of the herb Rosemary? alvia rosmarinus (/ˈsælviə ˌrɒsməˈraɪnəs/), commonly known as rosemary, is a shrub with fragrant, evergreen, needle-like leaves and white, pink, purple, or blue flowers, native to the Mediterranean re thanks",
+      "similarity": 0.9591724083562048,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What is the current capital of Japan? Tokyo (/ˈtoʊkioʊ/; Japanese: 東京, Tōkyō, [toːkʲoː] (listen)), officially the Tokyo Metropolis (東京都, Tōkyō-to), is the capital and most populous city of Japan. Formerly known as Edo, its metropolitan ar",
+      "testQuery": "Can you the current capital of Japan? Tokyo (/ˈtoʊkioʊ/; Japanese: 東京, Tōkyō, [toːkʲoː] (listen)), officially the Tokyo Metropolis (東京都, Tōkyō-to), is the capital and most populous city of Japan. Formerly known as Edo, its metropolitan ar thanks",
+      "similarity": 0.9603325771522776,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Classify the following types of cars as \"economy\" or \"luxury\": Ford, Chevrolet, Lamborghini, Ferrari, Mercedes, Honda, Lexus, Toyota, Nissan, Subaru",
+      "testQuery": "Please classify the following types of cars as \"economy\" or \"luxury\": Ford, Chevrolet, Lamborghini, Ferrari, Mercedes, Honda, Lexus, Toyota, Nissan, Subaru please",
+      "similarity": 0.9608087946740261,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Who was John Moses Browning? John Moses Browning (January 23, 1855 – November 26, 1926) was an American firearm designer who developed many varieties of military and civilian firearms, cartridges, and gun mechanisms – many of whi",
+      "testQuery": "Help me who was John Moses Browning? John Moses Browning (January 23, 1855 – November 26, 1926) was an American firearm designer who developed many varieties of military and civilian firearms, cartridges, and gun mechanisms – many of whi?",
+      "similarity": 0.9613983245547415,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "From the passage provided, extract the state Lincoln was born in Abraham Lincoln (/ˈlɪŋkən/ LINK-ən; February 12, 1809 – April 15, 1865) was an American lawyer, politician and statesman who served as the 16th president of the United States from 1861 until his assas",
+      "testQuery": "Tell me from the passage provided, extract the state Lincoln was born in Abraham Lincoln (/ˈlɪŋkən/ LINK-ən; February 12, 1809 – April 15, 1865) was an American lawyer, politician and statesman who served as the 16th president of the United States from 1861 until his assas thanks",
+      "similarity": 0.9621283590624525,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What does fasting mean? Fasting is the abstention from eating and sometimes drinking. From a purely physiological context, \"fasting\" may refer to the metabolic status of a person who has not eaten overnight (see \"Breakfast\")",
+      "testQuery": "How do I what does fasting mean? Fasting is the abstention from eating and sometimes drinking. From a purely physiological context, \"fasting\" may refer to the metabolic status of a person who has not eaten overnight (see \"Breakfast\") please",
+      "similarity": 0.9626240116646302,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Classify these objects based on their shape.\nwheel, coin, CD, stamp, chess board",
+      "testQuery": "Help me classify these objects based on their shape.\nwheel, coin, CD, stamp, chess board?",
+      "similarity": 0.9629791536226852,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Give me a list of ways that a runner can advance a base in baseball without there being a hit.",
+      "testQuery": "Tell me give me a list of ways that a runner can advance a base in baseball without there being a hit thanks",
+      "similarity": 0.9633641763589524,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Which products apple sell?",
+      "testQuery": "Can you which products apple sell?",
+      "similarity": 0.9645053915010093,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Which Dutch actress played Xenia Onatopp in the James Bond movie GoldenEye?",
+      "testQuery": "Please which Dutch actress played Xenia Onatopp in the James Bond movie GoldenEye",
+      "similarity": 0.9649331329332917,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Give me a list of the last five european golden boots winner And tell me how many goals they scored.",
+      "testQuery": "I want to know give me a list of the last five european golden boots winner And tell me how many goals they scored please",
+      "similarity": 0.9657718781995953,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "What are some of the common elements of visual design? Design elements are the basic units of any visual design which form its structure and convey visual messages. Painter and design theorist Maitland E. Graves (1902-1978), who attempted to gestate the f",
+      "testQuery": "I want to know what are some of the common elements of visual design? Design elements are the basic units of any visual design which form its structure and convey visual messages. Painter and design theorist Maitland E. Graves (1902-1978), who attempted to gestate the f please",
+      "similarity": 0.9659390722257507,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "Extract what is Top Gun The United States Navy Strike Fighter Tactics Instructor program (SFTI program), more popularly known as Top Gun (stylized as TOPGUN), is an American military program that teaches fighter and strike t",
+      "testQuery": "Tell me extract what is Top Gun The United States Navy Strike Fighter Tactics Instructor program (SFTI program), more popularly known as Top Gun (stylized as TOPGUN), is an American military program that teaches fighter and strike t for me",
+      "similarity": 0.9662809489904993,
+      "judgment": "YES"
+    },
+    {
+      "cacheQuery": "When rock climbing, what is the difference between lead climbing and top rope climbing?",
+      "testQuery": "Could you when rock climbing, what is the difference between lead climbing and top rope climbing",
+      "similarity": 0.9664662946132617,
+      "judgment": "YES"
+    }
+  ]
+}

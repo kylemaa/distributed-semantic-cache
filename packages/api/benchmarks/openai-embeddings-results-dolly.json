@@ -7,7 +7,7 @@
       "normalizedHits": 0,
       "semanticHits": 0,
       "misses": 598,
-      "avgLatency": 0.000630600000040431,
+      "avgLatency": 0.000337199999970835,
       "byType": {
         "exact": 400,
         "paraphrase": 1,
@@ -21,7 +21,7 @@
       "normalizedHits": 1,
       "semanticHits": 0,
       "misses": 597,
-      "avgLatency": 0.0005755999999983032,
+      "avgLatency": 0.0003740999999699852,
       "byType": {
         "exact": 400,
         "paraphrase": 1,
@@ -30,57 +30,57 @@
     },
     {
       "name": "3. + Semantic",
-      "hitRate": 0.671,
+      "hitRate": 0.667,
       "exactHits": 402,
       "normalizedHits": 1,
-      "semanticHits": 268,
-      "misses": 329,
-      "avgLatency": 0.8289565000000002,
+      "semanticHits": 264,
+      "misses": 333,
+      "avgLatency": 0.30681720000003404,
       "byType": {
         "exact": 400,
-        "paraphrase": 266,
+        "paraphrase": 262,
         "unique": 5
       }
     },
     {
       "name": "4. + HNSW",
-      "hitRate": 0.671,
+      "hitRate": 0.667,
       "exactHits": 402,
       "normalizedHits": 1,
-      "semanticHits": 268,
-      "misses": 329,
-      "avgLatency": 0.6384947000000648,
+      "semanticHits": 264,
+      "misses": 333,
+      "avgLatency": 0.41989590000000865,
       "byType": {
         "exact": 400,
-        "paraphrase": 266,
+        "paraphrase": 262,
         "unique": 5
       }
     },
     {
       "name": "5. + Adaptive",
-      "hitRate": 0.678,
+      "hitRate": 0.675,
       "exactHits": 402,
       "normalizedHits": 1,
-      "semanticHits": 275,
-      "misses": 322,
-      "avgLatency": 0.46526090000007025,
+      "semanticHits": 272,
+      "misses": 325,
+      "avgLatency": 0.4074416000000238,
       "byType": {
         "exact": 400,
-        "paraphrase": 273,
+        "paraphrase": 270,
         "unique": 5
       }
     },
     {
       "name": "6. Full System",
-      "hitRate": 0.678,
+      "hitRate": 0.675,
       "exactHits": 402,
       "normalizedHits": 1,
-      "semanticHits": 275,
-      "misses": 322,
-      "avgLatency": 0.5129739000000118,
+      "semanticHits": 272,
+      "misses": 325,
+      "avgLatency": 0.43250649999998314,
       "byType": {
         "exact": 400,
-        "paraphrase": 273,
+        "paraphrase": 270,
         "unique": 5
       }
     }

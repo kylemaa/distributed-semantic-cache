@@ -1,0 +1,1364 @@
+[
+  {
+    "cacheQuery": "I thought it could be from TMJ, what methods can relieve pain",
+    "testQuery": "I need you to i thought it could be from TMJ, what methods can relieve pain please",
+    "similarity": 0.9171143997989697,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Can you give me a recipe for potato pancakes?",
+    "testQuery": "Tell me give me a recipe for potato pancakes for me",
+    "similarity": 0.8651662337788939,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Yeah, a birthday party for a 6 year old.",
+    "testQuery": "Please yeah, a birthday party for a 6 year old please",
+    "similarity": 0.8318698801535016,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Have any new technological advances been made in regards to electricity within the past few years?",
+    "testQuery": "How do I have any new technological advances been made in regards to electricity within the past few years please",
+    "similarity": 0.8955009725832656,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Okay, tell me for both the month of February and June.",
+    "testQuery": "How do I okay, tell me for both the month of February and June thanks",
+    "similarity": 0.8425327733651333,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How do I make vodka mojitos?",
+    "testQuery": "Tell me make vodka mojitos",
+    "similarity": 0.852451890330358,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How do shoe insoles help you?",
+    "testQuery": "Help me how do shoe insoles help you",
+    "similarity": 0.9338929411042043,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "If you were my friend, would you encourage me to join Facebook?",
+    "testQuery": "How do I if you were my friend, would you encourage me to join Facebook please",
+    "similarity": 0.9126534065413012,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Yeah, but most PC's still work after they are old and slow.",
+    "testQuery": "Can you yeah, but most PC's still work after they are old and slow?",
+    "similarity": 0.908315678987831,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Is it better to buy a bounce house or to rent one?",
+    "testQuery": "Could you is it better to buy a bounce house or to rent one",
+    "similarity": 0.9533130056066564,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I've heard that Uma Thurman has done charity work. She's a great actress. I'm curious what you might know about her work?",
+    "testQuery": "Please i've heard that Uma Thurman has done charity work. She's a great actress. I'm curious what you might know about her work please",
+    "similarity": 0.9625566465584905,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I'm reading about her heading several different organizations. Sometimes you make things up though.",
+    "testQuery": "I want to know i'm reading about her heading several different organizations. Sometimes you make things up though thanks",
+    "similarity": 0.9033671718238061,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Why do most new things we buy only last a little while before they break? In the old days, stuff lasted.",
+    "testQuery": "Tell me why do most new things we buy only last a little while before they break? In the old days, stuff lasted please",
+    "similarity": 0.9553180281856557,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Right, all living organisms have cells! And all cells have DNA. Is that why you mentioned cell structure?",
+    "testQuery": "Tell me right, all living organisms have cells! And all cells have DNA. Is that why you mentioned cell structure please",
+    "similarity": 0.939887488190803,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "That's fair but do you know the process? If you do, can you briefly describe it?",
+    "testQuery": "I need you to that's fair but do you know the process? If you do, can you briefly describe it thanks",
+    "similarity": 0.8374786221134725,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Is it better to buy a bounce house or to rent one?",
+    "testQuery": "I want to know is it better to buy a bounce house or to rent one please",
+    "similarity": 0.9375560980644971,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "So do I help them pull, do I show them?",
+    "testQuery": "Could you so do I help them pull, do I show them?",
+    "similarity": 0.9100578266553553,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I find myself dealing with insomnia quite often. Do you have any tips for dealing with insomnia?",
+    "testQuery": "I want to know i find myself dealing with insomnia quite often. Do you have any tips for dealing with insomnia?",
+    "similarity": 0.9610597543468812,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Hmm...I just looked those things up and that's incorrect.",
+    "testQuery": "I want to know hmm...I just looked those things up and that's incorrect?",
+    "similarity": 0.8462405925998898,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Is testing being done to find a cure for macular degeneration?",
+    "testQuery": "Tell me is testing being done to find a cure for macular degeneration",
+    "similarity": 0.9209174116641331,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I have nothing more to say. Goodbye.",
+    "testQuery": "Explain i have nothing more to say. Goodbye please",
+    "similarity": 0.8622953972726202,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How should I dress for a job interview?",
+    "testQuery": "I need you to how should I dress for a job interview?",
+    "similarity": 0.9234938512577558,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "So you're saying that crayons feel like wax because they're literally made out of wax?",
+    "testQuery": "What is so you're saying that crayons feel like wax because they're literally made out of wax please",
+    "similarity": 0.9455947709316822,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What is the difference between a migraine and a regular headache?",
+    "testQuery": "What is the difference between a migraine and a regular headache for me",
+    "similarity": 0.8752628421184201,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I am trying to learn more about UFC history. Which two fighters were a part of the first match ever?",
+    "testQuery": "I want to know i am trying to learn more about UFC history. Which two fighters were a part of the first match ever for me",
+    "similarity": 0.9174767306375742,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How do you choose a good one?",
+    "testQuery": "Explain how do you choose a good one please",
+    "similarity": 0.8585520125720528,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Should I wear a suit and tie, or is that too formal?",
+    "testQuery": "Could you should I wear a suit and tie, or is that too formal?",
+    "similarity": 0.9485206210540134,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Voxer doesn't seem like a suitable suggestion for podcasts but the rest of your advice seems good",
+    "testQuery": "Please voxer doesn't seem like a suitable suggestion for podcasts but the rest of your advice seems good?",
+    "similarity": 0.9199435472467717,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "So, what is the difference between Java and JavaScript?",
+    "testQuery": "Tell me so, what is the difference between Java and JavaScript thanks",
+    "similarity": 0.8867761934592993,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Okay, do you have any other advice?",
+    "testQuery": "Okay, any other advice?",
+    "similarity": 0.9096143864202437,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I want to learn how to spatchcock a turkey for roasting.",
+    "testQuery": "What is i want to learn how to spatchcock a turkey for roasting thanks",
+    "similarity": 0.9339392609050917,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What is the Laurier house?",
+    "testQuery": "Could you the Laurier house?",
+    "similarity": 0.8632110626968488,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I am actually wondering, what sources I can look for information to find a cards value in general.",
+    "testQuery": "Could you i am actually wondering, what sources I can look for information to find a cards value in general please",
+    "similarity": 0.9477120242938049,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "That's correct, can you recommend me any bands that sound similar?",
+    "testQuery": "Could you that's correct, can you recommend me any bands that sound similar for me",
+    "similarity": 0.900229491142329,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "When was the Yankee Stadium built?",
+    "testQuery": "Can you when was the Yankee Stadium built please",
+    "similarity": 0.8700387473108373,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Those are some helpful tips!  How about selling them for a better price?",
+    "testQuery": "I want to know those are some helpful tips!  How about selling them for a better price",
+    "similarity": 0.9185917317688207,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I find myself dealing with insomnia quite often. Do you have any tips for dealing with insomnia?",
+    "testQuery": "I need you to i find myself dealing with insomnia quite often. Do you have any tips for dealing with insomnia for me",
+    "similarity": 0.8883773712428165,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Do people who deliver pizza actually enjoy their jobs?",
+    "testQuery": "Explain do people who deliver pizza actually enjoy their jobs for me",
+    "similarity": 0.9063409003963535,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Do you know which days of the year are dedicated to National food days? I want to take advantage of some of them.",
+    "testQuery": "I want to know do you know which days of the year are dedicated to National food days? I want to take advantage of some of them for me",
+    "similarity": 0.9606061620182754,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "If you don't have friends, how can you advise me how to make friends?",
+    "testQuery": "Help me if you don't have friends, how can you advise me how to make friends for me",
+    "similarity": 0.879208450846537,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I might not be sleeping well. Do you think that could be the problem?",
+    "testQuery": "I want to know i might not be sleeping well. Do you think that could be the problem please",
+    "similarity": 0.88543487460497,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I just mean what is the purpose of life and living?",
+    "testQuery": "Explain i just mean what is the purpose of life and living thanks",
+    "similarity": 0.8557444367989976,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Might The Lock Ness Monster really exist?",
+    "testQuery": "Help me might The Lock Ness Monster really exist?",
+    "similarity": 0.9051354851004101,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Do you think its possible to meet people on social media that will become your friend?",
+    "testQuery": "Can you do you think its possible to meet people on social media that will become your friend thanks",
+    "similarity": 0.9271203105490208,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "So do rainbows touch the ground then?",
+    "testQuery": "Could you so do rainbows touch the ground then",
+    "similarity": 0.8880196990097177,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I am actually wondering, what sources I can look for information to find a cards value in general.",
+    "testQuery": "Can you i am actually wondering, what sources I can look for information to find a cards value in general thanks",
+    "similarity": 0.9519982152032027,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I really just want them to be as bright white as they were when new. Do I really use soap on leather sneakers? Isn't there a better method?",
+    "testQuery": "What is i really just want them to be as bright white as they were when new. Do I really use soap on leather sneakers? Isn't there a better method for me",
+    "similarity": 0.9760759804312872,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Aren't most doughnuts usually fried?",
+    "testQuery": "I want to know aren't most doughnuts usually fried thanks",
+    "similarity": 0.8933899335126183,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Does sunrise get later in the winter?",
+    "testQuery": "Can you does sunrise get later in the winter?",
+    "similarity": 0.9496413372032595,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I do have a lot of clothes that are hard for me to give away",
+    "testQuery": "Explain i do have a lot of clothes that are hard for me to give away?",
+    "similarity": 0.8708972982485769,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Yes, how do I remove the backbone of the turkey?",
+    "testQuery": "Could you yes, how do I remove the backbone of the turkey",
+    "similarity": 0.9550685975933,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Anything exciting that is an adventure game for ps3.",
+    "testQuery": "Tell me anything exciting that is an adventure game for ps3",
+    "similarity": 0.9184626854776629,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I do have a lot of clothes that are hard for me to give away",
+    "testQuery": "Can you i do have a lot of clothes that are hard for me to give away thanks",
+    "similarity": 0.9170070718356111,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What's the best way to clean a pair of leather Reebok sneakers?",
+    "testQuery": "What is what's the best way to clean a pair of leather Reebok sneakers thanks",
+    "similarity": 0.9250395019813991,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "And how does a vacuum keep the dust and dirt from just spewing out into the air?",
+    "testQuery": "What is and how does a vacuum keep the dust and dirt from just spewing out into the air",
+    "similarity": 0.9302576902578195,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "And metabolism, right. Living organisms do require consuming food and turning it into energy",
+    "testQuery": "I want to know and metabolism, right. Living organisms do require consuming food and turning it into energy for me",
+    "similarity": 0.874886383517363,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How do I properly dispose of cooking oil?",
+    "testQuery": "What is properly dispose of cooking oil",
+    "similarity": 0.9462661702250779,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I need to know what to gift a college graduate next year. Got any suggestions?",
+    "testQuery": "Can you i need to know what to gift a college graduate next year. Got any suggestions?",
+    "similarity": 0.9773071260037034,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Are gift cards good Christmas presents?",
+    "testQuery": "Could you are gift cards good Christmas presents",
+    "similarity": 0.8883284253924606,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "That's incredible since Formula Rossa only goes up to 150 mph.  Wow that's 100 mph faster.",
+    "testQuery": "How do I that's incredible since Formula Rossa only goes up to 150 mph.  Wow that's 100 mph faster",
+    "similarity": 0.9423941091456223,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Okay. What else is needed to play, and what are the rules?",
+    "testQuery": "Tell me okay. What else is needed to play, and what are the rules please",
+    "similarity": 0.8808381458677157,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I'm looking for any sort of Korean drama that's popular!",
+    "testQuery": "Help me i'm looking for any sort of Korean drama that's popular?",
+    "similarity": 0.8711298961885332,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Those are some helpful tips!  How about selling them for a better price?",
+    "testQuery": "What is those are some helpful tips!  How about selling them for a better price thanks",
+    "similarity": 0.9321736405845811,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What numbers are you gonna run by me?",
+    "testQuery": "Tell me what numbers are you gonna run by me",
+    "similarity": 0.9165285124229147,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I have an old baseball card that is a collector's item. I want to find out how much it is worth?",
+    "testQuery": "I need you to i have an old baseball card that is a collector's item. I want to find out how much it is worth",
+    "similarity": 0.8829272775989369,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "It sounds like a really fun and unique video game series.",
+    "testQuery": "Can you it sounds like a really fun and unique video game series",
+    "similarity": 0.9217278240426564,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What safety equipment should you have on hand when you play with fireworks?",
+    "testQuery": "Explain what safety equipment should you have on hand when you play with fireworks",
+    "similarity": 0.9435441881049805,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Can you tell me who Bob Dylan is?",
+    "testQuery": "I want to know tell me who Bob Dylan is",
+    "similarity": 0.899268570360562,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Really? Feel like you're not being honest saying you dont know what a percentage is",
+    "testQuery": "I need you to really? Feel like you're not being honest saying you dont know what a percentage is",
+    "similarity": 0.8940778977282011,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Why do most new things we buy only last a little while before they break? In the old days, stuff lasted.",
+    "testQuery": "Help me why do most new things we buy only last a little while before they break? In the old days, stuff lasted",
+    "similarity": 0.947773854262342,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I'm in my 30s. I feel groggy and sluggish when I wake up.",
+    "testQuery": "Tell me i'm in my 30s. I feel groggy and sluggish when I wake up",
+    "similarity": 0.9135229699177273,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Are Bosnia and Herzegovina two different countries?",
+    "testQuery": "How do I are Bosnia and Herzegovina two different countries?",
+    "similarity": 0.9173053959435862,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Bosnia and Herzegovina, Croatia, Kosovo, Macedonia, Montenegro, Serbia, and Slovenia. Are they communist countries?  Which one has the most Muslims and which one has the most Christians?",
+    "testQuery": "Tell me bosnia and Herzegovina, Croatia, Kosovo, Macedonia, Montenegro, Serbia, and Slovenia. Are they communist countries?  Which one has the most Muslims and which one has the most Christians please",
+    "similarity": 0.9422999492905448,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What places should I visit in New Jersey?",
+    "testQuery": "I need you to what places should I visit in New Jersey",
+    "similarity": 0.9095949530990174,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "More trivia questions! Question One: What is a doe?",
+    "testQuery": "Help me more trivia questions! Question One: What is a doe thanks",
+    "similarity": 0.8257613487662905,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How should I dress for a job interview?",
+    "testQuery": "I need you to how should I dress for a job interview?",
+    "similarity": 0.9234721735261593,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I feel like how energized it makes one feel it would do the opposite of feeling relaxed.",
+    "testQuery": "Tell me i feel like how energized it makes one feel it would do the opposite of feeling relaxed",
+    "similarity": 0.9393075308832011,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Hopefull this will make it harder for young people to start smoking.",
+    "testQuery": "Can you hopefull this will make it harder for young people to start smoking for me",
+    "similarity": 0.8917108222953625,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I'm open to suggestion.",
+    "testQuery": "Can you i'm open to suggestion?",
+    "similarity": 0.8501765899441613,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What is the best selling candy in the US?",
+    "testQuery": "Explain the best selling candy in the US please",
+    "similarity": 0.8822028888231762,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How do i get a perfect cooked turkey for thanksgiving?",
+    "testQuery": "Can you get a perfect cooked turkey for thanksgiving",
+    "similarity": 0.8730317876977334,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "You have had these questions before?",
+    "testQuery": "How do I you have had these questions before please",
+    "similarity": 0.825666818340115,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How do you cash a personal check?",
+    "testQuery": "Explain how do you cash a personal check?",
+    "similarity": 0.958014851478522,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I am worried about my diabetic uncle. Can he be eating it everyday?",
+    "testQuery": "I need you to i am worried about my diabetic uncle. Can he be eating it everyday thanks",
+    "similarity": 0.9333049434659191,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I like to host guests at my home from time to time, and I am gathering  recipes of different dishes and drinks to keep things interesting. I am interested in trying some Kenyan dishes. Can you give me a recipe for Samaki?",
+    "testQuery": "What is i like to host guests at my home from time to time, and I am gathering  recipes of different dishes and drinks to keep things interesting. I am interested in trying some Kenyan dishes. Can you give me a recipe for Samaki?",
+    "similarity": 0.9892607399556556,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Will the metal be too damaged by rust to salvage it?",
+    "testQuery": "Tell me will the metal be too damaged by rust to salvage it",
+    "similarity": 0.9436442080927193,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What do I do about a cockroach infestation?",
+    "testQuery": "Tell me what do I do about a cockroach infestation please",
+    "similarity": 0.8608300145433779,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I want to make pancakes but I have never made them before.  Can you help me?",
+    "testQuery": "I need you to i want to make pancakes but I have never made them before.  Can you help me?",
+    "similarity": 0.9355338330405947,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "In Swahili samaki' is fish. The dish is popular in the Lake Victoria and Lake Naivasha area.",
+    "testQuery": "How do I in Swahili samaki' is fish. The dish is popular in the Lake Victoria and Lake Naivasha area for me",
+    "similarity": 0.9495352100552924,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Can you tell me the steps for getting a harbor boat slip for my sailboat?",
+    "testQuery": "Could you tell me the steps for getting a harbor boat slip for my sailboat?",
+    "similarity": 0.9954867652183811,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What are places I should go to when in NJ?",
+    "testQuery": "Help me what are places I should go to when in NJ?",
+    "similarity": 0.9650357238557892,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Bosnia and Herzegovina, Croatia, Kosovo, Macedonia, Montenegro, Serbia, and Slovenia. Are they communist countries?  Which one has the most Muslims and which one has the most Christians?",
+    "testQuery": "Could you bosnia and Herzegovina, Croatia, Kosovo, Macedonia, Montenegro, Serbia, and Slovenia. Are they communist countries?  Which one has the most Muslims and which one has the most Christians please",
+    "similarity": 0.9482266409378032,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I haven't seen a doctor yet because I would like to manage it on my own if possible.",
+    "testQuery": "Please i haven't seen a doctor yet because I would like to manage it on my own if possible thanks",
+    "similarity": 0.8796684288652071,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "It's a cooking method that I heard of, but I don't know much about it.",
+    "testQuery": "What is it's a cooking method that I heard of, but I don't know much about it?",
+    "similarity": 0.9353398369986439,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Is it the same for indoor plants?",
+    "testQuery": "Can you is it the same for indoor plants please",
+    "similarity": 0.9110166755887524,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Teaching a child how to convert a percent to a decimal",
+    "testQuery": "Help me teaching a child how to convert a percent to a decimal",
+    "similarity": 0.9551911361988894,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Restore the oak floors to their original appearance.",
+    "testQuery": "Please restore the oak floors to their original appearance for me",
+    "similarity": 0.8635735606414809,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Thanks. And what are some typical forms required?",
+    "testQuery": "I want to know thanks. And what are some typical forms required please",
+    "similarity": 0.808445373952968,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "When was Marvel started?",
+    "testQuery": "Can you when was Marvel started please",
+    "similarity": 0.902623682663687,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Okay, well, I know most college students want cash. Cash is an option, but I just want to think of other ideas, too",
+    "testQuery": "How do I okay, well, I know most college students want cash. Cash is an option, but I just want to think of other ideas, too please",
+    "similarity": 0.9513224095406286,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How do I learn to use a pogo stick?",
+    "testQuery": "Can you learn to use a pogo stick?",
+    "similarity": 0.9038700286623137,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Those are some helpful tips!  How about selling them for a better price?",
+    "testQuery": "I want to know those are some helpful tips!  How about selling them for a better price for me",
+    "similarity": 0.8821664389464285,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I heard that Apple actually sends updates to ruin their battery life.",
+    "testQuery": "What is i heard that Apple actually sends updates to ruin their battery life for me",
+    "similarity": 0.9284578672507937,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "And how does a vacuum keep the dust and dirt from just spewing out into the air?",
+    "testQuery": "How do I and how does a vacuum keep the dust and dirt from just spewing out into the air?",
+    "similarity": 0.9614225611498589,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How can I clarify butter?",
+    "testQuery": "Could you how can I clarify butter please",
+    "similarity": 0.8779820840302036,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How do you take care of a bamboo tree?",
+    "testQuery": "How do I how do you take care of a bamboo tree please",
+    "similarity": 0.9147514441734523,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I'm looking into different career avenues to decide what I might want to pursue. How do I start a podcast?",
+    "testQuery": "Can you i'm looking into different career avenues to decide what I might want to pursue. How do I start a podcast?",
+    "similarity": 0.966238496132145,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I have nothing more to say. Goodbye.",
+    "testQuery": "I want to know i have nothing more to say. Goodbye?",
+    "similarity": 0.825233985645951,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What are some methods I can use to help with my social anxiety?",
+    "testQuery": "Please what are some methods I can use to help with my social anxiety",
+    "similarity": 0.9433363148553296,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How do I make squash soup?",
+    "testQuery": "How do I make squash soup for me",
+    "similarity": 0.8724100195475627,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How can I tone up my body?",
+    "testQuery": "How do I how can I tone up my body please",
+    "similarity": 0.8539929353979447,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How can I help someone with Down Syndrome to achieve independence?",
+    "testQuery": "Explain how can I help someone with Down Syndrome to achieve independence?",
+    "similarity": 0.9751683777153519,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Did the breakup happen after President Josip Broz Tito died?",
+    "testQuery": "How do I did the breakup happen after President Josip Broz Tito died for me",
+    "similarity": 0.8606647275898154,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I'm looking for any sort of Korean drama that's popular!",
+    "testQuery": "I want to know i'm looking for any sort of Korean drama that's popular for me",
+    "similarity": 0.894676941996915,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Great. What are some popular French breakfast pastries?",
+    "testQuery": "How do I great. What are some popular French breakfast pastries",
+    "similarity": 0.9141292325078135,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I'm reading about her heading several different organizations. Sometimes you make things up though.",
+    "testQuery": "I need you to i'm reading about her heading several different organizations. Sometimes you make things up though thanks",
+    "similarity": 0.8340677553502168,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I'm trying to find out what the different phases of the moon are. Can you help?",
+    "testQuery": "Can you i'm trying to find out what the different phases of the moon are. Can you help for me",
+    "similarity": 0.9498875186130853,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I heard that the banana that the artificial banana flavoring is modeled on is extinct, is that true?",
+    "testQuery": "Please i heard that the banana that the artificial banana flavoring is modeled on is extinct, is that true for me",
+    "similarity": 0.9547326568844794,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I just mean what is the purpose of life and living?",
+    "testQuery": "Please i just mean what is the purpose of life and living please",
+    "similarity": 0.8785880829924616,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I thought you were going to explain about automobile design and safety that I thought might include seat belts.",
+    "testQuery": "Explain i thought you were going to explain about automobile design and safety that I thought might include seat belts thanks",
+    "similarity": 0.9393715975527859,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How do I find the present value of a collector baseball card?",
+    "testQuery": "What is find the present value of a collector baseball card thanks",
+    "similarity": 0.9365202153776346,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Hm, I see. Where did you read this?",
+    "testQuery": "Could you hm, I see. Where did you read this?",
+    "similarity": 0.8588409640017146,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What are signs of being spiritually ascended? Seems many religions, aspire to this.",
+    "testQuery": "How do I what are signs of being spiritually ascended? Seems many religions, aspire to this for me",
+    "similarity": 0.9450590887224901,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I would like some general information on the event.",
+    "testQuery": "Please i would like some general information on the event",
+    "similarity": 0.9309808682990164,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What was Yugoslavia and what happened to it?",
+    "testQuery": "Help me what was Yugoslavia and what happened to it",
+    "similarity": 0.8905341866178935,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Search for best The Cars songs",
+    "testQuery": "Could you search for best The Cars songs for me",
+    "similarity": 0.8778226382945215,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I like to host guests at my home from time to time, and I am gathering  recipes of different dishes and drinks to keep things interesting. I am interested in trying some Swiss dishes. Can you give me a recipe for Zopf?",
+    "testQuery": "Tell me i like to host guests at my home from time to time, and I am gathering  recipes of different dishes and drinks to keep things interesting. I am interested in trying some Swiss dishes. Can you give me a recipe for Zopf?",
+    "similarity": 0.9857161499253649,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What are places I should go to when in NJ?",
+    "testQuery": "Explain what are places I should go to when in NJ thanks",
+    "similarity": 0.9038363743105992,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "More trivia questions! Question One: What is a doe?",
+    "testQuery": "How do I more trivia questions! Question One: What is a doe thanks",
+    "similarity": 0.8063871822698946,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Which programming language is the easiest to learn online on my own?",
+    "testQuery": "Help me which programming language is the easiest to learn online on my own please",
+    "similarity": 0.9148394154745244,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "He is ignorant and mean. I feel bad going to work. What should I do?",
+    "testQuery": "Explain he is ignorant and mean. I feel bad going to work. What should I do?",
+    "similarity": 0.9551896050885131,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Which programming language is the easiest to learn online on my own?",
+    "testQuery": "Please which programming language is the easiest to learn online on my own for me",
+    "similarity": 0.9414718153106634,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How can I feed squirrels and make  more come to my home?",
+    "testQuery": "Explain how can I feed squirrels and make  more come to my home for me",
+    "similarity": 0.9230045386512196,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What should I do if my boss is always mean to me?",
+    "testQuery": "I want to know what should I do if my boss is always mean to me",
+    "similarity": 0.9129630057568282,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "If I wanted to watch the Star Wars movies so that the timeline is chronological, which order should I watch them in?",
+    "testQuery": "I need you to if I wanted to watch the Star Wars movies so that the timeline is chronological, which order should I watch them in for me",
+    "similarity": 0.9118830209920642,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How do you cash a personal check?",
+    "testQuery": "Tell me how do you cash a personal check",
+    "similarity": 0.9177625153292522,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Assuming they have a guest book. That's quite creative. Are there any more neutral, mainstream suggestions you might convey?",
+    "testQuery": "Tell me assuming they have a guest book. That's quite creative. Are there any more neutral, mainstream suggestions you might convey?",
+    "similarity": 0.9784483041296131,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "A lot of these aren't classics.",
+    "testQuery": "Could you a lot of these aren't classics",
+    "similarity": 0.8724110412752561,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How do you delete a Facebook account?",
+    "testQuery": "Help me how do you delete a Facebook account?",
+    "similarity": 0.901286313150757,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Your responses are incorrect.  According to Wikipedia, \"Nash was the first American car manufacturer to offer seat belts as a factory option in its 1949 models.\"",
+    "testQuery": "I want to know your responses are incorrect.  According to Wikipedia, \"Nash was the first American car manufacturer to offer seat belts as a factory option in its 1949 models.\" thanks",
+    "similarity": 0.9573843424848023,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Which automobile company was the first to offer seat belts?",
+    "testQuery": "I want to know which automobile company was the first to offer seat belts for me",
+    "similarity": 0.8891100811780781,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How bright does the light have to be?",
+    "testQuery": "I want to know how bright does the light have to be",
+    "similarity": 0.8942707505461125,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What are some of the best books by Ray Bradbury?",
+    "testQuery": "Explain what are some of the best books by Ray Bradbury?",
+    "similarity": 0.9644217676005257,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I want to try and find a new book to read. I like to read about factual events and things about soace. WHat could I read?",
+    "testQuery": "Please i want to try and find a new book to read. I like to read about factual events and things about soace. WHat could I read please",
+    "similarity": 0.9468259787690813,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What is the best way to make a friend?",
+    "testQuery": "How do I the best way to make a friend for me",
+    "similarity": 0.8584828309443006,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How bright does the light have to be?",
+    "testQuery": "I want to know how bright does the light have to be for me",
+    "similarity": 0.8078398952384995,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Does the US really go to war because of the access to oil in other countries?",
+    "testQuery": "Please does the US really go to war because of the access to oil in other countries thanks",
+    "similarity": 0.9263060431094093,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What are places I should go to when in NJ?",
+    "testQuery": "I need you to what are places I should go to when in NJ thanks",
+    "similarity": 0.9055894127467013,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "When was the Yankee Stadium built?",
+    "testQuery": "Please when was the Yankee Stadium built thanks",
+    "similarity": 0.8825654527250437,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I can see how listing positive things would help, but if my kid gets upset, I need something for him to do right then so that he doesn't get into trouble.",
+    "testQuery": "Tell me i can see how listing positive things would help, but if my kid gets upset, I need something for him to do right then so that he doesn't get into trouble?",
+    "similarity": 0.9610268827533631,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I'm in my 30s. I feel groggy and sluggish when I wake up.",
+    "testQuery": "What is i'm in my 30s. I feel groggy and sluggish when I wake up",
+    "similarity": 0.946427556192983,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I like  “Smooth”.  Have you heard of it?",
+    "testQuery": "Explain i like  “Smooth”.  Have you heard of it",
+    "similarity": 0.8798366753297406,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Well, I hear that for some National food days, you get a discount or free item at places that sell the particular food being sold.",
+    "testQuery": "What is well, I hear that for some National food days, you get a discount or free item at places that sell the particular food being sold thanks",
+    "similarity": 0.9223772548820751,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I like to host guests at my home from time to time, and I am gathering  recipes of different dishes and drinks to keep things interesting. I am interested in trying some Kenyan dishes. Can you give me a recipe for Samaki?",
+    "testQuery": "Can you i like to host guests at my home from time to time, and I am gathering  recipes of different dishes and drinks to keep things interesting. I am interested in trying some Kenyan dishes. Can you give me a recipe for Samaki?",
+    "similarity": 0.9900346850014701,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Do people who deliver pizza actually enjoy their jobs?",
+    "testQuery": "I need you to do people who deliver pizza actually enjoy their jobs thanks",
+    "similarity": 0.8473044783106986,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "And how does a vacuum keep the dust and dirt from just spewing out into the air?",
+    "testQuery": "Tell me and how does a vacuum keep the dust and dirt from just spewing out into the air?",
+    "similarity": 0.9595497186386477,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What are the best wigs for women?",
+    "testQuery": "How do I what are the best wigs for women?",
+    "similarity": 0.96148503600044,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "And how does a vacuum keep the dust and dirt from just spewing out into the air?",
+    "testQuery": "What is and how does a vacuum keep the dust and dirt from just spewing out into the air thanks",
+    "similarity": 0.9261566828888562,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How can I store food if I don't have a pantry?",
+    "testQuery": "Could you how can I store food if I don't have a pantry thanks",
+    "similarity": 0.9264864645316463,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I've been working graveyard shifts for nearly a decade now. I heard it's really bad for the health, and isn't a good long-term career. Is that true? How long do you think can I keep this up?",
+    "testQuery": "Explain i've been working graveyard shifts for nearly a decade now. I heard it's really bad for the health, and isn't a good long-term career. Is that true? How long do you think can I keep this up for me",
+    "similarity": 0.9652812840581585,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What games are being released for the PS4 next month?",
+    "testQuery": "Please what games are being released for the PS4 next month thanks",
+    "similarity": 0.9120564994265447,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I might not be sleeping well. Do you think that could be the problem?",
+    "testQuery": "Explain i might not be sleeping well. Do you think that could be the problem thanks",
+    "similarity": 0.8761375568165213,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What does detox mean?",
+    "testQuery": "I need you to what does detox mean?",
+    "similarity": 0.9009279830745318,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Which programming language is the easiest to learn online on my own?",
+    "testQuery": "Can you which programming language is the easiest to learn online on my own",
+    "similarity": 0.9653802555391242,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Yes, I'm asking whether he ever really saw a rhinoceros?",
+    "testQuery": "Tell me yes, I'm asking whether he ever really saw a rhinoceros for me",
+    "similarity": 0.8872709156003102,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I'm looking into different career avenues to decide what I might want to pursue. How do I start a podcast?",
+    "testQuery": "I need you to i'm looking into different career avenues to decide what I might want to pursue. How do I start a podcast thanks",
+    "similarity": 0.9116469536533486,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "My 35 year old son is having pain from his jaw, neck and shoulder blade",
+    "testQuery": "How do I my 35 year old son is having pain from his jaw, neck and shoulder blade thanks",
+    "similarity": 0.9430481524090655,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I thought it could be from TMJ, what methods can relieve pain",
+    "testQuery": "Can you i thought it could be from TMJ, what methods can relieve pain",
+    "similarity": 0.9716494799195093,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Do you think its possible to meet people on social media that will become your friend?",
+    "testQuery": "Please do you think its possible to meet people on social media that will become your friend please",
+    "similarity": 0.9426947119212314,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Okay, why would people get along better with rats?",
+    "testQuery": "How do I okay, why would people get along better with rats thanks",
+    "similarity": 0.924734257094969,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Both of your responses were inaccurate.   The singer who sang  “Smooth” is Rob Thomas.",
+    "testQuery": "Can you both of your responses were inaccurate.   The singer who sang  “Smooth” is Rob Thomas for me",
+    "similarity": 0.9288609040898169,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How often should I water a bamboo tree?",
+    "testQuery": "What is how often should I water a bamboo tree for me",
+    "similarity": 0.9136975551619825,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Do you think you can help me learn how to mount a TV to a wall?",
+    "testQuery": "I need you to do you think you can help me learn how to mount a TV to a wall thanks",
+    "similarity": 0.9353135266863475,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I'm going to France and need to learn a few food words.",
+    "testQuery": "How do I i'm going to France and need to learn a few food words for me",
+    "similarity": 0.9523114183276468,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "So you don't have one but I can search for one online. Is that your suggestion?",
+    "testQuery": "How do I so you don't have one but I can search for one online. Is that your suggestion?",
+    "similarity": 0.9154321161984081,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "what color does blue and purple make?",
+    "testQuery": "I need you to what color does blue and purple make?",
+    "similarity": 0.8845343009637421,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Just a reliable method to clean leather sneakers.",
+    "testQuery": "Can you just a reliable method to clean leather sneakers",
+    "similarity": 0.9145385868063819,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How do I apply leather soap? With a brush or a cloth?",
+    "testQuery": "Could you apply leather soap? With a brush or a cloth thanks",
+    "similarity": 0.891269277862625,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Does cereal have too much sugar?",
+    "testQuery": "How do I does cereal have too much sugar thanks",
+    "similarity": 0.8638591422122884,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How do I find the location of the studs?",
+    "testQuery": "Could you find the location of the studs thanks",
+    "similarity": 0.8664031260346774,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I was thinking a brown or black one for something different.",
+    "testQuery": "Please i was thinking a brown or black one for something different?",
+    "similarity": 0.9068025005672602,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How often should I water a bamboo tree?",
+    "testQuery": "Can you how often should I water a bamboo tree for me",
+    "similarity": 0.9223542993426183,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What are some good classic Disney movies?",
+    "testQuery": "Could you what are some good classic Disney movies?",
+    "similarity": 0.9643807930505637,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What are some of the other matches that were on the event UFC 1: The Beginning?",
+    "testQuery": "How do I what are some of the other matches that were on the event UFC 1: The Beginning?",
+    "similarity": 0.9780974624074709,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Are Bosnia and Herzegovina two different countries?",
+    "testQuery": "I want to know are Bosnia and Herzegovina two different countries?",
+    "similarity": 0.9526361164497562,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Yes, I have them.  Can you guide me step by step?",
+    "testQuery": "Could you yes, I have them.  Can you guide me step by step for me",
+    "similarity": 0.9137033482746778,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Would tube be an example?",
+    "testQuery": "Explain would tube be an example",
+    "similarity": 0.8684601988860209,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I'm in my 30s. I feel groggy and sluggish when I wake up.",
+    "testQuery": "I need you to i'm in my 30s. I feel groggy and sluggish when I wake up?",
+    "similarity": 0.8418914235321013,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What are signs of being spiritually ascended? Seems many religions, aspire to this.",
+    "testQuery": "Help me what are signs of being spiritually ascended? Seems many religions, aspire to this",
+    "similarity": 0.9624955256414266,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "That's a great ideas.  Are there any other light activities that I can build my stamina with?",
+    "testQuery": "Please that's a great ideas.  Are there any other light activities that I can build my stamina with for me",
+    "similarity": 0.960025257540389,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Voxer doesn't seem like a suitable suggestion for podcasts but the rest of your advice seems good",
+    "testQuery": "Explain voxer doesn't seem like a suitable suggestion for podcasts but the rest of your advice seems good",
+    "similarity": 0.9418812155833309,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How do you take care of a bamboo tree?",
+    "testQuery": "Explain how do you take care of a bamboo tree",
+    "similarity": 0.9296370993096956,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How do I find the present value of a collector baseball card?",
+    "testQuery": "Tell me find the present value of a collector baseball card for me",
+    "similarity": 0.9138119138488683,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What are some good Christmas dinner meals?",
+    "testQuery": "I want to know what are some good Christmas dinner meals please",
+    "similarity": 0.8414525533374819,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I want to learn how to spatchcock a turkey for roasting.",
+    "testQuery": "What is i want to learn how to spatchcock a turkey for roasting",
+    "similarity": 0.9415475517156905,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Oh. That makes sense. Would not want them staying dried out all night long.",
+    "testQuery": "What is oh. That makes sense. Would not want them staying dried out all night long thanks",
+    "similarity": 0.8840301484632916,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I'd like to comfort a relative who sprained their ankle. Do you have any suggestions?",
+    "testQuery": "I need you to i'd like to comfort a relative who sprained their ankle. Do you have any suggestions",
+    "similarity": 0.9474530273491992,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How do you laminate a document?",
+    "testQuery": "How do I how do you laminate a document for me",
+    "similarity": 0.9038643735894148,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "A lot of these aren't classics.",
+    "testQuery": "What is a lot of these aren't classics thanks",
+    "similarity": 0.8577686932846568,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Why did they settle on the 4 cylinder engine for most cars manufactured today?",
+    "testQuery": "I need you to why did they settle on the 4 cylinder engine for most cars manufactured today thanks",
+    "similarity": 0.8948117441815447,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I am trying to learn more about UFC history. Which two fighters were a part of the first match ever?",
+    "testQuery": "How do I i am trying to learn more about UFC history. Which two fighters were a part of the first match ever",
+    "similarity": 0.9562331320183293,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "He is ignorant and mean. I feel bad going to work. What should I do?",
+    "testQuery": "Explain he is ignorant and mean. I feel bad going to work. What should I do",
+    "similarity": 0.9344689153612344,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What are some cute types of outfits to wear for summer?",
+    "testQuery": "What is what are some cute types of outfits to wear for summer",
+    "similarity": 0.9353098953083201,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Got it, but can you please identify the four lunar phases of the moon?",
+    "testQuery": "What is got it, but can you please identify the four lunar phases of the moon for me",
+    "similarity": 0.9119268059720944,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I was thinking a brown or black one for something different.",
+    "testQuery": "Explain i was thinking a brown or black one for something different please",
+    "similarity": 0.8340079562846456,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I like all of those. Can you recommend a few more?",
+    "testQuery": "I want to know i like all of those. Can you recommend a few more",
+    "similarity": 0.85792659777684,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "So do I help them pull, do I show them?",
+    "testQuery": "Please so do I help them pull, do I show them for me",
+    "similarity": 0.8901323635355901,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Which coaster is the scariest?",
+    "testQuery": "Tell me which coaster is the scariest please",
+    "similarity": 0.8813229937571806,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Got it, but can you please identify the four lunar phases of the moon?",
+    "testQuery": "Help me got it, but can you please identify the four lunar phases of the moon",
+    "similarity": 0.9064170505672853,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Can an ophthalmologist see the drusen?",
+    "testQuery": "Explain can an ophthalmologist see the drusen",
+    "similarity": 0.9212275861715765,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Wow, can you narrow that down for me?",
+    "testQuery": "I want to know wow, can you narrow that down for me please",
+    "similarity": 0.8362290037617982,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Yeah, but most PC's still work after they are old and slow.",
+    "testQuery": "Please yeah, but most PC's still work after they are old and slow",
+    "similarity": 0.9161335902373978,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "He is mean to about half of us. I don't know what his problem is.",
+    "testQuery": "Please he is mean to about half of us. I don't know what his problem is thanks",
+    "similarity": 0.9283106341578795,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I'm thinking about taking a road trip along Route 66 and I want to learn more about it",
+    "testQuery": "Can you i'm thinking about taking a road trip along Route 66 and I want to learn more about it thanks",
+    "similarity": 0.9381571695338626,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I would like to know some useful facts about Stephan Hawking.",
+    "testQuery": "Could you i would like to know some useful facts about Stephan Hawking please",
+    "similarity": 0.9524861611168266,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Where is MOS Burger's headquarter?",
+    "testQuery": "I need you to where is MOS Burger's headquarter for me",
+    "similarity": 0.8413500311263781,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "If you don't have friends, how can you advise me how to make friends?",
+    "testQuery": "Can you if you don't have friends, how can you advise me how to make friends",
+    "similarity": 0.9473439430240733,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "Yeah, but most PC's still work after they are old and slow.",
+    "testQuery": "Help me yeah, but most PC's still work after they are old and slow please",
+    "similarity": 0.8010927621482132,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How do I clean a mirror?",
+    "testQuery": "Can you clean a mirror?",
+    "similarity": 0.9188234050914185,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How can I lose 50 lbs. in a year?",
+    "testQuery": "I want to know how can I lose 50 lbs. in a year?",
+    "similarity": 0.9643529969201821,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "So do you know when the original yankee stadium was built?",
+    "testQuery": "How do I so do you know when the original yankee stadium was built for me",
+    "similarity": 0.8953981967255998,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How do I make chamoy apples?",
+    "testQuery": "What is make chamoy apples for me",
+    "similarity": 0.8530122708633656,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What are some of Mozart's best musical pieces?",
+    "testQuery": "How do I what are some of Mozart's best musical pieces",
+    "similarity": 0.9355605365396954,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "I get in bed early and my mind races too much to be able to fall asleep.",
+    "testQuery": "How do I i get in bed early and my mind races too much to be able to fall asleep please",
+    "similarity": 0.8655978861878351,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "How do I encourage a baby to pull up?",
+    "testQuery": "I want to know encourage a baby to pull up thanks",
+    "similarity": 0.9081872552322827,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What's a good way to keep clothes from getting wrinkled if I have no place to hang them?",
+    "testQuery": "Explain what's a good way to keep clothes from getting wrinkled if I have no place to hang them thanks",
+    "similarity": 0.9242650100150617,
+    "dataset": "hhrlhf"
+  },
+  {
+    "cacheQuery": "What do you mean too harshly?",
+    "testQuery": "What is what do you mean too harshly?",
+    "similarity": 0.9364703419473192,
+    "dataset": "hhrlhf"
+  }
+]

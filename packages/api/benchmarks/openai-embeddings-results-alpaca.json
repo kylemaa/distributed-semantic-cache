@@ -7,7 +7,7 @@
       "normalizedHits": 0,
       "semanticHits": 0,
       "misses": 600,
-      "avgLatency": 0.0004525999999295891,
+      "avgLatency": 0.00032250000001840816,
       "byType": {
         "exact": 400,
         "paraphrase": 0,
@@ -21,7 +21,7 @@
       "normalizedHits": 0,
       "semanticHits": 0,
       "misses": 600,
-      "avgLatency": 0.0005689999999922293,
+      "avgLatency": 0.00035620000001290465,
       "byType": {
         "exact": 400,
         "paraphrase": 0,
@@ -30,58 +30,58 @@
     },
     {
       "name": "3. + Semantic",
-      "hitRate": 0.698,
+      "hitRate": 0.678,
       "exactHits": 400,
       "normalizedHits": 0,
-      "semanticHits": 298,
-      "misses": 302,
-      "avgLatency": 0.30880050000004305,
+      "semanticHits": 278,
+      "misses": 322,
+      "avgLatency": 0.31140170000000217,
       "byType": {
         "exact": 400,
-        "paraphrase": 298,
-        "unique": 0
+        "paraphrase": 276,
+        "unique": 2
       }
     },
     {
       "name": "4. + HNSW",
-      "hitRate": 0.698,
+      "hitRate": 0.678,
       "exactHits": 400,
       "normalizedHits": 0,
-      "semanticHits": 298,
-      "misses": 302,
-      "avgLatency": 0.3640787000000291,
+      "semanticHits": 278,
+      "misses": 322,
+      "avgLatency": 0.3568683999999976,
       "byType": {
         "exact": 400,
-        "paraphrase": 298,
-        "unique": 0
+        "paraphrase": 276,
+        "unique": 2
       }
     },
     {
       "name": "5. + Adaptive",
-      "hitRate": 0.699,
+      "hitRate": 0.688,
       "exactHits": 400,
       "normalizedHits": 0,
-      "semanticHits": 299,
-      "misses": 301,
-      "avgLatency": 0.3695869999999868,
+      "semanticHits": 288,
+      "misses": 312,
+      "avgLatency": 0.38124369999998087,
       "byType": {
         "exact": 400,
-        "paraphrase": 299,
-        "unique": 0
+        "paraphrase": 285,
+        "unique": 3
       }
     },
     {
       "name": "6. Full System",
-      "hitRate": 0.699,
+      "hitRate": 0.688,
       "exactHits": 400,
       "normalizedHits": 0,
-      "semanticHits": 299,
-      "misses": 301,
-      "avgLatency": 0.36687509999997564,
+      "semanticHits": 288,
+      "misses": 312,
+      "avgLatency": 0.3534020999999848,
       "byType": {
         "exact": 400,
-        "paraphrase": 299,
-        "unique": 0
+        "paraphrase": 285,
+        "unique": 3
       }
     }
   ],
@@ -95,7 +95,7 @@
     "uniqueRate": 0.3,
     "batchSize": 100
   },
-  "dataset": "wizardlm",
+  "dataset": "alpaca",
   "model": "text-embedding-3-small",
   "embeddingDim": 1536
 }

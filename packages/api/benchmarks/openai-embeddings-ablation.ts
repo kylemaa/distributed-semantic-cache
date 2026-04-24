@@ -46,6 +46,13 @@ const CONFIG = {
   batchSize: 100,
 };
 
+interface HitPair {
+  cacheQuery: string;
+  testQuery: string;
+  similarity: number;
+  dataset: string;
+}
+
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 if (!OPENAI_API_KEY) {
@@ -305,6 +312,7 @@ async function main() {
     byType: { exact: number; paraphrase: number; unique: number };
   }
   
+  const hitPairs: HitPair[] = [];
   const results: Result[] = [];
   
   for (const config of CONFIGURATIONS) {
@@ -355,19 +363,22 @@ async function main() {
         }
         
         let bestSimilarity = 0;
-        
+        let bestCacheIdx = -1;
+
         if (config.useHNSW && hnswIndex) {
           const results = hnswIndex.search(query.embedding, 10);
           for (const result of results) {
             if (result.similarity > bestSimilarity) {
               bestSimilarity = result.similarity;
+              bestCacheIdx = parseInt(result.id);
             }
           }
         } else {
-          for (const entry of cacheEntries) {
-            const sim = cosineSimilarity(query.embedding, entry.embedding);
+          for (let i = 0; i < cacheEntries.length; i++) {
+            const sim = cosineSimilarity(query.embedding, cacheEntries[i].embedding);
             if (sim > bestSimilarity) {
               bestSimilarity = sim;
+              bestCacheIdx = i;
             }
           }
         }
@@ -384,8 +395,17 @@ async function main() {
             hit = true;
           }
         }
+
+        if (hit && config.name === '6. Full System' && bestCacheIdx >= 0) {
+          hitPairs.push({
+            cacheQuery: cacheEntries[bestCacheIdx].text,
+            testQuery: query.text,
+            similarity: bestSimilarity,
+            dataset: DATASET_NAME,
+          });
+        }
       }
-      
+
       if (hit) {
         hitsByType[query.type]++;
       } else {
@@ -466,6 +486,11 @@ async function main() {
     embeddingDim: CONFIG.embeddingDim,
   }, null, 2));
   console.log(`📄 Results saved to: ${outputPath}\n`);
+
+  const hitPairsPath = path.join(__dirname,
+    `hit-pairs-${DATASET_NAME}.json`);
+  fs.writeFileSync(hitPairsPath, JSON.stringify(hitPairs, null, 2));
+  console.log(`\n📄 Hit pairs saved: ${hitPairsPath} (${hitPairs.length} pairs)`);
 }
 
 main().catch(console.error);

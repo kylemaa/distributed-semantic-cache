@@ -2,6 +2,29 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Current Focus
+
+Building benchmark credibility for blog post publication.
+Working in: `packages/api/benchmarks/`
+Current step: Creating quality-eval.ts in packages/api/benchmarks/
+
+NOT touching: web dashboard, SDK middleware, API routes, storage layer
+
+Last updated: [4/24/2026]
+
+## Benchmark Status
+
+REAL EMBEDDINGS (credible, use these):
+- openai-embeddings-results-alpaca.json
+- openai-embeddings-results-dolly.json  
+- openai-embeddings-results-hhrlhf.json
+- openai-embeddings-results-wizardlm.json
+- cross-user-results-*.json
+
+SYNTHETIC/BROKEN (do not cite):
+- ablation-results.json (fake embeddings, 99.7% hit rate is meaningless)
+- realworld-results.json (deterministic embeddings, not real semantics)
+- statistical-results.json (broken - Cohen's d is 339 trillion, division by zero)
 ## Project Overview
 
 A distributed semantic caching system for LLM applications built as a TypeScript monorepo. It reduces API costs by caching semantically similar queries using embedding-based similarity search across a 3-layer cache architecture.

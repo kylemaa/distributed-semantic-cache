@@ -3,7 +3,14 @@
     "allow": [
       "Bash(npx tsx:*)",
       "Bash(node -e ' *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git rm *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "WebFetch(domain:linear.app)",
+      "Bash(pnpm --filter @distributed-semantic-cache/web type-check)",
+      "Bash(pnpm --filter @distributed-semantic-cache/web build)",
+      "Bash(pnpm *)"
     ]
   }
 }

@@ -1,3 +1,51 @@
+:root {
+  --bg-base: #0f0f0f;
+  --bg-surface: #161618;
+  --bg-elevated: #1c1c1e;
+  --bg-hover: #232326;
+
+  --border: rgba(255, 255, 255, 0.07);
+  --border-strong: rgba(255, 255, 255, 0.12);
+  --border-accent: rgba(94, 106, 210, 0.3);
+
+  --accent: #5e6ad2;
+  --accent-hover: #6875d9;
+  --accent-pressed: #4f59b8;
+  --accent-subtle: rgba(94, 106, 210, 0.12);
+  --accent-glow: rgba(94, 106, 210, 0.25);
+
+  --text-primary: #e8e8e8;
+  --text-secondary: #8a8f98;
+  --text-muted: #5a5f6a;
+  --text-inverse: #0f0f0f;
+
+  --success: #4caf6e;
+  --success-subtle: rgba(76, 175, 110, 0.15);
+  --error: #e5484d;
+  --error-subtle: rgba(229, 72, 77, 0.15);
+  --warning: #f59f0b;
+  --warning-subtle: rgba(245, 159, 11, 0.15);
+  --info: #4a9eff;
+  --info-subtle: rgba(74, 158, 255, 0.15);
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+
+  --transition: 0.15s ease;
+  --transition-slow: 0.25s ease;
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Helvetica Neue', sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Menlo, Monaco, Consolas,
+    'Courier New', monospace;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,21 +53,39 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--font-sans);
+  font-feature-settings: 'cv11', 'ss01', 'ss03';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0a0a1a;
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  letter-spacing: -0.011em;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: var(--font-mono);
 }
 
 #root {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.15);
 }

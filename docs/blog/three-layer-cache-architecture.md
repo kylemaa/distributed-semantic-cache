@@ -239,7 +239,7 @@ const result = await middleware.chat(
 
 This post covered the **LLM-call cache** — `Query → Response`. The same primitives (embeddings, semantic matching, layered lookup) generalize one level up to **agent trajectories**: `Goal + Context → Plan`. That's **[Pomerene](https://atc-dashboard-604846394197.us-central1.run.app)**, our flagship project — a *deterministic TypeScript trajectory cache for agentic systems*, where a cache hit replays a cached plan with **zero LLM on the hit path**.
 
-See it live, with client-verifiable receipts: **https://atc-dashboard-604846394197.us-central1.run.app**
+See it live, with client-verifiable receipts: **[the Pomerene dashboard](https://atc-dashboard-604846394197.us-central1.run.app)**.
 
 ---
 

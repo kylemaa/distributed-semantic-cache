@@ -6,7 +6,7 @@ Welcome to the Distributed Semantic Cache documentation.
 > This project is the **LLM-call cache** — it caches `Query → Response`. It's the foundational
 > layer beneath **Pomerene**, our flagship *deterministic trajectory cache for agentic systems*,
 > which caches `Goal + Context → Plan` one layer up.
-> → See it live: https://atc-dashboard-604846394197.us-central1.run.app
+> → See the [live dashboard](https://atc-dashboard-604846394197.us-central1.run.app).
 
 ---
 

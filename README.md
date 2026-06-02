@@ -11,7 +11,7 @@
 > This project is the **LLM-call cache** — it caches `Query → Response`. It's the foundational
 > layer beneath **Pomerene**, our flagship *deterministic trajectory cache for agentic systems*,
 > which caches `Goal + Context → Plan` one layer up.
-> → See it live: https://atc-dashboard-604846394197.us-central1.run.app
+> → See the [live dashboard](https://atc-dashboard-604846394197.us-central1.run.app).
 
 | Layer | What's cached | Project |
 |---|---|---|
@@ -297,7 +297,7 @@ Have questions or need help?
 
 <p align="center">
   Part of the <a href="https://atc-dashboard-604846394197.us-central1.run.app"><strong>Pomerene</strong></a> stack — the LLM-call cache layer beneath Pomerene's deterministic agent-trajectory cache.<br/>
-  See the flagship live: <a href="https://atc-dashboard-604846394197.us-central1.run.app">atc-dashboard-604846394197.us-central1.run.app</a>
+  See the flagship live: <a href="https://atc-dashboard-604846394197.us-central1.run.app">the Pomerene dashboard</a>
 </p>
 
 <p align="center">

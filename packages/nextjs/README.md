@@ -8,7 +8,7 @@ Next.js App Router integration for [Distributed Semantic Cache](https://github.c
 > **Part of the [Pomerene](https://atc-dashboard-604846394197.us-central1.run.app) stack.**
 > This package caches `Query → Response` — the foundational layer beneath **Pomerene**, our
 > flagship *deterministic trajectory cache for agentic systems* (`Goal + Context → Plan`).
-> → See it live: https://atc-dashboard-604846394197.us-central1.run.app
+> → See the [live dashboard](https://atc-dashboard-604846394197.us-central1.run.app).
 
 ## Features
 

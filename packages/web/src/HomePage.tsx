@@ -33,7 +33,7 @@ function HomePage({ onNavigate }: HomePageProps) {
             The <strong>LLM-call cache</strong> layer of <strong>Pomerene</strong>, our deterministic
             agent-trajectory cache. See the flagship live →{' '}
             <a href="https://atc-dashboard-604846394197.us-central1.run.app" target="_blank" rel="noopener noreferrer">
-              atc-dashboard-604846394197.us-central1.run.app
+              the Pomerene dashboard
             </a>
           </p>
           <div className="hero-cta">

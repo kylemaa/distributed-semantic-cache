@@ -31,7 +31,8 @@ describe('EmbeddingsService with LRU Cache', () => {
   beforeEach(() => {
     process.env.OPENAI_API_KEY = 'test-key';
     process.env.EMBEDDING_CACHE_SIZE = '5'; // Small cache for testing
-    embeddingsService = new EmbeddingsService(5);
+    // Pin to the (mocked) OpenAI provider; the runtime default is now 'local'.
+    embeddingsService = new EmbeddingsService(5, 'openai');
   });
 
   describe('caching behavior', () => {

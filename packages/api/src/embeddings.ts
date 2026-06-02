@@ -20,11 +20,19 @@ export class EmbeddingsService {
 
     // Initialize the appropriate provider
     if (this.provider === 'openai') {
+      // Paid API path: only allowed when the operator has explicitly opted in
+      // by providing their own OPENAI_API_KEY. This prevents accidental charges.
+      if (!config.openai.apiKey) {
+        throw new Error(
+          '[Embeddings] EMBEDDING_PROVIDER=openai requires you to set your own OPENAI_API_KEY. ' +
+          'Use EMBEDDING_PROVIDER=local (the default, free, no API key) unless you intend to be billed by OpenAI.'
+        );
+      }
       this.openai = new OpenAI({
         apiKey: config.openai.apiKey,
       });
       this.model = config.openai.embeddingModel;
-      console.log(`[Embeddings] Using OpenAI provider (${this.model})`);
+      console.log(`[Embeddings] Using OpenAI provider (${this.model}) — billed to your OPENAI_API_KEY`);
     } else {
       const localModel = config.embeddings.localModel as LocalEmbeddingModelId;
       this.localProvider = new LocalEmbeddingsProvider(localModel);

@@ -18,8 +18,14 @@ export const config = {
     },
   },
   openai: {
-    apiKey: process.env.OPENAI_API_KEY || '',
-    embeddingModel: process.env.EMBEDDING_MODEL || 'text-embedding-3-small',
+    // Getters so the key is read dynamically (consistent with the rest of
+    // this file, and important for tests that set env vars at runtime).
+    get apiKey() {
+      return process.env.OPENAI_API_KEY || '';
+    },
+    get embeddingModel() {
+      return process.env.EMBEDDING_MODEL || 'text-embedding-3-small';
+    },
   },
   cache: {
     similarityThreshold: parseFloat(process.env.SIMILARITY_THRESHOLD || '0.85'),
@@ -34,8 +40,10 @@ export const config = {
   },
   embeddings: {
     // Embedding provider: 'openai' or 'local'
+    // Defaults to 'local' (free, no API key) so the server never hits a paid
+    // API by accident. Set EMBEDDING_PROVIDER=openai to opt in with your own key.
     get provider() {
-      return (process.env.EMBEDDING_PROVIDER || 'openai') as 'openai' | 'local';
+      return (process.env.EMBEDDING_PROVIDER || 'local') as 'openai' | 'local';
     },
     // Local model to use when provider=local
     get localModel() {

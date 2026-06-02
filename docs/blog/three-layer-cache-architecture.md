@@ -2,6 +2,8 @@
 
 *The engineering decisions behind Distributed Semantic Cache — and why the middle layer matters more than you'd think.*
 
+> _Distributed Semantic Cache is the **LLM-call cache** layer of the [Pomerene](https://atc-dashboard-604846394197.us-central1.run.app) stack. The same primitives described below — embeddings, semantic matching, layered lookup — power **Pomerene**, our flagship deterministic cache for **agent trajectories** (`Goal + Context → Plan`) one layer up._
+
 ---
 
 LLM API calls are slow and expensive. A single GPT-4 call costs $0.03-0.06 per 1K tokens and takes 500-2000ms. At scale, this adds up fast: 1M queries/month at even modest token counts can hit $30K/month in API costs alone.
@@ -232,6 +234,12 @@ const result = await middleware.chat(
   () => openai.chat.completions.create({ model: 'gpt-4', messages })
 );
 ```
+
+## Caching the layer above: Pomerene
+
+This post covered the **LLM-call cache** — `Query → Response`. The same primitives (embeddings, semantic matching, layered lookup) generalize one level up to **agent trajectories**: `Goal + Context → Plan`. That's **[Pomerene](https://atc-dashboard-604846394197.us-central1.run.app)**, our flagship project — a *deterministic TypeScript trajectory cache for agentic systems*, where a cache hit replays a cached plan with **zero LLM on the hit path**.
+
+See it live, with client-verifiable receipts: **https://atc-dashboard-604846394197.us-central1.run.app**
 
 ---
 

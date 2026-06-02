@@ -11,6 +11,7 @@
 - Many queries are semantically identical ("what is X" vs "explain X" vs "can you describe X") but string comparison treats them as cache misses
 - Exact-string caching catches only true duplicates — common wisdom says it helps ~5–10% in practice
 - We benchmarked a 3-layer semantic cache against four real public datasets using real OpenAI embeddings to find out how much further semantic matching actually gets you — and where it falls short
+- Framing note: this is the **LLM-call cache** story (`Query → Response`) — the foundational layer of the [Pomerene](https://atc-dashboard-604846394197.us-central1.run.app) stack. Pomerene applies the same primitives one layer up to cache **agent trajectories** (`Goal + Context → Plan`); link the live dashboard as the flagship CTA
 
 ---
 

@@ -1,7 +1,7 @@
 {
   "name": "distributed-semantic-cache-poc",
   "version": "1.0.0",
-  "description": "Proof of concept for distributed semantic caching with embeddings",
+  "description": "The LLM-call semantic cache layer of the Pomerene stack — caches Query → Response to cut LLM API costs.",
   "private": true,
   "scripts": {
     "dev": "pnpm --parallel --filter \"./packages/*\" dev",
@@ -15,7 +15,10 @@
   "keywords": [
     "semantic-cache",
     "embeddings",
-    "distributed"
+    "distributed",
+    "pomerene",
+    "llm-cache",
+    "agentic"
   ],
   "engines": {
     "node": ">=18.0.0",

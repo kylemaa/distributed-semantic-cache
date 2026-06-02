@@ -2,6 +2,8 @@
 
 Detailed chronicle of the Distributed Semantic Cache development phases.
 
+> _This is the **LLM-call cache** layer of the [Pomerene](https://atc-dashboard-604846394197.us-central1.run.app) stack — the foundation beneath Pomerene's deterministic agent-trajectory cache._
+
 ---
 
 ## Phase 1: Core Caching Foundation

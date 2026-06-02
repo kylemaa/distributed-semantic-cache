@@ -5,6 +5,14 @@
 **Author**: Kyle (Distributed Semantic Cache POC Project)  
 **Purpose**: Establish prior art for semantic caching techniques
 
+> **Where this fits:** This paper describes the **LLM-call cache** (`Query → Response`) of the [Pomerene](https://atc-dashboard-604846394197.us-central1.run.app) stack. **Pomerene**, the flagship project, extends these same primitives one layer up to a *deterministic agent-trajectory cache* (`Goal + Context → Plan`) for agentic systems.
+>
+> | Layer | What's cached | Project |
+> |---|---|---|
+> | **LLM call** | Query → Response | **Semantic Cache (this repo)** |
+> | Agent trajectory | Goal + Context → Plan | [Pomerene →](https://atc-dashboard-604846394197.us-central1.run.app) |
+> | Conversation | Thread messages | Mastra Memory |
+
 ---
 
 ## Abstract

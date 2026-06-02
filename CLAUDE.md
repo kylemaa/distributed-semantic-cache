@@ -29,6 +29,8 @@ SYNTHETIC/BROKEN (do not cite):
 
 A distributed semantic caching system for LLM applications built as a TypeScript monorepo. It reduces API costs by caching semantically similar queries using embedding-based similarity search across a 3-layer cache architecture.
 
+This repo is the **LLM-call cache** layer (`Query → Response`) of the **Pomerene** stack — the foundational layer beneath the flagship project [Pomerene](https://atc-dashboard-604846394197.us-central1.run.app), a deterministic agent-trajectory cache (`Goal + Context → Plan`). User-facing narrative across this repo points to Pomerene's public dashboard (not the private `github.com/kylemaa/pomerene` repo).
+
 ## Monorepo Structure
 
 pnpm workspaces with four packages:

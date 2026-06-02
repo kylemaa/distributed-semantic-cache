@@ -1,9 +1,14 @@
 # @distributed-semantic-cache/nextjs
 
-Next.js App Router integration for [Distributed Semantic Cache](https://github.com/kylemaa/distributed-semantic-cache-poc) — reduce LLM API costs by 50-80% with semantic query matching.
+Next.js App Router integration for [Distributed Semantic Cache](https://github.com/kylemaa/distributed-semantic-cache-poc) — the **LLM-call cache layer of the [Pomerene](https://atc-dashboard-604846394197.us-central1.run.app) stack**. Reduce LLM API costs by 50-80% with semantic query matching.
 
 [![npm version](https://badge.fury.io/js/%40distributed-semantic-cache%2Fnextjs.svg)](https://www.npmjs.com/package/@distributed-semantic-cache/nextjs)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
+
+> **Part of the [Pomerene](https://atc-dashboard-604846394197.us-central1.run.app) stack.**
+> This package caches `Query → Response` — the foundational layer beneath **Pomerene**, our
+> flagship *deterministic trajectory cache for agentic systems* (`Goal + Context → Plan`).
+> → See it live: https://atc-dashboard-604846394197.us-central1.run.app
 
 ## Features
 

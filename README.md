@@ -7,6 +7,18 @@
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
 [![Tests](https://img.shields.io/badge/Tests-220%2B%20Passing-brightgreen.svg)](packages/api/__tests__)
 
+> **Part of the [Pomerene](https://atc-dashboard-604846394197.us-central1.run.app) stack.**
+> This project is the **LLM-call cache** — it caches `Query → Response`. It's the foundational
+> layer beneath **Pomerene**, our flagship *deterministic trajectory cache for agentic systems*,
+> which caches `Goal + Context → Plan` one layer up.
+> → See it live: https://atc-dashboard-604846394197.us-central1.run.app
+
+| Layer | What's cached | Project |
+|---|---|---|
+| **LLM call** | Query → Response | **Semantic Cache (this repo)** |
+| Agent trajectory | Goal + Context → Plan | [Pomerene →](https://atc-dashboard-604846394197.us-central1.run.app) |
+| Conversation | Thread messages | Mastra Memory |
+
 ## 🎯 Why Distributed Semantic Cache?
 
 | Challenge | Solution |
@@ -281,6 +293,11 @@ Have questions or need help?
 
 <p align="center">
   <strong>Reduce LLM costs. Improve performance. Ship faster.</strong>
+</p>
+
+<p align="center">
+  Part of the <a href="https://atc-dashboard-604846394197.us-central1.run.app"><strong>Pomerene</strong></a> stack — the LLM-call cache layer beneath Pomerene's deterministic agent-trajectory cache.<br/>
+  See the flagship live: <a href="https://atc-dashboard-604846394197.us-central1.run.app">atc-dashboard-604846394197.us-central1.run.app</a>
 </p>
 
 <p align="center">

@@ -2,6 +2,8 @@
 
 Comprehensive performance analysis of the Distributed Semantic Cache.
 
+> _These numbers measure the **LLM-call cache** (`Query → Response`) of the [Pomerene](https://atc-dashboard-604846394197.us-central1.run.app) stack. **Pomerene**, the flagship agent-trajectory cache, publishes its own live, client-verifiable receipts → https://atc-dashboard-604846394197.us-central1.run.app/receipts_
+
 > **How to reproduce:** All benchmarks can be run locally with `cd packages/api && npx tsx benchmarks/comprehensive-benchmark.ts`. No API keys required — local embeddings are used by default. Results below were collected on Node.js v20 / Apple M2 Pro / 16GB RAM. Your numbers will vary by hardware but relative ratios should hold.
 
 ---

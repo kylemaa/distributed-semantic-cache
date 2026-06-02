@@ -2,6 +2,14 @@
 
 A comprehensive overview of the Distributed Semantic Cache system architecture, featuring a 3-layer caching system with adaptive learning and privacy-first design.
 
+> **Where this fits:** This is the **LLM-call cache** of the [Pomerene](https://atc-dashboard-604846394197.us-central1.run.app) stack — it caches `Query → Response`. **Pomerene**, the flagship project, applies the same primitives (embeddings, HNSW/semantic matching, write-through caching) one layer up to cache `Goal + Context → Plan` for agentic systems.
+>
+> | Layer | What's cached | Project |
+> |---|---|---|
+> | **LLM call** | Query → Response | **Semantic Cache (this repo)** |
+> | Agent trajectory | Goal + Context → Plan | [Pomerene →](https://atc-dashboard-604846394197.us-central1.run.app) |
+> | Conversation | Thread messages | Mastra Memory |
+
 ## Table of Contents
 
 1. [Overview](#overview)

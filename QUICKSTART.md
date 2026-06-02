@@ -1,5 +1,7 @@
 # Quick Start Guide
 
+> _Part of the [Pomerene](https://atc-dashboard-604846394197.us-central1.run.app) stack — the LLM-call cache layer beneath Pomerene's agent-trajectory cache._
+
 Get up and running with the Distributed Semantic Cache POC in 5 minutes!
 
 ## 🆕 Phase 2 Update: FREE Local Embeddings!

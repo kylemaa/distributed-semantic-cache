@@ -1,10 +1,15 @@
 # @distributed-semantic-cache/sdk
 
-The official TypeScript/JavaScript SDK for Distributed Semantic Cache - a high-performance semantic caching system that reduces LLM API costs by 50-80% through intelligent query matching.
+The official TypeScript/JavaScript SDK for Distributed Semantic Cache — the **LLM-call cache layer of the [Pomerene](https://atc-dashboard-604846394197.us-central1.run.app) stack**. It reduces LLM API costs by 50-80% through intelligent query matching (`Query → Response`).
 
 [![npm version](https://badge.fury.io/js/%40distributed-semantic-cache%2Fsdk.svg)](https://www.npmjs.com/package/@distributed-semantic-cache/sdk)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+> **Part of the [Pomerene](https://atc-dashboard-604846394197.us-central1.run.app) stack.**
+> This SDK caches `Query → Response`. It's the foundational layer beneath **Pomerene**, our
+> flagship *deterministic trajectory cache for agentic systems*, which caches
+> `Goal + Context → Plan` one layer up. → See it live: https://atc-dashboard-604846394197.us-central1.run.app
 
 ## Features
 

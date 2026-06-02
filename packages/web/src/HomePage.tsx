@@ -18,7 +18,7 @@ function HomePage({ onNavigate }: HomePageProps) {
         <div className="hero-content">
           <div className="hero-badge">
             <span className="badge-icon">⚡</span>
-            <span>Open Source Semantic Caching</span>
+            <span>Part of the Pomerene stack</span>
           </div>
           <h1 className="hero-title">
             <span className="title-gradient">Distributed</span>
@@ -26,8 +26,15 @@ function HomePage({ onNavigate }: HomePageProps) {
             Semantic Cache
           </h1>
           <p className="hero-subtitle">
-            Cut your LLM API costs by <strong>50-60%</strong> with intelligent semantic caching. 
+            Cut your LLM API costs by <strong>50-60%</strong> with intelligent semantic caching.
             Cache similar queries, reduce latency, and scale your AI applications without breaking the bank.
+          </p>
+          <p className="hero-subtitle">
+            The <strong>LLM-call cache</strong> layer of <strong>Pomerene</strong>, our deterministic
+            agent-trajectory cache. See the flagship live →{' '}
+            <a href="https://atc-dashboard-604846394197.us-central1.run.app" target="_blank" rel="noopener noreferrer">
+              atc-dashboard-604846394197.us-central1.run.app
+            </a>
           </p>
           <div className="hero-cta">
             <button className="btn btn-primary btn-lg" onClick={() => onNavigate('chat')}>
@@ -454,6 +461,9 @@ function HomePage({ onNavigate }: HomePageProps) {
                 </svg>
                 <span>View on GitHub</span>
               </a>
+              <a href="https://atc-dashboard-604846394197.us-central1.run.app" className="btn btn-ghost btn-lg" target="_blank" rel="noopener noreferrer">
+                <span>Explore Pomerene →</span>
+              </a>
             </div>
           </div>
         </div>
@@ -464,10 +474,11 @@ function HomePage({ onNavigate }: HomePageProps) {
         <div className="footer-content">
           <div className="footer-brand">
             <span className="footer-logo">🚀</span>
-            <span className="footer-name">Distributed Semantic Cache</span>
+            <span className="footer-name">Distributed Semantic Cache · part of the Pomerene stack</span>
           </div>
           <div className="footer-links">
             <a href="https://github.com/kylemaa/distributed-semantic-cache" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://atc-dashboard-604846394197.us-central1.run.app" target="_blank" rel="noopener noreferrer">Pomerene</a>
             <a href="#docs">Documentation</a>
             <a href="#license">License</a>
           </div>

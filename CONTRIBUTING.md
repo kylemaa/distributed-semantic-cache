@@ -1,5 +1,7 @@
 # Contributing to Distributed Semantic Cache POC
 
+> _This repo is the **LLM-call cache** layer of the [Pomerene](https://atc-dashboard-604846394197.us-central1.run.app) stack. For the flagship deterministic agent-trajectory cache, see Pomerene._
+
 Thank you for your interest in contributing! This guide will help you get started.
 
 ## Development Setup

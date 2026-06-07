@@ -1,6 +1,6 @@
 # Distributed Semantic Cache
 
-**Open-source semantic caching for LLM applications. Reduce API costs by 50-80% while improving response times.**
+**Open-source semantic caching for LLM applications. Reduce API costs by while improving response times.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue.svg)](https://www.typescriptlang.org/)
